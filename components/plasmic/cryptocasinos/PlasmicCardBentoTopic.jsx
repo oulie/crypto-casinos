@@ -9,8 +9,10 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: U8ruvn_mupQO
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -106,7 +108,15 @@ function PlasmicCardBentoTopic__RenderFunc(props) {
     >
       <div className={classNames(projectcss.all, sty.freeBox___2Y7X1)} />
       <div className={classNames(projectcss.all, sty.freeBox___3L0Hk)}>
-        <div className={classNames(projectcss.all, sty.freeBox___9AOwi)}>
+        <PlasmicLink__
+          data-plasmic-name={"link"}
+          data-plasmic-override={overrides.link}
+          className={classNames(projectcss.all, projectcss.a, sty.link)}
+          component={Link}
+          href={"#"}
+          legacyBehavior={false}
+          platform={"nextjs"}
+        >
           <div className={classNames(projectcss.all, sty.freeBox__awImY)}>
             <div className={classNames(projectcss.all, sty.freeBox__y9RYn)}>
               {renderPlasmicSlot({
@@ -151,7 +161,7 @@ function PlasmicCardBentoTopic__RenderFunc(props) {
               })}
             </div>
           </div>
-        </div>
+        </PlasmicLink__>
         <div className={classNames(projectcss.all, sty.freeBox__a4Ab3)}>
           {renderPlasmicSlot({
             defaultContents: (
@@ -195,7 +205,8 @@ function PlasmicCardBentoTopic__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg"],
+  root: ["root", "link", "svg"],
+  link: ["link", "svg"],
   svg: ["svg"]
 };
 
@@ -231,6 +242,7 @@ export const PlasmicCardBentoTopic = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
     svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicCardBentoTopic
     internalVariantProps: PlasmicCardBentoTopic__VariantProps,

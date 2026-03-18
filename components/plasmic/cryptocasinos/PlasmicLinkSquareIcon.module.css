@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #cfcfcf;
+  position: relative;
+  transition-property: background, color;
+  transition-duration: 0.15s, 0.15s;
+  -webkit-transition-property: background, color;
+  -webkit-transition-duration: 0.15s, 0.15s;
+  border-radius: 10px;
+  padding: 10px;
+}
+.root:hover {
+  background: var(--token-QL0xMMXWaeGp);
+  color: #ffffff;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}

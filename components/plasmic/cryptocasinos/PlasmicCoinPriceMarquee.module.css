@@ -9,6 +9,7 @@
   padding-bottom: 10px;
   column-gap: 40px;
   position: relative;
+  overflow: hidden;
   min-width: 0;
   border-top: 1px none #ffffff0f;
   border-bottom: 1px solid #ffffff0f;

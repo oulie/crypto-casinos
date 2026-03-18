@@ -1,0 +1,30 @@
+.root {
+  animation: none;
+  opacity: 0.7;
+  background: var(--token-PU2kSrpIWaun);
+  position: relative;
+  cursor: pointer;
+  transition-property: background, color, opacity, border-color;
+  transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+  display: flex;
+  flex-direction: row;
+  color: #cfcfcf;
+  -webkit-transition-property: background, color, opacity, border-color;
+  -webkit-transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+  border-radius: 100px;
+  padding: 2px 10px;
+  border: 1px solid #ffffff1a;
+}
+.root:hover {
+  background: var(--token-QL0xMMXWaeGp);
+  opacity: 1;
+  border-color: var(--token-QL0xMMXWaeGp);
+}
+.slotTargetTitle {
+  font-size: 14px;
+  color: #cfcfcf;
+  white-space: pre;
+}
+.root:hover .slotTargetTitle {
+  color: #000000;
+}

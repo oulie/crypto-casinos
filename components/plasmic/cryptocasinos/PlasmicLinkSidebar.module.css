@@ -8,6 +8,13 @@
   padding-bottom: 10px;
   color: #ffffff80;
   position: relative;
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover {
+  color: var(--token-QL0xMMXWaeGp);
 }
 .svg__fjTes {
   animation: none;
@@ -18,7 +25,10 @@
 .slotTargetTitle {
   font-size: 16px;
   font-weight: 400;
-  color: #ffffffcc;
+  color: #ffffff99;
+}
+.root:hover .slotTargetTitle {
+  color: #ffffff;
 }
 .text {
   position: relative;

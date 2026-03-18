@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: relative;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  background: var(--token-PU2kSrpIWaun);
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  border-radius: 99px;
+}
+.root:hover {
+  transform: translate3d(0px, -2px, 0px) rotate3d(0, 0, 1, -20deg);
+}
+.img {
+  animation: none;
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 99px;
+  border: 2px solid var(--token-PU2kSrpIWaun);
+}
+.img > picture > img {
+  object-fit: cover;
+}

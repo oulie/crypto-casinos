@@ -4,6 +4,16 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  color: #cfcfcf;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.15s;
+  font-size: 15px;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover {
+  color: #ffffff;
 }
 .freeBox {
   position: relative;

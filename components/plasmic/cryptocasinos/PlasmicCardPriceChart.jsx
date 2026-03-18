@@ -16,13 +16,13 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import LinkSquareIcon from "../../LinkSquareIcon"; // plasmic-import: BILoRCVR4IMW/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicCardPriceChart.module.css"; // plasmic-import: Bygnfqie3Cqa/css
 import IconBitcoinIcon from "./icons/PlasmicIcon__IconBitcoin"; // plasmic-import: TBWc5K7MgpVr/icon
 import ChevronDownIcon from "./icons/PlasmicIcon__ChevronDown"; // plasmic-import: vouThdOwt4ZD/icon
-import ArrowUpRightIcon from "./icons/PlasmicIcon__ArrowUpRight"; // plasmic-import: J07A1eLgMbLa/icon
 import TrendUpIcon from "./icons/PlasmicIcon__TrendUp"; // plasmic-import: 8lQBxIYMce6A/icon
 
 createPlasmicElementProxy;
@@ -109,12 +109,11 @@ function PlasmicCardPriceChart__RenderFunc(props) {
             role={"img"}
           />
         </div>
-        <div className={classNames(projectcss.all, sty.freeBox__p0RwG)}>
-          <ArrowUpRightIcon
-            className={classNames(projectcss.all, sty.svg__bsTmm)}
-            role={"img"}
-          />
-        </div>
+        <LinkSquareIcon
+          data-plasmic-name={"linkSquareIcon"}
+          data-plasmic-override={overrides.linkSquareIcon}
+          className={classNames("__wab_instance", sty.linkSquareIcon)}
+        />
       </div>
       <div className={classNames(projectcss.all, sty.freeBox___48NOe)} />
       <div className={classNames(projectcss.all, sty.freeBox__fuiLz)}>
@@ -365,6 +364,7 @@ function PlasmicCardPriceChart__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
+    "linkSquareIcon",
     "price",
     "currency",
     "rangeHour",
@@ -382,6 +382,7 @@ const PlasmicDescendants = {
     "tradingActivitySellPercentage"
   ],
 
+  linkSquareIcon: ["linkSquareIcon"],
   price: ["price"],
   currency: ["currency"],
   rangeHour: ["rangeHour"],
@@ -431,6 +432,7 @@ export const PlasmicCardPriceChart = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    linkSquareIcon: makeNodeComponent("linkSquareIcon"),
     price: makeNodeComponent("price"),
     currency: makeNodeComponent("currency"),
     rangeHour: makeNodeComponent("rangeHour"),

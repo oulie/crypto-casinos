@@ -28,7 +28,7 @@ import sty from "./PlasmicLinkButton.module.css"; // plasmic-import: IXlYPJ9laVn
 
 createPlasmicElementProxy;
 
-export const PlasmicLinkButton__VariantProps = new Array("color");
+export const PlasmicLinkButton__VariantProps = new Array("color", "size");
 
 export const PlasmicLinkButton__ArgProps = new Array("title");
 
@@ -68,6 +68,12 @@ function PlasmicLinkButton__RenderFunc(props) {
         type: "private",
         variableType: "variant",
         initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.color
+      },
+      {
+        path: "size",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.size
       }
     ],
 
@@ -97,7 +103,9 @@ function PlasmicLinkButton__RenderFunc(props) {
         sty.root,
         {
           [sty.rootcolor_clear]: hasVariant($state, "color", "clear"),
-          [sty.rootcolor_gray]: hasVariant($state, "color", "gray")
+          [sty.rootcolor_gray]: hasVariant($state, "color", "gray"),
+          [sty.rootsize_medium]: hasVariant($state, "size", "medium"),
+          [sty.rootsize_small]: hasVariant($state, "size", "small")
         }
       )}
       component={Link}
@@ -110,7 +118,8 @@ function PlasmicLinkButton__RenderFunc(props) {
         data-plasmic-override={overrides.freeBox}
         className={classNames(projectcss.all, sty.freeBox, {
           [sty.freeBoxcolor_clear]: hasVariant($state, "color", "clear"),
-          [sty.freeBoxcolor_gray]: hasVariant($state, "color", "gray")
+          [sty.freeBoxcolor_gray]: hasVariant($state, "color", "gray"),
+          [sty.freeBoxsize_medium]: hasVariant($state, "size", "medium")
         })}
       >
         {renderPlasmicSlot({

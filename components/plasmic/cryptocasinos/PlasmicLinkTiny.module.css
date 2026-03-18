@@ -1,0 +1,16 @@
+.root {
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.4;
+  position: relative;
+  transition-property: opacity, background;
+  transition-duration: 0.15s, 0.15s;
+  -webkit-transition-property: opacity, background;
+  -webkit-transition-duration: 0.15s, 0.15s;
+  border-radius: 50px;
+  padding: 2px 8px;
+}
+.root:hover {
+  opacity: 1;
+  background: var(--token-QL0xMMXWaeGp);
+}

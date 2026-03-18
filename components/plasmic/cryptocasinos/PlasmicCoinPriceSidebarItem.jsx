@@ -14,7 +14,8 @@ import {
   PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -26,7 +27,13 @@ createPlasmicElementProxy;
 
 export const PlasmicCoinPriceSidebarItem__VariantProps = new Array();
 
-export const PlasmicCoinPriceSidebarItem__ArgProps = new Array();
+export const PlasmicCoinPriceSidebarItem__ArgProps = new Array(
+  "icon",
+  "title",
+  "handle",
+  "price",
+  "change"
+);
 
 const $$ = {};
 
@@ -42,7 +49,14 @@ function PlasmicCoinPriceSidebarItem__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          icon: {
+            src: "/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg",
+            fullWidth: 64,
+            fullHeight: 64,
+            aspectRatio: undefined
+          }
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -85,53 +99,34 @@ function PlasmicCoinPriceSidebarItem__RenderFunc(props) {
         displayMinWidth={"0"}
         displayWidth={"22px"}
         loading={"lazy"}
-        src={{
-          src: "/plasmic/cryptocasinos/images/image4.png",
-          fullWidth: 64,
-          fullHeight: 64,
-          aspectRatio: undefined
-        }}
+        src={args.icon}
       />
 
       <div className={classNames(projectcss.all, sty.freeBox__qg1K6)}>
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__bmGSt
-          )}
-        >
-          {"Bitcoin"}
-        </div>
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__lktys
-          )}
-        >
-          {"BTC"}
+        {renderPlasmicSlot({
+          defaultContents: "Bitcoin",
+          value: args.title,
+          className: classNames(sty.slotTargetTitle)
+        })}
+        <div className={classNames(projectcss.all, sty.freeBox__lktys)}>
+          {renderPlasmicSlot({
+            defaultContents: "BTC",
+            value: args.handle,
+            className: classNames(sty.slotTargetHandle)
+          })}
         </div>
       </div>
       <div className={classNames(projectcss.all, sty.freeBox__tuYgq)}>
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__sOg2
-          )}
-        >
-          {"$64,230"}
-        </div>
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text___1JCG
-          )}
-        >
-          {"+2,4%"}
-        </div>
+        {renderPlasmicSlot({
+          defaultContents: "$64,230",
+          value: args.price,
+          className: classNames(sty.slotTargetPrice)
+        })}
+        {renderPlasmicSlot({
+          defaultContents: "+2,4%",
+          value: args.change,
+          className: classNames(sty.slotTargetChange)
+        })}
       </div>
     </div>
   );

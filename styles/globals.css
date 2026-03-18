@@ -29,6 +29,11 @@ body {
   color: #000;
 }
 
+img::selection,
+svg::selection {
+  background: transparent;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -48,6 +53,25 @@ a {
   z-index: 1000;
   transition: background-color 0.4s cubic-bezier(0.22, 1, 0.36, 1) !important;
   backdrop-filter: blur(8px) !important;
+}
+
+.link-coin-icon {
+  margin-right: -8px;
+}
+
+.link-coin-icon:hover {
+  z-index: 10;
+}
+
+/* When hovering the wrapper, dim ALL icons */
+.link-coin-icon-wrap:hover .link-coin-icon-img {
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+/* Restore the one being directly hovered */
+.link-coin-icon:hover .link-coin-icon-img {
+  opacity: 1;
 }
 
 @media (max-width: 1023px) {

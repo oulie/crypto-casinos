@@ -274,6 +274,84 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicTopBar.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "nn118kQlMOAC",
+          "name": "TagPill",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTagPill.jsx",
+          "importSpec": {
+            "modulePath": "TagPill.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicTagPill.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "q2l6s7HIpw7u",
+          "name": "LinkCoinIcon",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLinkCoinIcon.jsx",
+          "importSpec": {
+            "modulePath": "LinkCoinIcon.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLinkCoinIcon.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "-HNmkPk7FKYK",
+          "name": "CardCta",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardCta.jsx",
+          "importSpec": {
+            "modulePath": "CardCta.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCta.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ftCRKqiLCHeT",
+          "name": "NewsGridItem",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicNewsGridItem.jsx",
+          "importSpec": {
+            "modulePath": "NewsGridItem.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicNewsGridItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "s_Cz1URrXJSO",
+          "name": "LinkTiny",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLinkTiny.jsx",
+          "importSpec": {
+            "modulePath": "LinkTiny.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLinkTiny.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "BILoRCVR4IMW",
+          "name": "LinkSquareIcon",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLinkSquareIcon.jsx",
+          "importSpec": {
+            "modulePath": "LinkSquareIcon.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLinkSquareIcon.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -503,6 +581,46 @@
           "id": "kcIzkxMw1BFG",
           "name": "bitcoin-circle.svg",
           "filePath": "../public/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg"
+        },
+        {
+          "id": "diFRrfH_KEnI",
+          "name": "coin-dot.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/coinDotSvg.svg"
+        },
+        {
+          "id": "KhTDGTq-MXxX",
+          "name": "coin-usdt.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/coinUsdtSvg.svg"
+        },
+        {
+          "id": "d0PoloRmDNl5",
+          "name": "coin-ada.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/coinAdaSvg.svg"
+        },
+        {
+          "id": "mfmRNX9y_jxv",
+          "name": "coin-eth.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/coinEthSvg.svg"
+        },
+        {
+          "id": "Yx1bhrXFkHaw",
+          "name": "coin-xrp.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/coinXrpSvg.svg"
+        },
+        {
+          "id": "_PAm_UU7m0kH",
+          "name": "coin-sol.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/coinSolSvg.svg"
+        },
+        {
+          "id": "T1B43wR7EQWK",
+          "name": "uifaces-alien-avatar.jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatarJpg.jpg"
+        },
+        {
+          "id": "rCqSeWtKhidz",
+          "name": "uifaces-alien-avatar (1).jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg"
         }
       ],
       "indirect": false,
@@ -529,7 +647,14 @@
     }
   ],
   "globalVariants": {
-    "variantGroups": []
+    "variantGroups": [
+      {
+        "id": "o3R6a5frYu3G",
+        "name": "Screen",
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "contextFilePath": "plasmic/cryptocasinos/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
   },
   "wrapPagesWithGlobalContexts": true,
   "preserveJsImportExtensions": false,

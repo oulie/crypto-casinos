@@ -15,10 +15,13 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
+  hasVariant,
   renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
+import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -73,6 +76,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
   return (
     <div
@@ -188,6 +192,11 @@ function PlasmicCardCasinoList__RenderFunc(props) {
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton___3SGTw)}
               color={"clear"}
+              size={
+                hasVariant(globalVariants, "screen", "mobile")
+                  ? "medium"
+                  : undefined
+              }
               title={"Read Review"}
             />
           </div>
@@ -315,37 +324,24 @@ function PlasmicCardCasinoList__RenderFunc(props) {
             {"200% up to $1k"}
           </div>
         </div>
-        <div className={classNames(projectcss.all, sty.freeBox__pgdpg)}>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text___1G5Lq
-            )}
-          >
-            {"Wager-free"}
-          </div>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__k3D5V
-            )}
-          >
-            {"BTC"}
-          </div>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__cI0Zx
-            )}
-          >
-            {"Non sticky"}
-          </div>
+        <div className={classNames(projectcss.all, sty.freeBox__fmD1L)}>
+          <TagPill
+            className={classNames("__wab_instance", sty.tagPill__xdsC)}
+          />
+
+          <TagPill
+            className={classNames("__wab_instance", sty.tagPill___2M1Yh)}
+            title={"BTC"}
+          />
+
+          <TagPill
+            className={classNames("__wab_instance", sty.tagPill___2L42P)}
+            title={"Non sticky"}
+          />
         </div>
         <LinkButton
           className={classNames("__wab_instance", sty.linkButton___00Y9F)}
+          size={"medium"}
           title={"Claim Bonus"}
         />
       </div>

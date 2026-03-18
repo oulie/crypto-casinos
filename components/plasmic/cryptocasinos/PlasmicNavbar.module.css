@@ -60,22 +60,6 @@
 .linkNav__pqzxn:global(.__wab_instance) {
   position: relative;
 }
-.freeBox__wmJis {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  background: var(--token-LKg2LChLUpjW);
-  box-shadow: 0px 0px 0px 2px #000000;
-  color: #ffffff;
-  border-radius: 6px;
-  padding: 5px 16px;
-}
-.text {
-  position: relative;
-  width: 100%;
-  height: auto;
+.linkButton:global(.__wab_instance) {
   max-width: 100%;
-  min-width: 0;
 }

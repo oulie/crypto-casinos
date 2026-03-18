@@ -25,6 +25,14 @@
   background: none;
   border-color: #ffffff00;
 }
+.rootsize_medium {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.rootsize_small {
+  font-size: 15px;
+  padding: 6px 14px;
+}
 .root:hover {
   background: var(--token-sxMiRhCxgPbQ);
 }
