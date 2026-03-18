@@ -48,6 +48,11 @@
   justify-content: flex-start;
   column-gap: 20px;
 }
+@media (max-width: 1023px) {
+  .freeBox__uruUf {
+    display: none;
+  }
+}
 .linkNav__n8X9Y:global(.__wab_instance) {
   position: relative;
 }

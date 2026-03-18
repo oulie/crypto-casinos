@@ -20,6 +20,7 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkNav from "../../LinkNav"; // plasmic-import: 5h9FlaGpp_HW/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -60,6 +61,7 @@ function PlasmicNavbar__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const stateSpecs = React.useMemo(
     () => [
       {
