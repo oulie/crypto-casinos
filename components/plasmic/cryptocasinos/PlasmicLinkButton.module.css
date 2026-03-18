@@ -1,0 +1,66 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: var(--token-QL0xMMXWaeGp);
+  color: #ffffff;
+  position: relative;
+  transition-property: background, color, border-color;
+  transition-duration: 0.15s, 0.15s, 0.15s;
+  cursor: pointer;
+  white-space: pre;
+  text-align: center;
+  -webkit-transition-property: background, color, border-color;
+  -webkit-transition-duration: 0.15s, 0.15s, 0.15s;
+  border-radius: 10px;
+  padding: 14px 22px;
+  border: 1px solid #ffffff33;
+}
+.rootcolor_gray {
+  background: linear-gradient(#ffffff0f, #ffffff0f), var(--token-PU2kSrpIWaun);
+  border-color: #ffffff0f;
+}
+.rootcolor_clear {
+  background: none;
+  border-color: #ffffff00;
+}
+.root:hover {
+  background: var(--token-sxMiRhCxgPbQ);
+}
+.freeBox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+.slotTargetTitle > *,
+.slotTargetTitle > :global(.__wab_slot) > *,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetTitle > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover .slotTargetTitle {
+  color: #ffffff;
+}

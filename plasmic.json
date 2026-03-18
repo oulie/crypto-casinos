@@ -1,0 +1,497 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "8PtdGodUbexNYgkuyBUcWu",
+      "projectApiToken": "34o5R5KswluuZ4sD83F88oQrcLWsNNeUpCptQ8Okf4hYqgjnHnX2idGAlhtB7WWQQelNAInf5XFazR1cGw",
+      "projectName": "plasmic-embed-css",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_embed_css/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_embed_css/PlasmicGlobalContextsProvider.jsx",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/plasmic_embed_css/PlasmicStyleTokensProvider.jsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/plasmic_embed_css/plasmic.jsx",
+      "codeComponents": [
+        {
+          "id": "qF0uJxFztB",
+          "name": "EmbedCss",
+          "displayName": "global-embed-css",
+          "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "1LHryFzrfagz6s5XszxyaX",
+      "projectApiToken": "HmTPUR8tEltQHAfRDwCLW6Ncn30t4Dr1FDCEm5XzZgMvppoe7ag5mNYtC3ExQTdxnl6mt8BPqoKMRoR1bhg",
+      "projectName": "Cryptocasinos",
+      "version": "latest",
+      "cssFilePath": "plasmic/cryptocasinos/plasmic.module.css",
+      "components": [
+        {
+          "id": "9i_F_lMez6u7",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicHomepage.jsx",
+          "importSpec": {
+            "modulePath": "../pages/index.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        },
+        {
+          "id": "_gAGXkAXxPJ1",
+          "name": "MarqueePriceItem",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicMarqueePriceItem.jsx",
+          "importSpec": {
+            "modulePath": "MarqueePriceItem.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicMarqueePriceItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "5h9FlaGpp_HW",
+          "name": "LinkNav",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLinkNav.jsx",
+          "importSpec": {
+            "modulePath": "LinkNav.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLinkNav.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "QXwWWXLv7dKm",
+          "name": "HeroCardLink",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicHeroCardLink.jsx",
+          "importSpec": {
+            "modulePath": "HeroCardLink.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicHeroCardLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "6YxcbeY1AF1_",
+          "name": "CardCasinoList",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoList.jsx",
+          "importSpec": {
+            "modulePath": "CardCasinoList.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoList.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "9cwbKxCRtECB",
+          "name": "LinkSidebar",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLinkSidebar.jsx",
+          "importSpec": {
+            "modulePath": "LinkSidebar.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLinkSidebar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "OXSVHEvZKoQP",
+          "name": "CoinPriceSidebarItem",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCoinPriceSidebarItem.jsx",
+          "importSpec": {
+            "modulePath": "CoinPriceSidebarItem.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCoinPriceSidebarItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "U8ruvn_mupQO",
+          "name": "CardBentoTopic",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardBentoTopic.jsx",
+          "importSpec": {
+            "modulePath": "CardBentoTopic.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardBentoTopic.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "qoaNCaz5f2G1",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicNavbar.jsx",
+          "importSpec": {
+            "modulePath": "Navbar.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "tGnuTHE96HBi",
+          "name": "CoinPriceMarquee",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCoinPriceMarquee.jsx",
+          "importSpec": {
+            "modulePath": "CoinPriceMarquee.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCoinPriceMarquee.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "fD_Lygxuv5kw",
+          "name": "LinkFooter",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLinkFooter.jsx",
+          "importSpec": {
+            "modulePath": "LinkFooter.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLinkFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "uVYTGz9cJOUu",
+          "name": "CornerTDivider",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCornerTDivider.jsx",
+          "importSpec": {
+            "modulePath": "CornerTDivider.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCornerTDivider.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "IXlYPJ9laVnz",
+          "name": "LinkButton",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLinkButton.jsx",
+          "importSpec": {
+            "modulePath": "LinkButton.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLinkButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Bygnfqie3Cqa",
+          "name": "CardPriceChart",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardPriceChart.jsx",
+          "importSpec": {
+            "modulePath": "CardPriceChart.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardPriceChart.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "B8aXAFRTKbUL",
+          "name": "ShieldCheckIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ShieldCheck.jsx"
+        },
+        {
+          "id": "KRBb5YKxEcus",
+          "name": "ArrowRightIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ArrowRight.jsx"
+        },
+        {
+          "id": "rZ8hz7v-qc_C",
+          "name": "ZapIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Zap.jsx"
+        },
+        {
+          "id": "YH9P_qiC8MJ-",
+          "name": "CoinsIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Coins.jsx"
+        },
+        {
+          "id": "tf1m50dLlqUe",
+          "name": "DiamondIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Diamond.jsx"
+        },
+        {
+          "id": "OE1F_elgA17S",
+          "name": "BadgeCheckIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__BadgeCheck.jsx"
+        },
+        {
+          "id": "LGewn1q6HySZ",
+          "name": "ShieldOffIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ShieldOff.jsx"
+        },
+        {
+          "id": "LxA7vPyY9CLd",
+          "name": "MoneyArrowDownIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__MoneyArrowDown.jsx"
+        },
+        {
+          "id": "uZVnQmbmAoUm",
+          "name": "DiceIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Dice.jsx"
+        },
+        {
+          "id": "BBZInROpO67i",
+          "name": "CrownIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Crown.jsx"
+        },
+        {
+          "id": "5yXXrMkLRYRW",
+          "name": "HandshakeIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Handshake.jsx"
+        },
+        {
+          "id": "JLJyojIPy5bM",
+          "name": "GiftIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Gift.jsx"
+        },
+        {
+          "id": "J07A1eLgMbLa",
+          "name": "ArrowUpRightIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ArrowUpRight.jsx"
+        },
+        {
+          "id": "h9sLGs5m_Vd1",
+          "name": "BookIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Book.jsx"
+        },
+        {
+          "id": "KIRkdu8buNhp",
+          "name": "StarIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Star.jsx"
+        },
+        {
+          "id": "w5YHMvzaEKho",
+          "name": "ListCheckIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ListCheck.jsx"
+        },
+        {
+          "id": "I-1KWj6kHo73",
+          "name": "TrophyIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Trophy.jsx"
+        },
+        {
+          "id": "TBWc5K7MgpVr",
+          "name": "IconBitcoinIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__IconBitcoin.jsx"
+        },
+        {
+          "id": "8lQBxIYMce6A",
+          "name": "TrendUpIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__TrendUp.jsx"
+        },
+        {
+          "id": "vouThdOwt4ZD",
+          "name": "ChevronDownIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ChevronDown.jsx"
+        },
+        {
+          "id": "TcA6uFpu7JRC",
+          "name": "LockIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Lock.jsx"
+        },
+        {
+          "id": "cBRHEkj-bEJ3",
+          "name": "ChartLineIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ChartLine.jsx"
+        },
+        {
+          "id": "Y_uxftxiiUAz",
+          "name": "ListSearchIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ListSearch.jsx"
+        },
+        {
+          "id": "ZJkkVfd7wR-_",
+          "name": "TboneSvgIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__TboneSvg.jsx"
+        },
+        {
+          "id": "Xd6Jep1FYsA3",
+          "name": "CornerTSvgIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__CornerTSvg.jsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "GJ-4uGWNAhX_",
+          "name": "crypto-casinos-logo.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/cryptoCasinosLogoSvg.svg"
+        },
+        {
+          "id": "QNr7N0aHrltA",
+          "name": "image",
+          "filePath": "../public/plasmic/cryptocasinos/images/image.webp"
+        },
+        {
+          "id": "Nocnc4OEnUgt",
+          "name": "cc-icon",
+          "filePath": "../public/plasmic/cryptocasinos/images/ccIcon.svg"
+        },
+        {
+          "id": "Y8p-lMBwhckZ",
+          "name": "stake-logo.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/stakeLogoSvg.svg"
+        },
+        {
+          "id": "4DK4WpDFQ4Ma",
+          "name": "image 3",
+          "filePath": "../public/plasmic/cryptocasinos/images/image3.png"
+        },
+        {
+          "id": "LMDKFHpu8kFV",
+          "name": "image 4",
+          "filePath": "../public/plasmic/cryptocasinos/images/image4.png"
+        },
+        {
+          "id": "z0mBzhFAghRu",
+          "name": "image 5",
+          "filePath": "../public/plasmic/cryptocasinos/images/image5.png"
+        },
+        {
+          "id": "-PM6-3VVgQpL",
+          "name": "image 6",
+          "filePath": "../public/plasmic/cryptocasinos/images/image6.png"
+        },
+        {
+          "id": "4MWwi7uiW0sf",
+          "name": "image 7",
+          "filePath": "../public/plasmic/cryptocasinos/images/image7.png"
+        },
+        {
+          "id": "cUM5WTHogUBD",
+          "name": "image 8",
+          "filePath": "../public/plasmic/cryptocasinos/images/image8.png"
+        },
+        {
+          "id": "KjaBRzDB7USV",
+          "name": "placeholder1.jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/placeholder1Jpg.jpg"
+        },
+        {
+          "id": "nH5Vi1u0EDDR",
+          "name": "placeholder2.avif",
+          "filePath": "../public/plasmic/cryptocasinos/images/placeholder2Avif.avif"
+        },
+        {
+          "id": "xKbR2BGGPHWQ",
+          "name": "placeholder3.jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/placeholder3Jpg.jpg"
+        },
+        {
+          "id": "PnJVwhwrtJoE",
+          "name": "diagonal-lines.png",
+          "filePath": "../public/plasmic/cryptocasinos/images/diagonalLinesPng.png"
+        },
+        {
+          "id": "pBUbixwzb8fl",
+          "name": "roobet-logo.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/roobetLogoSvg.svg"
+        },
+        {
+          "id": "H7IHmkiuUTX0",
+          "name": "wildio-logo.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/wildioLogoSvg.svg"
+        },
+        {
+          "id": "3gus-LxCvPzf",
+          "name": "dot-pattern.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/dotPatternSvg.svg"
+        },
+        {
+          "id": "-dqyk4N5O20F",
+          "name": "dot-pattern-gray.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/dotPatternGraySvg.svg"
+        },
+        {
+          "id": "kcIzkxMw1BFG",
+          "name": "bitcoin-circle.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/cryptocasinos/PlasmicGlobalContextsProvider.jsx",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/cryptocasinos/PlasmicStyleTokensProvider.jsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/cryptocasinos/plasmic.jsx",
+      "codeComponents": [
+        {
+          "id": "rDKnyzEC_u77",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "vjSEwgJxN1OD",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": []
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "preserveJsImportExtensions": false,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.359",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.359/dist/plasmic.schema.json"
+}

@@ -1,0 +1,160 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  transition-property: background;
+  transition-duration: 0.3s;
+  color: #cfcfcf;
+  cursor: pointer;
+  min-width: 0;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  padding: 30px;
+  border-right: 1px solid #ffffff0f;
+}
+.root:hover {
+  background: var(--token-GKj3RTmB9JGm);
+}
+.freeBox__kNFlT {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+  min-width: 0;
+}
+.freeBox___0Gqpn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: var(--token-PU2kSrpIWaun);
+  transition-property: background;
+  transition-duration: 0.15s;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.15s;
+  border-radius: 10px;
+  padding: 10px;
+}
+.slotTargetIcon > *,
+.slotTargetIcon > :global(.__wab_slot) > *,
+.slotTargetIcon > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetIcon
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetIcon > picture > img,
+.slotTargetIcon > :global(.__wab_slot) > picture > img,
+.slotTargetIcon > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetIcon
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover .slotTargetIcon {
+  color: #ffffff;
+}
+.svg__lJ7S1 {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  height: 20px;
+  color: #ffffff33;
+  transition-property: color, transform;
+  transition-duration: 0.15s, 0.15s;
+  transform: rotate3d(0, 0, 1, -45deg);
+  flex-shrink: 0;
+  -webkit-transition-property: color, transform;
+  -webkit-transition-duration: 0.15s, 0.15s;
+}
+.root:hover .svg {
+  color: var(--token-QL0xMMXWaeGp);
+  transform: rotate3d(0, 0, 1, 0deg);
+}
+.slotTargetTitle {
+  font-weight: 500;
+  color: #ffffff;
+}
+.slotTargetTitle > *,
+.slotTargetTitle > :global(.__wab_slot) > *,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetTitle > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover .slotTargetTitle {
+  color: #ffffff;
+}
+.freeBox__spJx {
+  position: relative;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: row;
+}
+.slotTargetDescription {
+  font-size: 14px;
+}
+.slotTargetDescription > *,
+.slotTargetDescription > :global(.__wab_slot) > *,
+.slotTargetDescription > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetDescription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetDescription > picture > img,
+.slotTargetDescription > :global(.__wab_slot) > picture > img,
+.slotTargetDescription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img,
+.slotTargetDescription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover .slotTargetDescription {
+  color: #cfcfcf;
+}

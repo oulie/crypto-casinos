@@ -1,0 +1,412 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: var(--token-LKg2LChLUpjW);
+  overflow: hidden;
+  box-shadow:
+    inset 0px 0px 0px 1px #ffffff1a,
+    0px 0px 0px 2px #000000;
+  row-gap: 10px;
+  position: relative;
+  min-width: 0;
+  border-radius: 20px;
+  padding: 20px;
+}
+.freeBox__jxyko {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  left: 0px;
+  top: 0px;
+  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+  pointer-events: none;
+  min-width: 0;
+  min-height: 0;
+}
+.freeBox__t1A6K {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+}
+.freeBox__mv8Na {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #e4e4e4;
+  flex-shrink: 0;
+  border-radius: 100px;
+  padding: 12px;
+}
+.svg__g29G1 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000000;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.freeBox___9QeId {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+}
+.text__yuhMs {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.text___9SEzg {
+  position: relative;
+  color: #ffffff;
+  opacity: 0.4;
+}
+.svg__gqhyf {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}
+.freeBox__p0RwG {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: auto;
+}
+.svg__bsTmm {
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-QL0xMMXWaeGp);
+  height: 1em;
+}
+.freeBox___48NOe {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  height: 1px;
+  background: #ffffff0f;
+  flex-shrink: 0;
+}
+.freeBox__fuiLz {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.freeBox___2Uhy {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  column-gap: 6px;
+}
+.price {
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #ffffff;
+  line-height: 1;
+}
+.currency {
+  position: relative;
+  color: #ffffff;
+  opacity: 0.4;
+}
+.freeBox___6MjmC {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+.rangeHour {
+  position: relative;
+}
+.rangeDay {
+  position: relative;
+  color: var(--token-QL0xMMXWaeGp);
+}
+.rangeWeek {
+  position: relative;
+}
+.rangeYear {
+  position: relative;
+}
+.freeBox__ijoHc {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+  opacity: 0.4;
+}
+.svg___167Me {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}
+.priceChange {
+  color: #ffffff;
+}
+.chartDiv {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  height: 250px;
+  flex-shrink: 0;
+}
+.freeBox___85OzI {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.freeBox__xL5P9 {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  padding-top: 20px;
+  min-width: 0;
+  border-top: 1px solid #ffffff0f;
+}
+.freeBox__t6DJ0 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+  min-width: 0;
+}
+.freeBox__g96X4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+}
+.text___6977S {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 12px;
+  opacity: 0.4;
+  min-width: 0;
+}
+.marketCap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 14px;
+  min-width: 0;
+}
+.freeBox__xBq0 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+}
+.text__xoFrv {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 12px;
+  opacity: 0.4;
+  min-width: 0;
+}
+.circulatingSupply {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 14px;
+  min-width: 0;
+}
+.freeBox__edyup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+  min-width: 0;
+}
+.freeBox__vjGg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+}
+.text__gcIe {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 12px;
+  opacity: 0.4;
+  min-width: 0;
+}
+.volume {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 14px;
+  min-width: 0;
+}
+.freeBox___9De4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+}
+.text__g5Kqf {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 12px;
+  opacity: 0.4;
+  min-width: 0;
+}
+.allTimeHigh {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 14px;
+  min-width: 0;
+}
+.freeBox___7HtRy {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  grid-column-end: span 2;
+  min-width: 0;
+}
+.freeBox__h8Ele {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  row-gap: 6px;
+  min-width: 0;
+  min-height: 0;
+}
+.text__s9SxE {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 12px;
+  opacity: 0.4;
+  min-width: 0;
+}
+.freeBox___7YOz {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  height: 6px;
+  background: #ffffff1a;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+.progressBarTradingActivity {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  height: 100%;
+  background: var(--token-QL0xMMXWaeGp);
+  min-height: 0;
+  border-radius: 20px;
+}
+.freeBox__vvDbT {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.tradingActivityBuyPercentage {
+  font-size: 14px;
+}
+.tradingActivitySellPercentage {
+  font-size: 14px;
+}

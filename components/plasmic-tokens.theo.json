@@ -1,0 +1,109 @@
+{
+  "props": [
+    {
+      "name": "bg",
+      "type": "color",
+      "value": "#0F1012",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "PU2kSrpIWaun"
+      }
+    },
+    {
+      "name": "card-bg",
+      "type": "color",
+      "value": "#232628",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "LKg2LChLUpjW"
+      }
+    },
+    {
+      "name": "card-bg-hover",
+      "type": "color",
+      "value": "#2B2F31",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "GKj3RTmB9JGm"
+      }
+    },
+    {
+      "name": "content-width",
+      "type": "spacing",
+      "value": "1200px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "eI5HWtMjxYZN"
+      }
+    },
+    {
+      "name": "green",
+      "type": "color",
+      "value": "#35B7AA",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "sxMiRhCxgPbQ"
+      }
+    },
+    {
+      "name": "lime",
+      "type": "color",
+      "value": "#C4FFA6",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "s9GqGn4DBJXG"
+      }
+    },
+    {
+      "name": "orange",
+      "type": "color",
+      "value": "#FF5A36",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "QL0xMMXWaeGp"
+      }
+    },
+    {
+      "name": "pink",
+      "type": "color",
+      "value": "#FF6DAD",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "DV-hmmuE7DB3"
+      }
+    },
+    {
+      "name": "purple",
+      "type": "color",
+      "value": "#9385FF",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "6ezJMcDkCpjz"
+      }
+    },
+    {
+      "name": "yellow",
+      "type": "color",
+      "value": "#FFC736",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "p2QTq273_LQh"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}
