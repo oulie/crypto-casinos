@@ -352,6 +352,8 @@
 }
 @media (max-width: 511px) {
   .freeBox__wse2R {
+    row-gap: 11px;
+    column-gap: 0px;
     padding: 14px 10px;
   }
 }
@@ -365,6 +367,14 @@
   background: var(--token-PU2kSrpIWaun);
   border-radius: 10px;
   padding: 6px;
+}
+@media (max-width: 511px) {
+  .freeBox__hQlk {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    column-gap: 0px;
+  }
 }
 .linkButton___3DaL:global(.__wab_instance) {
   position: relative;
