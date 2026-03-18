@@ -235,6 +235,45 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicCardPriceChart.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "YZjdruDHGUac",
+          "name": "MainLayout",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicMainLayout.jsx",
+          "importSpec": {
+            "modulePath": "MainLayout.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicMainLayout.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "FGNacl1eR48v",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicFooter.jsx",
+          "importSpec": {
+            "modulePath": "Footer.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "NVGL4dRD3q_4",
+          "name": "TopBar",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTopBar.jsx",
+          "importSpec": {
+            "modulePath": "TopBar.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicTopBar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -362,6 +401,11 @@
           "id": "Xd6Jep1FYsA3",
           "name": "CornerTSvgIcon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__CornerTSvg.jsx"
+        },
+        {
+          "id": "sd6MYWubVyh3",
+          "name": "DiamondSquareIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__DiamondSquare.jsx"
         }
       ],
       "images": [

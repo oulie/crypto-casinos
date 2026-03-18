@@ -18,7 +18,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import Navbar from "../../Navbar"; // plasmic-import: qoaNCaz5f2G1/component
 import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
 import HeroCardLink from "../../HeroCardLink"; // plasmic-import: QXwWWXLv7dKm/component
 import CornerTDivider from "../../CornerTDivider"; // plasmic-import: uVYTGz9cJOUu/component
@@ -28,7 +27,6 @@ import CardBentoTopic from "../../CardBentoTopic"; // plasmic-import: U8ruvn_mup
 import CardPriceChart from "../../CardPriceChart"; // plasmic-import: Bygnfqie3Cqa/component
 import LinkSidebar from "../../LinkSidebar"; // plasmic-import: 9cwbKxCRtECB/component
 import CoinPriceSidebarItem from "../../CoinPriceSidebarItem"; // plasmic-import: OXSVHEvZKoQP/component
-import LinkFooter from "../../LinkFooter"; // plasmic-import: fD_Lygxuv5kw/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -140,12 +138,6 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root
           )}
         >
-          <Navbar
-            data-plasmic-name={"navbar"}
-            data-plasmic-override={overrides.navbar}
-            className={classNames("__wab_instance", sty.navbar)}
-          />
-
           <CoinPriceMarquee
             data-plasmic-name={"coinPriceMarquee"}
             data-plasmic-override={overrides.coinPriceMarquee}
@@ -2456,216 +2448,6 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
             </div>
           </div>
-          <div
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames(projectcss.all, sty.footer)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__awHrO)}>
-              <div className={classNames(projectcss.all, sty.freeBox__riSuS)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__oYuIk)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"180px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/cryptocasinos/images/cryptoCasinosLogoSvg.svg",
-                    fullWidth: 983,
-                    fullHeight: 142,
-                    aspectRatio: 6.922535
-                  }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ayRlG
-                  )}
-                >
-                  {
-                    "Your independent authority on cryptocurrency gambling. We review, rate, and recommend the best blockchain casinos based on rigorous testing.\n\n"
-                  }
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__oDdbO)}>
-                <div className={classNames(projectcss.all, sty.freeBox__kljrD)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__cFS
-                    )}
-                  >
-                    {"Quick Links"}
-                  </div>
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__poeN4
-                    )}
-                    title={"Home"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__iUv7V
-                    )}
-                    title={"Top 10 Casinos"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__s2L76
-                    )}
-                    title={"No Deposit Bonuses"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__qWrPi
-                    )}
-                    title={"Crypto Sportsbooks"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter___6GjyT
-                    )}
-                    title={"Articles"}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__nysK9)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__c1117
-                    )}
-                  >
-                    {"Guides"}
-                  </div>
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__mk7Oq
-                    )}
-                    title={"How to buy Bitcoin"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__j2Be
-                    )}
-                    title={"Provably Fair Guide"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__iEmMb
-                    )}
-                    title={"KYC vs No-KYC"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__aBdv3
-                    )}
-                    title={"Responsible Gambling"}
-                  />
-                </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___9Hg1Y)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ioB1O
-                    )}
-                  >
-                    {"Articles"}
-                  </div>
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__btnrH
-                    )}
-                    title={"Terms of Service"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__dAorr
-                    )}
-                    title={"Privacy Policy"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__kne0Q
-                    )}
-                    title={"Disclaimer"}
-                  />
-
-                  <LinkFooter
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkFooter__l5Zjy
-                    )}
-                    title={"Contact us"}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__ky6Or)}>
-              <LinkFooter
-                className={classNames("__wab_instance", sty.linkFooter__vd0Mi)}
-                title={"Terms of Service"}
-              />
-
-              <LinkFooter
-                className={classNames("__wab_instance", sty.linkFooter__vNgk)}
-                title={"Privacy"}
-              />
-
-              <LinkFooter
-                className={classNames("__wab_instance", sty.linkFooter__g5Az)}
-                title={"Cookies"}
-              />
-
-              <LinkFooter
-                className={classNames("__wab_instance", sty.linkFooter__nc4Ro)}
-                title={"Advertising Disclosure"}
-              />
-
-              <div className={classNames(projectcss.all, sty.freeBox__nz7Zr)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__iAvOs
-                  )}
-                >
-                  {"\u00a9 2026 crypto-casinos.com. All rights reserved"}
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </React.Fragment>
@@ -2675,26 +2457,22 @@ function PlasmicHomepage__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "navbar",
     "coinPriceMarquee",
     "hero",
     "span",
     "content",
     "cardsCasinos",
     "cardPriceChart",
-    "sidebar",
-    "footer"
+    "sidebar"
   ],
 
-  navbar: ["navbar"],
   coinPriceMarquee: ["coinPriceMarquee"],
   hero: ["hero", "span"],
   span: ["span"],
   content: ["content", "cardsCasinos", "cardPriceChart", "sidebar"],
   cardsCasinos: ["cardsCasinos"],
   cardPriceChart: ["cardPriceChart"],
-  sidebar: ["sidebar"],
-  footer: ["footer"]
+  sidebar: ["sidebar"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -2729,7 +2507,6 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    navbar: makeNodeComponent("navbar"),
     coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
     hero: makeNodeComponent("hero"),
     span: makeNodeComponent("span"),
@@ -2737,7 +2514,6 @@ export const PlasmicHomepage = Object.assign(
     cardsCasinos: makeNodeComponent("cardsCasinos"),
     cardPriceChart: makeNodeComponent("cardPriceChart"),
     sidebar: makeNodeComponent("sidebar"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,

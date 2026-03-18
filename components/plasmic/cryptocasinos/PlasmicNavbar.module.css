@@ -1,4 +1,17 @@
-.navbar {
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #0f1012cc;
+  min-width: 0;
+  border-bottom: 1px solid #ffffff0f;
+}
+.freeBox__wdAJb {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6,7 +19,6 @@
   width: 100%;
   height: auto;
   max-width: var(--token-eI5HWtMjxYZN);
-  position: relative;
   padding-left: 10px;
   padding-right: 10px;
   min-width: 0;

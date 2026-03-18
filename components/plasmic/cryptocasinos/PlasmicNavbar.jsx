@@ -14,7 +14,8 @@ import {
   PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkNav from "../../LinkNav"; // plasmic-import: 5h9FlaGpp_HW/component
@@ -25,7 +26,7 @@ import sty from "./PlasmicNavbar.module.css"; // plasmic-import: qoaNCaz5f2G1/cs
 
 createPlasmicElementProxy;
 
-export const PlasmicNavbar__VariantProps = new Array();
+export const PlasmicNavbar__VariantProps = new Array("isScrolled");
 
 export const PlasmicNavbar__ArgProps = new Array();
 
@@ -58,11 +59,30 @@ function PlasmicNavbar__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "isScrolled",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.isScrolled
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
   const styleTokensClassNames = _useStyleTokens();
   return (
     <div
-      data-plasmic-name={"navbar"}
-      data-plasmic-override={overrides.navbar}
+      data-plasmic-name={"root"}
+      data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
@@ -71,64 +91,69 @@ function PlasmicNavbar__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        sty.navbar
+        sty.root
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__duMk6)}>
-        <PlasmicImg__
-          data-plasmic-name={"img"}
-          data-plasmic-override={overrides.img}
-          alt={""}
-          className={classNames(sty.img)}
-          displayHeight={"auto"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"180px"}
-          loading={"lazy"}
-          src={{
-            src: "/plasmic/cryptocasinos/images/cryptoCasinosLogoSvg.svg",
-            fullWidth: 983,
-            fullHeight: 142,
-            aspectRatio: 6.922535
-          }}
-        />
-      </div>
-      <div className={classNames(projectcss.all, sty.freeBox__uruUf)}>
-        <LinkNav className={classNames("__wab_instance", sty.linkNav__n8X9Y)} />
-        <LinkNav
-          className={classNames("__wab_instance", sty.linkNav__miIq)}
-          title={"Bonuses"}
-        />
+      <div className={classNames(projectcss.all, sty.freeBox__wdAJb)}>
+        <div className={classNames(projectcss.all, sty.freeBox__duMk6)}>
+          <PlasmicImg__
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"180px"}
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/cryptocasinos/images/cryptoCasinosLogoSvg.svg",
+              fullWidth: 983,
+              fullHeight: 142,
+              aspectRatio: 6.922535
+            }}
+          />
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__uruUf)}>
+          <LinkNav
+            className={classNames("__wab_instance", sty.linkNav__n8X9Y)}
+          />
 
-        <LinkNav
-          className={classNames("__wab_instance", sty.linkNav__ks2Xj)}
-          title={"Crypto Guides"}
-        />
+          <LinkNav
+            className={classNames("__wab_instance", sty.linkNav__miIq)}
+            title={"Bonuses"}
+          />
 
-        <LinkNav
-          className={classNames("__wab_instance", sty.linkNav__pqzxn)}
-          title={"News"}
-        />
+          <LinkNav
+            className={classNames("__wab_instance", sty.linkNav__ks2Xj)}
+            title={"Crypto Guides"}
+          />
 
-        <div
-          className={classNames(
-            projectcss.all,
-            sty.freeBox__wmJis,
-            "button-border"
-          )}
-        >
+          <LinkNav
+            className={classNames("__wab_instance", sty.linkNav__pqzxn)}
+            title={"News"}
+          />
+
           <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
             className={classNames(
               projectcss.all,
-              projectcss.__wab_text,
-              sty.text
+              sty.freeBox__wmJis,
+              "button-border"
             )}
           >
-            {"Subscribe"}
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text
+              )}
+            >
+              {"Subscribe"}
+            </div>
           </div>
         </div>
       </div>
@@ -137,7 +162,7 @@ function PlasmicNavbar__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  navbar: ["navbar", "img", "text"],
+  root: ["root", "img", "text"],
   img: ["img"],
   text: ["text"]
 };
@@ -161,7 +186,7 @@ function makeNodeComponent(nodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "navbar") {
+  if (nodeName === "root") {
     func.displayName = "PlasmicNavbar";
   } else {
     func.displayName = `PlasmicNavbar.${nodeName}`;
@@ -171,7 +196,7 @@ function makeNodeComponent(nodeName) {
 
 export const PlasmicNavbar = Object.assign(
   // Top-level PlasmicNavbar renders the root element
-  makeNodeComponent("navbar"),
+  makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
