@@ -91,7 +91,7 @@ function PlasmicFooter__RenderFunc(props) {
             displayWidth={"180px"}
             loading={"lazy"}
             src={{
-              src: "/plasmic/cryptocasinos/images/cryptoCasinosLogoSvg.svg",
+              src: "/plasmic/cryptocasinos/images/cryptoCasinosLogoFullSvg.svg",
               fullWidth: 983,
               fullHeight: 142,
               aspectRatio: 6.922535

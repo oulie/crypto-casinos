@@ -621,6 +621,11 @@
           "id": "rCqSeWtKhidz",
           "name": "uifaces-alien-avatar (1).jpg",
           "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg"
+        },
+        {
+          "id": "p6VVPO6KE-ve",
+          "name": "crypto-casinos-logo-full.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/cryptoCasinosLogoFullSvg.svg"
         }
       ],
       "indirect": false,
