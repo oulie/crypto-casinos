@@ -106,7 +106,7 @@ function PlasmicFooter__RenderFunc(props) {
             )}
           >
             {
-              "Your independent authority on cryptocurrency gambling. We review, rate, and recommend the best blockchain casinos based on rigorous testing.\n\n"
+              "Your independent authority on cryptocurrency gambling. We review, rate, and recommend the best blockchain casinos based on rigorous testing."
             }
           </div>
         </div>
