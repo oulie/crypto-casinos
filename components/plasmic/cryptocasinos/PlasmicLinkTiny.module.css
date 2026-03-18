@@ -13,4 +13,5 @@
 .root:hover {
   opacity: 1;
   background: var(--token-QL0xMMXWaeGp);
+  color: #ffffff;
 }
