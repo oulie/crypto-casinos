@@ -150,6 +150,7 @@ function PlasmicNavbar__RenderFunc(props) {
         <div className={classNames(projectcss.all, sty.freeBox__uruUf)}>
           <LinkNav
             className={classNames("__wab_instance", sty.linkNav__n8X9Y)}
+            href={`/top-casinos`}
           />
 
           <LinkNav

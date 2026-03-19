@@ -277,6 +277,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     "__wab_instance",
                     sty.heroCardLink__sQrQc
                   )}
+                  href={`/top-casinos`}
                   icon={
                     <TrophyIcon
                       className={classNames(projectcss.all, sty.svg__va2ZQ)}
@@ -526,6 +527,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.linkButton__rx2PR
                   )}
                   color={"gray"}
+                  href={`/top-casinos`}
                   size={"medium"}
                   title={"Compare  all"}
                 />

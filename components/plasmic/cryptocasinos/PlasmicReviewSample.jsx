@@ -161,7 +161,7 @@ function PlasmicReviewSample__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkBreadcrumb__q1Xo0
                 )}
-                title={"Crypto Guides"}
+                title={"Casinos"}
               />
 
               <IconIcon
@@ -175,7 +175,7 @@ function PlasmicReviewSample__RenderFunc(props) {
                   sty.linkBreadcrumb__drL6D
                 )}
                 isCurrent={true}
-                title={"How to Choose a Crypto Casino"}
+                title={"Stake Review"}
               />
             </div>
           </div>

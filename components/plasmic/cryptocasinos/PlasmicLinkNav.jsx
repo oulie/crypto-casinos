@@ -28,7 +28,7 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkNav__VariantProps = new Array();
 
-export const PlasmicLinkNav__ArgProps = new Array("title");
+export const PlasmicLinkNav__ArgProps = new Array("title", "href");
 
 const $$ = {};
 
@@ -44,7 +44,9 @@ function PlasmicLinkNav__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          href: "#"
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -76,7 +78,7 @@ function PlasmicLinkNav__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"#"}
+      href={args.href}
       legacyBehavior={false}
       platform={"nextjs"}
     >

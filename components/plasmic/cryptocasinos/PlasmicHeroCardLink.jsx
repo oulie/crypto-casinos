@@ -32,6 +32,7 @@ createPlasmicElementProxy;
 export const PlasmicHeroCardLink__VariantProps = new Array();
 
 export const PlasmicHeroCardLink__ArgProps = new Array(
+  "href",
   "icon",
   "title",
   "description"
@@ -51,7 +52,9 @@ function PlasmicHeroCardLink__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          href: "#"
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -84,7 +87,7 @@ function PlasmicHeroCardLink__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"#"}
+      href={args.href}
       legacyBehavior={false}
       platform={"nextjs"}
     >

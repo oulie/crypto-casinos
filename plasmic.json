@@ -601,6 +601,33 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoVertical.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "ImFQnwBYcSJp",
+          "name": "TopCasinos",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTopCasinos.jsx",
+          "importSpec": {
+            "modulePath": "../pages/top-casinos.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicTopCasinos.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/top-casinos"
+        },
+        {
+          "id": "pl0YfSACN4Nw",
+          "name": "CardCasinoLarge",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoLarge.jsx",
+          "importSpec": {
+            "modulePath": "CardCasinoLarge.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoLarge.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -910,6 +937,41 @@
           "id": "p6VVPO6KE-ve",
           "name": "crypto-casinos-logo-full.svg",
           "filePath": "../public/plasmic/cryptocasinos/images/cryptoCasinosLogoFullSvg.svg"
+        },
+        {
+          "id": "U9bdB6Q4akAd",
+          "name": "Screenshot 2026-03-19 at 22.21.09.png",
+          "filePath": "../public/plasmic/cryptocasinos/images/screenshot20260319At222109Png.png"
+        },
+        {
+          "id": "URrdelMbg0g_",
+          "name": "roobetSvg.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/roobetSvgSvg.svg"
+        },
+        {
+          "id": "iN6cq_ZOlgix",
+          "name": "tasteVegasSvg.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/tasteVegasSvgSvg.svg"
+        },
+        {
+          "id": "eYgOJe-hmLRE",
+          "name": "Unlimit_Contrast.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/unlimitContrastSvg.svg"
+        },
+        {
+          "id": "5N8nafGn1MPK",
+          "name": "screenshot-2025-10-27-at-21.12.21.png",
+          "filePath": "../public/plasmic/cryptocasinos/images/screenshot20251027At211221Png.png"
+        },
+        {
+          "id": "i-ZWLcQmhGpo",
+          "name": "rocket-riches (1).svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/rocketRiches1Svg.svg"
+        },
+        {
+          "id": "nMnSyo8p6RI5",
+          "name": "rocket-riches (1).png",
+          "filePath": "../public/plasmic/cryptocasinos/images/rocketRiches1Png.png"
         }
       ],
       "indirect": false,
