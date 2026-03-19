@@ -39,6 +39,7 @@
 .img {
   object-fit: cover;
   max-width: 100%;
+  aspect-ratio: 16/9;
 }
 .img > picture > img {
   object-fit: cover;

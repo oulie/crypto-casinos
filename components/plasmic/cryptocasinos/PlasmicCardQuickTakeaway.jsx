@@ -17,12 +17,11 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicCardQuickTakeaway.module.css"; // plasmic-import: h4XyEFfhBuXq/css
-import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: rZ8hz7v-qc_C/icon
+import CircleQuestionIcon from "./icons/PlasmicIcon__CircleQuestion"; // plasmic-import: nlOIPZUgTjYn/icon
 
 createPlasmicElementProxy;
 
@@ -78,14 +77,6 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
     >
       <div className={classNames(projectcss.all, sty.freeBox__dhvTy)} />
       <div className={classNames(projectcss.all, sty.freeBox__jf1If)}>
-        <div className={classNames(projectcss.all, sty.freeBox__cdz3T)}>
-          <ZapIcon
-            data-plasmic-name={"svg"}
-            data-plasmic-override={overrides.svg}
-            className={classNames(projectcss.all, sty.svg)}
-            role={"img"}
-          />
-        </div>
         <div
           className={classNames(
             projectcss.all,
@@ -93,19 +84,8 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
             sty.text__yLn1
           )}
         >
-          {"Quick takeaway"}
+          {"Casino Details"}
         </div>
-      </div>
-      <div
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.text__tejRd
-        )}
-      >
-        {
-          "The best crypto casino is usually the one with clear bonus terms, reliable withdrawals, strong game quality, and support for the coins you actually use."
-        }
       </div>
       <div className={classNames(projectcss.all, sty.freeBox__sF4J2)}>
         <div className={classNames(projectcss.all, sty.freeBox__o3Bmp)}>
@@ -116,7 +96,7 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
               sty.text__do4Fu
             )}
           >
-            {"Best for"}
+            {"Website"}
           </div>
           <div
             className={classNames(
@@ -125,7 +105,7 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
               sty.text__x25Ez
             )}
           >
-            {"New and intermediate players"}
+            {"stake.com"}
           </div>
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__tGyLl)}>
@@ -136,7 +116,7 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
               sty.text__oq6Lu
             )}
           >
-            {"Focus"}
+            {"Established"}
           </div>
           <div
             className={classNames(
@@ -145,7 +125,115 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
               sty.text__tvDd0
             )}
           >
-            {"Safety, payouts, bonus value"}
+            {"2017"}
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox___0TuJc)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__aorlf
+            )}
+          >
+            {"License"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__dkXNo
+            )}
+          >
+            {"Curacao"}
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__mznud)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__meWe9
+            )}
+          >
+            {"Owner"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__a92Dg
+            )}
+          >
+            {"Medium Rare N.V."}
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__xTvxw)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__zzEz
+            )}
+          >
+            {"Min Despoit"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___1YPyV
+            )}
+          >
+            {"Varies by coin, avg $25"}
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__idQ5)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__hyHoi
+            )}
+          >
+            {"KYC Process"}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox___1Xeqj)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___0TfYc
+              )}
+            >
+              {"Level 1 Required"}
+            </div>
+            <CircleQuestionIcon
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              className={classNames(projectcss.all, sty.svg)}
+              role={"img"}
+            />
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__ol7P)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__khK8S
+            )}
+          >
+            {"Live Chat"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__sItD
+            )}
+          >
+            {"Available 24/7"}
           </div>
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__uU2U)}>
@@ -156,7 +244,7 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
               sty.text__hJvbs
             )}
           >
-            {"Coins mentioned"}
+            {"Coin support"}
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___0Kpb5)}>
             <PlasmicImg__
@@ -167,7 +255,7 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"20px"}
+              displayWidth={"24px"}
               loading={"lazy"}
               src={{
                 src: "/plasmic/cryptocasinos/images/image3.png",
@@ -179,16 +267,16 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
 
             <PlasmicImg__
               alt={""}
-              className={classNames(sty.img__hwm6D)}
+              className={classNames(sty.img__xTsZn)}
               displayHeight={"auto"}
               displayMaxHeight={"none"}
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"20px"}
+              displayWidth={"24px"}
               loading={"lazy"}
               src={{
-                src: "/plasmic/cryptocasinos/images/image4.png",
+                src: "/plasmic/cryptocasinos/images/image3.png",
                 fullWidth: 64,
                 fullHeight: 64,
                 aspectRatio: undefined
@@ -197,16 +285,88 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
 
             <PlasmicImg__
               alt={""}
-              className={classNames(sty.img__aocYb)}
+              className={classNames(sty.img__fYRn)}
               displayHeight={"auto"}
               displayMaxHeight={"none"}
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"20px"}
+              displayWidth={"24px"}
               loading={"lazy"}
               src={{
-                src: "/plasmic/cryptocasinos/images/image8.png",
+                src: "/plasmic/cryptocasinos/images/image3.png",
+                fullWidth: 64,
+                fullHeight: 64,
+                aspectRatio: undefined
+              }}
+            />
+
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img___3GLdn)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"24px"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/cryptocasinos/images/image3.png",
+                fullWidth: 64,
+                fullHeight: 64,
+                aspectRatio: undefined
+              }}
+            />
+
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__mApRm)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"24px"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/cryptocasinos/images/image3.png",
+                fullWidth: 64,
+                fullHeight: 64,
+                aspectRatio: undefined
+              }}
+            />
+
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__dTq3X)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"24px"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/cryptocasinos/images/image3.png",
+                fullWidth: 64,
+                fullHeight: 64,
+                aspectRatio: undefined
+              }}
+            />
+
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__vvicy)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"24px"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/cryptocasinos/images/image3.png",
                 fullWidth: 64,
                 fullHeight: 64,
                 aspectRatio: undefined
@@ -215,21 +375,13 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
           </div>
         </div>
       </div>
-      <LinkButton
-        data-plasmic-name={"linkButton"}
-        data-plasmic-override={overrides.linkButton}
-        className={classNames("__wab_instance", sty.linkButton)}
-        size={"medium"}
-        title={"Compare Top Casinos"}
-      />
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg", "linkButton"],
-  svg: ["svg"],
-  linkButton: ["linkButton"]
+  root: ["root", "svg"],
+  svg: ["svg"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -265,7 +417,6 @@ export const PlasmicCardQuickTakeaway = Object.assign(
   {
     // Helper components rendering sub-elements
     svg: makeNodeComponent("svg"),
-    linkButton: makeNodeComponent("linkButton"),
     // Metadata about props expected for PlasmicCardQuickTakeaway
     internalVariantProps: PlasmicCardQuickTakeaway__VariantProps,
     internalArgProps: PlasmicCardQuickTakeaway__ArgProps

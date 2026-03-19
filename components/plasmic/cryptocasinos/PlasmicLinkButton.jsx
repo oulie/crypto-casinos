@@ -30,7 +30,7 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkButton__VariantProps = new Array("color", "size");
 
-export const PlasmicLinkButton__ArgProps = new Array("title");
+export const PlasmicLinkButton__ArgProps = new Array("title", "href");
 
 const $$ = {};
 
@@ -46,7 +46,9 @@ function PlasmicLinkButton__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          href: "#"
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -109,7 +111,7 @@ function PlasmicLinkButton__RenderFunc(props) {
         }
       )}
       component={Link}
-      href={"#"}
+      href={args.href}
       legacyBehavior={false}
       platform={"nextjs"}
     >

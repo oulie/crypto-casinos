@@ -509,6 +509,98 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicCardQuickTakeaway.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "ZN_2wNKlL_Tv",
+          "name": "ReviewSample",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicReviewSample.jsx",
+          "importSpec": {
+            "modulePath": "../pages/review-sample.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicReviewSample.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/review-sample"
+        },
+        {
+          "id": "w9WrndX1XiEm",
+          "name": "CardReviewHero",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardReviewHero.jsx",
+          "importSpec": {
+            "modulePath": "CardReviewHero.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardReviewHero.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "yrCDLPBLbJC6",
+          "name": "CardCoinGrid",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardCoinGrid.jsx",
+          "importSpec": {
+            "modulePath": "CardCoinGrid.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCoinGrid.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "nWtcpph3tHIf",
+          "name": "RatingProgressRow",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicRatingProgressRow.jsx",
+          "importSpec": {
+            "modulePath": "RatingProgressRow.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicRatingProgressRow.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "vGoC4GKdwTta",
+          "name": "CardCasinoDetails",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoDetails.jsx",
+          "importSpec": {
+            "modulePath": "CardCasinoDetails.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoDetails.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "pjNmnYGMdv5Z",
+          "name": "CardStep",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardStep.jsx",
+          "importSpec": {
+            "modulePath": "CardStep.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardStep.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "o5K8Z3qWaJGm",
+          "name": "CardCasinoVertical",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoVertical.jsx",
+          "importSpec": {
+            "modulePath": "CardCasinoVertical.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoVertical.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -666,6 +758,16 @@
           "id": "mwYmhIA7hqjY",
           "name": "Icon3Icon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Icon3.jsx"
+        },
+        {
+          "id": "nlOIPZUgTjYn",
+          "name": "CircleQuestionIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__CircleQuestion.jsx"
+        },
+        {
+          "id": "HfveT-jU9e3u",
+          "name": "StarHalfIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__StarHalf.jsx"
         }
       ],
       "images": [

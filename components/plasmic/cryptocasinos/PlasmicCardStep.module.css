@@ -1,0 +1,141 @@
+.root {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: var(--token-LKg2LChLUpjW);
+  overflow: hidden;
+  box-shadow:
+    inset 0px 0px 0px 1px #ffffff1a,
+    0px 0px 0px 2px #000000;
+  width: 100%;
+  position: relative;
+  column-gap: 10px;
+  min-width: 0;
+  border-radius: 20px;
+  padding: 20px;
+}
+.freeBox___7WVKh {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  left: 0px;
+  top: 0px;
+  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+  pointer-events: none;
+  min-width: 0;
+  min-height: 0;
+}
+.freeBox__oGxig {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: var(--token-6ezJMcDkCpjz);
+  color: #ffffff;
+  font-weight: 600;
+  flex-shrink: 0;
+  border-radius: 80px;
+}
+.freeBox__rWe1O {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  padding-top: 2px;
+  min-width: 0;
+}
+.freeBox__ahheU {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+}
+.slotTargetTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1;
+}
+.slotTargetTitle > *,
+.slotTargetTitle > :global(.__wab_slot) > *,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetTitle > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  animation: none;
+}
+.text__mLq5U {
+  animation: none;
+}
+.freeBox__tsmjZ {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+}
+.slotTargetDescription {
+  font-size: 12px;
+}
+.slotTargetDescription > *,
+.slotTargetDescription > :global(.__wab_slot) > *,
+.slotTargetDescription > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetDescription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetDescription > picture > img,
+.slotTargetDescription > :global(.__wab_slot) > picture > img,
+.slotTargetDescription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img,
+.slotTargetDescription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  animation: none;
+  opacity: 0.6;
+}
+.text__jcWSu {
+  animation: none;
+}

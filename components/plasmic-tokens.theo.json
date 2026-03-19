@@ -81,6 +81,16 @@
       }
     },
     {
+      "name": "progress-track",
+      "type": "color",
+      "value": "#313131",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "-fZ8TSfy8WP_"
+      }
+    },
+    {
       "name": "purple",
       "type": "color",
       "value": "#9385FF",

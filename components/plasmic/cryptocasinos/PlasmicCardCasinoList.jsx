@@ -192,6 +192,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton___3SGTw)}
               color={"clear"}
+              href={`/review-sample`}
               size={
                 hasVariant(globalVariants, "screen", "mobile")
                   ? "medium"

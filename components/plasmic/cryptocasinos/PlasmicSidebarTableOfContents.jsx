@@ -15,6 +15,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   hasVariant,
+  renderPlasmicSlot,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
@@ -29,7 +30,7 @@ createPlasmicElementProxy;
 
 export const PlasmicSidebarTableOfContents__VariantProps = new Array("isDone");
 
-export const PlasmicSidebarTableOfContents__ArgProps = new Array();
+export const PlasmicSidebarTableOfContents__ArgProps = new Array("children");
 
 const $$ = {};
 
@@ -98,10 +99,12 @@ function PlasmicSidebarTableOfContents__RenderFunc(props) {
     >
       <div className={classNames(projectcss.all, sty.freeBox__sJa21)}>
         <div
+          data-plasmic-name={"text"}
+          data-plasmic-override={overrides.text}
           className={classNames(
             projectcss.all,
             projectcss.__wab_text,
-            sty.text___5MXdR
+            sty.text
           )}
         >
           {"Table of Contents"}
@@ -129,57 +132,53 @@ function PlasmicSidebarTableOfContents__RenderFunc(props) {
               "bg-grain"
             )}
           >
-            <LinkTableOfContents
-              data-plasmic-name={"linkTableOfContents"}
-              data-plasmic-override={overrides.linkTableOfContents}
-              className={classNames("__wab_instance", sty.linkTableOfContents)}
-              title={"Trust basics"}
-            />
+            {renderPlasmicSlot({
+              defaultContents: (
+                <React.Fragment>
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__sQykW
+                    )}
+                    title={"Trust basics"}
+                  />
 
-            <div className={classNames(projectcss.all, sty.freeBox__uGadM)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__gXf1W
-                )}
-              >
-                {"Checklist"}
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__zq3D)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__hqrZx
-                )}
-              >
-                {"Bonus value"}
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__xxAnh)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___0Ul8Z
-                )}
-              >
-                {"Payments & coins"}
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__m3Ife)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__bU80
-                )}
-              >
-                {"Examples"}
-              </div>
-            </div>
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__tqv7U
+                    )}
+                    title={"Checklist"}
+                  />
+
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__hZaYj
+                    )}
+                    title={"Bonus value"}
+                  />
+
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__wYbuE
+                    )}
+                    title={"Payments & coins"}
+                  />
+
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__qhtV
+                    )}
+                    title={"Examples"}
+                  />
+                </React.Fragment>
+              ),
+
+              value: args.children
+            })}
           </div>
         </div>
         <LinkTableOfContentsLast
@@ -202,15 +201,15 @@ function PlasmicSidebarTableOfContents__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
+    "text",
     "progressTrack",
     "progressBar",
-    "linkTableOfContents",
     "linkTableOfContentsLast"
   ],
 
+  text: ["text"],
   progressTrack: ["progressTrack", "progressBar"],
   progressBar: ["progressBar"],
-  linkTableOfContents: ["linkTableOfContents"],
   linkTableOfContentsLast: ["linkTableOfContentsLast"]
 };
 
@@ -246,9 +245,9 @@ export const PlasmicSidebarTableOfContents = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    text: makeNodeComponent("text"),
     progressTrack: makeNodeComponent("progressTrack"),
     progressBar: makeNodeComponent("progressBar"),
-    linkTableOfContents: makeNodeComponent("linkTableOfContents"),
     linkTableOfContentsLast: makeNodeComponent("linkTableOfContentsLast"),
     // Metadata about props expected for PlasmicSidebarTableOfContents
     internalVariantProps: PlasmicSidebarTableOfContents__VariantProps,

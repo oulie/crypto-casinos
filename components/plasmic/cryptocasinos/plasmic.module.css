@@ -21,6 +21,8 @@
   --plasmic-token-lime: var(--token-s9GqGn4DBJXG);
   --token-6ezJMcDkCpjz: #9385ff;
   --plasmic-token-purple: var(--token-6ezJMcDkCpjz);
+  --token--fZ8TSfy8WP_: #313131;
+  --plasmic-token-progress-track: var(--token--fZ8TSfy8WP_);
 }
 
 .plasmic_tokens {

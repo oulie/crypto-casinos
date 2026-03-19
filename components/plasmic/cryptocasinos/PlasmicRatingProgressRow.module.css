@@ -1,0 +1,46 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+}
+.freeBox__kthGr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+.freeBox__dqF79 {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  height: 12px;
+  background: var(--token--fZ8TSfy8WP_);
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+.freeBox__kh5Mo {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  height: 100%;
+  box-shadow: inset 0px 1px 0px 0px #ffffff33;
+  background: #545454;
+  min-height: 0;
+  border-radius: 3px;
+}

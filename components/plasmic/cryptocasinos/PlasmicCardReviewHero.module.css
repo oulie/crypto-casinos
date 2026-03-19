@@ -1,0 +1,233 @@
+.root {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: var(--token-LKg2LChLUpjW);
+  overflow: hidden;
+  box-shadow:
+    inset 0px 0px 0px 1px #ffffff1a,
+    0px 0px 0px 2px #000000;
+  position: relative;
+  row-gap: 10px;
+  min-width: 0;
+  border-radius: 20px;
+  padding: 20px;
+}
+@media (max-width: 1023px) {
+  .root {
+    max-width: none;
+  }
+}
+@media (max-width: 511px) {
+  .root {
+    animation: none;
+  }
+}
+.freeBox__mdF4S {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  left: 0px;
+  top: 0px;
+  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+  pointer-events: none;
+  min-width: 0;
+  min-height: 0;
+}
+.freeBox__clMci {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+  width: 100%;
+  padding-bottom: 20px;
+  min-width: 0;
+  border-bottom: 1px solid #ffffff0f;
+}
+.freeBox__pHenu {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  background: var(--token-QL0xMMXWaeGp);
+  flex-shrink: 0;
+  border-radius: 20px;
+  padding: 8px;
+}
+.text__sl9Bl {
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.freeBox__vmh1W {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.2;
+  min-width: 0;
+}
+.text__ymyoL {
+  animation: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.text__ejMeU {
+  animation: none;
+  color: #cfcfcf;
+  font-size: 16px;
+  opacity: 0.6;
+}
+.freeBox__bhH {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  width: 100%;
+  min-width: 0;
+  border-bottom: 1px solid #ffffff0f;
+}
+.freeBox__gaCQy {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.2;
+  padding-bottom: 10px;
+  min-width: 0;
+}
+.text__mwyZl {
+  animation: none;
+  color: #cfcfcf;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.freeBox__cpLY {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 2px;
+}
+.svg__yyCbp {
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-p2QTq273_LQh);
+  height: 1em;
+}
+.svg__viYrs {
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-p2QTq273_LQh);
+  height: 1em;
+}
+.svg___4Ee2G {
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-p2QTq273_LQh);
+  height: 1em;
+}
+.svg__ayrt0 {
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-p2QTq273_LQh);
+  height: 1em;
+}
+.svg__mFjV {
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-p2QTq273_LQh);
+  height: 1em;
+}
+.text__vgHmG {
+  animation: none;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 1;
+}
+.freeBox__xAiQu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  min-width: 0;
+  min-height: 0;
+}
+.text__a9Xwc {
+  position: relative;
+  font-size: 12px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.text__xoy2J {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.text__orelm {
+  animation: none;
+  color: #cfcfcf;
+  font-size: 16px;
+  opacity: 0.6;
+}
+.linkButton:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+@media (max-width: 511px) {
+  .linkButton:global(.__wab_instance) {
+    animation: none;
+  }
+}
+.text__tB4Hu {
+  animation: none;
+}
+@media (max-width: 511px) {
+  .text__tB4Hu {
+    animation: none;
+  }
+}
