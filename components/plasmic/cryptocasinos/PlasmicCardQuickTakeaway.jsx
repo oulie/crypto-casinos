@@ -11,12 +11,12 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 import {
-  PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -246,131 +246,75 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
           >
             {"Coin support"}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox___0Kpb5)}>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__r7KN)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
+          <div
+            className={classNames(
+              projectcss.all,
+              sty.freeBox__jzRkb,
+              "link-coin-icon-wrap"
+            )}
+          >
+            <LinkCoinIcon
+              className={classNames("__wab_instance", sty.linkCoinIcon__j1CWc)}
+              icon={{
+                src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                fullWidth: 225,
+                fullHeight: 225,
+                aspectRatio: 1
               }}
             />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__xTsZn)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
+            <LinkCoinIcon
+              className={classNames("__wab_instance", sty.linkCoinIcon__wypO7)}
+              icon={{
+                src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
+                fullWidth: 225,
+                fullHeight: 225,
+                aspectRatio: 1
               }}
             />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__fYRn)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
+            <LinkCoinIcon
+              className={classNames("__wab_instance", sty.linkCoinIcon__e5AoN)}
+              icon={{
+                src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
+                fullWidth: 225,
+                fullHeight: 225,
+                aspectRatio: 1
               }}
             />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img___3GLdn)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
+            <LinkCoinIcon
+              className={classNames("__wab_instance", sty.linkCoinIcon__u4Fr)}
+              icon={{
+                src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                fullWidth: 225,
+                fullHeight: 225,
+                aspectRatio: 1
               }}
             />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__mApRm)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
+            <LinkCoinIcon
+              className={classNames("__wab_instance", sty.linkCoinIcon__o6SrJ)}
+              icon={{
+                src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
+                fullWidth: 225,
+                fullHeight: 225,
+                aspectRatio: 1
               }}
             />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__dTq3X)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
+            <LinkCoinIcon
+              className={classNames("__wab_instance", sty.linkCoinIcon___9RaEv)}
+              icon={{
+                src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                fullWidth: 225,
+                fullHeight: 225,
+                aspectRatio: 1
               }}
             />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__vvicy)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"24px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
+            <LinkCoinIcon
+              className={classNames("__wab_instance", sty.linkCoinIcon__cjFwx)}
             />
           </div>
         </div>

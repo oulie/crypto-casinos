@@ -238,101 +238,39 @@
   font-size: 14px;
   opacity: 0.5;
 }
-.freeBox___0Kpb5 {
+.freeBox__jzRkb {
   animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: stretch;
   justify-content: flex-start;
-  column-gap: 4px;
-  padding-right: 8px;
-  width: 100%;
-  flex-wrap: wrap;
-  row-gap: 4px;
-  min-width: 0;
 }
-.img__r7KN {
+.linkCoinIcon__j1CWc:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
-  max-width: 100%;
-  width: 24px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
+  position: relative;
 }
-.img__r7KN > picture > img {
-  object-fit: cover;
-}
-.img__xTsZn {
+.linkCoinIcon__wypO7:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
-  max-width: 100%;
-  width: 24px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
+  position: relative;
 }
-.img__xTsZn > picture > img {
-  object-fit: cover;
-}
-.img__fYRn {
+.linkCoinIcon__e5AoN:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
-  max-width: 100%;
-  width: 24px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
+  position: relative;
 }
-.img__fYRn > picture > img {
-  object-fit: cover;
-}
-.img___3GLdn {
+.linkCoinIcon__u4Fr:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
-  max-width: 100%;
-  width: 24px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
+  position: relative;
 }
-.img___3GLdn > picture > img {
-  object-fit: cover;
-}
-.img__mApRm {
+.linkCoinIcon__o6SrJ:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
-  max-width: 100%;
-  width: 24px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
+  position: relative;
 }
-.img__mApRm > picture > img {
-  object-fit: cover;
-}
-.img__dTq3X {
+.linkCoinIcon___9RaEv:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
-  max-width: 100%;
-  width: 24px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
+  position: relative;
 }
-.img__dTq3X > picture > img {
-  object-fit: cover;
-}
-.img__vvicy {
+.linkCoinIcon__cjFwx:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
-  max-width: 100%;
-  width: 24px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
-}
-.img__vvicy > picture > img {
-  object-fit: cover;
+  position: relative;
 }

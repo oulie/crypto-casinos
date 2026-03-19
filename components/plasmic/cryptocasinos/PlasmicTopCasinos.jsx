@@ -219,6 +219,7 @@ function PlasmicTopCasinos__RenderFunc(props) {
                       "__wab_instance",
                       sty.linkButton__vm21Q
                     )}
+                    href={`/article-sample`}
                     title={"Read Full Guide"}
                   />
                 </div>
