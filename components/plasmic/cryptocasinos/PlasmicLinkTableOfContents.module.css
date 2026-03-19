@@ -1,0 +1,26 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+  color: #cfcfcf;
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover {
+  color: #ffffff;
+}
+.freeBox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}

@@ -1,0 +1,55 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  column-gap: 10px;
+  position: relative;
+}
+.freeBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  transition-property: border-color, background;
+  transition-duration: 0.2s, 0.2s;
+  flex-shrink: 0;
+  -webkit-transition-property: border-color, background;
+  -webkit-transition-duration: 0.2s, 0.2s;
+  border-radius: 40px;
+  border: 3px solid #313131;
+}
+.freeBoxisDone {
+  background: var(--token-QL0xMMXWaeGp);
+  border-color: var(--token-QL0xMMXWaeGp);
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  color: #717171;
+  width: 20px;
+  height: 20px;
+  transition-property: color;
+  transition-duration: 0.2s;
+  flex-shrink: 0;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.2s;
+}
+.svgisDone {
+  color: #ffffff;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.textisDone {
+  color: #ffffff;
+}

@@ -32,6 +32,7 @@ import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/c
 import LinkTiny from "../../LinkTiny"; // plasmic-import: s_Cz1URrXJSO/component
 import LinkSidebar from "../../LinkSidebar"; // plasmic-import: 9cwbKxCRtECB/component
 import CoinPriceSidebarItem from "../../CoinPriceSidebarItem"; // plasmic-import: OXSVHEvZKoQP/component
+import SidebarRecentArticles from "../../SidebarRecentArticles"; // plasmic-import: 91sde1xxKkNX/component
 import CardCta from "../../CardCta"; // plasmic-import: -HNmkPk7FKYK/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -2173,169 +2174,15 @@ function PlasmicHomepage__RenderFunc(props) {
                   </div>
                 </div>
               </div>
-              <div
+              <SidebarRecentArticles
+                data-plasmic-name={"sidebarRecentArticles"}
+                data-plasmic-override={overrides.sidebarRecentArticles}
                 className={classNames(
-                  projectcss.all,
-                  sty.freeBox__n4BQj,
-                  "bg-grain"
+                  "__wab_instance",
+                  sty.sidebarRecentArticles
                 )}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__mzbZs)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fM6L
-                    )}
-                  >
-                    {"Recent Articles"}
-                  </div>
-                  <LinkTiny
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkTiny___0FrAm
-                    )}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__nUvRo)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__bvstw)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__sSo1J)}
-                      displayHeight={"80px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"80px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/cryptocasinos/images/placeholder1Jpg.jpg",
-                        fullWidth: 2501,
-                        fullHeight: 1025,
-                        aspectRatio: undefined
-                      }}
-                    />
+              />
 
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___1Or48
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__daQH
-                        )}
-                      >
-                        {"Best mobile crypto casinos in 2026"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__uqcjt
-                        )}
-                      >
-                        {"2 days ago"}
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___0UNig)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__cw83D)}
-                      displayHeight={"80px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"80px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/cryptocasinos/images/placeholder2Avif.avif",
-                        fullWidth: 880,
-                        fullHeight: 495,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__tyhWh)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__tU0Ah
-                        )}
-                      >
-                        {"Why Solana is becoming the gambler's choice"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__w7Q77
-                        )}
-                      >
-                        {"5 days ago"}
-                      </div>
-                    </div>
-                  </div>
-                  <div className={classNames(projectcss.all, sty.freeBox__dx6)}>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__qIyS1)}
-                      displayHeight={"80px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"80px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/cryptocasinos/images/placeholder3Jpg.jpg",
-                        fullWidth: 900,
-                        fullHeight: 500,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___50ZFb
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__ygMjt
-                        )}
-                      >
-                        {"Top 5 crypto roulette strategies explained"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__yPmeA
-                        )}
-                      >
-                        {"1 week ago"}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <CardCta
                 data-plasmic-name={"cardCta"}
                 data-plasmic-override={overrides.cardCta}
@@ -2359,16 +2206,26 @@ const PlasmicDescendants = {
     "cardsCasinos",
     "cardPriceChart",
     "sidebar",
+    "sidebarRecentArticles",
     "cardCta"
   ],
 
   coinPriceMarquee: ["coinPriceMarquee"],
   hero: ["hero", "span"],
   span: ["span"],
-  content: ["content", "cardsCasinos", "cardPriceChart", "sidebar", "cardCta"],
+  content: [
+    "content",
+    "cardsCasinos",
+    "cardPriceChart",
+    "sidebar",
+    "sidebarRecentArticles",
+    "cardCta"
+  ],
+
   cardsCasinos: ["cardsCasinos"],
   cardPriceChart: ["cardPriceChart"],
-  sidebar: ["sidebar", "cardCta"],
+  sidebar: ["sidebar", "sidebarRecentArticles", "cardCta"],
+  sidebarRecentArticles: ["sidebarRecentArticles"],
   cardCta: ["cardCta"]
 };
 
@@ -2411,6 +2268,7 @@ export const PlasmicHomepage = Object.assign(
     cardsCasinos: makeNodeComponent("cardsCasinos"),
     cardPriceChart: makeNodeComponent("cardPriceChart"),
     sidebar: makeNodeComponent("sidebar"),
+    sidebarRecentArticles: makeNodeComponent("sidebarRecentArticles"),
     cardCta: makeNodeComponent("cardCta"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

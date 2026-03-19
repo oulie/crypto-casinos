@@ -14,7 +14,7 @@ export default function GlobalContextsProvider(props) {
       css={
         embedCssProps && "css" in embedCssProps
           ? embedCssProps.css
-          : '/* CSS snippet */\n\n\n.button-border::before {\n  content: "";\n  position: absolute;\n  inset: 1px; /* 1px inset */\n  border-radius: 5px;\n  padding: 1px; /* border thickness */\n  background: linear-gradient(180deg, #404A4C, #262D2F);\n  \n  -webkit-mask: \n    linear-gradient(#000 0 0) content-box, \n    linear-gradient(#000 0 0);\n  -webkit-mask-composite: xor;\n          mask-composite: exclude;\n\n  pointer-events: none;\n}\n\n.button-gray::before {\n  content: "";\n  position: absolute;\n  inset: 1px; /* 1px inset */\n  border-radius: 5px;\n  padding: 1px; /* border thickness */\n  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 29, 33, 0));\n  \n  -webkit-mask: \n    linear-gradient(#000 0 0) content-box, \n    linear-gradient(#000 0 0);\n  -webkit-mask-composite: xor;\n          mask-composite: exclude;\n\n  pointer-events: none;\n}'
+          : '\nul {\n  list-style: none;\n  padding-left: 0px;\n}\n\nul li {\n  position: relative;\n  padding-left: 20px;\n}\n\nul li::before {\n  content: "";\n  position: absolute;\n  left: 0;\n  top: 0.5em;\n  width: 6px;\n  height: 6px;\n  background: #FF5A36;\n  border-radius: 50%;\n}'
       }
     >
       {children}

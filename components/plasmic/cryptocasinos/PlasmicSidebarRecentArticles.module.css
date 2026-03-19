@@ -1,0 +1,45 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 0;
+}
+.freeBox__v6Av8 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.freeBox___1Vi4R {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  row-gap: 10px;
+  min-width: 0;
+}
+.sidebarArticle__qFtRh:global(.__wab_instance) {
+  position: relative;
+}
+.sidebarArticle__onim3:global(.__wab_instance) {
+  position: relative;
+}
+.sidebarArticle__hSxTk:global(.__wab_instance) {
+  position: relative;
+}

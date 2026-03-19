@@ -9,12 +9,15 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: qoaNCaz5f2G1
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
+  hasVariant,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
@@ -28,7 +31,10 @@ import sty from "./PlasmicNavbar.module.css"; // plasmic-import: qoaNCaz5f2G1/cs
 
 createPlasmicElementProxy;
 
-export const PlasmicNavbar__VariantProps = new Array("isScrolled");
+export const PlasmicNavbar__VariantProps = new Array(
+  "isScrolled",
+  "showProgress"
+);
 
 export const PlasmicNavbar__ArgProps = new Array();
 
@@ -69,6 +75,13 @@ function PlasmicNavbar__RenderFunc(props) {
         type: "private",
         variableType: "variant",
         initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.isScrolled
+      },
+      {
+        path: "showProgress",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) =>
+          $props.showProgress
       }
     ],
 
@@ -94,11 +107,26 @@ function PlasmicNavbar__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        sty.root
+        sty.root,
+        {
+          [sty.rootshowProgress]: hasVariant(
+            $state,
+            "showProgress",
+            "showProgress"
+          )
+        }
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__wdAJb)}>
-        <div className={classNames(projectcss.all, sty.freeBox__duMk6)}>
+        <PlasmicLink__
+          data-plasmic-name={"link"}
+          data-plasmic-override={overrides.link}
+          className={classNames(projectcss.all, projectcss.a, sty.link)}
+          component={Link}
+          href={`/`}
+          legacyBehavior={false}
+          platform={"nextjs"}
+        >
           <PlasmicImg__
             data-plasmic-name={"img"}
             data-plasmic-override={overrides.img}
@@ -118,7 +146,7 @@ function PlasmicNavbar__RenderFunc(props) {
               aspectRatio: 6.922535
             }}
           />
-        </div>
+        </PlasmicLink__>
         <div className={classNames(projectcss.all, sty.freeBox__uruUf)}>
           <LinkNav
             className={classNames("__wab_instance", sty.linkNav__n8X9Y)}
@@ -149,14 +177,36 @@ function PlasmicNavbar__RenderFunc(props) {
           />
         </div>
       </div>
+      {(hasVariant($state, "showProgress", "showProgress") ? true : false) ? (
+        <div
+          data-plasmic-name={"track"}
+          data-plasmic-override={overrides.track}
+          className={classNames(projectcss.all, sty.track, {
+            [sty.trackshowProgress]: hasVariant(
+              $state,
+              "showProgress",
+              "showProgress"
+            )
+          })}
+        >
+          <div
+            data-plasmic-name={"progress"}
+            data-plasmic-override={overrides.progress}
+            className={classNames(projectcss.all, sty.progress)}
+          />
+        </div>
+      ) : null}
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "linkButton"],
+  root: ["root", "link", "img", "linkButton", "track", "progress"],
+  link: ["link", "img"],
   img: ["img"],
-  linkButton: ["linkButton"]
+  linkButton: ["linkButton"],
+  track: ["track", "progress"],
+  progress: ["progress"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -191,8 +241,11 @@ export const PlasmicNavbar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
     linkButton: makeNodeComponent("linkButton"),
+    track: makeNodeComponent("track"),
+    progress: makeNodeComponent("progress"),
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,
     internalArgProps: PlasmicNavbar__ArgProps

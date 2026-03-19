@@ -1,0 +1,160 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  row-gap: 10px;
+  position: relative;
+  min-width: 0;
+}
+.freeBox__sJa21 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.text___5MXdR {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.freeBox__wygRv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+}
+.freeBox___9BdKn {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.freeBox__vcPUt {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 18px;
+  min-height: 0;
+}
+.progressTrack {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: calc(100% + 12px);
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: #313131;
+  max-height: none;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.progressBar {
+  display: flex;
+  flex-direction: column;
+  width: 4px;
+  height: 50%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: var(--token-QL0xMMXWaeGp);
+}
+.freeBox___8EaK {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 0;
+}
+.linkTableOfContents:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox__uGadM {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.text__gXf1W {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.freeBox__zq3D {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.text__hqrZx {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.freeBox__xxAnh {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.text___0Ul8Z {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.freeBox__m3Ife {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.text__bU80 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.linkTableOfContentsLast:global(.__wab_instance) {
+  position: relative;
+}

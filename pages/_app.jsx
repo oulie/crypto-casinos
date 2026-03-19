@@ -10,7 +10,14 @@ import React from "react";
 
 export default function MyApp({ Component, pageProps }) {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [pageScrollProgress, setPageScrollProgress] = React.useState(0);
   const navRef = React.useRef(null);
+
+  const showProgressBar = Component.showProgressBar;
+
+  React.useEffect(() => {
+    setPageScrollProgress(0);
+  }, [Component]);
 
   React.useEffect(() => {
     const TOP = 10;
@@ -44,9 +51,20 @@ export default function MyApp({ Component, pageProps }) {
     <PlasmicRootProvider Head={Head} Link={Link}>
       <>
         {/* <TopBar /> */}
-        <Navbar ref={navRef} className="navbar" isScrolled={isScrolled} />
+        <Navbar
+          ref={navRef}
+          className="navbar"
+          isScrolled={isScrolled}
+          progress={showProgressBar ? pageScrollProgress : 0}
+          showProgress={showProgressBar}
+        />
         <MainLayout
-          main={<Component {...pageProps} />}
+          main={
+            <Component
+              {...pageProps}
+              setPageScrollProgress={setPageScrollProgress}
+            />
+          }
         />
       </>
     </PlasmicRootProvider>

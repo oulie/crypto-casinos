@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #8b8b8b;
+  position: relative;
+  padding: 2px 8px;
+}
+.rootisCurrent {
+  color: #ffffff;
+}
+.slotTargetTitle {
+  font-size: 12px;
+}

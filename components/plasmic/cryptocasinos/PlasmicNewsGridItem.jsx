@@ -102,7 +102,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
       <PlasmicLink__
         className={classNames(projectcss.all, projectcss.a, sty.link___9KPzr)}
         component={Link}
-        href={"#"}
+        href={`/article-sample`}
         legacyBehavior={false}
         platform={"nextjs"}
       >
@@ -183,7 +183,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
         <PlasmicLink__
           className={classNames(projectcss.all, projectcss.a, sty.link__t4Xxh)}
           component={Link}
-          href={"#"}
+          href={`/article-sample`}
           legacyBehavior={false}
           platform={"nextjs"}
         >

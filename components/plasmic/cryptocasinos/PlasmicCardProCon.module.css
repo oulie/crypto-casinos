@@ -1,0 +1,173 @@
+.root {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: var(--token-LKg2LChLUpjW);
+  overflow: hidden;
+  box-shadow:
+    inset 0px 0px 0px 1px #ffffff1a,
+    0px 0px 0px 2px #000000;
+  row-gap: 4px;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+  border-radius: 20px;
+  padding: 20px;
+}
+@media (max-width: 511px) {
+  .root {
+    animation: none;
+  }
+}
+.freeBox___6HeyD {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  left: 0px;
+  top: 0px;
+  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+  pointer-events: none;
+  min-width: 0;
+  min-height: 0;
+}
+.freeBox__ujCc0 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  width: 100%;
+  min-width: 0;
+}
+.text {
+  animation: none;
+  position: relative;
+  color: var(--token-sxMiRhCxgPbQ);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.texttype_cons {
+  color: var(--token-QL0xMMXWaeGp);
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  opacity: 0.5;
+  height: 1em;
+}
+.freeBox___9LRo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  min-width: 0;
+}
+.slotTargetTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1;
+}
+.freeBox__fuxyP {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  row-gap: 20px;
+  color: #cfcfcf99;
+  min-width: 0;
+}
+.proConRow__w6IcM:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.freeBox__vbzJc {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+}
+.svg__mcvNj {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-sxMiRhCxgPbQ);
+  height: 1em;
+}
+.text__yp4A7 {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.freeBox__lsVgy {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+}
+.svg__g4TnM {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-sxMiRhCxgPbQ);
+  height: 1em;
+}
+.text__hhBwS {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.freeBox__wrDn7 {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+}
+.svg__icsKb {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-sxMiRhCxgPbQ);
+  height: 1em;
+}
+.text__qhQto {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
