@@ -13,7 +13,7 @@
   -webkit-transition-property: background;
   -webkit-transition-duration: 0.3s;
   padding: 30px;
-  border-right: 1px solid #ffffff0f;
+  border-right: 1px none #ffffff0f;
 }
 @media (max-width: 1023px) {
   .root {
@@ -34,6 +34,10 @@
 }
 .root:hover {
   background: var(--token-GKj3RTmB9JGm);
+}
+.root:nth-last-child() {
+  border-right-style: none;
+  background: #ff3a3a;
 }
 .freeBox__kNFlT {
   display: flex;

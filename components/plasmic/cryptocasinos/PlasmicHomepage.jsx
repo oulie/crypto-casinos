@@ -375,6 +375,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.linkButton___3DaL
                     )}
+                    href={`/top-casinos`}
                   />
 
                   <LinkButton
@@ -1720,6 +1721,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.linkSidebar__rxoYu
                     )}
+                    href={`/top-casinos`}
                     icon={
                       <StarIcon
                         className={classNames(projectcss.all, sty.svg__eYws)}

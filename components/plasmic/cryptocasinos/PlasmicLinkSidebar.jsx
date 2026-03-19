@@ -29,7 +29,7 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkSidebar__VariantProps = new Array();
 
-export const PlasmicLinkSidebar__ArgProps = new Array("icon", "title");
+export const PlasmicLinkSidebar__ArgProps = new Array("href", "icon", "title");
 
 const $$ = {};
 
@@ -45,7 +45,9 @@ function PlasmicLinkSidebar__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          href: "#"
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -77,7 +79,7 @@ function PlasmicLinkSidebar__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"#"}
+      href={args.href}
       legacyBehavior={false}
       platform={"nextjs"}
     >
