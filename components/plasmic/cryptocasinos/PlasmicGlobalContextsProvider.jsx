@@ -14,7 +14,7 @@ export default function GlobalContextsProvider(props) {
       css={
         embedCssProps && "css" in embedCssProps
           ? embedCssProps.css
-          : '\nul {\n  list-style: none;\n  padding-left: 0px;\n}\n\nul li {\n  position: relative;\n  padding-left: 20px;\n}\n\nul li::before {\n  content: "";\n  position: absolute;\n  left: 0;\n  top: 0.5em;\n  width: 6px;\n  height: 6px;\n  background: #FF5A36;\n  border-radius: 50%;\n}'
+          : '\nul {\n  list-style: none;\n  padding-left: 0px;\n}\n\nul li {\n  position: relative;\n  padding-left: 20px;\n}\n\nul li::before {\n  content: "";\n  position: absolute;\n  left: 0;\n  top: 14px;\n  width: 6px;\n  height: 6px;\n  background: #FF5A36;\n  border-radius: 50%;\n}'
       }
     >
       {children}

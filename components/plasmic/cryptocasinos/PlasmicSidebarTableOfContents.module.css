@@ -70,7 +70,7 @@
 .progressBar {
   display: flex;
   flex-direction: column;
-  width: 4px;
+  width: 3px;
   height: 50%;
   max-width: 100%;
   justify-content: flex-start;
