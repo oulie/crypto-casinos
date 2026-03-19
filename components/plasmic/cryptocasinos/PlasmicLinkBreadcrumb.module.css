@@ -5,10 +5,17 @@
   align-items: center;
   color: #8b8b8b;
   position: relative;
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
   padding: 2px 8px;
 }
 .rootisCurrent {
   color: #ffffff;
+}
+.root:hover {
+  color: var(--token-QL0xMMXWaeGp);
 }
 .slotTargetTitle {
   font-size: 12px;

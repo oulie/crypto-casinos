@@ -137,6 +137,7 @@ function PlasmicTopCasinos__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkBreadcrumb__a5ZAa
                 )}
+                href={`/`}
               />
 
               <IconIcon
