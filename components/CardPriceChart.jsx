@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
   Area,
   AreaChart,
@@ -16,6 +16,7 @@ const COLOR_ORANGE = "#FF5A36";
 const NEGATIVE_COLOR = "#ff8a75";
 const MUTED_LINE = "rgba(255, 90, 54, 0.25)";
 const GRID_COLOR = "rgba(255, 255, 255, 0.09)";
+const HOVER_LINE_COLOR = "rgba(255, 255, 255, 0.24)";
 const AXIS_TICK_COLOR = "rgba(255, 255, 255, 0.32)";
 const CHART_MARGIN = { top: 18, right: 0, bottom: 12, left: 0 };
 const INACTIVE_RANGE_COLOR = "rgba(255, 255, 255, 0.56)";
@@ -305,11 +306,16 @@ function PortalChartTooltip({
 }
 
 function CardPriceChart_(props, ref) {
+  const idBase = useId().replace(/:/g, "");
+  const patternId = `bitcoin-price-chart-pattern-${idBase}`;
+  const clipPathId = `bitcoin-price-chart-clip-active-${idBase}`;
   const chartContainerRef = useRef(null);
   const [selectedRange, setSelectedRange] = useState("1D");
   const [marketData, setMarketData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [chartSize, setChartSize] = useState({ height: 0, width: 0 });
+  const [hoverCoordinateX, setHoverCoordinateX] = useState(null);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
@@ -354,19 +360,26 @@ function CardPriceChart_(props, ref) {
     return () => controller.abort();
   }, [selectedRange]);
 
+  useEffect(() => {
+    const node = chartContainerRef.current;
+
+    if (!node || typeof ResizeObserver === "undefined") {
+      return undefined;
+    }
+
+    const observer = new ResizeObserver((entries) => {
+      const { height, width } = entries[0].contentRect;
+      setChartSize({ height, width });
+    });
+
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, []);
+
   const chartData = useMemo(() => marketData?.points || [], [marketData]);
   const yDomain = useMemo(() => getYDomain(chartData), [chartData]);
   const tickValues = useMemo(() => buildTickValues(chartData), [chartData]);
-
-  const chartSeries = useMemo(() => {
-    return chartData.map((point, index) => ({
-      ...point,
-      activeValue:
-        hoveredIndex === null || index <= hoveredIndex ? point.value : null,
-      mutedValue:
-        hoveredIndex !== null && index >= hoveredIndex ? point.value : null,
-    }));
-  }, [chartData, hoveredIndex]);
 
   const hoveredPoint =
     hoveredIndex !== null ? chartData[hoveredIndex] || null : null;
@@ -425,22 +438,28 @@ function CardPriceChart_(props, ref) {
           <ResponsiveContainer height="100%" width="100%">
             <AreaChart
               accessibilityLayer={false}
-              data={chartSeries}
+              data={chartData}
               margin={CHART_MARGIN}
               onMouseLeave={() => {
+                setHoverCoordinateX(null);
                 setHoveredIndex(null);
               }}
               onMouseMove={(state) => {
-                if (typeof state?.activeTooltipIndex === "number") {
+                if (
+                  typeof state?.activeTooltipIndex === "number" &&
+                  Number.isFinite(state?.activeCoordinate?.x)
+                ) {
+                  setHoverCoordinateX(state.activeCoordinate.x);
                   setHoveredIndex(state.activeTooltipIndex);
                 } else {
+                  setHoverCoordinateX(null);
                   setHoveredIndex(null);
                 }
               }}
             >
               <defs>
                 <pattern
-                  id="bitcoin-price-chart-pattern"
+                  id={patternId}
                   height="8"
                   patternUnits="userSpaceOnUse"
                   width="8"
@@ -453,6 +472,21 @@ function CardPriceChart_(props, ref) {
                     r="1.1"
                   />
                 </pattern>
+                <clipPath clipPathUnits="userSpaceOnUse" id={clipPathId}>
+                  <rect
+                    height={Math.max(
+                      chartSize.height - CHART_MARGIN.top - CHART_MARGIN.bottom,
+                      1
+                    )}
+                    width={Math.max(
+                      (hoverCoordinateX ?? chartSize.width) - CHART_MARGIN.left,
+                      hoveredPoint ? 1 : chartSize.width - CHART_MARGIN.left,
+                      1
+                    )}
+                    x={CHART_MARGIN.left}
+                    y={CHART_MARGIN.top}
+                  />
+                </clipPath>
               </defs>
 
               <CartesianGrid
@@ -489,7 +523,11 @@ function CardPriceChart_(props, ref) {
                     rect={chartContainerRef.current?.getBoundingClientRect()}
                   />
                 )}
-                cursor={false}
+                cursor={{
+                  stroke: HOVER_LINE_COLOR,
+                  strokeDasharray: "4 6",
+                  strokeWidth: 1,
+                }}
                 isAnimationActive={false}
                 offset={0}
                 wrapperStyle={{ outline: "none", zIndex: 4 }}
@@ -498,8 +536,9 @@ function CardPriceChart_(props, ref) {
               {hoveredPoint ? (
                 <>
                   <ReferenceLine
-                    stroke={GRID_COLOR}
-                    strokeDasharray="3 6"
+                    stroke={HOVER_LINE_COLOR}
+                    strokeDasharray="4 6"
+                    strokeWidth={1}
                     x={hoveredPoint.time}
                   />
                   <ReferenceLine
@@ -510,39 +549,60 @@ function CardPriceChart_(props, ref) {
                 </>
               ) : null}
 
-              <Area
-                activeDot={{
-                  fill: COLOR_ORANGE,
-                  r: 4,
-                  stroke: "#131313",
-                  strokeWidth: 2,
-                }}
-                animationDuration={220}
-                connectNulls={true}
-                dataKey="activeValue"
-                dot={false}
-                fill="url(#bitcoin-price-chart-pattern)"
-                isAnimationActive={true}
-                stroke={COLOR_ORANGE}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                type="monotone"
-              />
-
-              <Area
-                animationDuration={220}
-                connectNulls={true}
-                dataKey="mutedValue"
-                dot={false}
-                fill="transparent"
-                isAnimationActive={true}
-                stroke={MUTED_LINE}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.3}
-                type="monotone"
-              />
+              {hoveredPoint ? (
+                <>
+                  <Area
+                    animationDuration={220}
+                    dataKey="value"
+                    dot={false}
+                    fill="transparent"
+                    isAnimationActive={true}
+                    stroke={MUTED_LINE}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.3}
+                    type="monotone"
+                  />
+                  <Area
+                    activeDot={{
+                      fill: COLOR_ORANGE,
+                      r: 4,
+                      stroke: "#131313",
+                      strokeWidth: 2,
+                    }}
+                    animationDuration={220}
+                    clipPath={`url(#${clipPathId})`}
+                    dataKey="value"
+                    dot={false}
+                    fill={`url(#${patternId})`}
+                    isAnimationActive={true}
+                    stroke={COLOR_ORANGE}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    type="monotone"
+                  />
+                </>
+              ) : (
+                <Area
+                  activeDot={{
+                    fill: COLOR_ORANGE,
+                    r: 4,
+                    stroke: "#131313",
+                    strokeWidth: 2,
+                  }}
+                  animationDuration={220}
+                  dataKey="value"
+                  dot={false}
+                  fill={`url(#${patternId})`}
+                  isAnimationActive={true}
+                  stroke={COLOR_ORANGE}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  type="monotone"
+                />
+              )}
             </AreaChart>
           </ResponsiveContainer>
 
