@@ -1,0 +1,136 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: var(--token-LKg2LChLUpjW);
+  overflow: hidden;
+  box-shadow:
+    inset 0px 0px 0px 1px #ffffff1a,
+    0px 0px 0px 2px #000000;
+  row-gap: 10px;
+  position: relative;
+  transition-property: background, box-shadow;
+  transition-duration: 0.3s, 0.3s;
+  cursor: pointer;
+  min-width: 0;
+  -webkit-transition-property: background, box-shadow;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  border-radius: 20px;
+  padding: 20px;
+}
+.root:hover {
+  background: var(--token-GKj3RTmB9JGm);
+}
+.freeBox__f9C5 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  left: 0px;
+  top: 0px;
+  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+  pointer-events: none;
+  min-width: 0;
+  min-height: 0;
+}
+.tagPill__poEkd:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text___29TtN {
+  animation: none;
+}
+.link {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: #cfcfcf;
+}
+.linkalt {
+  order: 1;
+}
+.root:hover .link {
+  color: #cfcfcf;
+}
+.slotTargetTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+.freeBox__szgWb {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetDescription {
+  font-size: 14px;
+}
+.freeBox___34PuS {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  column-gap: 2px;
+  padding-top: 20px;
+  min-width: 0;
+}
+.img__zBuyH {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  margin-right: -8px;
+  flex-shrink: 0;
+  border-radius: 99px;
+  border: 2px solid var(--token-PU2kSrpIWaun);
+}
+.img__zBuyH > picture > img {
+  object-fit: cover;
+}
+.img__np2Kb {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  margin-right: -8px;
+  flex-shrink: 0;
+  border-radius: 99px;
+  border: 2px solid var(--token-PU2kSrpIWaun);
+}
+.img__np2Kb > picture > img {
+  object-fit: cover;
+}
+.img__yC9Mt {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  margin-right: -8px;
+  flex-shrink: 0;
+  border-radius: 99px;
+  border: 2px solid var(--token-PU2kSrpIWaun);
+}
+.img__yC9Mt > picture > img {
+  object-fit: cover;
+}

@@ -692,7 +692,8 @@
 .linkButton__qyjVq:global(.__wab_instance) {
   position: relative;
 }
-.freeBox___235O {
+.freeBox__tHsY {
+  animation: none;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 100%;
@@ -703,329 +704,156 @@
   margin-bottom: 40px;
   min-width: 0;
 }
-@media (max-width: 1023px) {
-  .freeBox___235O {
-    margin-bottom: 0px;
-  }
-}
-@media (max-width: 511px) {
-  .freeBox___235O {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-}
-.freeBox__t7Ehv {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: var(--token-LKg2LChLUpjW);
-  overflow: hidden;
-  box-shadow:
-    inset 0px 0px 0px 1px #ffffff1a,
-    0px 0px 0px 2px #000000;
-  row-gap: 10px;
+.cardArticleNoCover___3Ujmb:global(.__wab_instance) {
+  animation: none;
   grid-column-end: span 1;
-  min-width: 0;
-  border-radius: 20px;
-  padding: 20px;
 }
-.freeBox__yQdef {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  left: 0px;
-  top: 0px;
-  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  pointer-events: none;
-  min-width: 0;
-  min-height: 0;
-}
-.text__zOwvn {
-  animation: none;
-  position: relative;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
-}
-.text__oEnaK {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-top: 10px;
-}
-.text___3Oujb {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  opacity: 0.6;
-  font-size: 14px;
-  min-width: 0;
-}
-.freeBox__qj6Sj {
-  animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  column-gap: 2px;
-  padding-top: 20px;
-  min-width: 0;
-}
-.img__alTi7 {
+.img___8GlAp {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__alTi7 > picture > img {
+.img___8GlAp > picture > img {
   object-fit: cover;
 }
-.img__oOvDv {
+.img__pl3Pg {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__oOvDv > picture > img {
+.img__pl3Pg > picture > img {
   object-fit: cover;
 }
-.img__orr8 {
+.img___8AdBq {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__orr8 > picture > img {
+.img___8AdBq > picture > img {
   object-fit: cover;
 }
-.freeBox__dr2T4 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: var(--token-LKg2LChLUpjW);
-  overflow: hidden;
-  box-shadow:
-    inset 0px 0px 0px 1px #ffffff1a,
-    0px 0px 0px 2px #000000;
-  row-gap: 10px;
+.tagPill___9EsMp:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__ga2Dw {
+  animation: none;
+}
+.cardArticleNoCover__nYd50:global(.__wab_instance) {
+  animation: none;
   grid-column-end: span 1;
-  min-width: 0;
-  border-radius: 20px;
-  padding: 20px;
 }
-.freeBox___9QDx {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  left: 0px;
-  top: 0px;
-  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  pointer-events: none;
-  min-width: 0;
-  min-height: 0;
-}
-.text__lDzK {
+.text__lZbqb {
   animation: none;
-  position: relative;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
 }
-.text__jr9Vp {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-top: 10px;
-}
-.text__pT6Yg {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  opacity: 0.6;
-  font-size: 14px;
-  min-width: 0;
-}
-.freeBox__sv3B8 {
+.text___7CrvN {
   animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  column-gap: 2px;
-  padding-top: 20px;
-  min-width: 0;
 }
-.img___5U3Qn {
+.img__mgiyx {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img___5U3Qn > picture > img {
+.img__mgiyx > picture > img {
   object-fit: cover;
 }
-.img__nt5Ug {
+.img__zApsq {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__nt5Ug > picture > img {
+.img__zApsq > picture > img {
   object-fit: cover;
 }
-.freeBox__arAp {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
+.img__hqvKc {
+  animation: none;
+  object-fit: cover;
   max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: var(--token-LKg2LChLUpjW);
-  overflow: hidden;
-  box-shadow:
-    inset 0px 0px 0px 1px #ffffff1a,
-    0px 0px 0px 2px #000000;
-  row-gap: 10px;
+  width: 20px;
+  margin-right: -8px;
+  border-radius: 99px;
+  border: 2px solid var(--token-PU2kSrpIWaun);
+}
+.img__hqvKc > picture > img {
+  object-fit: cover;
+}
+.tagPill__unTjo:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__eoAOs {
+  animation: none;
+}
+.cardArticleNoCover__kVGby:global(.__wab_instance) {
+  animation: none;
   grid-column-end: span 1;
-  min-width: 0;
-  border-radius: 20px;
-  padding: 20px;
 }
-.freeBox__sTX {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  left: 0px;
-  top: 0px;
-  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  pointer-events: none;
-  min-width: 0;
-  min-height: 0;
-}
-.text__ez1J9 {
+.text___1C0M {
   animation: none;
-  position: relative;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
 }
-.text__x1MdW {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-top: 10px;
-}
-.text__ijw1Z {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  opacity: 0.6;
-  font-size: 14px;
-  min-width: 0;
-}
-.freeBox___13Kd6 {
+.text___8R96H {
   animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  column-gap: 2px;
-  padding-top: 20px;
-  min-width: 0;
 }
-.img__wwsQ {
+.img__kLk5L {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__wwsQ > picture > img {
+.img__kLk5L > picture > img {
   object-fit: cover;
 }
-.img__ngmpq {
+.img__yHkgX {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__ngmpq > picture > img {
+.img__yHkgX > picture > img {
   object-fit: cover;
+}
+.img__nbIa {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  margin-right: -8px;
+  border-radius: 99px;
+  border: 2px solid var(--token-PU2kSrpIWaun);
+}
+.img__nbIa > picture > img {
+  object-fit: cover;
+}
+.tagPill__jbom0:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__lggxy {
+  animation: none;
 }

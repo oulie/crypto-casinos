@@ -24,6 +24,7 @@ import CardCasinoLarge from "../../CardCasinoLarge"; // plasmic-import: pl0YfSAC
 import CardCasinoList from "../../CardCasinoList"; // plasmic-import: 6YxcbeY1AF1_/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
+import CardArticleNoCover from "../../CardArticleNoCover"; // plasmic-import: h0trZzJIFxmu/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -666,274 +667,153 @@ function PlasmicTopCasinos__RenderFunc(props) {
                     title={"All Guides"}
                   />
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox___235O)}>
-                  <div
+                <div className={classNames(projectcss.all, sty.freeBox__tHsY)}>
+                  <CardArticleNoCover
                     className={classNames(
-                      projectcss.all,
-                      sty.freeBox__t7Ehv,
-                      "bg-grain"
+                      "__wab_instance",
+                      sty.cardArticleNoCover___3Ujmb
                     )}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__yQdef)}
-                    />
+                  />
 
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zOwvn
-                      )}
-                    >
-                      {"Guide"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__oEnaK
-                      )}
-                    >
-                      {
-                        "How to choose a crypto casino: security, bonus value, and withdrawal speed"
-                      }
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___3Oujb
-                      )}
-                    >
-                      {
-                        "Operators are adjusting deposit brackets and reworking VIP retention offers."
-                      }
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__qj6Sj)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__alTi7)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image5.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__oOvDv)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image7.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__orr8)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image4.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div
+                  <CardArticleNoCover
                     className={classNames(
-                      projectcss.all,
-                      sty.freeBox__dr2T4,
-                      "bg-grain"
+                      "__wab_instance",
+                      sty.cardArticleNoCover__nYd50
                     )}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox___9QDx)}
-                    />
+                    coins={
+                      <React.Fragment>
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__mgiyx)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"20px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/cryptocasinos/images/image5.png",
+                            fullWidth: 64,
+                            fullHeight: 64,
+                            aspectRatio: undefined
+                          }}
+                        />
 
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__lDzK
-                      )}
-                    >
-                      {"Guide"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__jr9Vp
-                      )}
-                    >
-                      {
-                        "How to choose a crypto casino: security, bonus value, and withdrawal speed"
-                      }
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__pT6Yg
-                      )}
-                    >
-                      {
-                        "Operators are adjusting deposit brackets and reworking VIP retention offers."
-                      }
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__sv3B8)}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___5U3Qn)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image3.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__zApsq)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"20px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/cryptocasinos/images/image8.png",
+                            fullWidth: 64,
+                            fullHeight: 64,
+                            aspectRatio: undefined
+                          }}
+                        />
 
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__nt5Ug)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image8.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__hqvKc)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"20px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/cryptocasinos/images/image3.png",
+                            fullWidth: 64,
+                            fullHeight: 64,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </React.Fragment>
+                    }
+                    description={
+                      "Operators are adjusting deposit brackets and reworking VIP retention offers."
+                    }
+                    title={
+                      "How to choose a crypto casino: security, bonus value, and withdrawal speed"
+                    }
+                  />
+
+                  <CardArticleNoCover
                     className={classNames(
-                      projectcss.all,
-                      sty.freeBox__arAp,
-                      "bg-grain"
+                      "__wab_instance",
+                      sty.cardArticleNoCover__kVGby
                     )}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__sTX)}
-                    />
+                    coins={
+                      <React.Fragment>
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__kLk5L)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"20px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/cryptocasinos/images/image5.png",
+                            fullWidth: 64,
+                            fullHeight: 64,
+                            aspectRatio: undefined
+                          }}
+                        />
 
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ez1J9
-                      )}
-                    >
-                      {"Guide"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__x1MdW
-                      )}
-                    >
-                      {
-                        "How to choose a crypto casino: security, bonus value, and withdrawal speed"
-                      }
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ijw1Z
-                      )}
-                    >
-                      {
-                        "Operators are adjusting deposit brackets and reworking VIP retention offers."
-                      }
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___13Kd6
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__wwsQ)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image3.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__yHkgX)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"20px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/cryptocasinos/images/image4.png",
+                            fullWidth: 64,
+                            fullHeight: 64,
+                            aspectRatio: undefined
+                          }}
+                        />
 
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__ngmpq)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image4.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </div>
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__nbIa)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"20px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/cryptocasinos/images/image3.png",
+                            fullWidth: 64,
+                            fullHeight: 64,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </React.Fragment>
+                    }
+                    description={
+                      "Operators are adjusting deposit brackets and reworking VIP retention offers."
+                    }
+                    title={
+                      "How to choose a crypto casino: security, bonus value, and withdrawal speed"
+                    }
+                  />
                 </div>
               </div>
             </div>

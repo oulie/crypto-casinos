@@ -628,6 +628,19 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCasinoLarge.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "h0trZzJIFxmu",
+          "name": "CardArticleNoCover",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardArticleNoCover.jsx",
+          "importSpec": {
+            "modulePath": "CardArticleNoCover.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardArticleNoCover.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

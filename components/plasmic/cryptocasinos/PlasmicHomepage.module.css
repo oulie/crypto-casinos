@@ -1221,220 +1221,85 @@
     animation: none;
   }
 }
-.freeBox___7081E {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: var(--token-LKg2LChLUpjW);
-  overflow: hidden;
-  box-shadow:
-    inset 0px 0px 0px 1px #ffffff1a,
-    0px 0px 0px 2px #000000;
-  row-gap: 10px;
+.cardArticleNoCover__mjwzY:global(.__wab_instance) {
   grid-column-end: span 1;
-  min-width: 0;
-  border-radius: 20px;
-  padding: 20px;
 }
-.freeBox__xyCuI {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  left: 0px;
-  top: 0px;
-  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  pointer-events: none;
-  min-width: 0;
-  min-height: 0;
-}
-.text__iugxd {
-  animation: none;
-  position: relative;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
-}
-.freeBox__uoXZk {
-  animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  column-gap: 2px;
-  padding-top: 20px;
-  min-width: 0;
-}
-.img__mU22Q {
+.img__hbYm5 {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__mU22Q > picture > img {
+.img__hbYm5 > picture > img {
   object-fit: cover;
 }
-.img__ucY8T {
+.img__orQr3 {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__ucY8T > picture > img {
+.img__orQr3 > picture > img {
   object-fit: cover;
 }
-.text__kzpMw {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-top: 10px;
-}
-.text__tqznB {
+.tagPill__l0Gfk:global(.__wab_instance) {
+  animation: none;
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  opacity: 0.6;
-  font-size: 14px;
-  min-width: 0;
 }
-.freeBox__gFdMm {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: var(--token-LKg2LChLUpjW);
-  overflow: hidden;
-  box-shadow:
-    inset 0px 0px 0px 1px #ffffff1a,
-    0px 0px 0px 2px #000000;
-  row-gap: 10px;
+.text__ow0FQ {
+  animation: none;
+}
+.cardArticleNoCover__z26Af:global(.__wab_instance) {
   grid-column-end: span 1;
-  min-width: 0;
-  border-radius: 20px;
-  padding: 20px;
 }
-.freeBox__s9Af {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  left: 0px;
-  top: 0px;
-  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  pointer-events: none;
-  min-width: 0;
-  min-height: 0;
-}
-.text__vH7Fa {
-  animation: none;
-  position: relative;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
-}
-.freeBox__hWtyx {
-  animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  column-gap: 2px;
-  padding-top: 20px;
-  min-width: 0;
-}
-.img___2G2WZ {
+.img__sb6O8 {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img___2G2WZ > picture > img {
+.img__sb6O8 > picture > img {
   object-fit: cover;
 }
-.img__iPg4V {
+.img___86Pm {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__iPg4V > picture > img {
+.img___86Pm > picture > img {
   object-fit: cover;
 }
-.img__tD7Ol {
+.img__no5Nd {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__tD7Ol > picture > img {
+.img__no5Nd > picture > img {
   object-fit: cover;
 }
-.text___7YAkd {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-top: 10px;
-}
-.text__eYvNp {
+.tagPill__vaouN:global(.__wab_instance) {
+  animation: none;
   position: relative;
-  font-size: 14px;
-  opacity: 0.6;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  min-width: 0;
+}
+.text__fJrIh {
+  animation: none;
 }
 .freeBox__ytNwg {
   display: flex;
@@ -1690,321 +1555,143 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
-.freeBox___7FlSy {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: var(--token-LKg2LChLUpjW);
-  overflow: hidden;
-  box-shadow:
-    inset 0px 0px 0px 1px #ffffff1a,
-    0px 0px 0px 2px #000000;
-  row-gap: 10px;
+.cardArticleNoCover__xtmsg:global(.__wab_instance) {
   grid-column-end: span 1;
-  min-width: 0;
-  border-radius: 20px;
-  padding: 20px;
 }
-.freeBox__ybB8 {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  left: 0px;
-  top: 0px;
-  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  pointer-events: none;
-  min-width: 0;
-  min-height: 0;
-}
-.text___7W7Dl {
-  animation: none;
-  position: relative;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
-}
-.text__ylcAi {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-top: 10px;
-}
-.text___6OtZy {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  opacity: 0.6;
-  font-size: 14px;
-  min-width: 0;
-}
-.freeBox__mfwc7 {
-  animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  column-gap: 2px;
-  padding-top: 20px;
-  min-width: 0;
-}
-.img__qbMXq {
+.img__yfr8N {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__qbMXq > picture > img {
+.img__yfr8N > picture > img {
   object-fit: cover;
 }
-.img___9UNtg {
+.img__iLlOc {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img___9UNtg > picture > img {
+.img__iLlOc > picture > img {
   object-fit: cover;
 }
-.img__eNxJs {
+.img__bUg9 {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__eNxJs > picture > img {
+.img__bUg9 > picture > img {
   object-fit: cover;
 }
-.freeBox__xmBwK {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: var(--token-LKg2LChLUpjW);
-  overflow: hidden;
-  box-shadow:
-    inset 0px 0px 0px 1px #ffffff1a,
-    0px 0px 0px 2px #000000;
-  row-gap: 10px;
+.tagPill___9Uwdo:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text___7EoR {
+  animation: none;
+}
+.cardArticleNoCover__bc2NS:global(.__wab_instance) {
   grid-column-end: span 1;
-  min-width: 0;
-  border-radius: 20px;
-  padding: 20px;
 }
-.freeBox__kfUMv {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  left: 0px;
-  top: 0px;
-  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  pointer-events: none;
-  min-width: 0;
-  min-height: 0;
-}
-.text__hRdhk {
-  animation: none;
-  position: relative;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
-}
-.text___5KiAc {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-top: 10px;
-}
-.text__paWik {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  opacity: 0.6;
-  font-size: 14px;
-  min-width: 0;
-}
-.freeBox__ilyl6 {
-  animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  column-gap: 2px;
-  padding-top: 20px;
-  min-width: 0;
-}
-.img__y8TJ2 {
+.img__sx4Pl {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__y8TJ2 > picture > img {
+.img__sx4Pl > picture > img {
   object-fit: cover;
 }
-.img__f8V18 {
+.img__f8Mhm {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__f8V18 > picture > img {
+.img__f8Mhm > picture > img {
   object-fit: cover;
 }
-.freeBox__h4IdC {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
+.img__w3Jw {
+  animation: none;
+  object-fit: cover;
   max-width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: var(--token-LKg2LChLUpjW);
-  overflow: hidden;
-  box-shadow:
-    inset 0px 0px 0px 1px #ffffff1a,
-    0px 0px 0px 2px #000000;
-  row-gap: 10px;
+  width: 20px;
+  margin-right: -8px;
+  border-radius: 99px;
+  border: 2px solid var(--token-PU2kSrpIWaun);
+}
+.img__w3Jw > picture > img {
+  object-fit: cover;
+}
+.tagPill__akSj0:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text___8XlBx {
+  animation: none;
+}
+.cardArticleNoCover__joJky:global(.__wab_instance) {
   grid-column-end: span 1;
-  min-width: 0;
-  border-radius: 20px;
-  padding: 20px;
 }
-.freeBox__untg {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
-  left: 0px;
-  top: 0px;
-  background: url("/plasmic/cryptocasinos/images/image.webp") top 50% left 50% / 100px auto repeat;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  pointer-events: none;
-  min-width: 0;
-  min-height: 0;
-}
-.text__vj7Lf {
-  animation: none;
-  position: relative;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
-}
-.text__ddcvA {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  padding-top: 10px;
-}
-.text__oUcDc {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  opacity: 0.6;
-  font-size: 14px;
-  min-width: 0;
-}
-.freeBox__jxOeS {
-  animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  column-gap: 2px;
-  padding-top: 20px;
-  min-width: 0;
-}
-.img___9GdPj {
+.img__sNl7E {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img___9GdPj > picture > img {
+.img__sNl7E > picture > img {
   object-fit: cover;
 }
-.img__hncmP {
+.img___2ELlr {
   animation: none;
   object-fit: cover;
   max-width: 100%;
   width: 20px;
   margin-right: -8px;
-  flex-shrink: 0;
   border-radius: 99px;
   border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__hncmP > picture > img {
+.img___2ELlr > picture > img {
   object-fit: cover;
+}
+.img__rmvvy {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  margin-right: -8px;
+  border-radius: 99px;
+  border: 2px solid var(--token-PU2kSrpIWaun);
+}
+.img__rmvvy > picture > img {
+  object-fit: cover;
+}
+.tagPill__onjcm:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text___9HvRo {
+  animation: none;
 }
 .sidebar {
   display: flex;
