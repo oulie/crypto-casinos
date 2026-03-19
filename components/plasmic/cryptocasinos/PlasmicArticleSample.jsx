@@ -146,6 +146,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkBreadcrumb__t19Q1
                 )}
+                href={`/`}
               />
 
               <IconIcon

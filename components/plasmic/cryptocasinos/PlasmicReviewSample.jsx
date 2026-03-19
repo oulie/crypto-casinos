@@ -149,6 +149,7 @@ function PlasmicReviewSample__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkBreadcrumb__gsQlh
                 )}
+                href={`/`}
               />
 
               <IconIcon
@@ -161,7 +162,8 @@ function PlasmicReviewSample__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkBreadcrumb__q1Xo0
                 )}
-                title={"Casinos"}
+                href={`/top-casinos`}
+                title={"Top Casinos"}
               />
 
               <IconIcon

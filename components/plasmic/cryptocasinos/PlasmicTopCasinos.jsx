@@ -19,6 +19,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
+import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import CardCasinoLarge from "../../CardCasinoLarge"; // plasmic-import: pl0YfSACN4Nw/component
 import CardCasinoList from "../../CardCasinoList"; // plasmic-import: 6YxcbeY1AF1_/component
@@ -30,6 +31,7 @@ import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-impor
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicTopCasinos.module.css"; // plasmic-import: ImFQnwBYcSJp/css
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 2AAjufLElL24/icon
 import BadgeCheckIcon from "./icons/PlasmicIcon__BadgeCheck"; // plasmic-import: OE1F_elgA17S/icon
 
 const emptyProxy = new Proxy(() => "", {
@@ -128,6 +130,30 @@ function PlasmicTopCasinos__RenderFunc(props) {
             className={classNames("__wab_instance", sty.coinPriceMarquee)}
           />
 
+          <div className={classNames(projectcss.all, sty.freeBox__trO9I)}>
+            <div className={classNames(projectcss.all, sty.freeBox__isUuP)}>
+              <LinkBreadcrumb
+                className={classNames(
+                  "__wab_instance",
+                  sty.linkBreadcrumb__a5ZAa
+                )}
+              />
+
+              <IconIcon
+                className={classNames(projectcss.all, sty.svg__q2PA)}
+                role={"img"}
+              />
+
+              <LinkBreadcrumb
+                className={classNames(
+                  "__wab_instance",
+                  sty.linkBreadcrumb__tSVlp
+                )}
+                isCurrent={true}
+                title={"Top Casinos"}
+              />
+            </div>
+          </div>
           <div
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
@@ -356,9 +382,7 @@ function PlasmicTopCasinos__RenderFunc(props) {
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__c9Dr3)}>
                   <BadgeCheckIcon
-                    data-plasmic-name={"svg"}
-                    data-plasmic-override={overrides.svg}
-                    className={classNames(projectcss.all, sty.svg)}
+                    className={classNames(projectcss.all, sty.svg___6LLke)}
                     role={"img"}
                   />
 
@@ -826,22 +850,12 @@ function PlasmicTopCasinos__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "coinPriceMarquee",
-    "hero",
-    "span",
-    "content",
-    "cardsCasinos",
-    "svg"
-  ],
-
+  root: ["root", "coinPriceMarquee", "hero", "span", "content", "cardsCasinos"],
   coinPriceMarquee: ["coinPriceMarquee"],
   hero: ["hero", "span"],
   span: ["span"],
-  content: ["content", "cardsCasinos", "svg"],
-  cardsCasinos: ["cardsCasinos"],
-  svg: ["svg"]
+  content: ["content", "cardsCasinos"],
+  cardsCasinos: ["cardsCasinos"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -881,7 +895,6 @@ export const PlasmicTopCasinos = Object.assign(
     span: makeNodeComponent("span"),
     content: makeNodeComponent("content"),
     cardsCasinos: makeNodeComponent("cardsCasinos"),
-    svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicTopCasinos
     internalVariantProps: PlasmicTopCasinos__VariantProps,
     internalArgProps: PlasmicTopCasinos__ArgProps,

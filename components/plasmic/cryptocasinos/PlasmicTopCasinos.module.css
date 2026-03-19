@@ -12,6 +12,50 @@
 .coinPriceMarquee:global(.__wab_instance) {
   position: relative;
 }
+.freeBox__trO9I {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ffffff0f;
+}
+.freeBox__isUuP {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: var(--token-eI5HWtMjxYZN);
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 0;
+}
+.linkBreadcrumb__a5ZAa:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__q2PA {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  color: #8b8b8b;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+.linkBreadcrumb__tSVlp:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__fnePu {
+  animation: none;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -388,7 +432,7 @@
   padding: 11px 22px;
   border: 1px solid #ffffff0f;
 }
-.svg {
+.svg___6LLke {
   object-fit: cover;
   max-width: 100%;
   color: var(--token-sxMiRhCxgPbQ);

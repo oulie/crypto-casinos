@@ -30,7 +30,7 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkBreadcrumb__VariantProps = new Array("isCurrent");
 
-export const PlasmicLinkBreadcrumb__ArgProps = new Array("title");
+export const PlasmicLinkBreadcrumb__ArgProps = new Array("title", "href");
 
 const $$ = {};
 
@@ -46,7 +46,9 @@ function PlasmicLinkBreadcrumb__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          href: "#"
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -98,7 +100,7 @@ function PlasmicLinkBreadcrumb__RenderFunc(props) {
         { [sty.rootisCurrent]: hasVariant($state, "isCurrent", "isCurrent") }
       )}
       component={Link}
-      href={"#"}
+      href={args.href}
       legacyBehavior={false}
       platform={"nextjs"}
     >
