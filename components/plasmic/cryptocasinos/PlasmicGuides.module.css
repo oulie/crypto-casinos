@@ -137,25 +137,39 @@
   border-radius: 25px;
   padding: 14px 20px;
 }
-.freeBox__hHL8 {
-  animation: none;
+.freeBox__de1W7 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
-  align-items: stretch;
-  justify-content: space-between;
-  column-gap: 6px;
-  background: var(--token-PU2kSrpIWaun);
-  flex-wrap: wrap;
-  align-content: center;
   width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--token-PU2kSrpIWaun);
+  column-gap: 6px;
+  flex-wrap: nowrap;
+  align-content: stretch;
   min-width: 0;
   border-radius: 10px;
   padding: 16px;
 }
+.freeBox__hHL8 {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  column-gap: 6px;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  min-width: 0;
+  border-bottom: 1px solid #ffffff1a;
+}
 .linkButton__xftWb:global(.__wab_instance) {
   animation: none;
-  position: relative;
 }
 .linkButton__xayzy:global(.__wab_instance) {
   animation: none;
@@ -196,6 +210,9 @@
 .linkButton__gfQkl:global(.__wab_instance) {
   animation: none;
   position: relative;
+}
+.togglesCoins:global(.__wab_instance) {
+  margin-top: 20px;
 }
 .content {
   animation: none;

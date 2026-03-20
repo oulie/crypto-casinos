@@ -1,0 +1,63 @@
+.root {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+}
+.buttonAll:global(.__wab_instance) {
+  animation: none;
+}
+.freeBox__yzljz {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+  flex-grow: 1;
+}
+.toggleCoin__lK4El:global(.__wab_instance) {
+  flex-shrink: 0;
+}
+.toggleCoin__zCQvB:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.toggleCoin__f7Lo:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.toggleCoin__g1D4K:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.toggleCoin___1UHu:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.toggleCoin__tPe5Q:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.toggleCoin__tnme:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.freeBox__uLtKn {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90px;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-shrink: 0;
+}

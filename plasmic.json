@@ -760,6 +760,32 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicLogoNav.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "V853JvFbe8dS",
+          "name": "ToggleCoin",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicToggleCoin.jsx",
+          "importSpec": {
+            "modulePath": "ToggleCoin.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicToggleCoin.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "CJpG2dK0Va9g",
+          "name": "TogglesCoins",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTogglesCoins.jsx",
+          "importSpec": {
+            "modulePath": "TogglesCoins.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicTogglesCoins.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

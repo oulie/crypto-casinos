@@ -21,6 +21,7 @@ import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
 import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
+import TogglesCoins from "../../TogglesCoins"; // plasmic-import: CJpG2dK0Va9g/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import Pagination from "../../Pagination"; // plasmic-import: pFMQCMqFtkNz/component
@@ -189,114 +190,123 @@ function PlasmicGuides__RenderFunc(props) {
             </div>
             <div className={classNames(projectcss.all, sty.freeBox___3WTyx)}>
               <div className={classNames(projectcss.all, sty.freeBox__iwjPz)}>
-                <div className={classNames(projectcss.all, sty.freeBox__hHL8)}>
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__xftWb
-                    )}
-                    size={"small"}
-                    title={"All Guides"}
-                  />
+                <div className={classNames(projectcss.all, sty.freeBox__de1W7)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__hHL8)}
+                  >
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__xftWb
+                      )}
+                      size={"small"}
+                      title={"All Guides"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__xayzy
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"No-KYC"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__xayzy
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"No-KYC"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__yWPrc
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"Wager-free"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__yWPrc
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"Wager-free"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__qwplX
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"Low fees"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__qwplX
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"Low fees"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__yxwa
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"Cashback"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__yxwa
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"Cashback"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__sTzNx
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"VIP"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__sTzNx
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"VIP"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__boFg
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"RTP"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__boFg
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"RTP"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__pThAm
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"Seeds"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__pThAm
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"Seeds"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__lfHhX
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"Provably fair"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__lfHhX
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"Provably fair"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__cXjF1
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"Licenses"}
-                  />
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__cXjF1
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"Licenses"}
+                    />
 
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__gfQkl
-                    )}
-                    color={"clear"}
-                    size={"small"}
-                    title={"Bonus terms"}
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__gfQkl
+                      )}
+                      color={"clear"}
+                      size={"small"}
+                      title={"Bonus terms"}
+                    />
+                  </div>
+                  <TogglesCoins
+                    data-plasmic-name={"togglesCoins"}
+                    data-plasmic-override={overrides.togglesCoins}
+                    className={classNames("__wab_instance", sty.togglesCoins)}
                   />
                 </div>
               </div>
@@ -1007,6 +1017,7 @@ const PlasmicDescendants = {
     "root",
     "coinPriceMarquee",
     "svg",
+    "togglesCoins",
     "content",
     "leftContent",
     "pagination",
@@ -1019,6 +1030,7 @@ const PlasmicDescendants = {
 
   coinPriceMarquee: ["coinPriceMarquee"],
   svg: ["svg"],
+  togglesCoins: ["togglesCoins"],
   content: [
     "content",
     "leftContent",
@@ -1080,6 +1092,7 @@ export const PlasmicGuides = Object.assign(
     // Helper components rendering sub-elements
     coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
     svg: makeNodeComponent("svg"),
+    togglesCoins: makeNodeComponent("togglesCoins"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
     pagination: makeNodeComponent("pagination"),
