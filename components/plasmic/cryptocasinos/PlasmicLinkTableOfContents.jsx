@@ -28,7 +28,7 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkTableOfContents__VariantProps = new Array();
 
-export const PlasmicLinkTableOfContents__ArgProps = new Array("title");
+export const PlasmicLinkTableOfContents__ArgProps = new Array("title", "href");
 
 const $$ = {};
 
@@ -44,7 +44,9 @@ function PlasmicLinkTableOfContents__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          href: "#"
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -76,7 +78,7 @@ function PlasmicLinkTableOfContents__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"#"}
+      href={args.href}
       legacyBehavior={false}
       platform={"nextjs"}
     >

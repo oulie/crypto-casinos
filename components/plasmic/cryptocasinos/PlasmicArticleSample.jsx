@@ -34,6 +34,7 @@ import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/c
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import SidebarRecentArticles from "../../SidebarRecentArticles"; // plasmic-import: 91sde1xxKkNX/component
 import SidebarTableOfContents from "../../SidebarTableOfContents"; // plasmic-import: wktJy5_5Z9UD/component
+import LinkTableOfContents from "../../LinkTableOfContents"; // plasmic-import: 0wQjSxZ9XwHa/component
 import CardCta from "../../CardCta"; // plasmic-import: -HNmkPk7FKYK/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -159,6 +160,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkBreadcrumb__jL5Hd
                 )}
+                href={`/guides`}
                 title={"Crypto Guides"}
               />
 
@@ -350,6 +352,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.h2__pcNow
                 )}
+                id={"trust-basics"}
               >
                 {"Start with trust and operational basics"}
               </h2>
@@ -451,6 +454,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.h2__rm2J
                 )}
+                id={"checklist"}
               >
                 {"A practical shortlist checklist"}
               </h2>
@@ -652,6 +656,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.h2___944VW
                 )}
+                id={"bonus-value"}
               >
                 {"Bonus value is more than the headline"}
               </h2>
@@ -788,6 +793,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.h3
                 )}
+                id={"examples"}
               >
                 {"Example comparison"}
               </h3>
@@ -875,6 +881,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                   projectcss.__wab_text,
                   sty.h2__enYub
                 )}
+                id={"final-takeaway"}
               >
                 {"Final Takeaway"}
               </h2>
@@ -1074,8 +1081,43 @@ function PlasmicArticleSample__RenderFunc(props) {
                     "__wab_instance",
                     sty.sidebarTableOfContents
                   )}
-                />
+                >
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__aMoAj
+                    )}
+                    href={"#trust-basics"}
+                    title={"Trust basics"}
+                  />
 
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__tW5Oz
+                    )}
+                    href={"#checklist"}
+                    title={"Checklist"}
+                  />
+
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__mkoIz
+                    )}
+                    href={"#bonus-value"}
+                    title={"Bonus value"}
+                  />
+
+                  <LinkTableOfContents
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkTableOfContents__hpVvv
+                    )}
+                    href={"#examples"}
+                    title={"Examples"}
+                  />
+                </SidebarTableOfContents>
                 <CardCta
                   data-plasmic-name={"cardCta"}
                   data-plasmic-override={overrides.cardCta}

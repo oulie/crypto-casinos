@@ -191,6 +191,7 @@ function PlasmicSidebarTableOfContents__RenderFunc(props) {
               "isDone"
             )
           })}
+          href={"#final-takeaway"}
           isDone={hasVariant($state, "isDone", "isDone") ? true : undefined}
         />
       </div>

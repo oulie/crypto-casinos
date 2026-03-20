@@ -9,8 +9,10 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: amqWhOAAf6Vm
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -28,7 +30,7 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkTableOfContentsLast__VariantProps = new Array("isDone");
 
-export const PlasmicLinkTableOfContentsLast__ArgProps = new Array();
+export const PlasmicLinkTableOfContentsLast__ArgProps = new Array("href");
 
 const $$ = {};
 
@@ -44,7 +46,9 @@ function PlasmicLinkTableOfContentsLast__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          href: "#"
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -80,13 +84,14 @@ function PlasmicLinkTableOfContentsLast__RenderFunc(props) {
   });
   const styleTokensClassNames = _useStyleTokens();
   return (
-    <div
+    <PlasmicLink__
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -94,6 +99,10 @@ function PlasmicLinkTableOfContentsLast__RenderFunc(props) {
         sty.root,
         { [sty.rootisDone]: hasVariant($state, "isDone", "isDone") }
       )}
+      component={Link}
+      href={args.href}
+      legacyBehavior={false}
+      platform={"nextjs"}
     >
       <div
         data-plasmic-name={"freeBox"}
@@ -120,7 +129,7 @@ function PlasmicLinkTableOfContentsLast__RenderFunc(props) {
       >
         {"Final takeaway"}
       </div>
-    </div>
+    </PlasmicLink__>
   );
 }
 
