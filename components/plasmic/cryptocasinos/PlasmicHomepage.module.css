@@ -1745,6 +1745,8 @@
 @media (max-width: 1023px) {
   .sidebar {
     width: 100%;
+    padding-bottom: 20px;
+    height: auto;
     min-width: 0;
   }
 }
@@ -1768,4 +1770,11 @@
   z-index: 1;
   row-gap: 30px;
   min-width: 0;
+}
+@media (max-width: 1023px) {
+  .sticky {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
 }

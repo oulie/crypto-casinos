@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useRouter } from "next/router";
 import { PlasmicNavbar } from "./plasmic/cryptocasinos/PlasmicNavbar";
 import ModalSearch from "./ModalSearch";
 
@@ -13,6 +14,7 @@ function composeHandlers(...handlers) {
 }
 
 function Navbar_({ progress = 0, ...props }, ref) {
+  const router = useRouter();
   const clampedProgress = Math.min(Math.max(progress, 0), 100);
   const [isSearchOpen, setIsSearchOpen] = React.useState(false);
 
@@ -36,6 +38,18 @@ function Navbar_({ progress = 0, ...props }, ref) {
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [isSearchOpen]);
+
+  React.useEffect(() => {
+    const closeSearch = () => setIsSearchOpen(false);
+
+    router.events.on("routeChangeStart", closeSearch);
+    router.events.on("hashChangeStart", closeSearch);
+
+    return () => {
+      router.events.off("routeChangeStart", closeSearch);
+      router.events.off("hashChangeStart", closeSearch);
+    };
+  }, [router.events]);
 
   return (
     <>
