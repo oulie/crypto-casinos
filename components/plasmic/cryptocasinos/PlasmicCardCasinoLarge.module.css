@@ -42,6 +42,13 @@
   justify-content: flex-start;
   padding: 10px;
 }
+@media (max-width: 1023px) {
+  .freeBox__qqu4X {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+}
 .freeBox__onqPf {
   display: flex;
   flex-direction: column;
@@ -54,6 +61,11 @@
   row-gap: 10px;
   min-width: 0;
   padding: 40px;
+}
+@media (max-width: 511px) {
+  .freeBox__onqPf {
+    padding: 20px;
+  }
 }
 .freeBox___8E8Ya {
   display: flex;
@@ -262,6 +274,11 @@
   border-radius: 10px;
   padding: 20px;
 }
+@media (max-width: 511px) {
+  .freeBox__r3F3O {
+    padding: 0px;
+  }
+}
 .freeBox__tDc1N {
   animation: none;
   display: flex;
@@ -313,6 +330,14 @@
   border-radius: 20px;
   padding: 7px 19px;
 }
+@media (max-width: 511px) {
+  .freeBox__svLum {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    column-gap: 0px;
+  }
+}
 .text__x5QZp {
   animation: none;
   position: relative;
@@ -327,6 +352,8 @@
   position: relative;
   align-items: stretch;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 6px;
 }
 .linkCoinIcon__uoEc2:global(.__wab_instance) {
   animation: none;
