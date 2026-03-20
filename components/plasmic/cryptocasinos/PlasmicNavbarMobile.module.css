@@ -13,6 +13,11 @@
   min-width: 0;
   border-top: 1px solid #ffffff0f;
 }
+@media (max-width: 1023px) {
+  .root {
+    display: flex;
+  }
+}
 .navbarMobileLink__nnqEv:global(.__wab_instance) {
   position: relative;
 }

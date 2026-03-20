@@ -13,10 +13,12 @@ import { useRouter } from "next/router";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import NavbarMobileLink from "../../NavbarMobileLink"; // plasmic-import: xAT4KXqPQbaF/component
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -61,8 +63,9 @@ function PlasmicNavbarMobile__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
-  return (
+  return (hasVariant(globalVariants, "screen", "tablet") ? true : false) ? (
     <div
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -128,7 +131,7 @@ function PlasmicNavbarMobile__RenderFunc(props) {
         title={"Coins"}
       />
     </div>
-  );
+  ) : null;
 }
 
 const PlasmicDescendants = {
