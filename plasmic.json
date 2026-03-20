@@ -891,6 +891,32 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicModalSearch.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "BRfhhBRySlKA",
+          "name": "NavbarMobile",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicNavbarMobile.jsx",
+          "importSpec": {
+            "modulePath": "NavbarMobile.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicNavbarMobile.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "xAT4KXqPQbaF",
+          "name": "NavbarMobileLink",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicNavbarMobileLink.jsx",
+          "importSpec": {
+            "modulePath": "NavbarMobileLink.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicNavbarMobileLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1078,6 +1104,16 @@
           "id": "SnJk96yyUigZ",
           "name": "CircleIcon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Circle.jsx"
+        },
+        {
+          "id": "wuaoX7IFFr8_",
+          "name": "MegaphoneIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Megaphone.jsx"
+        },
+        {
+          "id": "RZEM2UmEVS6m",
+          "name": "HouseIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__House.jsx"
         }
       ],
       "images": [

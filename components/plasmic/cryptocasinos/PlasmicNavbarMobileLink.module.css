@@ -1,0 +1,70 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #cfcfcf;
+  position: relative;
+  row-gap: 2px;
+}
+.root:hover {
+  color: var(--token-QL0xMMXWaeGp);
+}
+.root:hover .slotTargetIcon {
+  color: #ffffff;
+}
+.svg__wuFjr {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+  flex-shrink: 0;
+}
+.slotTargetTitle {
+  font-size: 12px;
+}
+.slotTargetTitle > *,
+.slotTargetTitle > :global(.__wab_slot) > *,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetTitle > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  opacity: 0.6;
+}
+.root:hover .slotTargetTitle > *,
+.root:hover .slotTargetTitle > :global(.__wab_slot) > *,
+.root:hover .slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.root:hover
+  .slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.root:hover .slotTargetTitle > picture > img,
+.root:hover .slotTargetTitle > :global(.__wab_slot) > picture > img,
+.root:hover
+  .slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img,
+.root:hover
+  .slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  opacity: 1;
+}

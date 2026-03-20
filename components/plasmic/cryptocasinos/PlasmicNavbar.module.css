@@ -33,20 +33,41 @@
 }
 @media (max-width: 1023px) {
   .freeBox__uruUf {
-    display: none;
+    flex-direction: row-reverse;
+    row-gap: 0px;
   }
 }
 .linkNav__n8X9Y:global(.__wab_instance) {
   position: relative;
 }
+@media (max-width: 1023px) {
+  .linkNav__n8X9Y:global(.__wab_instance) {
+    display: none;
+  }
+}
 .linkNav__miIq:global(.__wab_instance) {
   position: relative;
+}
+@media (max-width: 1023px) {
+  .linkNav__miIq:global(.__wab_instance) {
+    display: none;
+  }
 }
 .linkNav__ks2Xj:global(.__wab_instance) {
   position: relative;
 }
+@media (max-width: 1023px) {
+  .linkNav__ks2Xj:global(.__wab_instance) {
+    display: none;
+  }
+}
 .linkNav__pqzxn:global(.__wab_instance) {
   position: relative;
+}
+@media (max-width: 1023px) {
+  .linkNav__pqzxn:global(.__wab_instance) {
+    display: none;
+  }
 }
 .buttonSearch:global(.__wab_instance) {
   position: relative;

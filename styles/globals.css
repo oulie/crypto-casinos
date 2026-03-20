@@ -112,6 +112,7 @@ a {
 }
 
 @keyframes safe-knob-spin {
+
   /* Start */
   0% {
     transform: rotate(0deg);
@@ -121,46 +122,64 @@ a {
   12% {
     transform: rotate(45deg);
   }
+
   20% {
-    transform: rotate(45deg); /* pause */
+    transform: rotate(45deg);
+    /* pause */
   }
 
   /* Step 2 (overshoot right) */
   30% {
     transform: rotate(180deg);
   }
+
   38% {
-    transform: rotate(180deg); /* pause */
+    transform: rotate(180deg);
+    /* pause */
   }
 
   /* Step 3 (snap back left) */
   48% {
     transform: rotate(-45deg);
   }
+
   56% {
-    transform: rotate(-45 deg); /* pause */
+    transform: rotate(-45 deg);
+    /* pause */
   }
 
   /* Step 4 (hard left) */
   68% {
     transform: rotate(-360deg);
   }
+
   76% {
-    transform: rotate(-360deg); /* pause */
+    transform: rotate(-360deg);
+    /* pause */
   }
 
   /* Step 5 (small correction right) */
   86% {
     transform: rotate(180deg);
   }
+
   92% {
-    transform: rotate(180deg); /* short pause */
+    transform: rotate(180deg);
+    /* short pause */
   }
 
   /* Reset */
   100% {
     transform: rotate(0deg);
   }
+}
+
+.navbar-mobile {
+  position: sticky !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
 
 

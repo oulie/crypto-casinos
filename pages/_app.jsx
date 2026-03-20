@@ -1,5 +1,6 @@
 import MainLayout from '@/components/MainLayout';
 import Navbar from '@/components/Navbar';
+import NavbarMobile from '@/components/NavbarMobile';
 import TopBar from '@/components/TopBar';
 import '@/styles/globals.css'
 import { PlasmicRootProvider } from "@plasmicapp/react-web";
@@ -66,6 +67,7 @@ export default function MyApp({ Component, pageProps }) {
             />
           }
         />
+        <NavbarMobile className={'navbar-mobile'}/>
       </>
     </PlasmicRootProvider>
   );
