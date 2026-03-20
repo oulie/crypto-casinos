@@ -232,14 +232,18 @@ function PlasmicHomepage__RenderFunc(props) {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__ispI2)}
                   >
-                    <Icon4Icon
-                      className={classNames(
-                        projectcss.all,
-                        sty.svg___8A1V,
-                        "anim-spin"
-                      )}
-                      role={"img"}
-                    />
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__tnVcw)}
+                    >
+                      <Icon4Icon
+                        className={classNames(
+                          projectcss.all,
+                          sty.svg___8A1V,
+                          "anim-spin"
+                        )}
+                        role={"img"}
+                      />
+                    </div>
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__vDed5)}
