@@ -40,6 +40,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 9i_F_lMez6u7/css
 import ShieldCheckIcon from "./icons/PlasmicIcon__ShieldCheck"; // plasmic-import: B8aXAFRTKbUL/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: 480yurPMFzhC/icon
 import TrophyIcon from "./icons/PlasmicIcon__Trophy"; // plasmic-import: I-1KWj6kHo73/icon
 import GiftIcon from "./icons/PlasmicIcon__Gift"; // plasmic-import: JLJyojIPy5bM/icon
 import ChartLineIcon from "./icons/PlasmicIcon__ChartLine"; // plasmic-import: cBRHEkj-bEJ3/icon
@@ -228,32 +229,18 @@ function PlasmicHomepage__RenderFunc(props) {
                   </div>
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__zyhl8)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__nnm7V)}
-                    displayHeight={
-                      hasVariant(globalVariants, "screen", "mobile")
-                        ? "80%"
-                        : "auto"
-                    }
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={
-                      hasVariant(globalVariants, "screen", "mobile")
-                        ? "100%"
-                        : "50%"
-                    }
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/cryptocasinos/images/ccIcon.svg",
-                      fullWidth: 136.76,
-                      fullHeight: 136.76,
-                      aspectRatio: 1
-                    }}
-                  />
-
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ispI2)}
+                  >
+                    <Icon4Icon
+                      className={classNames(
+                        projectcss.all,
+                        sty.svg___8A1V,
+                        "anim-spin"
+                      )}
+                      role={"img"}
+                    />
+                  </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__vDed5)}
                   />
