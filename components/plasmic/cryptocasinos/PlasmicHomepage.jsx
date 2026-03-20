@@ -30,9 +30,8 @@ import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import CardPriceChart from "../../CardPriceChart"; // plasmic-import: Bygnfqie3Cqa/component
 import CardArticleNoCover from "../../CardArticleNoCover"; // plasmic-import: h0trZzJIFxmu/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
-import LinkTiny from "../../LinkTiny"; // plasmic-import: s_Cz1URrXJSO/component
-import LinkSidebar from "../../LinkSidebar"; // plasmic-import: 9cwbKxCRtECB/component
-import CoinPriceSidebarItem from "../../CoinPriceSidebarItem"; // plasmic-import: OXSVHEvZKoQP/component
+import SidebarCategories from "../../SidebarCategories"; // plasmic-import: qFRK-okrxuuw/component
+import SidebarLivePrices from "../../SidebarLivePrices"; // plasmic-import: 90xCi2dO4d5a/component
 import SidebarRecentArticles from "../../SidebarRecentArticles"; // plasmic-import: 91sde1xxKkNX/component
 import CardCta from "../../CardCta"; // plasmic-import: -HNmkPk7FKYK/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
@@ -55,8 +54,6 @@ import HandshakeIcon from "./icons/PlasmicIcon__Handshake"; // plasmic-import: 5
 import LockIcon from "./icons/PlasmicIcon__Lock"; // plasmic-import: TcA6uFpu7JRC/icon
 import ListSearchIcon from "./icons/PlasmicIcon__ListSearch"; // plasmic-import: Y_uxftxiiUAz/icon
 import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: rZ8hz7v-qc_C/icon
-import StarIcon from "./icons/PlasmicIcon__Star"; // plasmic-import: KIRkdu8buNhp/icon
-import ListCheckIcon from "./icons/PlasmicIcon__ListCheck"; // plasmic-import: w5YHMvzaEKho/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -359,6 +356,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   description={
                     "Learn no-KYC, provably fair, wallet setup, and safer ways to compare sites."
                   }
+                  href={`/guides`}
                   icon={
                     <BookIcon
                       className={classNames(projectcss.all, sty.svg___0LuN0)}
@@ -384,6 +382,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.linkButton__db89C
                     )}
                     color={"gray"}
+                    href={`/guides`}
                     title={"Browse Guides"}
                   />
                 </div>
@@ -1691,281 +1690,18 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-override={overrides.sidebar}
               className={classNames(projectcss.all, sty.sidebar)}
             >
-              <div className={classNames(projectcss.all, sty.freeBox__dbSj)}>
-                <div className={classNames(projectcss.all, sty.freeBox__kPary)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__pKjnM
-                    )}
-                  >
-                    {"Selected Categories"}
-                  </div>
-                  <LinkTiny
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkTiny__kWacj
-                    )}
-                  />
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    sty.freeBox__z58KV,
-                    "bg-grain"
-                  )}
-                >
-                  <LinkSidebar
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkSidebar__rxoYu
-                    )}
-                    href={`/top-casinos`}
-                    icon={
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__eYws)}
-                        role={"img"}
-                      />
-                    }
-                  />
+              <SidebarCategories
+                data-plasmic-name={"sidebarCategories"}
+                data-plasmic-override={overrides.sidebarCategories}
+                className={classNames("__wab_instance", sty.sidebarCategories)}
+              />
 
-                  <LinkSidebar
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkSidebar__gbtVz
-                    )}
-                    icon={
-                      <BookIcon
-                        className={classNames(projectcss.all, sty.svg__nYgHq)}
-                        role={"img"}
-                      />
-                    }
-                    title={"Game Guides"}
-                  />
+              <SidebarLivePrices
+                data-plasmic-name={"sidebarLivePrices"}
+                data-plasmic-override={overrides.sidebarLivePrices}
+                className={classNames("__wab_instance", sty.sidebarLivePrices)}
+              />
 
-                  <LinkSidebar
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkSidebar___3VWCm
-                    )}
-                    icon={
-                      <GiftIcon
-                        className={classNames(projectcss.all, sty.svg__xdXt8)}
-                        role={"img"}
-                      />
-                    }
-                    title={"Bonus Codes"}
-                  />
-
-                  <LinkSidebar
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkSidebar__mtVcx
-                    )}
-                    title={"Crypto News"}
-                  />
-
-                  <LinkSidebar
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkSidebar__oId6C
-                    )}
-                    icon={
-                      <ListCheckIcon
-                        className={classNames(projectcss.all, sty.svg__kqtXw)}
-                        role={"img"}
-                      />
-                    }
-                    title={"Tutorials"}
-                  />
-
-                  <LinkSidebar
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkSidebar__z9Sc5
-                    )}
-                    icon={
-                      <TrophyIcon
-                        className={classNames(projectcss.all, sty.svg__d0Aw1)}
-                        role={"img"}
-                      />
-                    }
-                    title={"Sportbooks"}
-                  />
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__k2Mxr)}>
-                <div className={classNames(projectcss.all, sty.freeBox__oEciv)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ymzCd
-                    )}
-                  >
-                    {"Live Prices"}
-                  </div>
-                  <LinkTiny
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkTiny__fczHs
-                    )}
-                  />
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    sty.freeBox__gRzp8,
-                    "bg-grain"
-                  )}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___0QPr7)}
-                  >
-                    <CoinPriceSidebarItem
-                      className={classNames(
-                        "__wab_instance",
-                        sty.coinPriceSidebarItem___1UH4
-                      )}
-                      price={"$71,055.48"}
-                    />
-
-                    <CoinPriceSidebarItem
-                      change={
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__jgoEq
-                          )}
-                        >
-                          {"-5,66%"}
-                        </div>
-                      }
-                      className={classNames(
-                        "__wab_instance",
-                        sty.coinPriceSidebarItem__wrAs1
-                      )}
-                      handle={
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__xv47J
-                          )}
-                        >
-                          {"ETH"}
-                        </div>
-                      }
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      price={"$2,184.65"}
-                      title={"Ethereum"}
-                    />
-
-                    <CoinPriceSidebarItem
-                      change={
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__k7LRx
-                          )}
-                        >
-                          {"-4,84%"}
-                        </div>
-                      }
-                      className={classNames(
-                        "__wab_instance",
-                        sty.coinPriceSidebarItem___1DDjA
-                      )}
-                      handle={"XRP"}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      price={"$1.4389"}
-                      title={"XRP"}
-                    />
-
-                    <CoinPriceSidebarItem
-                      className={classNames(
-                        "__wab_instance",
-                        sty.coinPriceSidebarItem__iTjCl
-                      )}
-                      handle={"SOL"}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      price={"$88.88"}
-                      title={"Solana"}
-                    />
-
-                    <CoinPriceSidebarItem
-                      change={
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__qjqum
-                          )}
-                        >
-                          {"-4,84%"}
-                        </div>
-                      }
-                      className={classNames(
-                        "__wab_instance",
-                        sty.coinPriceSidebarItem___9TIEo
-                      )}
-                      handle={
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ge1BV
-                          )}
-                        >
-                          {"DOT"}
-                        </div>
-                      }
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      price={"$1.4389"}
-                      title={"Polkadot"}
-                    />
-
-                    <CoinPriceSidebarItem
-                      className={classNames(
-                        "__wab_instance",
-                        sty.coinPriceSidebarItem__gO2HL
-                      )}
-                      handle={"ADA"}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      price={"$88.88"}
-                      title={"Cardano"}
-                    />
-                  </div>
-                </div>
-              </div>
               <SidebarRecentArticles
                 data-plasmic-name={"sidebarRecentArticles"}
                 data-plasmic-override={overrides.sidebarRecentArticles}
@@ -1998,6 +1734,8 @@ const PlasmicDescendants = {
     "cardsCasinos",
     "cardPriceChart",
     "sidebar",
+    "sidebarCategories",
+    "sidebarLivePrices",
     "sidebarRecentArticles",
     "cardCta"
   ],
@@ -2010,13 +1748,24 @@ const PlasmicDescendants = {
     "cardsCasinos",
     "cardPriceChart",
     "sidebar",
+    "sidebarCategories",
+    "sidebarLivePrices",
     "sidebarRecentArticles",
     "cardCta"
   ],
 
   cardsCasinos: ["cardsCasinos"],
   cardPriceChart: ["cardPriceChart"],
-  sidebar: ["sidebar", "sidebarRecentArticles", "cardCta"],
+  sidebar: [
+    "sidebar",
+    "sidebarCategories",
+    "sidebarLivePrices",
+    "sidebarRecentArticles",
+    "cardCta"
+  ],
+
+  sidebarCategories: ["sidebarCategories"],
+  sidebarLivePrices: ["sidebarLivePrices"],
   sidebarRecentArticles: ["sidebarRecentArticles"],
   cardCta: ["cardCta"]
 };
@@ -2060,6 +1809,8 @@ export const PlasmicHomepage = Object.assign(
     cardsCasinos: makeNodeComponent("cardsCasinos"),
     cardPriceChart: makeNodeComponent("cardPriceChart"),
     sidebar: makeNodeComponent("sidebar"),
+    sidebarCategories: makeNodeComponent("sidebarCategories"),
+    sidebarLivePrices: makeNodeComponent("sidebarLivePrices"),
     sidebarRecentArticles: makeNodeComponent("sidebarRecentArticles"),
     cardCta: makeNodeComponent("cardCta"),
     // Metadata about props expected for PlasmicHomepage

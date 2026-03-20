@@ -17,7 +17,9 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  renderPlasmicSlot
+  hasVariant,
+  renderPlasmicSlot,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
@@ -28,7 +30,7 @@ import sty from "./PlasmicNewsGridItem.module.css"; // plasmic-import: ftCRKqiLC
 
 createPlasmicElementProxy;
 
-export const PlasmicNewsGridItem__VariantProps = new Array();
+export const PlasmicNewsGridItem__VariantProps = new Array("isWide");
 
 export const PlasmicNewsGridItem__ArgProps = new Array(
   "cover",
@@ -83,6 +85,25 @@ function PlasmicNewsGridItem__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "isWide",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.isWide
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
   const styleTokensClassNames = _useStyleTokens();
   return (
     <div
@@ -96,7 +117,8 @@ function PlasmicNewsGridItem__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        sty.root
+        sty.root,
+        { [sty.rootisWide]: hasVariant($state, "isWide", "isWide") }
       )}
     >
       <PlasmicLink__
@@ -192,7 +214,13 @@ function PlasmicNewsGridItem__RenderFunc(props) {
               defaultContents:
                 "Bitcoin hits new highs: impact on gambling limits",
               value: args.title,
-              className: classNames(sty.slotTargetTitle)
+              className: classNames(sty.slotTargetTitle, {
+                [sty.slotTargetTitleisWide]: hasVariant(
+                  $state,
+                  "isWide",
+                  "isWide"
+                )
+              })
             })}
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__w5Mqp)}>

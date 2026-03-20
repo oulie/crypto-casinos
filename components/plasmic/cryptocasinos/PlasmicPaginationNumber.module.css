@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background: var(--token-qAtNpqcFq1ZH);
+  position: relative;
+  transition-property: background, color;
+  transition-duration: 0.15s, 0.15s;
+  cursor: pointer;
+  -webkit-transition-property: background, color;
+  -webkit-transition-duration: 0.15s, 0.15s;
+  border-radius: 10px;
+}
+.rootisActive {
+  background: var(--token-QL0xMMXWaeGp);
+  color: #ffffff;
+}
+.root:hover {
+  background: var(--token-GKj3RTmB9JGm);
+  color: #ffffff;
+}

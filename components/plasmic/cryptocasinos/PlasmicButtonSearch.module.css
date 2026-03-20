@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition-property: color, border-color, background;
+  transition-duration: 0.15s, 0.15s, 0.15s;
+  cursor: pointer;
+  -webkit-transition-property: color, border-color, background;
+  -webkit-transition-duration: 0.15s, 0.15s, 0.15s;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf00;
+}
+.root:hover {
+  color: #ffffff;
+  background: #ffffff0f;
+  border-color: #ffffff0f;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+  flex-shrink: 0;
+}

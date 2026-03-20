@@ -4,17 +4,18 @@
   align-items: center;
   justify-content: flex-start;
   column-gap: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: #ffffff80;
   position: relative;
-  transition-property: color;
-  transition-duration: 0.15s;
-  -webkit-transition-property: color;
-  -webkit-transition-duration: 0.15s;
+  transition-property: color, background;
+  transition-duration: 0.15s, 0.15s;
+  -webkit-transition-property: color, background;
+  -webkit-transition-duration: 0.15s, 0.15s;
+  border-radius: 10px;
+  padding: 10px 8px;
 }
 .root:hover {
   color: var(--token-QL0xMMXWaeGp);
+  background: var(--token-qAtNpqcFq1ZH);
 }
 .svg__fjTes {
   animation: none;
@@ -34,8 +35,15 @@
   position: relative;
   margin-left: auto;
   font-size: 12px;
-  background: var(--token-LKg2LChLUpjW);
+  background: var(--token-qAtNpqcFq1ZH);
   color: #ffffff66;
+  transition-property: background;
+  transition-duration: 0.15s;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.15s;
   border-radius: 10px;
   padding: 2px 6px;
+}
+.root:hover .text {
+  background: var(--token-PU2kSrpIWaun);
 }

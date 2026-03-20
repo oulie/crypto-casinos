@@ -1,0 +1,61 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 7px;
+  position: relative;
+}
+.freeBox___8OhLe {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  flex-shrink: 0;
+  border-radius: 7px;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000000;
+  width: 18px;
+  height: 18px;
+  transform: rotate3d(0, 0, 1, 0deg);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  flex-shrink: 0;
+  -webkit-transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+}
+.root:hover .svg {
+  transform: rotate3d(0, 0, 1, 180deg);
+}
+.freeBox__vaZqL {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 0;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 148px;
+  margin-top: 2px;
+}
+.img > picture > img {
+  object-fit: cover;
+}

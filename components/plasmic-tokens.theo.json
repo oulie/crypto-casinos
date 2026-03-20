@@ -41,6 +41,16 @@
       }
     },
     {
+      "name": "dark-item-bg",
+      "type": "color",
+      "value": "#191A1C",
+      "category": "color",
+      "meta": {
+        "projectId": "1LHryFzrfagz6s5XszxyaX",
+        "id": "qAtNpqcFq1ZH"
+      }
+    },
+    {
       "name": "green",
       "type": "color",
       "value": "#35B7AA",

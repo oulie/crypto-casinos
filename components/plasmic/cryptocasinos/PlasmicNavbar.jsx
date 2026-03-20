@@ -9,11 +9,8 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: qoaNCaz5f2G1
 import * as React from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import {
-  PlasmicImg as PlasmicImg__,
-  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -21,7 +18,9 @@ import {
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import LogoNav from "../../LogoNav"; // plasmic-import: P-YvXBhx4Ztn/component
 import LinkNav from "../../LinkNav"; // plasmic-import: 5h9FlaGpp_HW/component
+import ButtonSearch from "../../ButtonSearch"; // plasmic-import: yuJ4kW6TZe94/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -118,35 +117,12 @@ function PlasmicNavbar__RenderFunc(props) {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__wdAJb)}>
-        <PlasmicLink__
-          data-plasmic-name={"link"}
-          data-plasmic-override={overrides.link}
-          className={classNames(projectcss.all, projectcss.a, sty.link)}
-          component={Link}
-          href={`/`}
-          legacyBehavior={false}
-          platform={"nextjs"}
-        >
-          <PlasmicImg__
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
-            alt={""}
-            className={classNames(sty.img)}
-            displayHeight={"auto"}
-            displayMaxHeight={"none"}
-            displayMaxWidth={"100%"}
-            displayMinHeight={"0"}
-            displayMinWidth={"0"}
-            displayWidth={"180px"}
-            loading={"lazy"}
-            src={{
-              src: "/plasmic/cryptocasinos/images/cryptoCasinosLogoFullSvg.svg",
-              fullWidth: 983,
-              fullHeight: 142,
-              aspectRatio: 6.922535
-            }}
-          />
-        </PlasmicLink__>
+        <LogoNav
+          data-plasmic-name={"logoNav"}
+          data-plasmic-override={overrides.logoNav}
+          className={classNames("__wab_instance", sty.logoNav)}
+        />
+
         <div className={classNames(projectcss.all, sty.freeBox__uruUf)}>
           <LinkNav
             className={classNames("__wab_instance", sty.linkNav__n8X9Y)}
@@ -160,12 +136,19 @@ function PlasmicNavbar__RenderFunc(props) {
 
           <LinkNav
             className={classNames("__wab_instance", sty.linkNav__ks2Xj)}
+            href={`/guides`}
             title={"Crypto Guides"}
           />
 
           <LinkNav
             className={classNames("__wab_instance", sty.linkNav__pqzxn)}
             title={"News"}
+          />
+
+          <ButtonSearch
+            data-plasmic-name={"buttonSearch"}
+            data-plasmic-override={overrides.buttonSearch}
+            className={classNames("__wab_instance", sty.buttonSearch)}
           />
 
           <LinkButton
@@ -202,9 +185,9 @@ function PlasmicNavbar__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "img", "linkButton", "track", "progress"],
-  link: ["link", "img"],
-  img: ["img"],
+  root: ["root", "logoNav", "buttonSearch", "linkButton", "track", "progress"],
+  logoNav: ["logoNav"],
+  buttonSearch: ["buttonSearch"],
   linkButton: ["linkButton"],
   track: ["track", "progress"],
   progress: ["progress"]
@@ -242,8 +225,8 @@ export const PlasmicNavbar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
-    img: makeNodeComponent("img"),
+    logoNav: makeNodeComponent("logoNav"),
+    buttonSearch: makeNodeComponent("buttonSearch"),
     linkButton: makeNodeComponent("linkButton"),
     track: makeNodeComponent("track"),
     progress: makeNodeComponent("progress"),

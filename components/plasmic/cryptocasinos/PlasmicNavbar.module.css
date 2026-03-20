@@ -23,30 +23,13 @@
   padding-right: 10px;
   min-width: 0;
 }
-.link {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 70px;
-  max-width: 100%;
-  justify-content: center;
-  align-items: flex-start;
-}
-.img {
-  object-fit: cover;
-  max-width: 100%;
-  width: 180px;
-}
-.img > picture > img {
-  object-fit: cover;
-}
 .freeBox__uruUf {
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: stretch;
   justify-content: flex-start;
-  column-gap: 20px;
+  column-gap: 10px;
 }
 @media (max-width: 1023px) {
   .freeBox__uruUf {
@@ -64,6 +47,10 @@
 }
 .linkNav__pqzxn:global(.__wab_instance) {
   position: relative;
+}
+.buttonSearch:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
 }
 .linkButton:global(.__wab_instance) {
   max-width: 100%;

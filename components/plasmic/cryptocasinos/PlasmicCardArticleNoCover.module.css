@@ -67,8 +67,8 @@
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
-  line-height: 1.1;
-  letter-spacing: -1px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
 }
 .freeBox__szgWb {
   position: relative;
@@ -93,6 +93,7 @@
   width: 100%;
   column-gap: 2px;
   padding-top: 20px;
+  margin-top: 1px;
   min-width: 0;
 }
 .img__zBuyH {
