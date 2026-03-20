@@ -131,7 +131,7 @@
   justify-content: center;
   margin-top: auto;
   width: 100%;
-  background: url("/plasmic/cryptocasinos/images/dotPatternGraySvg.svg") top 50% left 0% / 8px auto repeat;
+  background: url("/plasmic/cryptocasinos/images/dotPatternGraySvg.svg") top 50% left 50% / 8px auto repeat;
   column-gap: 6px;
   min-width: 0;
   border-radius: 25px;
@@ -675,9 +675,23 @@
   animation: none;
   position: relative;
 }
+.sticky {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  left: 0px;
+  top: 90px;
+  z-index: 1;
+  row-gap: 30px;
+  min-width: 0;
+}
 .sidebarRecentArticles:global(.__wab_instance) {
   animation: none;
-  position: relative;
 }
 .cardCta:global(.__wab_instance) {
   animation: none;

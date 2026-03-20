@@ -974,20 +974,26 @@ function PlasmicGuides__RenderFunc(props) {
                 className={classNames("__wab_instance", sty.sidebarCategories)}
               />
 
-              <SidebarRecentArticles
-                data-plasmic-name={"sidebarRecentArticles"}
-                data-plasmic-override={overrides.sidebarRecentArticles}
-                className={classNames(
-                  "__wab_instance",
-                  sty.sidebarRecentArticles
-                )}
-              />
+              <div
+                data-plasmic-name={"sticky"}
+                data-plasmic-override={overrides.sticky}
+                className={classNames(projectcss.all, sty.sticky)}
+              >
+                <SidebarRecentArticles
+                  data-plasmic-name={"sidebarRecentArticles"}
+                  data-plasmic-override={overrides.sidebarRecentArticles}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.sidebarRecentArticles
+                  )}
+                />
 
-              <CardCta
-                data-plasmic-name={"cardCta"}
-                data-plasmic-override={overrides.cardCta}
-                className={classNames("__wab_instance", sty.cardCta)}
-              />
+                <CardCta
+                  data-plasmic-name={"cardCta"}
+                  data-plasmic-override={overrides.cardCta}
+                  className={classNames("__wab_instance", sty.cardCta)}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1006,6 +1012,7 @@ const PlasmicDescendants = {
     "pagination",
     "sidebar",
     "sidebarCategories",
+    "sticky",
     "sidebarRecentArticles",
     "cardCta"
   ],
@@ -1018,14 +1025,23 @@ const PlasmicDescendants = {
     "pagination",
     "sidebar",
     "sidebarCategories",
+    "sticky",
     "sidebarRecentArticles",
     "cardCta"
   ],
 
   leftContent: ["leftContent", "pagination"],
   pagination: ["pagination"],
-  sidebar: ["sidebar", "sidebarCategories", "sidebarRecentArticles", "cardCta"],
+  sidebar: [
+    "sidebar",
+    "sidebarCategories",
+    "sticky",
+    "sidebarRecentArticles",
+    "cardCta"
+  ],
+
   sidebarCategories: ["sidebarCategories"],
+  sticky: ["sticky", "sidebarRecentArticles", "cardCta"],
   sidebarRecentArticles: ["sidebarRecentArticles"],
   cardCta: ["cardCta"]
 };
@@ -1069,6 +1085,7 @@ export const PlasmicGuides = Object.assign(
     pagination: makeNodeComponent("pagination"),
     sidebar: makeNodeComponent("sidebar"),
     sidebarCategories: makeNodeComponent("sidebarCategories"),
+    sticky: makeNodeComponent("sticky"),
     sidebarRecentArticles: makeNodeComponent("sidebarRecentArticles"),
     cardCta: makeNodeComponent("cardCta"),
     // Metadata about props expected for PlasmicGuides
