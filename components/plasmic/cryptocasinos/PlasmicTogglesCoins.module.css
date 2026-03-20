@@ -26,7 +26,7 @@
 .buttonAll:global(.__wab_instance) {
   animation: none;
 }
-.freeBox__yzljz {
+.toggles {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -38,39 +38,39 @@
   row-gap: 6px;
 }
 @media (max-width: 1023px) {
-  .freeBox__yzljz {
+  .toggles {
     justify-content: flex-start;
     align-content: flex-start;
   }
 }
-.toggleCoin__lK4El:global(.__wab_instance) {
+.toggleBtc:global(.__wab_instance) {
   flex-shrink: 0;
 }
-.toggleCoin__zCQvB:global(.__wab_instance) {
+.toggleDot:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
-.toggleCoin__f7Lo:global(.__wab_instance) {
+.toggleUsdt:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
-.toggleCoin__g1D4K:global(.__wab_instance) {
+.toggleAda:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
-.toggleCoin___1UHu:global(.__wab_instance) {
+.toggleEth:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
-.toggleCoin__tPe5Q:global(.__wab_instance) {
+.toggleXrp:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
-.toggleCoin__tnme:global(.__wab_instance) {
+.toggleSol:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
-.freeBox__uLtKn {
+.freeBox {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -82,7 +82,7 @@
   flex-shrink: 0;
 }
 @media (max-width: 1023px) {
-  .freeBox__uLtKn {
+  .freeBox {
     display: none;
   }
 }

@@ -85,13 +85,21 @@ function PlasmicTogglesCoins__RenderFunc(props) {
         title={"All Coins"}
       />
 
-      <div className={classNames(projectcss.all, sty.freeBox__yzljz)}>
+      <div
+        data-plasmic-name={"toggles"}
+        data-plasmic-override={overrides.toggles}
+        className={classNames(projectcss.all, sty.toggles)}
+      >
         <ToggleCoin
-          className={classNames("__wab_instance", sty.toggleCoin__lK4El)}
+          data-plasmic-name={"toggleBtc"}
+          data-plasmic-override={overrides.toggleBtc}
+          className={classNames("__wab_instance", sty.toggleBtc)}
         />
 
         <ToggleCoin
-          className={classNames("__wab_instance", sty.toggleCoin__zCQvB)}
+          data-plasmic-name={"toggleDot"}
+          data-plasmic-override={overrides.toggleDot}
+          className={classNames("__wab_instance", sty.toggleDot)}
           icon={{
             src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
             fullWidth: 225,
@@ -102,7 +110,9 @@ function PlasmicTogglesCoins__RenderFunc(props) {
         />
 
         <ToggleCoin
-          className={classNames("__wab_instance", sty.toggleCoin__f7Lo)}
+          data-plasmic-name={"toggleUsdt"}
+          data-plasmic-override={overrides.toggleUsdt}
+          className={classNames("__wab_instance", sty.toggleUsdt)}
           icon={{
             src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
             fullWidth: 225,
@@ -113,7 +123,9 @@ function PlasmicTogglesCoins__RenderFunc(props) {
         />
 
         <ToggleCoin
-          className={classNames("__wab_instance", sty.toggleCoin__g1D4K)}
+          data-plasmic-name={"toggleAda"}
+          data-plasmic-override={overrides.toggleAda}
+          className={classNames("__wab_instance", sty.toggleAda)}
           icon={{
             src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
             fullWidth: 225,
@@ -124,7 +136,9 @@ function PlasmicTogglesCoins__RenderFunc(props) {
         />
 
         <ToggleCoin
-          className={classNames("__wab_instance", sty.toggleCoin___1UHu)}
+          data-plasmic-name={"toggleEth"}
+          data-plasmic-override={overrides.toggleEth}
+          className={classNames("__wab_instance", sty.toggleEth)}
           icon={{
             src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
             fullWidth: 225,
@@ -135,18 +149,22 @@ function PlasmicTogglesCoins__RenderFunc(props) {
         />
 
         <ToggleCoin
-          className={classNames("__wab_instance", sty.toggleCoin__tPe5Q)}
+          data-plasmic-name={"toggleXrp"}
+          data-plasmic-override={overrides.toggleXrp}
+          className={classNames("__wab_instance", sty.toggleXrp)}
           icon={{
             src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
             fullWidth: 225,
             fullHeight: 225,
             aspectRatio: 1
           }}
-          shortname={"XRL"}
+          shortname={"XRP"}
         />
 
         <ToggleCoin
-          className={classNames("__wab_instance", sty.toggleCoin__tnme)}
+          data-plasmic-name={"toggleSol"}
+          data-plasmic-override={overrides.toggleSol}
+          className={classNames("__wab_instance", sty.toggleSol)}
           icon={{
             src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
             fullWidth: 225,
@@ -156,14 +174,50 @@ function PlasmicTogglesCoins__RenderFunc(props) {
           shortname={"SOL"}
         />
       </div>
-      <div className={classNames(projectcss.all, sty.freeBox__uLtKn)} />
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
+      />
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "buttonAll"],
-  buttonAll: ["buttonAll"]
+  root: [
+    "root",
+    "buttonAll",
+    "toggles",
+    "toggleBtc",
+    "toggleDot",
+    "toggleUsdt",
+    "toggleAda",
+    "toggleEth",
+    "toggleXrp",
+    "toggleSol",
+    "freeBox"
+  ],
+
+  buttonAll: ["buttonAll"],
+  toggles: [
+    "toggles",
+    "toggleBtc",
+    "toggleDot",
+    "toggleUsdt",
+    "toggleAda",
+    "toggleEth",
+    "toggleXrp",
+    "toggleSol"
+  ],
+
+  toggleBtc: ["toggleBtc"],
+  toggleDot: ["toggleDot"],
+  toggleUsdt: ["toggleUsdt"],
+  toggleAda: ["toggleAda"],
+  toggleEth: ["toggleEth"],
+  toggleXrp: ["toggleXrp"],
+  toggleSol: ["toggleSol"],
+  freeBox: ["freeBox"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -199,6 +253,15 @@ export const PlasmicTogglesCoins = Object.assign(
   {
     // Helper components rendering sub-elements
     buttonAll: makeNodeComponent("buttonAll"),
+    toggles: makeNodeComponent("toggles"),
+    toggleBtc: makeNodeComponent("toggleBtc"),
+    toggleDot: makeNodeComponent("toggleDot"),
+    toggleUsdt: makeNodeComponent("toggleUsdt"),
+    toggleAda: makeNodeComponent("toggleAda"),
+    toggleEth: makeNodeComponent("toggleEth"),
+    toggleXrp: makeNodeComponent("toggleXrp"),
+    toggleSol: makeNodeComponent("toggleSol"),
+    freeBox: makeNodeComponent("freeBox"),
     // Metadata about props expected for PlasmicTogglesCoins
     internalVariantProps: PlasmicTogglesCoins__VariantProps,
     internalArgProps: PlasmicTogglesCoins__ArgProps
