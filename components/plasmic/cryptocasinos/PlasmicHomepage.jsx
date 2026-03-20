@@ -195,7 +195,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     )}
                   >
                     <React.Fragment>
-                      <React.Fragment>{"Find "}</React.Fragment>
+                      <React.Fragment>{"Unlock "}</React.Fragment>
                       {
                         <span
                           data-plasmic-name={"span"}
@@ -224,7 +224,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Navigate the expanding world of blockchain casinos with confidence. We verify fairness, audit bonuses, and track the fastest withdrawals."
+                      "Skip the guesswork. We surface verified platforms with fair play, real bonuses, and fast withdrawals."
                     }
                   </div>
                 </div>
