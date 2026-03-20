@@ -1159,6 +1159,7 @@
 @media (max-width: 1023px) {
   .sidebar {
     width: 100%;
+    height: auto;
     min-width: 0;
   }
 }
