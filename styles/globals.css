@@ -1,10 +1,16 @@
 :root {
   --background: #0F1012;
   --foreground: #0F1012;
+  --anchor-offset: 100px;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--anchor-offset);
+}
+
+:target {
+  scroll-margin-top: var(--anchor-offset);
 }
 
 
