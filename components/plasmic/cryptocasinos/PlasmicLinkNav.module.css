@@ -9,11 +9,14 @@
   transition-property: color;
   transition-duration: 0.15s;
   font-size: 15px;
+  height: 70px;
   -webkit-transition-property: color;
   -webkit-transition-duration: 0.15s;
+  border-bottom: 1px solid #ff5a3600;
 }
 .root:hover {
   color: #ffffff;
+  border-bottom-color: var(--token-QL0xMMXWaeGp);
 }
 .freeBox {
   position: relative;
