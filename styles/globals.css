@@ -2,6 +2,9 @@
   --background: #0F1012;
   --foreground: #0F1012;
   --anchor-offset: 100px;
+  --scrollbar-thumb: #2f3237;
+  --scrollbar-thumb-hover: #3b3f45;
+  --scrollbar-track: #121417;
 }
 
 html {
@@ -44,6 +47,27 @@ svg::selection {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+  border: 2px solid var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
 }
 
 a {

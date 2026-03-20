@@ -12,6 +12,7 @@
     "@plasmicapp/cli": "^0.1.359",
     "@plasmicapp/react-web": "^0.2.426",
     "@plasmicpkgs/plasmic-embed-css": "^0.1.224",
+    "@plasmicpkgs/react-aria": "^0.0.173",
     "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",

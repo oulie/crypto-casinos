@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+  position: relative;
+  padding: 10px;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 80px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.freeBox__pfMam {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+}
+.freeBox__rec8B {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.freeBox__fqn7W {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSubtitle {
+  font-size: 12px;
+}
