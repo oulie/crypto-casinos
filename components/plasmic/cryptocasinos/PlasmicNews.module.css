@@ -134,8 +134,8 @@
   background: url("/plasmic/cryptocasinos/images/dotPatternGraySvg.svg") top 50% left 50% / 8px auto repeat;
   column-gap: 6px;
   min-width: 0;
-  border-radius: 25px;
-  padding: 14px 20px;
+  border-radius: 30px;
+  padding: 16px;
 }
 .freeBox__dpO3 {
   display: flex;
