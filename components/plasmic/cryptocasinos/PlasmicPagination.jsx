@@ -95,16 +95,6 @@ function PlasmicPagination__RenderFunc(props) {
       />
 
       <PaginationNumber
-        className={classNames("__wab_instance", sty.paginationNumber__m9HzN)}
-        number={"4"}
-      />
-
-      <PaginationNumber
-        className={classNames("__wab_instance", sty.paginationNumber__gj4W7)}
-        number={"5"}
-      />
-
-      <PaginationNumber
         className={classNames("__wab_instance", sty.paginationNumber__y6Lsf)}
         number={"..."}
       />
