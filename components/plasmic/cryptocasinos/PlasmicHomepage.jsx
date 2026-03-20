@@ -1702,20 +1702,26 @@ function PlasmicHomepage__RenderFunc(props) {
                 className={classNames("__wab_instance", sty.sidebarLivePrices)}
               />
 
-              <SidebarRecentArticles
-                data-plasmic-name={"sidebarRecentArticles"}
-                data-plasmic-override={overrides.sidebarRecentArticles}
-                className={classNames(
-                  "__wab_instance",
-                  sty.sidebarRecentArticles
-                )}
-              />
+              <div
+                data-plasmic-name={"sticky"}
+                data-plasmic-override={overrides.sticky}
+                className={classNames(projectcss.all, sty.sticky)}
+              >
+                <SidebarRecentArticles
+                  data-plasmic-name={"sidebarRecentArticles"}
+                  data-plasmic-override={overrides.sidebarRecentArticles}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.sidebarRecentArticles
+                  )}
+                />
 
-              <CardCta
-                data-plasmic-name={"cardCta"}
-                data-plasmic-override={overrides.cardCta}
-                className={classNames("__wab_instance", sty.cardCta)}
-              />
+                <CardCta
+                  data-plasmic-name={"cardCta"}
+                  data-plasmic-override={overrides.cardCta}
+                  className={classNames("__wab_instance", sty.cardCta)}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1736,6 +1742,7 @@ const PlasmicDescendants = {
     "sidebar",
     "sidebarCategories",
     "sidebarLivePrices",
+    "sticky",
     "sidebarRecentArticles",
     "cardCta"
   ],
@@ -1750,6 +1757,7 @@ const PlasmicDescendants = {
     "sidebar",
     "sidebarCategories",
     "sidebarLivePrices",
+    "sticky",
     "sidebarRecentArticles",
     "cardCta"
   ],
@@ -1760,12 +1768,14 @@ const PlasmicDescendants = {
     "sidebar",
     "sidebarCategories",
     "sidebarLivePrices",
+    "sticky",
     "sidebarRecentArticles",
     "cardCta"
   ],
 
   sidebarCategories: ["sidebarCategories"],
   sidebarLivePrices: ["sidebarLivePrices"],
+  sticky: ["sticky", "sidebarRecentArticles", "cardCta"],
   sidebarRecentArticles: ["sidebarRecentArticles"],
   cardCta: ["cardCta"]
 };
@@ -1811,6 +1821,7 @@ export const PlasmicHomepage = Object.assign(
     sidebar: makeNodeComponent("sidebar"),
     sidebarCategories: makeNodeComponent("sidebarCategories"),
     sidebarLivePrices: makeNodeComponent("sidebarLivePrices"),
+    sticky: makeNodeComponent("sticky"),
     sidebarRecentArticles: makeNodeComponent("sidebarRecentArticles"),
     cardCta: makeNodeComponent("cardCta"),
     // Metadata about props expected for PlasmicHomepage

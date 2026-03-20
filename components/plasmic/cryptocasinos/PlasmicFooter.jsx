@@ -123,12 +123,20 @@ function PlasmicFooter__RenderFunc(props) {
             </div>
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter___9E22Q)}
+              href={`/`}
               title={"Home"}
             />
 
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter___4Xipp)}
+              href={`/top-casinos`}
               title={"Top 10 Casinos"}
+            />
+
+            <LinkFooter
+              className={classNames("__wab_instance", sty.linkFooter__eijE5)}
+              href={`/guides`}
+              title={"Crypto Casino Guides"}
             />
 
             <LinkFooter
@@ -158,21 +166,25 @@ function PlasmicFooter__RenderFunc(props) {
             </div>
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter__cMyYv)}
+              href={`/article-sample`}
               title={"How to buy Bitcoin"}
             />
 
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter__pUuDo)}
+              href={`/article-sample`}
               title={"Provably Fair Guide"}
             />
 
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter__qVgYw)}
+              href={`/article-sample`}
               title={"KYC vs No-KYC"}
             />
 
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter___31QSn)}
+              href={`/article-sample`}
               title={"Responsible Gambling"}
             />
           </div>
@@ -213,11 +225,13 @@ function PlasmicFooter__RenderFunc(props) {
           <div className={classNames(projectcss.all, sty.freeBox__oeTN)}>
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton__khQun)}
+              href={`/top-casinos`}
             />
 
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton___1YSTa)}
               color={"gray"}
+              href={`/guides`}
               title={"Browse Guides"}
             />
           </div>

@@ -28,7 +28,7 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkFooter__VariantProps = new Array();
 
-export const PlasmicLinkFooter__ArgProps = new Array("title");
+export const PlasmicLinkFooter__ArgProps = new Array("title", "href");
 
 const $$ = {};
 
@@ -44,7 +44,9 @@ function PlasmicLinkFooter__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          href: "#"
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -76,7 +78,7 @@ function PlasmicLinkFooter__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"#"}
+      href={args.href}
       legacyBehavior={false}
       platform={"nextjs"}
     >
