@@ -136,6 +136,7 @@ function PlasmicSidebarCategories__RenderFunc(props) {
 
         <LinkSidebar
           className={classNames("__wab_instance", sty.linkSidebar__td0W5)}
+          href={`/news`}
           title={"Crypto News"}
         />
 

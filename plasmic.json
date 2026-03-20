@@ -786,6 +786,20 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicTogglesCoins.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "-o3LJ1ExUSGd",
+          "name": "News",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicNews.jsx",
+          "importSpec": {
+            "modulePath": "../pages/news.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicNews.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/news"
         }
       ],
       "icons": [
