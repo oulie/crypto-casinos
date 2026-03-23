@@ -1154,6 +1154,11 @@
           "id": "RZEM2UmEVS6m",
           "name": "HouseIcon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__House.jsx"
+        },
+        {
+          "id": "HdrPe8G3Z0hy",
+          "name": "ClockIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Clock.jsx"
         }
       ],
       "images": [

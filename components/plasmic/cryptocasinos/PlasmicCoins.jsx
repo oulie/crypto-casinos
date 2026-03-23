@@ -29,6 +29,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicCoins.module.css"; // plasmic-import: c6czgU2PZEZT/css
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 2AAjufLElL24/icon
+import ClockIcon from "./icons/PlasmicIcon__Clock"; // plasmic-import: HdrPe8G3Z0hy/icon
+import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: rZ8hz7v-qc_C/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -136,9 +138,7 @@ function PlasmicCoins__RenderFunc(props) {
               />
 
               <IconIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
+                className={classNames(projectcss.all, sty.svg__jcv38)}
                 role={"img"}
               />
 
@@ -492,6 +492,13 @@ function PlasmicCoins__RenderFunc(props) {
                     "__wab_instance",
                     sty.tableRowCoin__z5E6R
                   )}
+                  iconNetworkSpeed={
+                    <ClockIcon
+                      className={classNames(projectcss.all, sty.svg__afxts)}
+                      role={"img"}
+                    />
+                  }
+                  networkSpeed={"5-10 min"}
                 />
 
                 <TableRowCoin
@@ -517,6 +524,12 @@ function PlasmicCoins__RenderFunc(props) {
                     fullHeight: 225,
                     aspectRatio: 1
                   }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg___6Uo6Q)}
+                      role={"img"}
+                    />
+                  }
                 />
 
                 <TableRowCoin
@@ -532,6 +545,12 @@ function PlasmicCoins__RenderFunc(props) {
                     fullHeight: 225,
                     aspectRatio: 1
                   }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg___7L8Wm)}
+                      role={"img"}
+                    />
+                  }
                 />
 
                 <TableRowCoin
@@ -547,6 +566,13 @@ function PlasmicCoins__RenderFunc(props) {
                     fullHeight: 225,
                     aspectRatio: 1
                   }}
+                  iconNetworkSpeed={
+                    <ClockIcon
+                      className={classNames(projectcss.all, sty.svg__er5C1)}
+                      role={"img"}
+                    />
+                  }
+                  networkSpeed={"5-10 min"}
                 />
 
                 <TableRowCoin
@@ -562,6 +588,12 @@ function PlasmicCoins__RenderFunc(props) {
                     fullHeight: 225,
                     aspectRatio: 1
                   }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg__qz66K)}
+                      role={"img"}
+                    />
+                  }
                 />
 
                 <TableRowCoin
@@ -577,6 +609,12 @@ function PlasmicCoins__RenderFunc(props) {
                     fullHeight: 225,
                     aspectRatio: 1
                   }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg__mdvWo)}
+                      role={"img"}
+                    />
+                  }
                 />
 
                 <TableRowCoin
@@ -592,6 +630,12 @@ function PlasmicCoins__RenderFunc(props) {
                     fullHeight: 225,
                     aspectRatio: 1
                   }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg__o451Z)}
+                      role={"img"}
+                    />
+                  }
                 />
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__ecfWi)}>
@@ -796,9 +840,8 @@ function PlasmicCoins__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "coinPriceMarquee", "svg", "content", "leftContent"],
+  root: ["root", "coinPriceMarquee", "content", "leftContent"],
   coinPriceMarquee: ["coinPriceMarquee"],
-  svg: ["svg"],
   content: ["content", "leftContent"],
   leftContent: ["leftContent"]
 };
@@ -836,7 +879,6 @@ export const PlasmicCoins = Object.assign(
   {
     // Helper components rendering sub-elements
     coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
-    svg: makeNodeComponent("svg"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
     // Metadata about props expected for PlasmicCoins

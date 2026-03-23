@@ -32,7 +32,9 @@ export const PlasmicTableRowCoin__VariantProps = new Array();
 export const PlasmicTableRowCoin__ArgProps = new Array(
   "icon",
   "coinName",
-  "coinShorthand"
+  "coinShorthand",
+  "iconNetworkSpeed",
+  "networkSpeed"
 );
 
 const $$ = {};
@@ -145,22 +147,20 @@ function PlasmicTableRowCoin__RenderFunc(props) {
         </div>
       </div>
       <div className={classNames(projectcss.all, sty.freeBox__t3FaG)}>
-        <ZapIcon
-          data-plasmic-name={"svg"}
-          data-plasmic-override={overrides.svg}
-          className={classNames(projectcss.all, sty.svg)}
-          role={"img"}
-        />
+        {renderPlasmicSlot({
+          defaultContents: (
+            <ZapIcon
+              className={classNames(projectcss.all, sty.svg__um1Hx)}
+              role={"img"}
+            />
+          ),
 
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text___1YN9C
-          )}
-        >
-          {"Instant"}
-        </div>
+          value: args.iconNetworkSpeed
+        })}
+        {renderPlasmicSlot({
+          defaultContents: "Instant",
+          value: args.networkSpeed
+        })}
       </div>
       <div className={classNames(projectcss.all, sty.freeBox__buo0A)}>
         <LinkButton
@@ -177,9 +177,8 @@ function PlasmicTableRowCoin__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "svg", "linkButton"],
+  root: ["root", "img", "linkButton"],
   img: ["img"],
-  svg: ["svg"],
   linkButton: ["linkButton"]
 };
 
@@ -216,7 +215,6 @@ export const PlasmicTableRowCoin = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
-    svg: makeNodeComponent("svg"),
     linkButton: makeNodeComponent("linkButton"),
     // Metadata about props expected for PlasmicTableRowCoin
     internalVariantProps: PlasmicTableRowCoin__VariantProps,
