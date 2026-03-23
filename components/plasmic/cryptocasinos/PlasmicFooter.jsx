@@ -141,6 +141,7 @@ function PlasmicFooter__RenderFunc(props) {
 
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter__ypvn3)}
+              href={`/article-sample`}
               title={"No Deposit Bonuses"}
             />
 
@@ -151,7 +152,14 @@ function PlasmicFooter__RenderFunc(props) {
 
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter__bEuiW)}
-              title={"Articles"}
+              href={`/news`}
+              title={"Crypto News"}
+            />
+
+            <LinkFooter
+              className={classNames("__wab_instance", sty.linkFooter___61M5B)}
+              href={`/authors`}
+              title={"Authors"}
             />
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__ltRji)}>
@@ -200,6 +208,7 @@ function PlasmicFooter__RenderFunc(props) {
             </div>
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter__nrZen)}
+              href={`/terms`}
               title={"Terms of Service"}
             />
 
