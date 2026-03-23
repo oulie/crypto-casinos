@@ -957,6 +957,19 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicTableRowCoin.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "bDT2gFRjoAiP",
+          "name": "SectionFullwidthArticle",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicSectionFullwidthArticle.jsx",
+          "importSpec": {
+            "modulePath": "SectionFullwidthArticle.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicSectionFullwidthArticle.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

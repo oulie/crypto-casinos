@@ -17,6 +17,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -138,14 +139,21 @@ function PlasmicCardCasinoDetails__RenderFunc(props) {
           >
             {"Focus"}
           </div>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__rXzwc
-            )}
-          >
-            {"Safety, payouts, bonus value"}
+          <div className={classNames(projectcss.all, sty.freeBox__iuERx)}>
+            <TagPill
+              className={classNames("__wab_instance", sty.tagPill__bAbxD)}
+              title={"Safety"}
+            />
+
+            <TagPill
+              className={classNames("__wab_instance", sty.tagPill__zbZ0E)}
+              title={"Payouts"}
+            />
+
+            <TagPill
+              className={classNames("__wab_instance", sty.tagPill__kogL3)}
+              title={"Bonus value"}
+            />
           </div>
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__zvM2R)}>

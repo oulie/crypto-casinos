@@ -15,18 +15,19 @@ import {
   PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
 import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
-import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
+import SectionFullwidthArticle from "../../SectionFullwidthArticle"; // plasmic-import: bDT2gFRjoAiP/component
 import CardCasinoLarge from "../../CardCasinoLarge"; // plasmic-import: pl0YfSACN4Nw/component
 import CardCasinoList from "../../CardCasinoList"; // plasmic-import: 6YxcbeY1AF1_/component
+import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import CardArticleNoCover from "../../CardArticleNoCover"; // plasmic-import: h0trZzJIFxmu/component
-import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -62,7 +63,7 @@ createPlasmicElementProxy;
 
 export const PlasmicTopCasinos__VariantProps = new Array();
 
-export const PlasmicTopCasinos__ArgProps = new Array();
+export const PlasmicTopCasinos__ArgProps = new Array("authorName");
 
 const $$ = {};
 
@@ -93,7 +94,6 @@ function PlasmicTopCasinos__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const globalVariants = _useGlobalVariants();
   const pageMetadata = generateDynamicMetadata(
     wrapQueriesWithLoadingProxy({}),
     $ctx
@@ -155,104 +155,19 @@ function PlasmicTopCasinos__RenderFunc(props) {
               />
             </div>
           </div>
-          <div
-            data-plasmic-name={"hero"}
-            data-plasmic-override={overrides.hero}
-            className={classNames(projectcss.all, sty.hero)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__aVm6K)}>
-              <div className={classNames(projectcss.all, sty.freeBox__jkdMh)}>
-                <div className={classNames(projectcss.all, sty.freeBox__keUkP)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fVqPd
-                    )}
-                  >
-                    {"Top Crypto Casinos"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yYarY
-                    )}
-                  >
-                    <React.Fragment>
-                      <React.Fragment>{"The "}</React.Fragment>
-                      {
-                        <span
-                          data-plasmic-name={"span"}
-                          data-plasmic-override={overrides.span}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.span,
-                            projectcss.__wab_text,
-                            projectcss.plasmic_default__inline,
-                            sty.span
-                          )}
-                        >
-                          {"Ultimate Guide"}
-                        </span>
-                      }
-                      <React.Fragment>
-                        {" to Crypto Casinos in 2026"}
-                      </React.Fragment>
-                    </React.Fragment>
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__bahlp
-                    )}
-                  >
-                    {
-                      "Discover the safest platforms, the biggest deposit bonuses, and strategies to maximize your crypto holdings while playing online."
-                    }
-                  </div>
-                </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___4HOfj)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__rOttc)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__o2BMn)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/cryptocasinos/images/placeholder2Avif.avif",
-                        fullWidth: 880,
-                        fullHeight: 495,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__lo4HP)}>
-                <div className={classNames(projectcss.all, sty.freeBox__lgLMb)}>
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__vm21Q
-                    )}
-                    href={`/article-sample`}
-                    title={"Read Full Guide"}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <SectionFullwidthArticle
+            data-plasmic-name={"sectionFullwidthArticle"}
+            data-plasmic-override={overrides.sectionFullwidthArticle}
+            authorName={renderPlasmicSlot({
+              defaultContents: "Peter Pragnanda",
+              value: args.authorName
+            })}
+            className={classNames(
+              "__wab_instance",
+              sty.sectionFullwidthArticle
+            )}
+          />
+
           <div className={classNames(projectcss.all, sty.freeBox__viAXt)} />
           <div
             data-plasmic-name={"content"}
@@ -851,10 +766,16 @@ function PlasmicTopCasinos__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "coinPriceMarquee", "hero", "span", "content", "cardsCasinos"],
+  root: [
+    "root",
+    "coinPriceMarquee",
+    "sectionFullwidthArticle",
+    "content",
+    "cardsCasinos"
+  ],
+
   coinPriceMarquee: ["coinPriceMarquee"],
-  hero: ["hero", "span"],
-  span: ["span"],
+  sectionFullwidthArticle: ["sectionFullwidthArticle"],
   content: ["content", "cardsCasinos"],
   cardsCasinos: ["cardsCasinos"]
 };
@@ -892,8 +813,7 @@ export const PlasmicTopCasinos = Object.assign(
   {
     // Helper components rendering sub-elements
     coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
-    hero: makeNodeComponent("hero"),
-    span: makeNodeComponent("span"),
+    sectionFullwidthArticle: makeNodeComponent("sectionFullwidthArticle"),
     content: makeNodeComponent("content"),
     cardsCasinos: makeNodeComponent("cardsCasinos"),
     // Metadata about props expected for PlasmicTopCasinos

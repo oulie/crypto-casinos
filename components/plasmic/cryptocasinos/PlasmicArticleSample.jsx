@@ -23,7 +23,7 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
 import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
-import CardQuickTakeaway from "../../CardQuickTakeaway"; // plasmic-import: h4XyEFfhBuXq/component
+import CardCasinoDetails from "../../CardCasinoDetails"; // plasmic-import: vGoC4GKdwTta/component
 import CardInfoBox from "../../CardInfoBox"; // plasmic-import: fL78jSqd6G-W/component
 import CardProCon from "../../CardProCon"; // plasmic-import: _S-PAjhmk554/component
 import ProConRow from "../../ProConRow"; // plasmic-import: KERk-bERJlpe/component
@@ -279,10 +279,9 @@ function PlasmicArticleSample__RenderFunc(props) {
                 </div>
               </div>
             </div>
-            <CardQuickTakeaway
-              data-plasmic-name={"cardQuickTakeaway"}
-              data-plasmic-override={overrides.cardQuickTakeaway}
-              className={classNames("__wab_instance", sty.cardQuickTakeaway)}
+            <CardCasinoDetails
+              data-plasmic-name={"cardCasinoDetails"}
+              data-plasmic-override={overrides.cardCasinoDetails}
             />
           </div>
           <div
@@ -1139,7 +1138,7 @@ const PlasmicDescendants = {
     "root",
     "coinPriceMarquee",
     "hero",
-    "cardQuickTakeaway",
+    "cardCasinoDetails",
     "divider",
     "content",
     "leftContent",
@@ -1156,8 +1155,8 @@ const PlasmicDescendants = {
   ],
 
   coinPriceMarquee: ["coinPriceMarquee"],
-  hero: ["hero", "cardQuickTakeaway"],
-  cardQuickTakeaway: ["cardQuickTakeaway"],
+  hero: ["hero", "cardCasinoDetails"],
+  cardCasinoDetails: ["cardCasinoDetails"],
   divider: ["divider"],
   content: [
     "content",
@@ -1236,7 +1235,7 @@ export const PlasmicArticleSample = Object.assign(
     // Helper components rendering sub-elements
     coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
     hero: makeNodeComponent("hero"),
-    cardQuickTakeaway: makeNodeComponent("cardQuickTakeaway"),
+    cardCasinoDetails: makeNodeComponent("cardCasinoDetails"),
     divider: makeNodeComponent("divider"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),

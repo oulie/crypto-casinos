@@ -1,0 +1,322 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: var(--token-eI5HWtMjxYZN);
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  min-width: 0;
+}
+.freeBox__uhz8A {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  row-gap: 20px;
+  position: relative;
+  min-width: 0;
+}
+@media (max-width: 511px) {
+  .freeBox__uhz8A {
+    padding-top: 20px;
+    row-gap: 10px;
+    column-gap: 0px;
+  }
+}
+.freeBox__ugnF8 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  column-gap: 40px;
+  min-width: 0;
+}
+@media (max-width: 1023px) {
+  .freeBox__ugnF8 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 0px;
+  }
+}
+@media (max-width: 511px) {
+  .freeBox__ugnF8 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    column-gap: 0px;
+  }
+}
+.freeBox__wm612 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 20px;
+  flex-grow: 1;
+  flex-basis: 60%;
+  min-width: 0;
+}
+@media (max-width: 1023px) {
+  .freeBox__wm612 {
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}
+.text__k1Oq9 {
+  color: var(--token-sxMiRhCxgPbQ);
+}
+.text___4EBgf {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 75px;
+  letter-spacing: -3px;
+  line-height: 0.9;
+  max-width: 700px;
+  font-weight: 700;
+  color: #ffffff;
+  min-width: 0;
+}
+@media (max-width: 511px) {
+  .text___4EBgf {
+    font-size: 55px;
+  }
+}
+.span {
+  color: #ffffff80;
+}
+.text__rgN0W {
+  position: relative;
+  max-width: 610px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+.freeBox__zSkG3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 40%;
+  min-width: 0;
+  min-height: 0;
+}
+@media (max-width: 1023px) {
+  .freeBox__zSkG3 {
+    flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+}
+@media (max-width: 511px) {
+  .freeBox__zSkG3 {
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-basis: auto;
+    height: 160px;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    row-gap: 0px;
+    display: none;
+  }
+}
+.freeBox__zUuaQ {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px #000000;
+  min-width: 0;
+  border-radius: 20px;
+  border: 1px solid #ffffff0f;
+}
+.img__lPnn {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__lPnn > picture > img {
+  object-fit: cover;
+}
+.freeBox___9KWhf {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: auto;
+  width: 100%;
+  background: url("/plasmic/cryptocasinos/images/dotPatternGraySvg.svg") top 50% left 0% / 8px auto repeat;
+  column-gap: 6px;
+  min-width: 0;
+  border-radius: 25px;
+  padding: 14px 20px;
+}
+@media (max-width: 1023px) {
+  .freeBox___9KWhf {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    align-items: stretch;
+    justify-content: center;
+    column-gap: 0px;
+  }
+}
+@media (max-width: 511px) {
+  .freeBox___9KWhf {
+    row-gap: 11px;
+    column-gap: 0px;
+    padding: 14px 10px;
+  }
+}
+.freeBox___9PQbA {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+  background: var(--token-PU2kSrpIWaun);
+  border-radius: 10px;
+  padding: 6px;
+}
+@media (max-width: 511px) {
+  .freeBox___9PQbA {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    column-gap: 0px;
+  }
+}
+.linkButton:global(.__wab_instance) {
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .linkButton:global(.__wab_instance) {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.freeBox__t5PPn {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: var(--token-PU2kSrpIWaun);
+  column-gap: 10px;
+  border-radius: 20px;
+  padding: 7px 22px 7px 19px;
+}
+.text__dRlWf {
+  animation: none;
+  position: relative;
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.freeBox___1T10 {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+  width: 100%;
+  white-space: pre;
+  min-width: 0;
+}
+.img__xOaPl {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 60px;
+}
+.img__xOaPl > picture > img {
+  object-fit: cover;
+}
+.freeBox__tf8F1 {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 1.4;
+  min-width: 0;
+}
+.freeBox__lsSir {
+  animation: none;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetAuthorName {
+  font-size: 14px;
+}
+.slotTargetAuthorName > *,
+.slotTargetAuthorName > :global(.__wab_slot) > *,
+.slotTargetAuthorName > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetAuthorName
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetAuthorName > picture > img,
+.slotTargetAuthorName > :global(.__wab_slot) > picture > img,
+.slotTargetAuthorName
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img,
+.slotTargetAuthorName
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  animation: none;
+}
+.text__lNE2 {
+  animation: none;
+}
