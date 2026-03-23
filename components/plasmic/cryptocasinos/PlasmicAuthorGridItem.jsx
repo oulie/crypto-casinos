@@ -298,6 +298,7 @@ function PlasmicAuthorGridItem__RenderFunc(props) {
         data-plasmic-override={overrides.linkButton}
         className={classNames("__wab_instance", sty.linkButton)}
         color={"gray"}
+        href={`/authors/sample`}
         size={"medium"}
         title={"Open author page"}
       />
