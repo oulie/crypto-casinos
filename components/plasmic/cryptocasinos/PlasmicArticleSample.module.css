@@ -534,7 +534,7 @@
 .ul {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 30px;
   line-height: 2;
 }
 .freeBox__uOf46 {
@@ -608,7 +608,6 @@
   max-width: 100%;
   color: #cfcfcf99;
   line-height: 2;
-  margin-bottom: 30px;
   min-width: 0;
 }
 .link__xlBq1 {
@@ -623,6 +622,20 @@
   padding-right: 6px;
   background: #ff6dad33;
   border-radius: 6px;
+}
+.text__xxeQx {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: #cfcfcf99;
+  min-width: 0;
+}
+.ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  line-height: 2;
 }
 .freeBox__rgd9W {
   animation: none;

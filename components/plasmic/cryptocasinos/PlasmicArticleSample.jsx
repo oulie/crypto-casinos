@@ -723,6 +723,78 @@ function PlasmicArticleSample__RenderFunc(props) {
               <div
                 className={classNames(
                   projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__xxeQx
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <ol
+                      data-plasmic-name={"ol"}
+                      data-plasmic-override={overrides.ol}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.ol,
+                        sty.ol
+                      )}
+                    >
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          projectcss.__wab_text,
+                          sty.li___1MGd5
+                        )}
+                      >
+                        {
+                          "Check whether the site supports your preferred coins and networks, not just the most common ticker symbols."
+                        }
+                      </li>
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          projectcss.__wab_text,
+                          sty.li__smhjy
+                        )}
+                      >
+                        {
+                          "Review bonus restrictions before depositing, especially wagering requirements, game weighting, and max-cashout rules."
+                        }
+                      </li>
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          projectcss.__wab_text,
+                          sty.li__mv26A
+                        )}
+                      >
+                        {
+                          "Look for a healthy mix of original games, slots, and live casino providers rather than a shallow content library."
+                        }
+                      </li>
+                      <li
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.li,
+                          projectcss.__wab_text,
+                          sty.li__ts1Ip
+                        )}
+                      >
+                        {
+                          "Read the cashier and verification terms to understand when KYC is triggered and whether large withdrawals are treated differently."
+                        }
+                      </li>
+                    </ol>
+                  }
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
                   sty.freeBox__rgd9W,
                   "bg-grain"
                 )}
@@ -1144,6 +1216,7 @@ const PlasmicDescendants = {
     "leftContent",
     "span",
     "ul",
+    "ol",
     "richTextImage",
     "h3",
     "cardCasinoList",
@@ -1163,6 +1236,7 @@ const PlasmicDescendants = {
     "leftContent",
     "span",
     "ul",
+    "ol",
     "richTextImage",
     "h3",
     "cardCasinoList",
@@ -1177,6 +1251,7 @@ const PlasmicDescendants = {
     "leftContent",
     "span",
     "ul",
+    "ol",
     "richTextImage",
     "h3",
     "cardCasinoList"
@@ -1184,6 +1259,7 @@ const PlasmicDescendants = {
 
   span: ["span"],
   ul: ["ul"],
+  ol: ["ol"],
   richTextImage: ["richTextImage"],
   h3: ["h3"],
   cardCasinoList: ["cardCasinoList"],
@@ -1241,6 +1317,7 @@ export const PlasmicArticleSample = Object.assign(
     leftContent: makeNodeComponent("leftContent"),
     span: makeNodeComponent("span"),
     ul: makeNodeComponent("ul"),
+    ol: makeNodeComponent("ol"),
     richTextImage: makeNodeComponent("richTextImage"),
     h3: makeNodeComponent("h3"),
     cardCasinoList: makeNodeComponent("cardCasinoList"),
