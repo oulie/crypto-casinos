@@ -417,15 +417,15 @@
   position: relative;
   align-items: center;
   justify-content: flex-start;
-  column-gap: 6px;
+  column-gap: 10px;
   white-space: pre;
 }
 .img__poAog {
   animation: none;
   object-fit: cover;
   max-width: 100%;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
 }
 .img__poAog > picture > img {

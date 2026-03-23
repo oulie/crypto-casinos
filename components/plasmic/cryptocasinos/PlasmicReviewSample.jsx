@@ -331,12 +331,12 @@ function PlasmicReviewSample__RenderFunc(props) {
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__poAog)}
-                    displayHeight={"32px"}
+                    displayHeight={"28px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"32px"}
+                    displayWidth={"28px"}
                     loading={"lazy"}
                     src={{
                       src: "/plasmic/cryptocasinos/images/ccIcon.svg",
