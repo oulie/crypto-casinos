@@ -1024,6 +1024,33 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicCardAuthorDetails.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "8JsWp1i_uRX-",
+          "name": "Authors",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicAuthors.jsx",
+          "importSpec": {
+            "modulePath": "../pages/authors.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicAuthors.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/authors"
+        },
+        {
+          "id": "QrVApQRILF2K",
+          "name": "AuthorGridItem",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicAuthorGridItem.jsx",
+          "importSpec": {
+            "modulePath": "AuthorGridItem.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicAuthorGridItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

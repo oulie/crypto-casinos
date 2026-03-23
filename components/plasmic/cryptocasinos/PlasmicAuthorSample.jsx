@@ -151,7 +151,7 @@ function PlasmicAuthorSample__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkBreadcrumb__iCyU2
                 )}
-                href={`/`}
+                href={`/authors`}
                 title={"Authors"}
               />
 
