@@ -117,13 +117,53 @@ function PlasmicCardCasinoDetails__RenderFunc(props) {
               sty.text__pvyxC
             )}
           >
-            {"Best for"}
+            {"Published at"}
           </div>
           <div
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
               sty.text___2T5Tp
+            )}
+          >
+            {"Mar 1, 2026"}
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__rb7PE)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__xi9Vp
+            )}
+          >
+            {"Updated at"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__zHbJz
+            )}
+          >
+            {"Mar 23, 2026"}
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__weJeq)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__idpTi
+            )}
+          >
+            {"Best for"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___6BOr0
             )}
           >
             {"New and intermediate players"}

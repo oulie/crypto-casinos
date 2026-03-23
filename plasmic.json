@@ -970,6 +970,33 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicSectionFullwidthArticle.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "UZv_JybYoTjg",
+          "name": "Terms",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTerms.jsx",
+          "importSpec": {
+            "modulePath": "../pages/terms.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicTerms.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/terms"
+        },
+        {
+          "id": "YHX7r1koYXua",
+          "name": "TableSample",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTableSample.jsx",
+          "importSpec": {
+            "modulePath": "TableSample.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicTableSample.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

@@ -343,6 +343,7 @@ function PlasmicFooter__RenderFunc(props) {
       <div className={classNames(projectcss.all, sty.freeBox__bp2L4)}>
         <LinkFooter
           className={classNames("__wab_instance", sty.linkFooter__dp4Ow)}
+          href={`/terms`}
           title={"Terms of Service"}
         />
 

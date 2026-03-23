@@ -1,0 +1,11 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 0;
+}

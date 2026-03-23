@@ -25,8 +25,10 @@ import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTH
 import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import CardCasinoDetails from "../../CardCasinoDetails"; // plasmic-import: vGoC4GKdwTta/component
 import CardInfoBox from "../../CardInfoBox"; // plasmic-import: fL78jSqd6G-W/component
+import TableSample from "../../TableSample"; // plasmic-import: YHX7r1koYXua/component
 import CardProCon from "../../CardProCon"; // plasmic-import: _S-PAjhmk554/component
 import ProConRow from "../../ProConRow"; // plasmic-import: KERk-bERJlpe/component
+import TableRowCoin from "../../TableRowCoin"; // plasmic-import: nX5ivYUrRc2W/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import RichTextImage from "../../RichTextImage"; // plasmic-import: 1vp7wIRXlNq8/component
 import CardCasinoList from "../../CardCasinoList"; // plasmic-import: 6YxcbeY1AF1_/component
@@ -42,6 +44,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicArticleSample.module.css"; // plasmic-import: pfmKCpU0cemV/css
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 2AAjufLElL24/icon
+import ClockIcon from "./icons/PlasmicIcon__Clock"; // plasmic-import: HdrPe8G3Z0hy/icon
+import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: rZ8hz7v-qc_C/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -72,7 +76,7 @@ createPlasmicElementProxy;
 export const PlasmicArticleSample__VariantProps = new Array();
 
 export const PlasmicArticleSample__ArgProps = new Array(
-  "plbuishDate",
+  "updatedAt",
   "authorName"
 );
 
@@ -221,9 +225,9 @@ function PlasmicArticleSample__RenderFunc(props) {
               <div className={classNames(projectcss.all, sty.freeBox__zqjef)}>
                 <div className={classNames(projectcss.all, sty.freeBox__bamF)}>
                   {renderPlasmicSlot({
-                    defaultContents: "Mar 16, 2026",
-                    value: args.plbuishDate,
-                    className: classNames(sty.slotTargetPlbuishDate)
+                    defaultContents: "Updated at Mar 16, 2026",
+                    value: args.updatedAt,
+                    className: classNames(sty.slotTargetUpdatedAt)
                   })}
                 </div>
                 <div
@@ -470,6 +474,12 @@ function PlasmicArticleSample__RenderFunc(props) {
                   "Once a casino passes the initial trust check, use a more practical comparison. Look at the coins available for deposits, whether the cashier highlights network options clearly, and how easy it is to understand withdrawal limits. If a casino supports multiple networks for stablecoins, that can be a meaningful usability win."
                 }
               </div>
+              <TableSample
+                data-plasmic-name={"tableSample"}
+                data-plasmic-override={overrides.tableSample}
+                className={classNames("__wab_instance", sty.tableSample)}
+              />
+
               <div
                 className={classNames(
                   projectcss.all,
@@ -719,6 +729,196 @@ function PlasmicArticleSample__RenderFunc(props) {
                     }
                   </React.Fragment>
                 </React.Fragment>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__gKrn7)}>
+                <div className={classNames(projectcss.all, sty.freeBox__ktZd4)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jla2I
+                    )}
+                  >
+                    {"Coin"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___2N7Cu
+                    )}
+                  >
+                    {"Price"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__fuHuv
+                    )}
+                  >
+                    {"24H Change"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pw23B
+                    )}
+                  >
+                    {"Network speed"}
+                  </div>
+                </div>
+                <TableRowCoin
+                  className={classNames(
+                    "__wab_instance",
+                    sty.tableRowCoin__gWd
+                  )}
+                  iconNetworkSpeed={
+                    <ClockIcon
+                      className={classNames(projectcss.all, sty.svg__aW1Dr)}
+                      role={"img"}
+                    />
+                  }
+                  networkSpeed={"5-10 min"}
+                />
+
+                <TableRowCoin
+                  className={classNames(
+                    "__wab_instance",
+                    sty.tableRowCoin___9Nmq
+                  )}
+                  coinName={"Tether"}
+                  coinShorthand={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___5SCne
+                      )}
+                    >
+                      {"USDT"}
+                    </div>
+                  }
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg__ycoiw)}
+                      role={"img"}
+                    />
+                  }
+                />
+
+                <TableRowCoin
+                  className={classNames(
+                    "__wab_instance",
+                    sty.tableRowCoin__x8Byc
+                  )}
+                  coinName={"Polkadot"}
+                  coinShorthand={"DOT"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg__efTrw)}
+                      role={"img"}
+                    />
+                  }
+                />
+
+                <TableRowCoin
+                  className={classNames(
+                    "__wab_instance",
+                    sty.tableRowCoin__diqhg
+                  )}
+                  coinName={"Cardano"}
+                  coinShorthand={"ADA"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
+                  iconNetworkSpeed={
+                    <ClockIcon
+                      className={classNames(projectcss.all, sty.svg__bbWxr)}
+                      role={"img"}
+                    />
+                  }
+                  networkSpeed={"5-10 min"}
+                />
+
+                <TableRowCoin
+                  className={classNames(
+                    "__wab_instance",
+                    sty.tableRowCoin__qxKXf
+                  )}
+                  coinName={"XRP"}
+                  coinShorthand={"XRP"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg__xz65)}
+                      role={"img"}
+                    />
+                  }
+                />
+
+                <TableRowCoin
+                  className={classNames(
+                    "__wab_instance",
+                    sty.tableRowCoin__kU4JZ
+                  )}
+                  coinName={"Ethereum"}
+                  coinShorthand={"ETH"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg___3T3XN)}
+                      role={"img"}
+                    />
+                  }
+                />
+
+                <TableRowCoin
+                  className={classNames(
+                    "__wab_instance",
+                    sty.tableRowCoin__seUM
+                  )}
+                  coinName={"Solana"}
+                  coinShorthand={"SOL"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
+                  iconNetworkSpeed={
+                    <ZapIcon
+                      className={classNames(projectcss.all, sty.svg__cQohS)}
+                      role={"img"}
+                    />
+                  }
+                />
               </div>
               <div
                 className={classNames(
@@ -1215,6 +1415,7 @@ const PlasmicDescendants = {
     "content",
     "leftContent",
     "span",
+    "tableSample",
     "ul",
     "ol",
     "richTextImage",
@@ -1235,6 +1436,7 @@ const PlasmicDescendants = {
     "content",
     "leftContent",
     "span",
+    "tableSample",
     "ul",
     "ol",
     "richTextImage",
@@ -1250,6 +1452,7 @@ const PlasmicDescendants = {
   leftContent: [
     "leftContent",
     "span",
+    "tableSample",
     "ul",
     "ol",
     "richTextImage",
@@ -1258,6 +1461,7 @@ const PlasmicDescendants = {
   ],
 
   span: ["span"],
+  tableSample: ["tableSample"],
   ul: ["ul"],
   ol: ["ol"],
   richTextImage: ["richTextImage"],
@@ -1316,6 +1520,7 @@ export const PlasmicArticleSample = Object.assign(
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
     span: makeNodeComponent("span"),
+    tableSample: makeNodeComponent("tableSample"),
     ul: makeNodeComponent("ul"),
     ol: makeNodeComponent("ol"),
     richTextImage: makeNodeComponent("richTextImage"),
