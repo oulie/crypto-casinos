@@ -309,6 +309,20 @@ function PlasmicCoins__RenderFunc(props) {
                     sty.cardCoinStats__ct9Zp
                   )}
                 />
+
+                <CardCoinStats
+                  className={classNames(
+                    "__wab_instance",
+                    sty.cardCoinStats__irxIx
+                  )}
+                />
+
+                <CardCoinStats
+                  className={classNames(
+                    "__wab_instance",
+                    sty.cardCoinStats__iy9Yn
+                  )}
+                />
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__wZrm)}>
                 <div className={classNames(projectcss.all, sty.freeBox__e2QXc)}>
