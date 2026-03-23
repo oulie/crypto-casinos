@@ -181,45 +181,49 @@ function PlasmicCoinSample__RenderFunc(props) {
             <div className={classNames(projectcss.all, sty.freeBox___1J4Df)}>
               <div className={classNames(projectcss.all, sty.freeBox__oiOgn)}>
                 <div className={classNames(projectcss.all, sty.freeBox__xfNkm)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__fW9Zn)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg",
-                      fullWidth: 64,
-                      fullHeight: 64,
-                      aspectRatio: undefined
-                    }}
-                  />
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__pUqzJ)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__fW9Zn)}
+                      displayHeight={"48px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"none"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"48px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg",
+                        fullWidth: 64,
+                        fullHeight: 64,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__hQiOg
-                    )}
-                  >
-                    {
-                      "Bitcoin casinos, BTC guides and the latest news in one place"
-                    }
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__tWalq
-                    )}
-                  >
-                    {
-                      "Explore our Bitcoin hub for editor-tested BTC casino recommendations, practical guides, recent Bitcoin gambling news."
-                    }
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__hQiOg
+                      )}
+                    >
+                      {
+                        "Bitcoin casinos, BTC guides and the latest news in one place"
+                      }
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__tWalq
+                      )}
+                    >
+                      {
+                        "Explore our Bitcoin hub for editor-tested BTC casino recommendations, practical guides, recent Bitcoin gambling news."
+                      }
+                    </div>
                   </div>
                   <div
                     className={classNames(
