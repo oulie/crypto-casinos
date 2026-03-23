@@ -23,6 +23,7 @@ import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQ
 import CardCoinStats from "../../CardCoinStats"; // plasmic-import: oroZGFcSE0LK/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import TableRowCoin from "../../TableRowCoin"; // plasmic-import: nX5ivYUrRc2W/component
+import CardPriceChart from "../../CardPriceChart"; // plasmic-import: Bygnfqie3Cqa/component
 import CardArticleNoCover from "../../CardArticleNoCover"; // plasmic-import: h0trZzJIFxmu/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -646,6 +647,36 @@ function PlasmicCoins__RenderFunc(props) {
                   title={"Load more coins"}
                 />
               </div>
+              <div className={classNames(projectcss.all, sty.freeBox__oYo2A)}>
+                <div className={classNames(projectcss.all, sty.freeBox__enIN)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__w4K5X
+                    )}
+                  >
+                    {"Live Price"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pgu21
+                    )}
+                  >
+                    {
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
+                    }
+                  </div>
+                </div>
+              </div>
+              <CardPriceChart
+                data-plasmic-name={"cardPriceChart"}
+                data-plasmic-override={overrides.cardPriceChart}
+                className={classNames("__wab_instance", sty.cardPriceChart)}
+              />
+
               <div className={classNames(projectcss.all, sty.freeBox__w5D9H)}>
                 <div className={classNames(projectcss.all, sty.freeBox__bDnh)}>
                   <div
@@ -840,10 +871,18 @@ function PlasmicCoins__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "coinPriceMarquee", "content", "leftContent"],
+  root: [
+    "root",
+    "coinPriceMarquee",
+    "content",
+    "leftContent",
+    "cardPriceChart"
+  ],
+
   coinPriceMarquee: ["coinPriceMarquee"],
-  content: ["content", "leftContent"],
-  leftContent: ["leftContent"]
+  content: ["content", "leftContent", "cardPriceChart"],
+  leftContent: ["leftContent", "cardPriceChart"],
+  cardPriceChart: ["cardPriceChart"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -881,6 +920,7 @@ export const PlasmicCoins = Object.assign(
     coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
+    cardPriceChart: makeNodeComponent("cardPriceChart"),
     // Metadata about props expected for PlasmicCoins
     internalVariantProps: PlasmicCoins__VariantProps,
     internalArgProps: PlasmicCoins__ArgProps,

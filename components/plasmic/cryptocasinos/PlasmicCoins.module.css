@@ -537,6 +537,44 @@
 .linkButton__byCc:global(.__wab_instance) {
   max-width: 100%;
 }
+.freeBox__oYo2A {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+  row-gap: 20px;
+  min-width: 0;
+}
+.freeBox__enIN {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.text__w4K5X {
+  animation: none;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+.text__pgu21 {
+  animation: none;
+  position: relative;
+  max-width: 610px;
+  font-size: 18px;
+  opacity: 0.6;
+  padding-bottom: 0px;
+}
+.cardPriceChart:global(.__wab_instance) {
+  max-width: 100%;
+  margin-bottom: 40px;
+}
 .freeBox__w5D9H {
   animation: none;
   display: flex;
