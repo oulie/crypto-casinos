@@ -9,9 +9,11 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: bDT2gFRjoAiP
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -170,7 +172,15 @@ function PlasmicSectionFullwidthArticle__RenderFunc(props) {
             >
               {"AUTHOR"}
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox___1T10)}>
+            <PlasmicLink__
+              data-plasmic-name={"link"}
+              data-plasmic-override={overrides.link}
+              className={classNames(projectcss.all, projectcss.a, sty.link)}
+              component={Link}
+              href={`/authors/sample`}
+              legacyBehavior={false}
+              platform={"nextjs"}
+            >
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__xOaPl)}
@@ -198,7 +208,7 @@ function PlasmicSectionFullwidthArticle__RenderFunc(props) {
                   })}
                 </div>
               </div>
-            </div>
+            </PlasmicLink__>
           </div>
         </div>
       </div>
@@ -207,9 +217,10 @@ function PlasmicSectionFullwidthArticle__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  hero: ["hero", "span", "linkButton"],
+  hero: ["hero", "span", "linkButton", "link"],
   span: ["span"],
-  linkButton: ["linkButton"]
+  linkButton: ["linkButton"],
+  link: ["link"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -246,6 +257,7 @@ export const PlasmicSectionFullwidthArticle = Object.assign(
     // Helper components rendering sub-elements
     span: makeNodeComponent("span"),
     linkButton: makeNodeComponent("linkButton"),
+    link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicSectionFullwidthArticle
     internalVariantProps: PlasmicSectionFullwidthArticle__VariantProps,
     internalArgProps: PlasmicSectionFullwidthArticle__ArgProps

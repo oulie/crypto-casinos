@@ -267,6 +267,7 @@ function PlasmicCardCasinoDetails__RenderFunc(props) {
         data-plasmic-name={"linkButton"}
         data-plasmic-override={overrides.linkButton}
         className={classNames("__wab_instance", sty.linkButton)}
+        href={`/top-casinos`}
         size={"medium"}
         title={"Compare Top Casinos"}
       />
