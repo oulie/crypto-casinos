@@ -24,10 +24,6 @@ import CardCoinStats from "../../CardCoinStats"; // plasmic-import: oroZGFcSE0LK
 import TableRowCoin from "../../TableRowCoin"; // plasmic-import: nX5ivYUrRc2W/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import CardArticleNoCover from "../../CardArticleNoCover"; // plasmic-import: h0trZzJIFxmu/component
-import SidebarCategories from "../../SidebarCategories"; // plasmic-import: qFRK-okrxuuw/component
-import SidebarRecentArticles from "../../SidebarRecentArticles"; // plasmic-import: 91sde1xxKkNX/component
-import CardCta from "../../CardCta"; // plasmic-import: -HNmkPk7FKYK/component
-import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -93,7 +89,6 @@ function PlasmicCoins__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const globalVariants = _useGlobalVariants();
   const pageMetadata = generateDynamicMetadata(
     wrapQueriesWithLoadingProxy({}),
     $ctx
@@ -621,38 +616,6 @@ function PlasmicCoins__RenderFunc(props) {
                 </div>
               </div>
             </div>
-            <div
-              data-plasmic-name={"sidebar"}
-              data-plasmic-override={overrides.sidebar}
-              className={classNames(projectcss.all, sty.sidebar)}
-            >
-              <SidebarCategories
-                data-plasmic-name={"sidebarCategories"}
-                data-plasmic-override={overrides.sidebarCategories}
-                className={classNames("__wab_instance", sty.sidebarCategories)}
-              />
-
-              <div
-                data-plasmic-name={"sticky"}
-                data-plasmic-override={overrides.sticky}
-                className={classNames(projectcss.all, sty.sticky)}
-              >
-                <SidebarRecentArticles
-                  data-plasmic-name={"sidebarRecentArticles"}
-                  data-plasmic-override={overrides.sidebarRecentArticles}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.sidebarRecentArticles
-                  )}
-                />
-
-                <CardCta
-                  data-plasmic-name={"cardCta"}
-                  data-plasmic-override={overrides.cardCta}
-                  className={classNames("__wab_instance", sty.cardCta)}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -661,44 +624,11 @@ function PlasmicCoins__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "coinPriceMarquee",
-    "svg",
-    "content",
-    "leftContent",
-    "sidebar",
-    "sidebarCategories",
-    "sticky",
-    "sidebarRecentArticles",
-    "cardCta"
-  ],
-
+  root: ["root", "coinPriceMarquee", "svg", "content", "leftContent"],
   coinPriceMarquee: ["coinPriceMarquee"],
   svg: ["svg"],
-  content: [
-    "content",
-    "leftContent",
-    "sidebar",
-    "sidebarCategories",
-    "sticky",
-    "sidebarRecentArticles",
-    "cardCta"
-  ],
-
-  leftContent: ["leftContent"],
-  sidebar: [
-    "sidebar",
-    "sidebarCategories",
-    "sticky",
-    "sidebarRecentArticles",
-    "cardCta"
-  ],
-
-  sidebarCategories: ["sidebarCategories"],
-  sticky: ["sticky", "sidebarRecentArticles", "cardCta"],
-  sidebarRecentArticles: ["sidebarRecentArticles"],
-  cardCta: ["cardCta"]
+  content: ["content", "leftContent"],
+  leftContent: ["leftContent"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -737,11 +667,6 @@ export const PlasmicCoins = Object.assign(
     svg: makeNodeComponent("svg"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
-    sidebar: makeNodeComponent("sidebar"),
-    sidebarCategories: makeNodeComponent("sidebarCategories"),
-    sticky: makeNodeComponent("sticky"),
-    sidebarRecentArticles: makeNodeComponent("sidebarRecentArticles"),
-    cardCta: makeNodeComponent("cardCta"),
     // Metadata about props expected for PlasmicCoins
     internalVariantProps: PlasmicCoins__VariantProps,
     internalArgProps: PlasmicCoins__ArgProps,

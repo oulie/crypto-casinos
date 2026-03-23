@@ -6,8 +6,13 @@
   max-width: 100%;
   font-size: 14px;
   position: relative;
+  background: var(--token-qAtNpqcFq1ZH);
   min-width: 0;
+  border-radius: 10px;
   padding: 8px;
+}
+.root:nth-child(even) {
+  background: none;
 }
 .freeBox__e0Tpc {
   animation: none;
