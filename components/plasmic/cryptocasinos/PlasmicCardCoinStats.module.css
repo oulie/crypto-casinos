@@ -90,9 +90,9 @@
   align-items: stretch;
   justify-content: space-between;
 }
-.text__el1Ix {
-  color: #ffffff;
+.slotTargetCoinName {
   font-weight: 500;
+  color: #ffffff;
 }
 .text__vMfSq {
   color: #ffffff;
@@ -105,9 +105,11 @@
   align-items: stretch;
   justify-content: space-between;
 }
-.text__tOkmc {
+.freeBox__tOkmc {
   position: relative;
   opacity: 0.6;
+  display: flex;
+  flex-direction: row;
 }
 .text__vD9B {
   position: relative;
@@ -200,6 +202,10 @@
   position: relative;
   font-size: 14px;
 }
-.linkButton:global(.__wab_instance) {
+.linkButton__uce5:global(.__wab_instance) {
+  animation: none;
   max-width: 100%;
+}
+.text___9Ndkx {
+  animation: none;
 }

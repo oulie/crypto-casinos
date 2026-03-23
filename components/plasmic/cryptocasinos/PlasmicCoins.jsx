@@ -21,8 +21,8 @@ import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
 import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import CardCoinStats from "../../CardCoinStats"; // plasmic-import: oroZGFcSE0LK/component
-import TableRowCoin from "../../TableRowCoin"; // plasmic-import: nX5ivYUrRc2W/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
+import TableRowCoin from "../../TableRowCoin"; // plasmic-import: nX5ivYUrRc2W/component
 import CardArticleNoCover from "../../CardArticleNoCover"; // plasmic-import: h0trZzJIFxmu/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -290,38 +290,138 @@ function PlasmicCoins__RenderFunc(props) {
                 />
 
                 <CardCoinStats
+                  buttonWrap={
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__jehG
+                      )}
+                      size={"small"}
+                      title={"DOT Casinos"}
+                    />
+                  }
                   className={classNames(
                     "__wab_instance",
                     sty.cardCoinStats__jLbvr
                   )}
+                  coinName={"Polkadot"}
+                  coinShorthand={"DOT"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <CardCoinStats
+                  buttonWrap={
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton___8G0DC
+                      )}
+                      size={"small"}
+                      title={"USDT Casinos"}
+                    />
+                  }
                   className={classNames(
                     "__wab_instance",
                     sty.cardCoinStats___3XonK
                   )}
+                  coinName={"Tether"}
+                  coinShorthand={"USDT"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <CardCoinStats
+                  buttonWrap={
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__rEsys
+                      )}
+                      size={"small"}
+                      title={"ADA Casinos"}
+                    />
+                  }
                   className={classNames(
                     "__wab_instance",
                     sty.cardCoinStats__ct9Zp
                   )}
+                  coinName={"Cardano"}
+                  coinShorthand={"ADA"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <CardCoinStats
+                  buttonWrap={
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton___7F8Ua
+                      )}
+                      size={"small"}
+                      title={"ETC Casinos"}
+                    />
+                  }
                   className={classNames(
                     "__wab_instance",
                     sty.cardCoinStats__irxIx
                   )}
+                  coinName={"Ethereum"}
+                  coinShorthand={"ETH"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <CardCoinStats
+                  buttonWrap={
+                    <LinkButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.linkButton__mfSPj
+                      )}
+                      size={"small"}
+                      title={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__ejy70
+                          )}
+                        >
+                          {"XRP Casinos"}
+                        </div>
+                      }
+                    />
+                  }
                   className={classNames(
                     "__wab_instance",
                     sty.cardCoinStats__iy9Yn
                   )}
+                  coinName={"XRP"}
+                  coinShorthand={"XRP"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__wZrm)}>

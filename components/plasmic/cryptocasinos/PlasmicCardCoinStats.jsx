@@ -14,7 +14,8 @@ import {
   PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
@@ -27,7 +28,12 @@ createPlasmicElementProxy;
 
 export const PlasmicCardCoinStats__VariantProps = new Array();
 
-export const PlasmicCardCoinStats__ArgProps = new Array();
+export const PlasmicCardCoinStats__ArgProps = new Array(
+  "icon",
+  "coinName",
+  "coinShorthand",
+  "buttonWrap"
+);
 
 const $$ = {};
 
@@ -43,7 +49,14 @@ function PlasmicCardCoinStats__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          icon: {
+            src: "/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg",
+            fullWidth: 64,
+            fullHeight: 64,
+            aspectRatio: undefined
+          }
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -90,25 +103,16 @@ function PlasmicCardCoinStats__RenderFunc(props) {
             displayMinWidth={"0"}
             displayWidth={"38px"}
             loading={"lazy"}
-            src={{
-              src: "/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg",
-              fullWidth: 64,
-              fullHeight: 64,
-              aspectRatio: undefined
-            }}
+            src={args.icon}
           />
 
           <div className={classNames(projectcss.all, sty.freeBox__s3IvH)}>
             <div className={classNames(projectcss.all, sty.freeBox__rkPpW)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__el1Ix
-                )}
-              >
-                {"Bitcoin"}
-              </div>
+              {renderPlasmicSlot({
+                defaultContents: "Bitcoin",
+                value: args.coinName,
+                className: classNames(sty.slotTargetCoinName)
+              })}
               <div
                 className={classNames(
                   projectcss.all,
@@ -120,14 +124,11 @@ function PlasmicCardCoinStats__RenderFunc(props) {
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__v3Na7)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__tOkmc
-                )}
-              >
-                {"BTC"}
+              <div className={classNames(projectcss.all, sty.freeBox__tOkmc)}>
+                {renderPlasmicSlot({
+                  defaultContents: "BTC",
+                  value: args.coinShorthand
+                })}
               </div>
               <div
                 className={classNames(
@@ -214,22 +215,25 @@ function PlasmicCardCoinStats__RenderFunc(props) {
         >
           {"Supported by 115 Casinos"}
         </div>
-        <LinkButton
-          data-plasmic-name={"linkButton"}
-          data-plasmic-override={overrides.linkButton}
-          className={classNames("__wab_instance", sty.linkButton)}
-          size={"small"}
-          title={"BTC Casinos"}
-        />
+        {renderPlasmicSlot({
+          defaultContents: (
+            <LinkButton
+              className={classNames("__wab_instance", sty.linkButton__uce5)}
+              size={"small"}
+              title={"BTC Casinos"}
+            />
+          ),
+
+          value: args.buttonWrap
+        })}
       </div>
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "linkButton"],
-  img: ["img"],
-  linkButton: ["linkButton"]
+  root: ["root", "img"],
+  img: ["img"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -265,7 +269,6 @@ export const PlasmicCardCoinStats = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
-    linkButton: makeNodeComponent("linkButton"),
     // Metadata about props expected for PlasmicCardCoinStats
     internalVariantProps: PlasmicCardCoinStats__VariantProps,
     internalArgProps: PlasmicCardCoinStats__ArgProps
