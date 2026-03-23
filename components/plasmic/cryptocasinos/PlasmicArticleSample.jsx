@@ -242,8 +242,16 @@ function PlasmicArticleSample__RenderFunc(props) {
                   >
                     {"AUTHOR"}
                   </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__i4Tk)}
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__i4Tk
+                    )}
+                    component={Link}
+                    href={`/authors/sample`}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
                   >
                     <PlasmicImg__
                       alt={""}
@@ -279,7 +287,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                         })}
                       </div>
                     </div>
-                  </div>
+                  </PlasmicLink__>
                 </div>
               </div>
             </div>

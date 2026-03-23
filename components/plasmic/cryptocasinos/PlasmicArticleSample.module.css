@@ -237,7 +237,7 @@
   text-transform: uppercase;
   opacity: 0.7;
 }
-.freeBox__i4Tk {
+.link__i4Tk {
   animation: none;
   display: flex;
   flex-direction: row;
@@ -247,7 +247,11 @@
   column-gap: 6px;
   width: 100%;
   white-space: pre;
+  color: #cfcfcf;
   min-width: 0;
+}
+.root .link__i4Tk:hover {
+  color: #ffffff;
 }
 .img__nfd9Z {
   animation: none;

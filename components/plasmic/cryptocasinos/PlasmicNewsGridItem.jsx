@@ -233,27 +233,48 @@ function PlasmicNewsGridItem__RenderFunc(props) {
           </div>
         </PlasmicLink__>
         <div className={classNames(projectcss.all, sty.freeBox__lbq3A)}>
-          <PlasmicImg__
-            alt={""}
-            className={classNames(sty.img__c2YS)}
-            displayHeight={"32px"}
-            displayMaxHeight={"none"}
-            displayMaxWidth={"100%"}
-            displayMinHeight={"0"}
-            displayMinWidth={"0"}
-            displayWidth={"32px"}
-            loading={"lazy"}
-            src={args.autohrAvatar}
-          />
-
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              sty.link___0NQfL
+            )}
+            component={Link}
+            href={`/authors/sample`}
+            legacyBehavior={false}
+            platform={"nextjs"}
+          >
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__c2YS)}
+              displayHeight={"32px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"32px"}
+              loading={"lazy"}
+              src={args.autohrAvatar}
+            />
+          </PlasmicLink__>
           <div className={classNames(projectcss.all, sty.freeBox__sIl5)}>
-            <div className={classNames(projectcss.all, sty.freeBox__jKh5D)}>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__jKh5D
+              )}
+              component={Link}
+              href={`/authors/sample`}
+              legacyBehavior={false}
+              platform={"nextjs"}
+            >
               {renderPlasmicSlot({
                 defaultContents: "Peter Pragnanda",
                 value: args.authorName,
                 className: classNames(sty.slotTargetAuthorName)
               })}
-            </div>
+            </PlasmicLink__>
             <div className={classNames(projectcss.all, sty.freeBox__s639N)}>
               {renderPlasmicSlot({
                 defaultContents: "Mar 16, 2026",
