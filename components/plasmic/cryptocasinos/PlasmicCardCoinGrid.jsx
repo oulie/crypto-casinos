@@ -9,9 +9,11 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: yrCDLPBLbJC6
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -72,13 +74,14 @@ function PlasmicCardCoinGrid__RenderFunc(props) {
   const $refs = refsRef.current;
   const styleTokensClassNames = _useStyleTokens();
   return (
-    <div
+    <PlasmicLink__
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -86,6 +89,10 @@ function PlasmicCardCoinGrid__RenderFunc(props) {
         sty.root,
         "bg-grain"
       )}
+      component={Link}
+      href={`/coins/btc`}
+      legacyBehavior={false}
+      platform={"nextjs"}
     >
       <div className={classNames(projectcss.all, sty.freeBox__gVjF)} />
       <PlasmicImg__
@@ -124,7 +131,7 @@ function PlasmicCardCoinGrid__RenderFunc(props) {
           })}
         </div>
       </div>
-    </div>
+    </PlasmicLink__>
   );
 }
 

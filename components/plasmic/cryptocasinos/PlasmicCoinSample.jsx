@@ -154,6 +154,7 @@ function PlasmicCoinSample__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkBreadcrumb__khhnR
                 )}
+                href={`/coins`}
                 title={"Coins"}
               />
 

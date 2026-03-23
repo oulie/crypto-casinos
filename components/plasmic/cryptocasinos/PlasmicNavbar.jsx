@@ -131,7 +131,8 @@ function PlasmicNavbar__RenderFunc(props) {
 
           <LinkNav
             className={classNames("__wab_instance", sty.linkNav__miIq)}
-            title={"Bonuses"}
+            href={`/coins`}
+            title={"Coins"}
           />
 
           <LinkNav

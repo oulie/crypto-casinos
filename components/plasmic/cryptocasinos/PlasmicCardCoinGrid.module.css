@@ -12,9 +12,15 @@
   width: 100%;
   position: relative;
   column-gap: 10px;
+  color: #cfcfcf;
+  cursor: pointer;
   min-width: 0;
   border-radius: 20px;
   padding: 20px;
+}
+.root:hover {
+  color: #cfcfcf;
+  background: var(--token-GKj3RTmB9JGm);
 }
 .freeBox__gVjF {
   animation: none;
@@ -39,11 +45,18 @@
   object-fit: cover;
   width: 40px;
   height: 40px;
+  transition-property: transform;
+  transition-duration: 0.15s;
   flex-shrink: 0;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 0.15s;
   border-radius: 60px;
 }
 .img > picture > img {
   object-fit: cover;
+}
+.root:hover .img {
+  transform: rotate3d(0, 0, 1, -30deg);
 }
 .freeBox__ki15B {
   animation: none;

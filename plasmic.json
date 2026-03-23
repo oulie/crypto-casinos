@@ -917,6 +917,46 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicNavbarMobileLink.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "c6czgU2PZEZT",
+          "name": "Coins",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCoins.jsx",
+          "importSpec": {
+            "modulePath": "../pages/coins.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCoins.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/coins"
+        },
+        {
+          "id": "oroZGFcSE0LK",
+          "name": "CardCoinStats",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardCoinStats.jsx",
+          "importSpec": {
+            "modulePath": "CardCoinStats.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardCoinStats.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "nX5ivYUrRc2W",
+          "name": "TableRowCoin",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTableRowCoin.jsx",
+          "importSpec": {
+            "modulePath": "TableRowCoin.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicTableRowCoin.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
