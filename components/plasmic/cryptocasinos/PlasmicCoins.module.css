@@ -411,6 +411,7 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: stretch;
+  row-gap: 4px;
   min-width: 0;
 }
 .freeBox__fcgi5 {
@@ -450,6 +451,9 @@
 }
 .tableRowCoin__ymC3S:global(.__wab_instance) {
   position: relative;
+}
+.text__yRlqC {
+  padding-bottom: 0px;
 }
 .tableRowCoin__b4UYs:global(.__wab_instance) {
   position: relative;

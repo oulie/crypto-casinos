@@ -499,6 +499,24 @@ function PlasmicCoins__RenderFunc(props) {
                     "__wab_instance",
                     sty.tableRowCoin__ymC3S
                   )}
+                  coinName={"Tether"}
+                  coinShorthand={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__yRlqC
+                      )}
+                    >
+                      {"USDT"}
+                    </div>
+                  }
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <TableRowCoin
@@ -506,6 +524,14 @@ function PlasmicCoins__RenderFunc(props) {
                     "__wab_instance",
                     sty.tableRowCoin__b4UYs
                   )}
+                  coinName={"Polkadot"}
+                  coinShorthand={"DOT"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <TableRowCoin
@@ -513,6 +539,14 @@ function PlasmicCoins__RenderFunc(props) {
                     "__wab_instance",
                     sty.tableRowCoin__wZlOe
                   )}
+                  coinName={"Cardano"}
+                  coinShorthand={"ADA"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <TableRowCoin
@@ -520,6 +554,14 @@ function PlasmicCoins__RenderFunc(props) {
                     "__wab_instance",
                     sty.tableRowCoin__qAfl
                   )}
+                  coinName={"XRP"}
+                  coinShorthand={"XRP"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <TableRowCoin
@@ -527,6 +569,14 @@ function PlasmicCoins__RenderFunc(props) {
                     "__wab_instance",
                     sty.tableRowCoin__jlMsw
                   )}
+                  coinName={"Ethereum"}
+                  coinShorthand={"ETH"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
 
                 <TableRowCoin
@@ -534,6 +584,14 @@ function PlasmicCoins__RenderFunc(props) {
                     "__wab_instance",
                     sty.tableRowCoin__dDf3W
                   )}
+                  coinName={"Solana"}
+                  coinShorthand={"SOL"}
+                  icon={{
+                    src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                    fullWidth: 225,
+                    fullHeight: 225,
+                    aspectRatio: 1
+                  }}
                 />
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__ecfWi)}>

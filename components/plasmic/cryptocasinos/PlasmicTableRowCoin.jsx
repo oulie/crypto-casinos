@@ -11,12 +11,13 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 import {
+  PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -28,7 +29,11 @@ createPlasmicElementProxy;
 
 export const PlasmicTableRowCoin__VariantProps = new Array();
 
-export const PlasmicTableRowCoin__ArgProps = new Array();
+export const PlasmicTableRowCoin__ArgProps = new Array(
+  "icon",
+  "coinName",
+  "coinShorthand"
+);
 
 const $$ = {};
 
@@ -44,7 +49,14 @@ function PlasmicTableRowCoin__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          icon: {
+            src: "/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg",
+            fullWidth: 64,
+            fullHeight: 64,
+            aspectRatio: undefined
+          }
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -76,33 +88,36 @@ function PlasmicTableRowCoin__RenderFunc(props) {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__e0Tpc)}>
-        <LinkCoinIcon
-          data-plasmic-name={"linkCoinIcon"}
-          data-plasmic-override={overrides.linkCoinIcon}
-          className={classNames("__wab_instance", sty.linkCoinIcon)}
+        <PlasmicImg__
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
+          alt={""}
+          className={classNames(sty.img)}
+          displayHeight={"32px"}
+          displayMaxHeight={"none"}
+          displayMaxWidth={"100%"}
+          displayMinHeight={"0"}
+          displayMinWidth={"0"}
+          displayWidth={"32px"}
+          loading={"lazy"}
+          src={args.icon}
         />
 
         <div className={classNames(projectcss.all, sty.freeBox__booAy)}>
           <div className={classNames(projectcss.all, sty.freeBox__zlJ1B)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__lBjzO
-              )}
-            >
-              {"Bitcoin"}
-            </div>
+            {renderPlasmicSlot({
+              defaultContents: "Bitcoin",
+              value: args.coinName,
+              className: classNames(sty.slotTargetCoinName)
+            })}
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__h5XRi)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__soG8X
-              )}
-            >
-              {"BTC"}
+            <div className={classNames(projectcss.all, sty.freeBox__soG8X)}>
+              {renderPlasmicSlot({
+                defaultContents: "BTC",
+                value: args.coinShorthand,
+                className: classNames(sty.slotTargetCoinShorthand)
+              })}
             </div>
           </div>
         </div>
@@ -162,8 +177,8 @@ function PlasmicTableRowCoin__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "linkCoinIcon", "svg", "linkButton"],
-  linkCoinIcon: ["linkCoinIcon"],
+  root: ["root", "img", "svg", "linkButton"],
+  img: ["img"],
   svg: ["svg"],
   linkButton: ["linkButton"]
 };
@@ -200,7 +215,7 @@ export const PlasmicTableRowCoin = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    linkCoinIcon: makeNodeComponent("linkCoinIcon"),
+    img: makeNodeComponent("img"),
     svg: makeNodeComponent("svg"),
     linkButton: makeNodeComponent("linkButton"),
     // Metadata about props expected for PlasmicTableRowCoin
