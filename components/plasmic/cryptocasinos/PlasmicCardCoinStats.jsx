@@ -11,12 +11,12 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 import {
+  PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -78,10 +78,24 @@ function PlasmicCardCoinStats__RenderFunc(props) {
       <div className={classNames(projectcss.all, sty.freeBox__s4BVv)} />
       <div className={classNames(projectcss.all, sty.freeBox__pUrPc)}>
         <div className={classNames(projectcss.all, sty.freeBox__tuElg)}>
-          <LinkCoinIcon
-            data-plasmic-name={"linkCoinIcon"}
-            data-plasmic-override={overrides.linkCoinIcon}
-            className={classNames("__wab_instance", sty.linkCoinIcon)}
+          <PlasmicImg__
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={"38px"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"38px"}
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/cryptocasinos/images/bitcoinCircleSvg.svg",
+              fullWidth: 64,
+              fullHeight: 64,
+              aspectRatio: undefined
+            }}
           />
 
           <div className={classNames(projectcss.all, sty.freeBox__s3IvH)}>
@@ -213,8 +227,8 @@ function PlasmicCardCoinStats__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "linkCoinIcon", "linkButton"],
-  linkCoinIcon: ["linkCoinIcon"],
+  root: ["root", "img", "linkButton"],
+  img: ["img"],
   linkButton: ["linkButton"]
 };
 
@@ -250,7 +264,7 @@ export const PlasmicCardCoinStats = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    linkCoinIcon: makeNodeComponent("linkCoinIcon"),
+    img: makeNodeComponent("img"),
     linkButton: makeNodeComponent("linkButton"),
     // Metadata about props expected for PlasmicCardCoinStats
     internalVariantProps: PlasmicCardCoinStats__VariantProps,
