@@ -190,7 +190,7 @@ function PlasmicCardCasinoVertical__RenderFunc(props) {
           <LinkButton
             className={classNames("__wab_instance", sty.linkButton__xmf2)}
             color={"clear"}
-            href={`/review-sample`}
+            href={`/casinos/stake`}
             size={
               hasVariant(globalVariants, "screen", "mobile")
                 ? "medium"

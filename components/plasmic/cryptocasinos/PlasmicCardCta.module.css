@@ -92,3 +92,17 @@
 .text__j6RrL {
   animation: none;
 }
+.svg__ukoQ {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__kyZHn {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}

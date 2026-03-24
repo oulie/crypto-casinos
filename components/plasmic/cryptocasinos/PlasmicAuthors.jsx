@@ -17,15 +17,13 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
-import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import AuthorGridItem from "../../AuthorGridItem"; // plasmic-import: QrVApQRILF2K/component
+import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import Pagination from "../../Pagination"; // plasmic-import: pFMQCMqFtkNz/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicAuthors.module.css"; // plasmic-import: 8JsWp1i_uRX-/css
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 2AAjufLElL24/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -116,39 +114,6 @@ function PlasmicAuthors__RenderFunc(props) {
             sty.root
           )}
         >
-          <CoinPriceMarquee
-            data-plasmic-name={"coinPriceMarquee"}
-            data-plasmic-override={overrides.coinPriceMarquee}
-            className={classNames("__wab_instance", sty.coinPriceMarquee)}
-          />
-
-          <div className={classNames(projectcss.all, sty.freeBox__gw7JB)}>
-            <div className={classNames(projectcss.all, sty.freeBox__ujkA)}>
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__odWdn
-                )}
-                href={`/`}
-              />
-
-              <IconIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
-                role={"img"}
-              />
-
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__mKjg8
-                )}
-                isCurrent={true}
-                title={"Authors"}
-              />
-            </div>
-          </div>
           <div className={classNames(projectcss.all, sty.freeBox__sVpqv)}>
             <div className={classNames(projectcss.all, sty.freeBox__wKuI2)}>
               <div
@@ -196,30 +161,224 @@ function PlasmicAuthors__RenderFunc(props) {
                     "__wab_instance",
                     sty.authorGridItem__ak9V6
                   )}
+                  coins={
+                    <React.Fragment>
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__jvAzV
+                        )}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon___8Tpsg
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__kzUt5
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+                    </React.Fragment>
+                  }
                 />
 
                 <AuthorGridItem
+                  avatar={{
+                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatarJpg.jpg",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
                   className={classNames(
                     "__wab_instance",
                     sty.authorGridItem__ixIT
                   )}
+                  coins={
+                    <React.Fragment>
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__j7ZC
+                        )}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon___1YZ3
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__uCr3
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+                    </React.Fragment>
+                  }
                 />
 
                 <AuthorGridItem
+                  avatar={{
+                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar8Jpg.jpg",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
                   className={classNames(
                     "__wab_instance",
                     sty.authorGridItem__hpUfC
                   )}
+                  coins={
+                    <React.Fragment>
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__ci8Z
+                        )}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__lh5U5
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__nTlKc
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+                    </React.Fragment>
+                  }
                 />
 
                 <AuthorGridItem
+                  avatar={{
+                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar7Jpg.jpg",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
                   className={classNames(
                     "__wab_instance",
                     sty.authorGridItem__pQ6Pc
                   )}
+                  coins={
+                    <React.Fragment>
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon___3SnVo
+                        )}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__vgY0A
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__yADsA
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__yoWzz
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+                    </React.Fragment>
+                  }
                 />
 
                 <AuthorGridItem
+                  avatar={{
+                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar6Jpg.jpg",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
                   className={classNames(
                     "__wab_instance",
                     sty.authorGridItem__miSnh
@@ -227,13 +386,92 @@ function PlasmicAuthors__RenderFunc(props) {
                 />
 
                 <AuthorGridItem
+                  avatar={{
+                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar5Jpg.jpg",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
                   className={classNames(
                     "__wab_instance",
                     sty.authorGridItem__nRlOt
                   )}
+                  coins={
+                    <React.Fragment>
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon___1B7O
+                        )}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__yRqFx
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__l0GAn
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon___1MM7
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+
+                      <LinkCoinIcon
+                        className={classNames(
+                          "__wab_instance",
+                          sty.linkCoinIcon__t8NxM
+                        )}
+                        icon={{
+                          src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                          fullWidth: 225,
+                          fullHeight: 225,
+                          aspectRatio: 1
+                        }}
+                        size={"small"}
+                      />
+                    </React.Fragment>
+                  }
                 />
 
                 <AuthorGridItem
+                  avatar={{
+                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar4Jpg.jpg",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
                   className={classNames(
                     "__wab_instance",
                     sty.authorGridItem__h8Ggf
@@ -241,6 +479,12 @@ function PlasmicAuthors__RenderFunc(props) {
                 />
 
                 <AuthorGridItem
+                  avatar={{
+                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar3Jpg.jpg",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
                   className={classNames(
                     "__wab_instance",
                     sty.authorGridItem___6V9Gv
@@ -248,6 +492,12 @@ function PlasmicAuthors__RenderFunc(props) {
                 />
 
                 <AuthorGridItem
+                  avatar={{
+                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar9Jpg.jpg",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
+                    aspectRatio: undefined
+                  }}
                   className={classNames(
                     "__wab_instance",
                     sty.authorGridItem__zlbU9
@@ -268,17 +518,7 @@ function PlasmicAuthors__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "coinPriceMarquee",
-    "svg",
-    "content",
-    "leftContent",
-    "pagination"
-  ],
-
-  coinPriceMarquee: ["coinPriceMarquee"],
-  svg: ["svg"],
+  root: ["root", "content", "leftContent", "pagination"],
   content: ["content", "leftContent", "pagination"],
   leftContent: ["leftContent", "pagination"],
   pagination: ["pagination"]
@@ -316,8 +556,6 @@ export const PlasmicAuthors = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
-    svg: makeNodeComponent("svg"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
     pagination: makeNodeComponent("pagination"),

@@ -231,3 +231,17 @@
     animation: none;
   }
 }
+.svg__oGxoM {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__timtc {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}

@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
+import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -37,7 +38,8 @@ export const PlasmicCardCasinoList__VariantProps = new Array();
 export const PlasmicCardCasinoList__ArgProps = new Array(
   "logo",
   "position",
-  "title"
+  "title",
+  "coins"
 );
 
 const $$ = {};
@@ -107,8 +109,10 @@ function PlasmicCardCasinoList__RenderFunc(props) {
             </div>
           </div>
           <PlasmicImg__
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
             alt={""}
-            className={classNames(sty.img__szHwS)}
+            className={classNames(sty.img)}
             displayHeight={"80px"}
             displayMaxHeight={"none"}
             displayMaxWidth={"100%"}
@@ -192,7 +196,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton___3SGTw)}
               color={"clear"}
-              href={`/review-sample`}
+              href={`/casinos/stake`}
               size={
                 hasVariant(globalVariants, "screen", "mobile")
                   ? "medium"
@@ -201,102 +205,89 @@ function PlasmicCardCasinoList__RenderFunc(props) {
               title={"Read Review"}
             />
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__gLiMw)}>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__a40B)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"20px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
-            />
+          <div
+            className={classNames(
+              projectcss.all,
+              sty.freeBox__x7Iy0,
+              "link-coin-icon-wrap"
+            )}
+          >
+            {renderPlasmicSlot({
+              defaultContents: (
+                <React.Fragment>
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon___6PGpL
+                    )}
+                    size={"small"}
+                  />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__xesL)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"20px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image4.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
-            />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon___8R8Xh
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img___6Gpz)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"20px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image5.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
-            />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon___0I7Pj
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img___1IQ7X)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"20px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image7.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
-            />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__pXmHc
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img___5ZS7W)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"20px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image8.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
-            />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__xkRp
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
+                </React.Fragment>
+              ),
 
+              value: args.coins
+            })}
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__ep0Du
+                sty.text__vKt1X
               )}
             >
               {"+9"}
@@ -351,7 +342,8 @@ function PlasmicCardCasinoList__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "img"],
+  img: ["img"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -386,6 +378,7 @@ export const PlasmicCardCasinoList = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicCardCasinoList
     internalVariantProps: PlasmicCardCasinoList__VariantProps,
     internalArgProps: PlasmicCardCasinoList__ArgProps

@@ -12,14 +12,11 @@ import * as React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import {
-  PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
-import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import TogglesCoins from "../../TogglesCoins"; // plasmic-import: CJpG2dK0Va9g/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
@@ -33,7 +30,6 @@ import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-impor
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicGuides.module.css"; // plasmic-import: XijmaTP8xfzh/css
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 2AAjufLElL24/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -125,39 +121,6 @@ function PlasmicGuides__RenderFunc(props) {
             sty.root
           )}
         >
-          <CoinPriceMarquee
-            data-plasmic-name={"coinPriceMarquee"}
-            data-plasmic-override={overrides.coinPriceMarquee}
-            className={classNames("__wab_instance", sty.coinPriceMarquee)}
-          />
-
-          <div className={classNames(projectcss.all, sty.freeBox__ag6Nj)}>
-            <div className={classNames(projectcss.all, sty.freeBox__rZySd)}>
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__iwRay
-                )}
-                href={`/`}
-              />
-
-              <IconIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
-                role={"img"}
-              />
-
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__fIOtL
-                )}
-                isCurrent={true}
-                title={"Guides"}
-              />
-            </div>
-          </div>
           <div className={classNames(projectcss.all, sty.freeBox__ofSkB)}>
             <div className={classNames(projectcss.all, sty.freeBox__yGbxq)}>
               <div
@@ -351,63 +314,6 @@ function PlasmicGuides__RenderFunc(props) {
                     "__wab_instance",
                     sty.newsGridItem__nxEe1
                   )}
-                  coins={
-                    <React.Fragment>
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__kFuVt)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image3.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__fmzXg)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image4.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__pjFYb)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image8.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </React.Fragment>
-                  }
                   cover={{
                     src: "/plasmic/cryptocasinos/images/placeholder1Jpg.jpg",
                     fullWidth: 2501,
@@ -456,63 +362,6 @@ function PlasmicGuides__RenderFunc(props) {
                     "__wab_instance",
                     sty.newsGridItem__mvVi
                   )}
-                  coins={
-                    <React.Fragment>
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___3Aj1D)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image3.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__tSTgZ)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image4.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__eYoxJ)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image8.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </React.Fragment>
-                  }
                   cover={{
                     src: "/plasmic/cryptocasinos/images/placeholder2Avif.avif",
                     fullWidth: 880,
@@ -561,63 +410,6 @@ function PlasmicGuides__RenderFunc(props) {
                     "__wab_instance",
                     sty.newsGridItem__b6Vsf
                   )}
-                  coins={
-                    <React.Fragment>
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__jqGd)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image3.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__cNrw7)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image4.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___1JwAp)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image8.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </React.Fragment>
-                  }
                   cover={{
                     src: "/plasmic/cryptocasinos/images/bitcoinJpg.jpg",
                     fullWidth: 1262,
@@ -666,63 +458,6 @@ function PlasmicGuides__RenderFunc(props) {
                     "__wab_instance",
                     sty.newsGridItem__jzRgX
                   )}
-                  coins={
-                    <React.Fragment>
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__f1G5L)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image3.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__tICzb)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image4.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___08Y6V)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image8.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </React.Fragment>
-                  }
                   cover={{
                     src: "/plasmic/cryptocasinos/images/_06CryptoCoverPurpleJpg.jpg",
                     fullWidth: 1600,
@@ -771,63 +506,6 @@ function PlasmicGuides__RenderFunc(props) {
                     "__wab_instance",
                     sty.newsGridItem__j28Jk
                   )}
-                  coins={
-                    <React.Fragment>
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__q9Hxh)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image3.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___3DwP)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image4.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__wlaxh)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image8.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </React.Fragment>
-                  }
                   cover={{
                     src: "/plasmic/cryptocasinos/images/whatIsACryptoProtocol1200X550Svg.svg",
                     fullWidth: 1200,
@@ -876,63 +554,6 @@ function PlasmicGuides__RenderFunc(props) {
                     "__wab_instance",
                     sty.newsGridItem___4Zzns
                   )}
-                  coins={
-                    <React.Fragment>
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__j5SkS)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image3.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__ouRu)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image4.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__f8I)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"20px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/cryptocasinos/images/image8.png",
-                          fullWidth: 64,
-                          fullHeight: 64,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </React.Fragment>
-                  }
                   cover={{
                     src: "/plasmic/cryptocasinos/images/placeholder2Avif.avif",
                     fullWidth: 880,
@@ -1017,8 +638,6 @@ function PlasmicGuides__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "coinPriceMarquee",
-    "svg",
     "togglesCoins",
     "content",
     "leftContent",
@@ -1030,8 +649,6 @@ const PlasmicDescendants = {
     "cardCta"
   ],
 
-  coinPriceMarquee: ["coinPriceMarquee"],
-  svg: ["svg"],
   togglesCoins: ["togglesCoins"],
   content: [
     "content",
@@ -1092,8 +709,6 @@ export const PlasmicGuides = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
-    svg: makeNodeComponent("svg"),
     togglesCoins: makeNodeComponent("togglesCoins"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),

@@ -21,8 +21,6 @@ import {
   renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
-import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import CardCasinoDetails from "../../CardCasinoDetails"; // plasmic-import: vGoC4GKdwTta/component
 import CardInfoBox from "../../CardInfoBox"; // plasmic-import: fL78jSqd6G-W/component
 import TableSample from "../../TableSample"; // plasmic-import: YHX7r1koYXua/component
@@ -32,6 +30,7 @@ import TableRowCoin from "../../TableRowCoin"; // plasmic-import: nX5ivYUrRc2W/c
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import RichTextImage from "../../RichTextImage"; // plasmic-import: 1vp7wIRXlNq8/component
 import CardCasinoList from "../../CardCasinoList"; // plasmic-import: 6YxcbeY1AF1_/component
+import SectionHeader from "../../SectionHeader"; // plasmic-import: peFiZbBQXNG2/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import SidebarRecentArticles from "../../SidebarRecentArticles"; // plasmic-import: 91sde1xxKkNX/component
@@ -43,7 +42,6 @@ import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-impor
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicArticleSample.module.css"; // plasmic-import: pfmKCpU0cemV/css
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 2AAjufLElL24/icon
 import ClockIcon from "./icons/PlasmicIcon__Clock"; // plasmic-import: HdrPe8G3Z0hy/icon
 import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: rZ8hz7v-qc_C/icon
 
@@ -140,51 +138,6 @@ function PlasmicArticleSample__RenderFunc(props) {
             sty.root
           )}
         >
-          <CoinPriceMarquee
-            data-plasmic-name={"coinPriceMarquee"}
-            data-plasmic-override={overrides.coinPriceMarquee}
-            className={classNames("__wab_instance", sty.coinPriceMarquee)}
-          />
-
-          <div className={classNames(projectcss.all, sty.freeBox__kdIoD)}>
-            <div className={classNames(projectcss.all, sty.freeBox__xMvx7)}>
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__t19Q1
-                )}
-                href={`/`}
-              />
-
-              <IconIcon
-                className={classNames(projectcss.all, sty.svg__to8S)}
-                role={"img"}
-              />
-
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__jL5Hd
-                )}
-                href={`/guides`}
-                title={"Crypto Guides"}
-              />
-
-              <IconIcon
-                className={classNames(projectcss.all, sty.svg__ffB1Y)}
-                role={"img"}
-              />
-
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__tenL
-                )}
-                isCurrent={true}
-                title={"How to Choose a Crypto Casino"}
-              />
-            </div>
-          </div>
           <div
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
@@ -249,7 +202,7 @@ function PlasmicArticleSample__RenderFunc(props) {
                       sty.link__i4Tk
                     )}
                     component={Link}
-                    href={`/authors/sample`}
+                    href={`/authors/peter-pragnanda`}
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
@@ -1183,42 +1136,29 @@ function PlasmicArticleSample__RenderFunc(props) {
                 className={classNames("__wab_instance", sty.cardCasinoList)}
               />
 
-              <div className={classNames(projectcss.all, sty.freeBox__vZu3B)}>
-                <div className={classNames(projectcss.all, sty.freeBox__r9PEs)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___9GsNg)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__qzBdQ
-                      )}
-                    >
-                      {"Guides & News"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__icAmm
-                      )}
-                    >
-                      {
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
-                      }
-                    </div>
-                  </div>
+              <SectionHeader
+                data-plasmic-name={"sectionHeader"}
+                data-plasmic-override={overrides.sectionHeader}
+                buttons={
                   <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__tdBA
-                    )}
+                    data-plasmic-name={"linkButton"}
+                    data-plasmic-override={overrides.linkButton}
+                    className={classNames("__wab_instance", sty.linkButton)}
                     color={"gray"}
+                    href={`/news`}
                     size={"medium"}
                     title={"Browse News"}
                   />
-                </div>
+                }
+                className={classNames("__wab_instance", sty.sectionHeader)}
+                description={
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
+                }
+                hasButton={true}
+                title={"Latest News"}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox__vZu3B)}>
                 <div className={classNames(projectcss.all, sty.freeBox__rpOal)}>
                   <NewsGridItem
                     className={classNames(
@@ -1239,63 +1179,6 @@ function PlasmicArticleSample__RenderFunc(props) {
                       "__wab_instance",
                       sty.newsGridItem__felWh
                     )}
-                    coins={
-                      <React.Fragment>
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___830AE)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image3.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___3Ar6O)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image4.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__bHq6Q)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image8.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </React.Fragment>
-                    }
                     cover={{
                       src: "/plasmic/cryptocasinos/images/placeholder1Jpg.jpg",
                       fullWidth: 2501,
@@ -1416,7 +1299,6 @@ function PlasmicArticleSample__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "coinPriceMarquee",
     "hero",
     "cardCasinoDetails",
     "divider",
@@ -1429,6 +1311,8 @@ const PlasmicDescendants = {
     "richTextImage",
     "h3",
     "cardCasinoList",
+    "sectionHeader",
+    "linkButton",
     "sidebar",
     "sidebarRecentArticles",
     "sticky",
@@ -1436,7 +1320,6 @@ const PlasmicDescendants = {
     "cardCta"
   ],
 
-  coinPriceMarquee: ["coinPriceMarquee"],
   hero: ["hero", "cardCasinoDetails"],
   cardCasinoDetails: ["cardCasinoDetails"],
   divider: ["divider"],
@@ -1450,6 +1333,8 @@ const PlasmicDescendants = {
     "richTextImage",
     "h3",
     "cardCasinoList",
+    "sectionHeader",
+    "linkButton",
     "sidebar",
     "sidebarRecentArticles",
     "sticky",
@@ -1465,7 +1350,9 @@ const PlasmicDescendants = {
     "ol",
     "richTextImage",
     "h3",
-    "cardCasinoList"
+    "cardCasinoList",
+    "sectionHeader",
+    "linkButton"
   ],
 
   span: ["span"],
@@ -1475,6 +1362,8 @@ const PlasmicDescendants = {
   richTextImage: ["richTextImage"],
   h3: ["h3"],
   cardCasinoList: ["cardCasinoList"],
+  sectionHeader: ["sectionHeader", "linkButton"],
+  linkButton: ["linkButton"],
   sidebar: [
     "sidebar",
     "sidebarRecentArticles",
@@ -1521,7 +1410,6 @@ export const PlasmicArticleSample = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
     hero: makeNodeComponent("hero"),
     cardCasinoDetails: makeNodeComponent("cardCasinoDetails"),
     divider: makeNodeComponent("divider"),
@@ -1534,6 +1422,8 @@ export const PlasmicArticleSample = Object.assign(
     richTextImage: makeNodeComponent("richTextImage"),
     h3: makeNodeComponent("h3"),
     cardCasinoList: makeNodeComponent("cardCasinoList"),
+    sectionHeader: makeNodeComponent("sectionHeader"),
+    linkButton: makeNodeComponent("linkButton"),
     sidebar: makeNodeComponent("sidebar"),
     sidebarRecentArticles: makeNodeComponent("sidebarRecentArticles"),
     sticky: makeNodeComponent("sticky"),
@@ -1543,8 +1433,8 @@ export const PlasmicArticleSample = Object.assign(
     internalVariantProps: PlasmicArticleSample__VariantProps,
     internalArgProps: PlasmicArticleSample__ArgProps,
     pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
-      pageRoute: "/article-sample",
-      pagePath: "/article-sample",
+      pageRoute: "/guides/how-to-choose-a-crypto-casino",
+      pagePath: "/guides/how-to-choose-a-crypto-casino",
       params: {},
       query: {}
     })

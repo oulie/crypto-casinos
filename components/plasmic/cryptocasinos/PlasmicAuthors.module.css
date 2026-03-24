@@ -9,53 +9,6 @@
   min-height: 0;
   padding: 0px;
 }
-.coinPriceMarquee:global(.__wab_instance) {
-  position: relative;
-}
-.freeBox__gw7JB {
-  animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #ffffff0f;
-}
-.freeBox__ujkA {
-  animation: none;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: var(--token-eI5HWtMjxYZN);
-  padding-left: 10px;
-  padding-right: 10px;
-  min-width: 0;
-}
-.linkBreadcrumb__odWdn:global(.__wab_instance) {
-  animation: none;
-  position: relative;
-}
-.svg {
-  animation: none;
-  object-fit: cover;
-  max-width: 100%;
-  color: #8b8b8b;
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-}
-.linkBreadcrumb__mKjg8:global(.__wab_instance) {
-  animation: none;
-  position: relative;
-}
-.text__arnE7 {
-  animation: none;
-}
 .freeBox__sVpqv {
   display: flex;
   flex-direction: column;
@@ -180,29 +133,149 @@
 .authorGridItem__ak9V6:global(.__wab_instance) {
   position: relative;
 }
+.linkCoinIcon__jvAzV:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon___8Tpsg:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__kzUt5:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
 .authorGridItem__ixIT:global(.__wab_instance) {
   position: relative;
+}
+.linkCoinIcon__j7ZC:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon___1YZ3:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__uCr3:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
 }
 .authorGridItem__hpUfC:global(.__wab_instance) {
   position: relative;
 }
+.linkCoinIcon__ci8Z:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__lh5U5:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__nTlKc:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
 .authorGridItem__pQ6Pc:global(.__wab_instance) {
   position: relative;
+}
+.linkCoinIcon___3SnVo:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__vgY0A:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__yADsA:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__yoWzz:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
 }
 .authorGridItem__miSnh:global(.__wab_instance) {
   position: relative;
 }
+.linkCoinIcon__orqE:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__tu0Ib:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__iB4th:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
 .authorGridItem__nRlOt:global(.__wab_instance) {
   position: relative;
+}
+.linkCoinIcon___1B7O:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__yRqFx:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__l0GAn:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon___1MM7:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__t8NxM:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
 }
 .authorGridItem__h8Ggf:global(.__wab_instance) {
   position: relative;
 }
+.linkCoinIcon__jdStR:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__wpEo:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon___8DelC:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
 .authorGridItem___6V9Gv:global(.__wab_instance) {
   position: relative;
 }
+.linkCoinIcon__dXcEi:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__iZg4Q:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__kIxeI:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
 .authorGridItem__zlbU9:global(.__wab_instance) {
   position: relative;
+}
+.linkCoinIcon__uWczw:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__fowGq:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__gwrxd:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
 }
 .pagination:global(.__wab_instance) {
   animation: none;

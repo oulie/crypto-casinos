@@ -209,7 +209,7 @@ function PlasmicCardCasinoLarge__RenderFunc(props) {
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton__oouvC)}
               color={"gray"}
-              href={`/review-sample`}
+              href={`/casinos/stake`}
               size={"medium"}
               title={"Read Review"}
             />

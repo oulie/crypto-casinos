@@ -197,52 +197,25 @@
   font-size: 14px;
   opacity: 0.5;
 }
-.freeBox__mnGke {
+.freeBox__irICb {
   animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   column-gap: 2px;
-  padding-right: 8px;
+  padding-right: 10px;
 }
-.img__kAhvi {
+.linkCoinIcon__hj85B:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__kAhvi > picture > img {
-  object-fit: cover;
-}
-.img___1MqWp {
+.linkCoinIcon___5LnH:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img___1MqWp > picture > img {
-  object-fit: cover;
-}
-.img__tpkur {
+.linkCoinIcon___1Ybgv:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
-}
-.img__tpkur > picture > img {
-  object-fit: cover;
 }

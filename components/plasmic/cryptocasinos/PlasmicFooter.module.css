@@ -225,6 +225,20 @@
     min-width: 0;
   }
 }
+.svg__aFh2K {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__j5Js9 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .linkButton___1YSTa:global(.__wab_instance) {
   animation: none;
   position: relative;
@@ -238,6 +252,20 @@
 }
 .text__nnrno {
   animation: none;
+}
+.svg__lj2I3 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__twYf4 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 .freeBox__trAfZ {
   animation: none;

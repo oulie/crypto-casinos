@@ -226,6 +226,20 @@
     min-width: 0;
   }
 }
+.svg__qxUy {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg___0RoGv {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .freeBox__t5PPn {
   animation: none;
   display: flex;

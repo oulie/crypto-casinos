@@ -223,54 +223,27 @@
   font-size: 14px;
   opacity: 0.5;
 }
-.freeBox__zavCg {
+.freeBox__g1Tkk {
   animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   column-gap: 2px;
-  padding-right: 8px;
+  padding-right: 10px;
 }
-.img__n8SIh {
+.linkCoinIcon___6Nmmy:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__n8SIh > picture > img {
-  object-fit: cover;
-}
-.img__aPSfe {
+.linkCoinIcon__uRvwj:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__aPSfe > picture > img {
-  object-fit: cover;
-}
-.img__ihbbf {
+.linkCoinIcon___5I1HG:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
-}
-.img__ihbbf > picture > img {
-  object-fit: cover;
 }
 .linkButton:global(.__wab_instance) {
   animation: none;
@@ -290,4 +263,18 @@
   .text__kn5Sr {
     animation: none;
   }
+}
+.svg__mnfZu {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__cyeRr {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }

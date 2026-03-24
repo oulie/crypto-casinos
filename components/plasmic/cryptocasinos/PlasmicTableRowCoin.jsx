@@ -168,6 +168,7 @@ function PlasmicTableRowCoin__RenderFunc(props) {
           data-plasmic-override={overrides.linkButton}
           className={classNames("__wab_instance", sty.linkButton)}
           color={"clear"}
+          href={`/coins/btc`}
           size={"small"}
           title={"View"}
         />

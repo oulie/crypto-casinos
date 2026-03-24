@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
 import { PageParamsProvider as PageParamsProvider__ } from "@plasmicapp/react-web/lib/host";
-import GlobalContextsProvider from "../components/plasmic/cryptocasinos/PlasmicGlobalContextsProvider";
-import { PlasmicArticleSample } from "../components/plasmic/cryptocasinos/PlasmicArticleSample";
+import GlobalContextsProvider from "../../components/plasmic/cryptocasinos/PlasmicGlobalContextsProvider";
+import { PlasmicReviewSample } from "../../components/plasmic/cryptocasinos/PlasmicReviewSample";
 import { useRouter } from "next/router";
 import { PlasmicQueryDataProvider } from "@plasmicapp/react-web/lib/query";
 
-function ArticleSample({ setPageScrollProgress }) {
+function ReviewSample({ setPageScrollProgress }) {
   const contentRef = useRef(null);
   const [progress, setProgress] = useState(0);
 
@@ -72,7 +72,7 @@ function ArticleSample({ setPageScrollProgress }) {
           params={useRouter()?.query}
           query={useRouter()?.query}
         >
-          <PlasmicArticleSample
+          <PlasmicReviewSample
 
             sidebarTableOfContents={{
               progress
@@ -90,5 +90,6 @@ function ArticleSample({ setPageScrollProgress }) {
     </GlobalContextsProvider>
   );
 }
-ArticleSample.showProgressBar = true;
-export default ArticleSample;
+
+ReviewSample.showProgressBar = true;
+export default ReviewSample;

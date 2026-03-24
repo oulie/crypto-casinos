@@ -102,7 +102,7 @@ function PlasmicSidebarCategories__RenderFunc(props) {
       >
         <LinkSidebar
           className={classNames("__wab_instance", sty.linkSidebar___6MoBi)}
-          href={`/top-casinos`}
+          href={`/casinos`}
           icon={
             <StarIcon
               className={classNames(projectcss.all, sty.svg__hfUy)}

@@ -25,12 +25,23 @@ import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-impor
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicLinkButton.module.css"; // plasmic-import: IXlYPJ9laVnz/css
+import BadgeCheckIcon from "./icons/PlasmicIcon__BadgeCheck"; // plasmic-import: OE1F_elgA17S/icon
+import ArrowRightIcon from "./icons/PlasmicIcon__ArrowRight"; // plasmic-import: KRBb5YKxEcus/icon
 
 createPlasmicElementProxy;
 
-export const PlasmicLinkButton__VariantProps = new Array("color", "size");
+export const PlasmicLinkButton__VariantProps = new Array(
+  "color",
+  "size",
+  "showIcon"
+);
 
-export const PlasmicLinkButton__ArgProps = new Array("title", "href");
+export const PlasmicLinkButton__ArgProps = new Array(
+  "href",
+  "iconLeft",
+  "title",
+  "iconRight"
+);
 
 const $$ = {};
 
@@ -76,6 +87,12 @@ function PlasmicLinkButton__RenderFunc(props) {
         type: "private",
         variableType: "variant",
         initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.size
+      },
+      {
+        path: "showIcon",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.showIcon
       }
     ],
 
@@ -106,6 +123,8 @@ function PlasmicLinkButton__RenderFunc(props) {
         {
           [sty.rootcolor_clear]: hasVariant($state, "color", "clear"),
           [sty.rootcolor_gray]: hasVariant($state, "color", "gray"),
+          [sty.rootcolor_outlined]: hasVariant($state, "color", "outlined"),
+          [sty.rootshowIcon_left]: hasVariant($state, "showIcon", "left"),
           [sty.rootsize_medium]: hasVariant($state, "size", "medium"),
           [sty.rootsize_small]: hasVariant($state, "size", "small")
         }
@@ -115,6 +134,18 @@ function PlasmicLinkButton__RenderFunc(props) {
       legacyBehavior={false}
       platform={"nextjs"}
     >
+      {(hasVariant($state, "showIcon", "left") ? true : false)
+        ? renderPlasmicSlot({
+            defaultContents: (
+              <BadgeCheckIcon
+                className={classNames(projectcss.all, sty.svg___8CDcu)}
+                role={"img"}
+              />
+            ),
+
+            value: args.iconLeft
+          })
+        : null}
       <div
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
@@ -133,10 +164,31 @@ function PlasmicLinkButton__RenderFunc(props) {
               "color",
               "clear"
             ),
-            [sty.slotTargetTitlecolor_gray]: hasVariant($state, "color", "gray")
+            [sty.slotTargetTitlecolor_gray]: hasVariant(
+              $state,
+              "color",
+              "gray"
+            ),
+            [sty.slotTargetTitlecolor_outlined]: hasVariant(
+              $state,
+              "color",
+              "outlined"
+            )
           })
         })}
       </div>
+      {(hasVariant($state, "showIcon", "right") ? true : false)
+        ? renderPlasmicSlot({
+            defaultContents: (
+              <ArrowRightIcon
+                className={classNames(projectcss.all, sty.svg__vtSk)}
+                role={"img"}
+              />
+            ),
+
+            value: args.iconRight
+          })
+        : null}
     </PlasmicLink__>
   );
 }

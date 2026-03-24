@@ -360,7 +360,7 @@
           "projectId": "1LHryFzrfagz6s5XszxyaX",
           "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicArticleSample.jsx",
           "importSpec": {
-            "modulePath": "../pages/article-sample.jsx"
+            "modulePath": "../pages/guides/how-to-choose-a-crypto-casino.jsx"
           },
           "cssFilePath": "plasmic/cryptocasinos/PlasmicArticleSample.module.css",
           "scheme": "blackbox",
@@ -517,7 +517,7 @@
           "projectId": "1LHryFzrfagz6s5XszxyaX",
           "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicReviewSample.jsx",
           "importSpec": {
-            "modulePath": "../pages/review-sample.jsx"
+            "modulePath": "../pages/casinos/stake.jsx"
           },
           "cssFilePath": "plasmic/cryptocasinos/PlasmicReviewSample.module.css",
           "scheme": "blackbox",
@@ -609,7 +609,7 @@
           "projectId": "1LHryFzrfagz6s5XszxyaX",
           "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTopCasinos.jsx",
           "importSpec": {
-            "modulePath": "../pages/top-casinos.jsx"
+            "modulePath": "../pages/casinos.jsx"
           },
           "cssFilePath": "plasmic/cryptocasinos/PlasmicTopCasinos.module.css",
           "scheme": "blackbox",
@@ -1005,7 +1005,7 @@
           "projectId": "1LHryFzrfagz6s5XszxyaX",
           "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicAuthorSample.jsx",
           "importSpec": {
-            "modulePath": "../pages/authors/sample.jsx"
+            "modulePath": "../pages/authors/peter-pragnanda.jsx"
           },
           "cssFilePath": "plasmic/cryptocasinos/PlasmicAuthorSample.module.css",
           "scheme": "blackbox",
@@ -1049,6 +1049,97 @@
             "modulePath": "AuthorGridItem.jsx"
           },
           "cssFilePath": "plasmic/cryptocasinos/PlasmicAuthorGridItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "peFiZbBQXNG2",
+          "name": "SectionHeader",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicSectionHeader.jsx",
+          "importSpec": {
+            "modulePath": "SectionHeader.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicSectionHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "MU0TpuySR0t9",
+          "name": "CardArticleFeatureGrid",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardArticleFeatureGrid.jsx",
+          "importSpec": {
+            "modulePath": "CardArticleFeatureGrid.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardArticleFeatureGrid.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "_Cbr6Dwvaf0w",
+          "name": "InfoBlockRank",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicInfoBlockRank.jsx",
+          "importSpec": {
+            "modulePath": "InfoBlockRank.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicInfoBlockRank.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "9b8CeTfcgtV8",
+          "name": "HeroEyebrowPill",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicHeroEyebrowPill.jsx",
+          "importSpec": {
+            "modulePath": "HeroEyebrowPill.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicHeroEyebrowPill.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "zC-Mr2iMn1dL",
+          "name": "CardArticleCover",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardArticleCover.jsx",
+          "importSpec": {
+            "modulePath": "CardArticleCover.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardArticleCover.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8ZkwL0g0X38I",
+          "name": "Breadcrumbs",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicBreadcrumbs.jsx",
+          "importSpec": {
+            "modulePath": "Breadcrumbs.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicBreadcrumbs.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Mf-dytp-tcvL",
+          "name": "BreadcrumbChevron",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicBreadcrumbChevron.jsx",
+          "importSpec": {
+            "modulePath": "BreadcrumbChevron.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicBreadcrumbChevron.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -1450,6 +1541,41 @@
           "id": "oLXFGZmV-XUC",
           "name": "image 2",
           "filePath": "../public/plasmic/cryptocasinos/images/image2.svg"
+        },
+        {
+          "id": "_Ump2_baGV7c",
+          "name": "uifaces-alien-avatar (8).jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar8Jpg.jpg"
+        },
+        {
+          "id": "9UUJ8LonzYcR",
+          "name": "uifaces-alien-avatar (7).jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar7Jpg.jpg"
+        },
+        {
+          "id": "rAIsRUDOV8NJ",
+          "name": "uifaces-alien-avatar (6).jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar6Jpg.jpg"
+        },
+        {
+          "id": "JSkLl0y2cKSg",
+          "name": "uifaces-alien-avatar (5).jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar5Jpg.jpg"
+        },
+        {
+          "id": "sLKDjp4DWRJg",
+          "name": "uifaces-alien-avatar (4).jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar4Jpg.jpg"
+        },
+        {
+          "id": "HpFGFBlrtjl9",
+          "name": "uifaces-alien-avatar (3).jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar3Jpg.jpg"
+        },
+        {
+          "id": "2qmxN8mwsDsV",
+          "name": "uifaces-alien-avatar (9).jpg",
+          "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar9Jpg.jpg"
         }
       ],
       "indirect": false,

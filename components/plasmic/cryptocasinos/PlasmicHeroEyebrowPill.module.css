@@ -1,0 +1,32 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+  position: relative;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid #ffffff0f;
+}
+@media (max-width: 511px) {
+  .root {
+    flex-direction: column;
+    row-gap: 6px;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    column-gap: 0px;
+    display: none;
+  }
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  color: var(--token-QL0xMMXWaeGp);
+  height: 1em;
+}
+.text {
+  position: relative;
+  font-size: 14px;
+}

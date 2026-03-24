@@ -2,19 +2,25 @@ import MainLayout from '@/components/MainLayout';
 import Navbar from '@/components/Navbar';
 import NavbarMobile from '@/components/NavbarMobile';
 import TopBar from '@/components/TopBar';
+import CoinPriceMarquee from '@/components/CoinPriceMarquee';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import '@/styles/globals.css'
 import { PlasmicRootProvider } from "@plasmicapp/react-web";
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 
 export default function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [pageScrollProgress, setPageScrollProgress] = React.useState(0);
   const navRef = React.useRef(null);
 
   const showProgressBar = Component.showProgressBar;
+  const currentPath = (router.asPath || "/").split("?")[0].split("#")[0] || "/";
+  const shouldShowBreadcrumbs = currentPath !== "/";
 
   React.useEffect(() => {
     setPageScrollProgress(0);
@@ -59,6 +65,14 @@ export default function MyApp({ Component, pageProps }) {
           progress={showProgressBar ? pageScrollProgress : 0}
           showProgress={showProgressBar}
         />
+        <CoinPriceMarquee />
+        {shouldShowBreadcrumbs ? (
+          <Breadcrumbs
+            pageProps={pageProps}
+            pathname={router.pathname}
+            currentPath={currentPath}
+          />
+        ) : null}
         <MainLayout
           main={
             <Component
@@ -67,7 +81,7 @@ export default function MyApp({ Component, pageProps }) {
             />
           }
         />
-        <NavbarMobile className={'navbar-mobile'}/>
+        <NavbarMobile className={'navbar-mobile'} />
       </>
     </PlasmicRootProvider>
   );

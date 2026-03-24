@@ -49,11 +49,33 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  opacity: 0.4;
   display: flex;
   flex-direction: row;
   min-width: 0;
 }
 .slotTargetTimeSince {
   font-size: 12px;
+}
+.slotTargetTimeSince > *,
+.slotTargetTimeSince > :global(.__wab_slot) > *,
+.slotTargetTimeSince > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetTimeSince
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetTimeSince > picture > img,
+.slotTargetTimeSince > :global(.__wab_slot) > picture > img,
+.slotTargetTimeSince
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img,
+.slotTargetTimeSince
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  opacity: 0.6;
 }

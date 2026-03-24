@@ -19,8 +19,6 @@ import {
   renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
-import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import CardReviewHero from "../../CardReviewHero"; // plasmic-import: w9WrndX1XiEm/component
 import CardProCon from "../../CardProCon"; // plasmic-import: _S-PAjhmk554/component
 import ProConRow from "../../ProConRow"; // plasmic-import: KERk-bERJlpe/component
@@ -39,7 +37,6 @@ import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-impor
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicReviewSample.module.css"; // plasmic-import: ZN_2wNKlL_Tv/css
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 2AAjufLElL24/icon
 import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: rZ8hz7v-qc_C/icon
 import ShieldCheckIcon from "./icons/PlasmicIcon__ShieldCheck"; // plasmic-import: B8aXAFRTKbUL/icon
 import CoinsIcon from "./icons/PlasmicIcon__Coins"; // plasmic-import: YH9P_qiC8MJ-/icon
@@ -136,51 +133,6 @@ function PlasmicReviewSample__RenderFunc(props) {
             sty.root
           )}
         >
-          <CoinPriceMarquee
-            data-plasmic-name={"coinPriceMarquee"}
-            data-plasmic-override={overrides.coinPriceMarquee}
-            className={classNames("__wab_instance", sty.coinPriceMarquee)}
-          />
-
-          <div className={classNames(projectcss.all, sty.freeBox__xiiIy)}>
-            <div className={classNames(projectcss.all, sty.freeBox__dXwUj)}>
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__gsQlh
-                )}
-                href={`/`}
-              />
-
-              <IconIcon
-                className={classNames(projectcss.all, sty.svg__gcNhN)}
-                role={"img"}
-              />
-
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__q1Xo0
-                )}
-                href={`/top-casinos`}
-                title={"Top Casinos"}
-              />
-
-              <IconIcon
-                className={classNames(projectcss.all, sty.svg__mqUiW)}
-                role={"img"}
-              />
-
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__drL6D
-                )}
-                isCurrent={true}
-                title={"Stake Review"}
-              />
-            </div>
-          </div>
           <div
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
@@ -1098,7 +1050,6 @@ function PlasmicReviewSample__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "coinPriceMarquee",
     "hero",
     "cardReviewHero",
     "divider",
@@ -1114,7 +1065,6 @@ const PlasmicDescendants = {
     "sidebarTableOfContents"
   ],
 
-  coinPriceMarquee: ["coinPriceMarquee"],
   hero: ["hero", "cardReviewHero"],
   cardReviewHero: ["cardReviewHero"],
   divider: ["divider"],
@@ -1181,7 +1131,6 @@ export const PlasmicReviewSample = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
     hero: makeNodeComponent("hero"),
     cardReviewHero: makeNodeComponent("cardReviewHero"),
     divider: makeNodeComponent("divider"),
@@ -1199,8 +1148,8 @@ export const PlasmicReviewSample = Object.assign(
     internalVariantProps: PlasmicReviewSample__VariantProps,
     internalArgProps: PlasmicReviewSample__ArgProps,
     pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
-      pageRoute: "/review-sample",
-      pagePath: "/review-sample",
+      pageRoute: "/casinos/stake",
+      pagePath: "/casinos/stake",
       params: {},
       query: {}
     })

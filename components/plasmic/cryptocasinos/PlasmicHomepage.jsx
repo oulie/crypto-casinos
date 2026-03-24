@@ -12,22 +12,24 @@ import * as React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import {
-  PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
   hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
+import HeroEyebrowPill from "../../HeroEyebrowPill"; // plasmic-import: 9b8CeTfcgtV8/component
 import HeroCardLink from "../../HeroCardLink"; // plasmic-import: QXwWWXLv7dKm/component
 import CornerTDivider from "../../CornerTDivider"; // plasmic-import: uVYTGz9cJOUu/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
+import SectionHeader from "../../SectionHeader"; // plasmic-import: peFiZbBQXNG2/component
 import CardCasinoList from "../../CardCasinoList"; // plasmic-import: 6YxcbeY1AF1_/component
+import InfoBlockRank from "../../InfoBlockRank"; // plasmic-import: _Cbr6Dwvaf0w/component
 import CardBentoTopic from "../../CardBentoTopic"; // plasmic-import: U8ruvn_mupQO/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import CardPriceChart from "../../CardPriceChart"; // plasmic-import: Bygnfqie3Cqa/component
+import CardArticleFeatureGrid from "../../CardArticleFeatureGrid"; // plasmic-import: MU0TpuySR0t9/component
 import CardArticleNoCover from "../../CardArticleNoCover"; // plasmic-import: h0trZzJIFxmu/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
 import SidebarCategories from "../../SidebarCategories"; // plasmic-import: qFRK-okrxuuw/component
@@ -39,22 +41,17 @@ import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-impor
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 9i_F_lMez6u7/css
-import ShieldCheckIcon from "./icons/PlasmicIcon__ShieldCheck"; // plasmic-import: B8aXAFRTKbUL/icon
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: 480yurPMFzhC/icon
 import TrophyIcon from "./icons/PlasmicIcon__Trophy"; // plasmic-import: I-1KWj6kHo73/icon
 import GiftIcon from "./icons/PlasmicIcon__Gift"; // plasmic-import: JLJyojIPy5bM/icon
 import ChartLineIcon from "./icons/PlasmicIcon__ChartLine"; // plasmic-import: cBRHEkj-bEJ3/icon
 import BookIcon from "./icons/PlasmicIcon__Book"; // plasmic-import: h9sLGs5m_Vd1/icon
-import BadgeCheckIcon from "./icons/PlasmicIcon__BadgeCheck"; // plasmic-import: OE1F_elgA17S/icon
 import ShieldOffIcon from "./icons/PlasmicIcon__ShieldOff"; // plasmic-import: LGewn1q6HySZ/icon
 import MoneyArrowDownIcon from "./icons/PlasmicIcon__MoneyArrowDown"; // plasmic-import: LxA7vPyY9CLd/icon
 import DiceIcon from "./icons/PlasmicIcon__Dice"; // plasmic-import: uZVnQmbmAoUm/icon
 import CrownIcon from "./icons/PlasmicIcon__Crown"; // plasmic-import: BBZInROpO67i/icon
 import CoinsIcon from "./icons/PlasmicIcon__Coins"; // plasmic-import: YH9P_qiC8MJ-/icon
 import HandshakeIcon from "./icons/PlasmicIcon__Handshake"; // plasmic-import: 5yXXrMkLRYRW/icon
-import LockIcon from "./icons/PlasmicIcon__Lock"; // plasmic-import: TcA6uFpu7JRC/icon
-import ListSearchIcon from "./icons/PlasmicIcon__ListSearch"; // plasmic-import: Y_uxftxiiUAz/icon
-import ZapIcon from "./icons/PlasmicIcon__Zap"; // plasmic-import: rZ8hz7v-qc_C/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -146,36 +143,18 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root
           )}
         >
-          <CoinPriceMarquee
-            data-plasmic-name={"coinPriceMarquee"}
-            data-plasmic-override={overrides.coinPriceMarquee}
-            className={classNames("__wab_instance", sty.coinPriceMarquee)}
-          />
-
           <div
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
           >
             <div className={classNames(projectcss.all, sty.freeBox__uwDL)}>
-              <div className={classNames(projectcss.all, sty.freeBox__su1M)}>
-                <ShieldCheckIcon
-                  className={classNames(projectcss.all, sty.svg__xYsu)}
-                  role={"img"}
-                />
+              <HeroEyebrowPill
+                data-plasmic-name={"heroEyebrowPill"}
+                data-plasmic-override={overrides.heroEyebrowPill}
+                className={classNames("__wab_instance", sty.heroEyebrowPill)}
+              />
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__bYrX
-                  )}
-                >
-                  {
-                    "Trusted rankings, live prices and expert crypto casino guides"
-                  }
-                </div>
-              </div>
               <div className={classNames(projectcss.all, sty.freeBox___5EE1J)}>
                 <div className={classNames(projectcss.all, sty.freeBox__hAhg2)}>
                   <div
@@ -266,7 +245,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     "__wab_instance",
                     sty.heroCardLink__sQrQc
                   )}
-                  href={`/top-casinos`}
+                  href={`/casinos`}
                   icon={
                     <TrophyIcon
                       className={classNames(projectcss.all, sty.svg__va2ZQ)}
@@ -364,7 +343,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.linkButton___3DaL
                     )}
-                    href={`/top-casinos`}
+                    href={`/casinos`}
                   />
 
                   <LinkButton
@@ -490,40 +469,30 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames(projectcss.all, sty.content)}
           >
             <div className={classNames(projectcss.all, sty.freeBox__im7X0)}>
-              <div className={classNames(projectcss.all, sty.freeBox__flQ7X)}>
-                <div className={classNames(projectcss.all, sty.freeBox__gwa5)}>
-                  <div
+              <SectionHeader
+                buttons={
+                  <LinkButton
                     className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gUSz0
+                      "__wab_instance",
+                      sty.linkButton__rJ0Mx
                     )}
-                  >
-                    {"Recommended Crypto Casinos"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__vLjsy
-                    )}
-                  >
-                    {
-                      "The currently most recommended crypto casinos based on our expert reviews."
-                    }
-                  </div>
-                </div>
-                <LinkButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.linkButton__rx2PR
-                  )}
-                  color={"gray"}
-                  href={`/top-casinos`}
-                  size={"medium"}
-                  title={"Compare  all"}
-                />
-              </div>
+                    color={"gray"}
+                    href={`/casinos`}
+                    size={"medium"}
+                    title={"Compare all"}
+                  />
+                }
+                className={classNames(
+                  "__wab_instance",
+                  sty.sectionHeader__nJn54
+                )}
+                description={
+                  "The currently most recommended crypto casinos based on our expert reviews."
+                }
+                hasButton={true}
+                title={"Recommended Crypto Casinos"}
+              />
+
               <div
                 data-plasmic-name={"cardsCasinos"}
                 data-plasmic-override={overrides.cardsCasinos}
@@ -566,68 +535,35 @@ function PlasmicHomepage__RenderFunc(props) {
                   title={"Wild.io"}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__mdNnw)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__nluua
-                  )}
-                >
-                  {
-                    "We rank casinos by reputation, bonus clarity, withdrawal speed, and supported payment methods."
-                  }
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__da6)}>
-                  <BadgeCheckIcon
-                    className={classNames(projectcss.all, sty.svg__uHgOf)}
-                    role={"img"}
-                  />
+              <InfoBlockRank
+                data-plasmic-name={"infoBlockRank"}
+                data-plasmic-override={overrides.infoBlockRank}
+                className={classNames("__wab_instance", sty.infoBlockRank)}
+              />
 
-                  <div
+              <SectionHeader
+                buttons={
+                  <LinkButton
                     className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__byZxI
+                      "__wab_instance",
+                      sty.linkButton__hBhIv
                     )}
-                  >
-                    {"How we rank casinos"}
-                  </div>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__skRui)}>
-                <div className={classNames(projectcss.all, sty.freeBox__e0AI3)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__usQ
-                    )}
-                  >
-                    {"Explore Casino Topics"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__kPqEo
-                    )}
-                  >
-                    {
-                      "Explore crypto casino categories like No-KYC, Non-sticky, Fast payouts and other popular topics."
-                    }
-                  </div>
-                </div>
-                <LinkButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.linkButton__aNehe
-                  )}
-                  color={"gray"}
-                  size={"medium"}
-                  title={"Browse Topics"}
-                />
-              </div>
+                    color={"gray"}
+                    size={"medium"}
+                    title={"Browse Topics"}
+                  />
+                }
+                className={classNames(
+                  "__wab_instance",
+                  sty.sectionHeader__i8SxN
+                )}
+                description={
+                  "Explore crypto casino categories like No-KYC, Non-sticky, Fast payouts and other popular topics."
+                }
+                hasButton={true}
+                title={"Explore Casino Topics"}
+              />
+
               <div className={classNames(projectcss.all, sty.freeBox___6UUYu)}>
                 <CardBentoTopic
                   className={classNames(
@@ -946,308 +882,59 @@ function PlasmicHomepage__RenderFunc(props) {
                   title={"Bonus Strategy"}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__jfhzS)}>
-                <div className={classNames(projectcss.all, sty.freeBox__mkMmm)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gOeZe
-                    )}
-                  >
-                    {"Live Price"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gcvB
-                    )}
-                  >
-                    {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
-                    }
-                  </div>
-                </div>
-              </div>
+              <SectionHeader
+                buttons={null}
+                className={classNames(
+                  "__wab_instance",
+                  sty.sectionHeader__twzng
+                )}
+                description={
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
+                }
+                title={"Live Price"}
+              />
+
               <CardPriceChart
                 data-plasmic-name={"cardPriceChart"}
                 data-plasmic-override={overrides.cardPriceChart}
                 className={classNames("__wab_instance", sty.cardPriceChart)}
               />
 
-              <div className={classNames(projectcss.all, sty.freeBox__mhLDy)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___8G0Oa)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__npRit)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__jcBbT
-                      )}
-                    >
-                      {"Featured Articles"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__fxsEn
-                      )}
-                    >
-                      {
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
-                      }
-                    </div>
-                  </div>
+              <SectionHeader
+                buttons={
                   <LinkButton
                     className={classNames(
                       "__wab_instance",
-                      sty.linkButton__xSxYh
+                      sty.linkButton__t7Hm
                     )}
                     color={"gray"}
+                    href={`/news`}
                     size={"medium"}
                     title={"All Articles"}
                   />
-                </div>
+                }
+                className={classNames(
+                  "__wab_instance",
+                  sty.sectionHeader__cTr3U
+                )}
+                description={
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
+                }
+                hasButton={true}
+                title={"Featured Articles"}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox__mhLDy)}>
                 <div className={classNames(projectcss.all, sty.freeBox___1TBG)}>
-                  <div
+                  <CardArticleFeatureGrid
+                    data-plasmic-name={"cardArticleFeatureGrid"}
+                    data-plasmic-override={overrides.cardArticleFeatureGrid}
                     className={classNames(
-                      projectcss.all,
-                      sty.freeBox__fy79P,
-                      "bg-grain"
+                      "__wab_instance",
+                      sty.cardArticleFeatureGrid
                     )}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__kxbBi)}
-                    />
+                  />
 
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__u4Em)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__rpryz
-                        )}
-                      >
-                        <BookIcon
-                          className={classNames(projectcss.all, sty.svg__rHDuS)}
-                          role={"img"}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__ybQbi
-                        )}
-                      >
-                        {"Editors Pick"}
-                      </div>
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__hsidx
-                      )}
-                    >
-                      {
-                        "How to choose a crypto casino: security, bonus value, and withdrawal speed"
-                      }
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__k162K
-                      )}
-                    >
-                      {
-                        "This guide breaks down the signals that matter most when comparing a Bitcoin casino in 2025, including game fairness, on-chain efficiency, bonus restrictions, and country access."
-                      }
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__fIoWb)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__rkLim
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__emq5N
-                          )}
-                        >
-                          <LockIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__mcwCb
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__y5Piu
-                            )}
-                          >
-                            {"Security first"}
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__w7Cho
-                          )}
-                        >
-                          {"Review wallet safety practices and track record."}
-                        </div>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__shAir
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__n3N97
-                          )}
-                        >
-                          <ListSearchIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___9DjZx
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__asOb2
-                            )}
-                          >
-                            {"Bonus terms"}
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__yqMqs
-                          )}
-                        >
-                          {
-                            "Look at rollover, max cashout, and excluded titles."
-                          }
-                        </div>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__uf8Nd
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__crq67
-                          )}
-                        >
-                          <CoinsIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___2TlCe
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___9Ketc
-                            )}
-                          >
-                            {"Coin support"}
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__tXhfZ
-                          )}
-                        >
-                          {"Compare BTC, ETH, SOL, and stablecoin options."}
-                        </div>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__obox
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__mTt9B
-                          )}
-                        >
-                          <ZapIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__lgy1O
-                            )}
-                            role={"img"}
-                          />
-
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__l0Vcu
-                            )}
-                          >
-                            {"Cashout speed"}
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__n1VUx
-                          )}
-                        >
-                          {"Spotlight on quick processing and clear limits."}
-                        </div>
-                      </div>
-                    </div>
-                    <LinkButton
-                      className={classNames(
-                        "__wab_instance",
-                        sty.linkButton__npCo5
-                      )}
-                      href={`/article-sample`}
-                      size={"medium"}
-                      title={"Read Full Guide"}
-                    />
-                  </div>
                   <CardArticleNoCover
                     alt={true}
                     category={
@@ -1263,45 +950,6 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.cardArticleNoCover__mjwzY
                     )}
-                    coins={
-                      <React.Fragment>
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__hbYm5)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image5.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__orQr3)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image3.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </React.Fragment>
-                    }
                     description={
                       "Operators are adjusting deposit brackets and reworking VIP retention offers."
                     }
@@ -1334,44 +982,31 @@ function PlasmicHomepage__RenderFunc(props) {
                   />
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__ytNwg)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___0Mc7R)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__gWmA1)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__qj7Dw
-                      )}
-                    >
-                      {"Guides & News"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__djgq
-                      )}
-                    >
-                      {
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
-                      }
-                    </div>
-                  </div>
+              <SectionHeader
+                buttons={
                   <LinkButton
                     className={classNames(
                       "__wab_instance",
-                      sty.linkButton__oQsT8
+                      sty.linkButton__dfGB
                     )}
                     color={"gray"}
+                    href={`/news`}
                     size={"medium"}
                     title={"Browse News"}
                   />
-                </div>
+                }
+                className={classNames(
+                  "__wab_instance",
+                  sty.sectionHeader__mgzP3
+                )}
+                description={
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
+                }
+                hasButton={true}
+                title={"Latest News"}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox__ytNwg)}>
                 <div className={classNames(projectcss.all, sty.freeBox__uuOeC)}>
                   <NewsGridItem
                     className={classNames(
@@ -1392,63 +1027,6 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.newsGridItem__mzQhq
                     )}
-                    coins={
-                      <React.Fragment>
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__i9DR)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image3.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___02HE3)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image4.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__naXr5)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image8.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </React.Fragment>
-                    }
                     cover={{
                       src: "/plasmic/cryptocasinos/images/placeholder1Jpg.jpg",
                       fullWidth: 2501,
@@ -1488,42 +1066,31 @@ function PlasmicHomepage__RenderFunc(props) {
                   />
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox___25Gl)}>
-                <div className={classNames(projectcss.all, sty.freeBox__ehzhW)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__xVLyb)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___0Trx0
-                      )}
-                    >
-                      {"Popular Guides"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___6Bgo2
-                      )}
-                    >
-                      {
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
-                      }
-                    </div>
-                  </div>
+              <SectionHeader
+                buttons={
                   <LinkButton
                     className={classNames(
                       "__wab_instance",
-                      sty.linkButton__pGuXm
+                      sty.linkButton__rkNi8
                     )}
                     color={"gray"}
+                    href={`/guides`}
                     size={"medium"}
                     title={"All Guides"}
                   />
-                </div>
+                }
+                className={classNames(
+                  "__wab_instance",
+                  sty.sectionHeader___8Kdb0
+                )}
+                description={
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
+                }
+                hasButton={true}
+                title={"Popular Guides"}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox___25Gl)}>
                 <div
                   className={classNames(projectcss.all, sty.freeBox___1OovW)}
                 >
@@ -1539,63 +1106,6 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.cardArticleNoCover__bc2NS
                     )}
-                    coins={
-                      <React.Fragment>
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__sx4Pl)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image5.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__f8Mhm)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image8.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__w3Jw)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image3.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </React.Fragment>
-                    }
                     description={
                       "Operators are adjusting deposit brackets and reworking VIP retention offers."
                     }
@@ -1609,63 +1119,6 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.cardArticleNoCover__joJky
                     )}
-                    coins={
-                      <React.Fragment>
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__sNl7E)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image5.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___2ELlr)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image4.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__rmvvy)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"20px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/cryptocasinos/images/image3.png",
-                            fullWidth: 64,
-                            fullHeight: 64,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </React.Fragment>
-                    }
                     description={
                       "Operators are adjusting deposit brackets and reworking VIP retention offers."
                     }
@@ -1724,12 +1177,14 @@ function PlasmicHomepage__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "coinPriceMarquee",
     "hero",
+    "heroEyebrowPill",
     "span",
     "content",
     "cardsCasinos",
+    "infoBlockRank",
     "cardPriceChart",
+    "cardArticleFeatureGrid",
     "sidebar",
     "sidebarCategories",
     "sidebarLivePrices",
@@ -1738,13 +1193,15 @@ const PlasmicDescendants = {
     "cardCta"
   ],
 
-  coinPriceMarquee: ["coinPriceMarquee"],
-  hero: ["hero", "span"],
+  hero: ["hero", "heroEyebrowPill", "span"],
+  heroEyebrowPill: ["heroEyebrowPill"],
   span: ["span"],
   content: [
     "content",
     "cardsCasinos",
+    "infoBlockRank",
     "cardPriceChart",
+    "cardArticleFeatureGrid",
     "sidebar",
     "sidebarCategories",
     "sidebarLivePrices",
@@ -1754,7 +1211,9 @@ const PlasmicDescendants = {
   ],
 
   cardsCasinos: ["cardsCasinos"],
+  infoBlockRank: ["infoBlockRank"],
   cardPriceChart: ["cardPriceChart"],
+  cardArticleFeatureGrid: ["cardArticleFeatureGrid"],
   sidebar: [
     "sidebar",
     "sidebarCategories",
@@ -1803,12 +1262,14 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
     hero: makeNodeComponent("hero"),
+    heroEyebrowPill: makeNodeComponent("heroEyebrowPill"),
     span: makeNodeComponent("span"),
     content: makeNodeComponent("content"),
     cardsCasinos: makeNodeComponent("cardsCasinos"),
+    infoBlockRank: makeNodeComponent("infoBlockRank"),
     cardPriceChart: makeNodeComponent("cardPriceChart"),
+    cardArticleFeatureGrid: makeNodeComponent("cardArticleFeatureGrid"),
     sidebar: makeNodeComponent("sidebar"),
     sidebarCategories: makeNodeComponent("sidebarCategories"),
     sidebarLivePrices: makeNodeComponent("sidebarLivePrices"),

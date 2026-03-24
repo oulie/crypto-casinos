@@ -128,6 +128,20 @@
   animation: none;
   min-width: 160px;
 }
+.svg__u8JCv {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg___6GcSh {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .freeBox__rfjQn {
   display: flex;
   flex-direction: row;
@@ -243,4 +257,18 @@
 }
 .linkButton__xmf2:global(.__wab_instance) {
   animation: none;
+}
+.svg__oMzg7 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__rmij7 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }

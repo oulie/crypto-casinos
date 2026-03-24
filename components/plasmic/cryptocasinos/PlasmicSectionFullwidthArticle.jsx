@@ -158,7 +158,7 @@ function PlasmicSectionFullwidthArticle__RenderFunc(props) {
               data-plasmic-name={"linkButton"}
               data-plasmic-override={overrides.linkButton}
               className={classNames("__wab_instance", sty.linkButton)}
-              href={`/article-sample`}
+              href={`/guides/how-to-choose-a-crypto-casino`}
               title={"Read Full Guide"}
             />
           </div>
@@ -177,7 +177,7 @@ function PlasmicSectionFullwidthArticle__RenderFunc(props) {
               data-plasmic-override={overrides.link}
               className={classNames(projectcss.all, projectcss.a, sty.link)}
               component={Link}
-              href={`/authors/sample`}
+              href={`/authors/peter-pragnanda`}
               legacyBehavior={false}
               platform={"nextjs"}
             >

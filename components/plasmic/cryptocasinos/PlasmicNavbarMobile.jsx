@@ -93,7 +93,7 @@ function PlasmicNavbarMobile__RenderFunc(props) {
 
       <NavbarMobileLink
         className={classNames("__wab_instance", sty.navbarMobileLink__tm0E7)}
-        href={`/top-casinos`}
+        href={`/casinos`}
         icon={
           <TrophyIcon
             className={classNames(projectcss.all, sty.svg__rzCs)}

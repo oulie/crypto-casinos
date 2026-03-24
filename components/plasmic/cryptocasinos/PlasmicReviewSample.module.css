@@ -9,56 +9,6 @@
   min-height: 0;
   padding: 0px;
 }
-.coinPriceMarquee:global(.__wab_instance) {
-  position: relative;
-}
-.freeBox__xiiIy {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #ffffff0f;
-}
-.freeBox__dXwUj {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: var(--token-eI5HWtMjxYZN);
-  padding-left: 10px;
-  padding-right: 10px;
-  min-width: 0;
-}
-.linkBreadcrumb__gsQlh:global(.__wab_instance) {
-  position: relative;
-}
-.svg__gcNhN {
-  object-fit: cover;
-  max-width: 100%;
-  color: #8b8b8b;
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-}
-.linkBreadcrumb__q1Xo0:global(.__wab_instance) {
-  position: relative;
-}
-.svg__mqUiW {
-  object-fit: cover;
-  max-width: 100%;
-  color: #8b8b8b;
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-}
-.linkBreadcrumb__drL6D:global(.__wab_instance) {
-  position: relative;
-}
 .hero {
   display: flex;
   flex-direction: column;
@@ -748,6 +698,20 @@
 .text__cksXc {
   animation: none;
 }
+.svg__hpgU1 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__dWFro {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .linkButton__ueI5:global(.__wab_instance) {
   animation: none;
   position: relative;
@@ -755,6 +719,20 @@
 }
 .text__zydI {
   animation: none;
+}
+.svg__zLr9D {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg___2MiCf {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 .linkButton__vbm6E:global(.__wab_instance) {
   animation: none;
@@ -764,6 +742,20 @@
 .text___3JiTo {
   animation: none;
 }
+.svg__wgxPe {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__fNkJh {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .linkButton__gaSfl:global(.__wab_instance) {
   animation: none;
   position: relative;
@@ -771,6 +763,20 @@
 }
 .text__j2TFn {
   animation: none;
+}
+.svg__tAQnj {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__eohUd {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 .linkButton__ppY86:global(.__wab_instance) {
   animation: none;
@@ -780,6 +786,20 @@
 .text__o8UMu {
   animation: none;
 }
+.svg__dMcx0 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__d803U {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .linkButton__bWnap:global(.__wab_instance) {
   animation: none;
   position: relative;
@@ -787,6 +807,20 @@
 }
 .text__poKnK {
   animation: none;
+}
+.svg__pomwE {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg___2I4Ax {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 .h2__buQ5Z {
   position: relative;
@@ -953,6 +987,26 @@
 .cardCasinoList:global(.__wab_instance) {
   max-width: 100%;
   margin-bottom: 40px;
+}
+.linkCoinIcon__rOO8:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon___7SxnW:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon___4I4J:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__h7PWb:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__gprk0:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
 }
 .h2__ztFa1 {
   position: relative;

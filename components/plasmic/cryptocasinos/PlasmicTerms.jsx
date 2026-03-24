@@ -20,15 +20,12 @@ import {
   renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import CoinPriceMarquee from "../../CoinPriceMarquee"; // plasmic-import: tGnuTHE96HBi/component
-import LinkBreadcrumb from "../../LinkBreadcrumb"; // plasmic-import: 1eoRAvixrQdT/component
 import SidebarTableOfContents from "../../SidebarTableOfContents"; // plasmic-import: wktJy5_5Z9UD/component
 import LinkTableOfContents from "../../LinkTableOfContents"; // plasmic-import: 0wQjSxZ9XwHa/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicTerms.module.css"; // plasmic-import: UZv_JybYoTjg/css
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 2AAjufLElL24/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -119,39 +116,6 @@ function PlasmicTerms__RenderFunc(props) {
             sty.root
           )}
         >
-          <CoinPriceMarquee
-            data-plasmic-name={"coinPriceMarquee"}
-            data-plasmic-override={overrides.coinPriceMarquee}
-            className={classNames("__wab_instance", sty.coinPriceMarquee)}
-          />
-
-          <div className={classNames(projectcss.all, sty.freeBox__xb8Mz)}>
-            <div className={classNames(projectcss.all, sty.freeBox__rYzm1)}>
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb__koKk
-                )}
-                href={`/`}
-              />
-
-              <IconIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
-                role={"img"}
-              />
-
-              <LinkBreadcrumb
-                className={classNames(
-                  "__wab_instance",
-                  sty.linkBreadcrumb___3BmOh
-                )}
-                isCurrent={true}
-                title={"Terms of Service"}
-              />
-            </div>
-          </div>
           <div className={classNames(projectcss.all, sty.freeBox__vpBdB)}>
             <div className={classNames(projectcss.all, sty.freeBox__bvL4G)}>
               <div
@@ -617,8 +581,6 @@ function PlasmicTerms__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "coinPriceMarquee",
-    "svg",
     "content",
     "leftContent",
     "span",
@@ -630,8 +592,6 @@ const PlasmicDescendants = {
     "sidebarTableOfContents"
   ],
 
-  coinPriceMarquee: ["coinPriceMarquee"],
-  svg: ["svg"],
   content: [
     "content",
     "leftContent",
@@ -686,8 +646,6 @@ export const PlasmicTerms = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    coinPriceMarquee: makeNodeComponent("coinPriceMarquee"),
-    svg: makeNodeComponent("svg"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
     span: makeNodeComponent("span"),

@@ -26,6 +26,20 @@
 .buttonAll:global(.__wab_instance) {
   animation: none;
 }
+.svg__iWya9 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__xrErC {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .toggles {
   display: flex;
   flex-direction: row;

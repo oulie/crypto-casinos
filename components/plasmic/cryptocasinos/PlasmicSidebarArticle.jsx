@@ -88,7 +88,7 @@ function PlasmicSidebarArticle__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={`/article-sample`}
+      href={`/guides/how-to-choose-a-crypto-casino`}
       legacyBehavior={false}
       platform={"nextjs"}
     >

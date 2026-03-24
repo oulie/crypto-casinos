@@ -1,0 +1,9 @@
+.root {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  color: #8b8b8b;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}

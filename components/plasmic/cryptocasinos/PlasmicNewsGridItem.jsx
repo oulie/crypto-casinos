@@ -22,6 +22,7 @@ import {
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -124,7 +125,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
       <PlasmicLink__
         className={classNames(projectcss.all, projectcss.a, sty.link___9KPzr)}
         component={Link}
-        href={`/article-sample`}
+        href={`/guides/how-to-choose-a-crypto-casino`}
         legacyBehavior={false}
         platform={"nextjs"}
       >
@@ -156,44 +157,50 @@ function PlasmicNewsGridItem__RenderFunc(props) {
           >
             {"News"}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__eKxqM)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              sty.freeBox__s7Y8B,
+              "link-coin-icon-wrap"
+            )}
+          >
             {renderPlasmicSlot({
               defaultContents: (
                 <React.Fragment>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__xJ9Zl)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"20px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/cryptocasinos/images/image3.png",
-                      fullWidth: 64,
-                      fullHeight: 64,
-                      aspectRatio: undefined
-                    }}
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__ehrlr
+                    )}
+                    size={"small"}
                   />
 
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__teOhl)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"20px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/cryptocasinos/images/image4.png",
-                      fullWidth: 64,
-                      fullHeight: 64,
-                      aspectRatio: undefined
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__vuRww
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
                     }}
+                    size={"small"}
+                  />
+
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__apoiw
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
                   />
                 </React.Fragment>
               ),
@@ -205,7 +212,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
         <PlasmicLink__
           className={classNames(projectcss.all, projectcss.a, sty.link__t4Xxh)}
           component={Link}
-          href={`/article-sample`}
+          href={`/guides/how-to-choose-a-crypto-casino`}
           legacyBehavior={false}
           platform={"nextjs"}
         >
@@ -240,7 +247,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
               sty.link___0NQfL
             )}
             component={Link}
-            href={`/authors/sample`}
+            href={`/authors/peter-pragnanda`}
             legacyBehavior={false}
             platform={"nextjs"}
           >
@@ -265,7 +272,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
                 sty.link__jKh5D
               )}
               component={Link}
-              href={`/authors/sample`}
+              href={`/authors/peter-pragnanda`}
               legacyBehavior={false}
               platform={"nextjs"}
             >

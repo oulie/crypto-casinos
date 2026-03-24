@@ -252,6 +252,20 @@
 .text__jyje {
   animation: none;
 }
+.svg___5Nv4A {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__f5STn {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .linkButton__oouvC:global(.__wab_instance) {
   animation: none;
   position: relative;
@@ -259,6 +273,20 @@
 }
 .text___2Y53 {
   animation: none;
+}
+.svg__zMIfT {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__qLcF7 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 .freeBox__r3F3O {
   display: flex;

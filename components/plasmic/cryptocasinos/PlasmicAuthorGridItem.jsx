@@ -14,10 +14,12 @@ import {
   PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
+import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -29,7 +31,11 @@ createPlasmicElementProxy;
 
 export const PlasmicAuthorGridItem__VariantProps = new Array();
 
-export const PlasmicAuthorGridItem__ArgProps = new Array();
+export const PlasmicAuthorGridItem__ArgProps = new Array(
+  "avatar",
+  "name",
+  "coins"
+);
 
 const $$ = {};
 
@@ -45,7 +51,14 @@ function PlasmicAuthorGridItem__RenderFunc(props) {
   const args = React.useMemo(
     () =>
       Object.assign(
-        {},
+        {
+          avatar: {
+            src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg",
+            fullWidth: 1024,
+            fullHeight: 1024,
+            aspectRatio: undefined
+          }
+        },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
         )
@@ -79,8 +92,10 @@ function PlasmicAuthorGridItem__RenderFunc(props) {
     >
       <div className={classNames(projectcss.all, sty.freeBox__gleoi)}>
         <PlasmicImg__
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
           alt={""}
-          className={classNames(sty.img__ocpx)}
+          className={classNames(sty.img)}
           displayHeight={"auto"}
           displayMaxHeight={"none"}
           displayMaxWidth={"100%"}
@@ -88,23 +103,16 @@ function PlasmicAuthorGridItem__RenderFunc(props) {
           displayMinWidth={"0"}
           displayWidth={"60px"}
           loading={"lazy"}
-          src={{
-            src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg",
-            fullWidth: 1024,
-            fullHeight: 1024,
-            aspectRatio: undefined
-          }}
+          src={args.avatar}
         />
 
         <div className={classNames(projectcss.all, sty.freeBox__nebNa)}>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text___4SM5J
-            )}
-          >
-            {"Peter Pragnanda"}
+          <div className={classNames(projectcss.all, sty.freeBox___4SM5J)}>
+            {renderPlasmicSlot({
+              defaultContents: "Peter Pragnanda",
+              value: args.name,
+              className: classNames(sty.slotTargetName)
+            })}
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__cOumw)}>
             <div className={classNames(projectcss.all, sty.freeBox__c3Cy)}>
@@ -236,60 +244,56 @@ function PlasmicAuthorGridItem__RenderFunc(props) {
           >
             {"Coins mentioned"}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__vAcK5)}>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__bNaxB)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"20px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image3.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
-            />
+          <div
+            className={classNames(
+              projectcss.all,
+              sty.freeBox___2J73W,
+              "link-coin-icon-wrap"
+            )}
+          >
+            {renderPlasmicSlot({
+              defaultContents: (
+                <React.Fragment>
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon___3ZpPb
+                    )}
+                    size={"small"}
+                  />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__hcW1)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"20px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image4.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
-            />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__pmu66
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__xek9W)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"20px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/cryptocasinos/images/image8.png",
-                fullWidth: 64,
-                fullHeight: 64,
-                aspectRatio: undefined
-              }}
-            />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__kAxl1
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
+                </React.Fragment>
+              ),
+
+              value: args.coins
+            })}
           </div>
         </div>
       </div>
@@ -298,7 +302,7 @@ function PlasmicAuthorGridItem__RenderFunc(props) {
         data-plasmic-override={overrides.linkButton}
         className={classNames("__wab_instance", sty.linkButton)}
         color={"gray"}
-        href={`/authors/sample`}
+        href={`/authors/peter-pragnanda`}
         size={"medium"}
         title={"Open author page"}
       />
@@ -307,7 +311,8 @@ function PlasmicAuthorGridItem__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg", "linkButton"],
+  root: ["root", "img", "svg", "linkButton"],
+  img: ["img"],
   svg: ["svg"],
   linkButton: ["linkButton"]
 };
@@ -344,6 +349,7 @@ export const PlasmicAuthorGridItem = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
     svg: makeNodeComponent("svg"),
     linkButton: makeNodeComponent("linkButton"),
     // Metadata about props expected for PlasmicAuthorGridItem

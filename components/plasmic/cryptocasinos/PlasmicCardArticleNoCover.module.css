@@ -83,55 +83,27 @@
 .slotTargetDescription {
   font-size: 14px;
 }
-.freeBox___34PuS {
+.freeBox__u18P {
   animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
   column-gap: 2px;
-  padding-top: 20px;
+  padding-right: 10px;
   margin-top: 1px;
-  min-width: 0;
+  padding-top: 20px;
 }
-.img__zBuyH {
+.linkCoinIcon__ggEgk:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__zBuyH > picture > img {
-  object-fit: cover;
-}
-.img__np2Kb {
+.linkCoinIcon__gydx:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
 }
-.img__np2Kb > picture > img {
-  object-fit: cover;
-}
-.img__yC9Mt {
+.linkCoinIcon__nPTaR:global(.__wab_instance) {
   animation: none;
-  object-fit: cover;
   max-width: 100%;
-  width: 20px;
-  margin-right: -8px;
-  flex-shrink: 0;
-  border-radius: 99px;
-  border: 2px solid var(--token-PU2kSrpIWaun);
-}
-.img__yC9Mt > picture > img {
-  object-fit: cover;
 }

@@ -16,7 +16,9 @@ import {
   PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -26,7 +28,7 @@ import sty from "./PlasmicLinkCoinIcon.module.css"; // plasmic-import: q2l6s7HIp
 
 createPlasmicElementProxy;
 
-export const PlasmicLinkCoinIcon__VariantProps = new Array();
+export const PlasmicLinkCoinIcon__VariantProps = new Array("size");
 
 export const PlasmicLinkCoinIcon__ArgProps = new Array("icon");
 
@@ -66,6 +68,25 @@ function PlasmicLinkCoinIcon__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "size",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.size
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
   const styleTokensClassNames = _useStyleTokens();
   return (
     <PlasmicLink__
@@ -81,7 +102,8 @@ function PlasmicLinkCoinIcon__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "link-coin-icon"
+        "link-coin-icon",
+        { [sty.rootsize_small]: hasVariant($state, "size", "small") }
       )}
       component={Link}
       href={`/coins/btc`}
@@ -92,13 +114,15 @@ function PlasmicLinkCoinIcon__RenderFunc(props) {
         data-plasmic-name={"img"}
         data-plasmic-override={overrides.img}
         alt={""}
-        className={classNames(sty.img, "link-coin-icon-img")}
-        displayHeight={"30px"}
+        className={classNames(sty.img, "link-coin-icon-img", {
+          [sty.imgsize_small]: hasVariant($state, "size", "small")
+        })}
+        displayHeight={hasVariant($state, "size", "small") ? "20px" : "30px"}
         displayMaxHeight={"none"}
         displayMaxWidth={"none"}
         displayMinHeight={"0"}
         displayMinWidth={"0"}
-        displayWidth={"30px"}
+        displayWidth={hasVariant($state, "size", "small") ? "20px" : "30px"}
         loading={"lazy"}
         src={args.icon}
       />
