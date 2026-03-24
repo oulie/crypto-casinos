@@ -89,36 +89,9 @@
   line-height: 2;
   min-width: 0;
 }
-.freeBox__zqjef {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-  width: 100%;
-  background: url("/plasmic/cryptocasinos/images/dotPatternGraySvg.svg") top 50% left 0% / 8px auto repeat;
-  column-gap: 6px;
-  min-width: 0;
-  border-radius: 25px;
-  padding: 14px 20px;
-}
-@media (max-width: 1023px) {
-  .freeBox__zqjef {
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
-    align-items: stretch;
-    justify-content: center;
-    column-gap: 0px;
-  }
-}
-@media (max-width: 511px) {
-  .freeBox__zqjef {
-    row-gap: 11px;
-    column-gap: 0px;
-    padding: 14px 10px;
-  }
+.actionsMain:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
 }
 .freeBox__bamF {
   display: flex;
@@ -129,7 +102,7 @@
   column-gap: 6px;
   background: var(--token-PU2kSrpIWaun);
   border-radius: 10px;
-  padding: 16px;
+  padding: 6px;
 }
 @media (max-width: 511px) {
   .freeBox__bamF {
@@ -170,24 +143,23 @@
 .text__f5XTy {
   animation: none;
 }
-.freeBox___2Krd3 {
+.freeBox___9Lcc3 {
+  animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: center;
   justify-content: center;
-  background: var(--token-PU2kSrpIWaun);
   column-gap: 10px;
-  border-radius: 20px;
-  padding: 7px 22px 7px 19px;
 }
-.text__xcIt {
+.text__aaImf {
+  animation: none;
   position: relative;
   font-size: 11px;
   text-transform: uppercase;
   opacity: 0.7;
 }
-.link__i4Tk {
+.link__mxxds {
   animation: none;
   display: flex;
   flex-direction: row;
@@ -200,10 +172,11 @@
   color: #cfcfcf;
   min-width: 0;
 }
-.root .link__i4Tk:hover {
+.root .link__mxxds:hover {
+  animation: none;
   color: #ffffff;
 }
-.img__nfd9Z {
+.img__ic7Ok {
   animation: none;
   object-fit: cover;
   max-width: 100%;
@@ -212,10 +185,10 @@
   flex-shrink: 0;
   border-radius: 60px;
 }
-.img__nfd9Z > picture > img {
+.img__ic7Ok > picture > img {
   object-fit: cover;
 }
-.freeBox__hhf9K {
+.freeBox__z9V0R {
   animation: none;
   display: flex;
   flex-direction: column;
@@ -228,7 +201,7 @@
   line-height: 1.4;
   min-width: 0;
 }
-.freeBox__usk3N {
+.freeBox__ha0Wo {
   animation: none;
   width: 100%;
   height: auto;
@@ -263,7 +236,7 @@
   > img {
   animation: none;
 }
-.text__fUOb {
+.text___3ECkl {
   animation: none;
 }
 .linkCoinIcon__yWzWf:global(.__wab_instance) {

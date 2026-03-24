@@ -148,6 +148,93 @@
 .actionsMain:global(.__wab_instance) {
   max-width: var(--token-eI5HWtMjxYZN);
 }
+.linkButton__ggL7L:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__jT3K {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__kmHwm {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__j5TfU:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__zeK7T {
+  animation: none;
+}
+.svg___4146T {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg___5JwAq {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.text__aKi0A {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.4;
+  min-width: 0;
+}
+.freeBox__h7KK {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-right: 4px;
+}
+.linkCoinIcon__bhO4:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__ypc2J:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__yv7KN:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__wMdy1:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__ahXT:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__iJi1R:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon___7PYll:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
 .freeBox__bp2L4 {
   display: flex;
   flex-direction: row;

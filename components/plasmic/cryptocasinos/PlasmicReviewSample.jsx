@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import CardReviewHero from "../../CardReviewHero"; // plasmic-import: w9WrndX1XiEm/component
+import ActionsMain from "../../ActionsMain"; // plasmic-import: s3lR74zcYqTi/component
 import CardProCon from "../../CardProCon"; // plasmic-import: _S-PAjhmk554/component
 import ProConRow from "../../ProConRow"; // plasmic-import: KERk-bERJlpe/component
 import RichTextImage from "../../RichTextImage"; // plasmic-import: 1vp7wIRXlNq8/component
@@ -261,59 +262,71 @@ function PlasmicReviewSample__RenderFunc(props) {
                 data-plasmic-override={overrides.cardReviewHero}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__jbIKh)}>
-              <div className={classNames(projectcss.all, sty.freeBox__rayTs)}>
-                {renderPlasmicSlot({
-                  defaultContents: "Updated March 19, 2026",
-                  value: args.updatedAt,
-                  className: classNames(sty.slotTargetUpdatedAt)
-                })}
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__igtwb)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__q8V7H
-                  )}
-                >
-                  {"Reviewed by"}
+            <ActionsMain
+              data-plasmic-name={"actionsMain"}
+              data-plasmic-override={overrides.actionsMain}
+              className={classNames("__wab_instance", sty.actionsMain)}
+              contentLeft={
+                <div className={classNames(projectcss.all, sty.freeBox__rayTs)}>
+                  {renderPlasmicSlot({
+                    defaultContents: "Updated March 19, 2026",
+                    value: args.updatedAt,
+                    className: classNames(sty.slotTargetUpdatedAt)
+                  })}
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__cMlr5)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__poAog)}
-                    displayHeight={"28px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"28px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/cryptocasinos/images/ccIcon.svg",
-                      fullWidth: 136.76,
-                      fullHeight: 136.76,
-                      aspectRatio: 1
-                    }}
-                  />
-
+              }
+              contentRight={
+                <div className={classNames(projectcss.all, sty.freeBox__igtwb)}>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__nxOlv)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__q8V7H
+                    )}
                   >
+                    {"Reviewed by"}
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__cMlr5)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__poAog)}
+                      displayHeight={"28px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"28px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/cryptocasinos/images/ccIcon.svg",
+                        fullWidth: 136.76,
+                        fullHeight: 136.76,
+                        aspectRatio: 1
+                      }}
+                    />
+
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__o5K0R)}
+                      className={classNames(projectcss.all, sty.freeBox__nxOlv)}
                     >
-                      {renderPlasmicSlot({
-                        defaultContents: "Crypto-Casinos Team",
-                        value: args.authorName,
-                        className: classNames(sty.slotTargetAuthorName)
-                      })}
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__o5K0R
+                        )}
+                      >
+                        {renderPlasmicSlot({
+                          defaultContents: "Crypto-Casinos Team",
+                          value: args.authorName,
+                          className: classNames(sty.slotTargetAuthorName)
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              }
+            />
           </div>
           <div
             data-plasmic-name={"divider"}
@@ -1052,6 +1065,7 @@ const PlasmicDescendants = {
     "root",
     "hero",
     "cardReviewHero",
+    "actionsMain",
     "divider",
     "content",
     "leftContent",
@@ -1065,8 +1079,9 @@ const PlasmicDescendants = {
     "sidebarTableOfContents"
   ],
 
-  hero: ["hero", "cardReviewHero"],
+  hero: ["hero", "cardReviewHero", "actionsMain"],
   cardReviewHero: ["cardReviewHero"],
+  actionsMain: ["actionsMain"],
   divider: ["divider"],
   content: [
     "content",
@@ -1133,6 +1148,7 @@ export const PlasmicReviewSample = Object.assign(
     // Helper components rendering sub-elements
     hero: makeNodeComponent("hero"),
     cardReviewHero: makeNodeComponent("cardReviewHero"),
+    actionsMain: makeNodeComponent("actionsMain"),
     divider: makeNodeComponent("divider"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),

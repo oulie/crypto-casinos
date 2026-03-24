@@ -314,6 +314,93 @@
 .actionsMain:global(.__wab_instance) {
   position: relative;
 }
+.linkButton__gw7RB:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__aiom6 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__qrvBn {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__zbTzg:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__hrvXm {
+  animation: none;
+}
+.svg__qphdj {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__wntw9 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.text__zP54P {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.4;
+  min-width: 0;
+}
+.freeBox__vt1LU {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-right: 4px;
+}
+.linkCoinIcon__oY32H:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__eLpWy:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__vxToQ:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__aRzF5:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__rnXY:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon___7YiTm:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__xLjjg:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
 .freeBox__ezV7R {
   display: flex;
   flex-direction: column;

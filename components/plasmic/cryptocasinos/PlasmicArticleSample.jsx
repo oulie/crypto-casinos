@@ -21,6 +21,7 @@ import {
   renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import ActionsMain from "../../ActionsMain"; // plasmic-import: s3lR74zcYqTi/component
 import CardCasinoDetails from "../../CardCasinoDetails"; // plasmic-import: vGoC4GKdwTta/component
 import CardInfoBox from "../../CardInfoBox"; // plasmic-import: fL78jSqd6G-W/component
 import TableSample from "../../TableSample"; // plasmic-import: YHX7r1koYXua/component
@@ -177,74 +178,86 @@ function PlasmicArticleSample__RenderFunc(props) {
                   "A practical framework for comparing Bitcoin and altcoin casinos without getting distracted by oversized bonus headlines or flashy promotions."
                 }
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__zqjef)}>
-                <div className={classNames(projectcss.all, sty.freeBox__bamF)}>
-                  {renderPlasmicSlot({
-                    defaultContents: "Updated at Mar 16, 2026",
-                    value: args.updatedAt,
-                    className: classNames(sty.slotTargetUpdatedAt)
-                  })}
-                </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___2Krd3)}
-                >
+              <ActionsMain
+                data-plasmic-name={"actionsMain"}
+                data-plasmic-override={overrides.actionsMain}
+                className={classNames("__wab_instance", sty.actionsMain)}
+                contentLeft={
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__xcIt
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__bamF)}
                   >
-                    {"AUTHOR"}
+                    {renderPlasmicSlot({
+                      defaultContents: "Updated at Mar 16, 2026",
+                      value: args.updatedAt,
+                      className: classNames(sty.slotTargetUpdatedAt)
+                    })}
                   </div>
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__i4Tk
-                    )}
-                    component={Link}
-                    href={`/authors/peter-pragnanda`}
-                    legacyBehavior={false}
-                    platform={"nextjs"}
+                }
+                contentRight={
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___9Lcc3)}
                   >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__nfd9Z)}
-                      displayHeight={"32px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"32px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__hhf9K)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__aaImf
+                      )}
                     >
+                      {"AUTHOR"}
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__mxxds
+                      )}
+                      component={Link}
+                      href={`/authors/peter-pragnanda`}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__ic7Ok)}
+                        displayHeight={"32px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"32px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg",
+                          fullWidth: 1024,
+                          fullHeight: 1024,
+                          aspectRatio: undefined
+                        }}
+                      />
+
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__usk3N
+                          sty.freeBox__z9V0R
                         )}
                       >
-                        {renderPlasmicSlot({
-                          defaultContents: "Peter Pragnanda",
-                          value: args.authorName,
-                          className: classNames(sty.slotTargetAuthorName)
-                        })}
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__ha0Wo
+                          )}
+                        >
+                          {renderPlasmicSlot({
+                            defaultContents: "Peter Pragnanda",
+                            value: args.authorName,
+                            className: classNames(sty.slotTargetAuthorName)
+                          })}
+                        </div>
                       </div>
-                    </div>
-                  </PlasmicLink__>
-                </div>
-              </div>
+                    </PlasmicLink__>
+                  </div>
+                }
+              />
             </div>
             <CardCasinoDetails
               data-plasmic-name={"cardCasinoDetails"}
@@ -1212,6 +1225,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "hero",
+    "actionsMain",
     "cardCasinoDetails",
     "divider",
     "content",
@@ -1233,7 +1247,8 @@ const PlasmicDescendants = {
     "cardCta"
   ],
 
-  hero: ["hero", "cardCasinoDetails"],
+  hero: ["hero", "actionsMain", "cardCasinoDetails"],
+  actionsMain: ["actionsMain"],
   cardCasinoDetails: ["cardCasinoDetails"],
   divider: ["divider"],
   content: [
@@ -1327,6 +1342,7 @@ export const PlasmicArticleSample = Object.assign(
   {
     // Helper components rendering sub-elements
     hero: makeNodeComponent("hero"),
+    actionsMain: makeNodeComponent("actionsMain"),
     cardCasinoDetails: makeNodeComponent("cardCasinoDetails"),
     divider: makeNodeComponent("divider"),
     content: makeNodeComponent("content"),

@@ -32,39 +32,39 @@
   border-radius: 30px;
   padding: 10px;
 }
-.linkButton__slwX:global(.__wab_instance) {
+.linkButton__oVc4A:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
-.svg__wbwwv {
+.svg__hXlf6 {
   animation: none;
   object-fit: cover;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
-.svg___9OtdZ {
+.svg__spKe7 {
   animation: none;
   object-fit: cover;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
-.linkButton__ifH8:global(.__wab_instance) {
+.linkButton___64CbE:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
-.text__yx8Ki {
+.text__xgQWy {
   animation: none;
 }
-.svg__xRsJb {
+.svg__tK4Vs {
   animation: none;
   object-fit: cover;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
-.svg__kUGb {
+.svg__ph99B {
   animation: none;
   object-fit: cover;
   width: 16px;
@@ -80,9 +80,9 @@
   justify-content: center;
   column-gap: 6px;
   border-radius: 30px;
-  padding: 6px 20px 6px 16px;
+  padding: 8px 16px;
 }
-.text {
+.text__cR80 {
   animation: none;
   position: relative;
   width: 100%;
@@ -93,39 +93,40 @@
   opacity: 0.4;
   min-width: 0;
 }
-.freeBox__qRl6A {
+.freeBox__mWBjb {
   animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
   align-items: stretch;
   justify-content: flex-start;
+  padding-right: 4px;
 }
-.linkCoinIcon___2UCr0:global(.__wab_instance) {
+.linkCoinIcon__azUnR:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
-.linkCoinIcon___3I3Qk:global(.__wab_instance) {
+.linkCoinIcon__x9Z1X:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
-.linkCoinIcon__ynLgk:global(.__wab_instance) {
+.linkCoinIcon__yzTyU:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
-.linkCoinIcon__hAj8:global(.__wab_instance) {
+.linkCoinIcon__gQWzR:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
-.linkCoinIcon___9KeYk:global(.__wab_instance) {
+.linkCoinIcon___6CiL:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
-.linkCoinIcon__iuPzt:global(.__wab_instance) {
+.linkCoinIcon__vXbXi:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
-.linkCoinIcon__wifyt:global(.__wab_instance) {
+.linkCoinIcon__tFjKx:global(.__wab_instance) {
   animation: none;
   position: relative;
 }
