@@ -62,21 +62,10 @@
   font-size: 18px;
   opacity: 0.6;
 }
-.freeBox__ik3Mm {
-  animation: none;
-  display: flex;
-  flex-direction: row;
+.infoDotPanel:global(.__wab_instance) {
   position: relative;
-  align-items: center;
-  justify-content: center;
-  margin-top: auto;
-  width: auto;
-  background: url("/plasmic/cryptocasinos/images/dotPatternGraySvg.svg") top 50% left 50% / 8px auto repeat;
-  column-gap: 16px;
-  border-radius: 30px;
-  padding: 16px;
 }
-.freeBox__d9L50 {
+.freeBox__fwbTh {
   animation: none;
   display: flex;
   flex-direction: column;
@@ -85,26 +74,29 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background: var(--token-PU2kSrpIWaun);
   column-gap: 6px;
   flex-wrap: nowrap;
   align-content: stretch;
   white-space: pre;
+  line-height: 1.2;
+  width: 144px;
   border-radius: 20px;
-  padding: 16px;
+  padding: 18px;
 }
-.text__f4Ypw {
+.text___7Kl7F {
+  animation: none;
   position: relative;
   font-size: 30px;
   font-weight: 500;
   color: #ffffff;
 }
-.text__iI3Pn {
+.text__r2IeM {
+  animation: none;
   position: relative;
   color: var(--token-sxMiRhCxgPbQ);
   font-size: 14px;
 }
-.freeBox__kqRgj {
+.freeBox__rudoz {
   animation: none;
   display: flex;
   flex-direction: column;
@@ -113,26 +105,29 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background: var(--token-PU2kSrpIWaun);
   column-gap: 6px;
   flex-wrap: nowrap;
   align-content: stretch;
   white-space: pre;
+  line-height: 1.2;
+  width: 144px;
   border-radius: 20px;
-  padding: 16px;
+  padding: 18px;
 }
-.text__q4LdF {
+.text__cGjTb {
+  animation: none;
   position: relative;
   font-size: 30px;
   font-weight: 500;
   color: #ffffff;
 }
-.text__vALoE {
+.text__eZdVx {
+  animation: none;
   position: relative;
   color: var(--token-sxMiRhCxgPbQ);
   font-size: 14px;
 }
-.freeBox__qL4Z1 {
+.freeBox__fcPry {
   animation: none;
   display: flex;
   flex-direction: column;
@@ -141,21 +136,24 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background: var(--token-PU2kSrpIWaun);
   column-gap: 6px;
   flex-wrap: nowrap;
   align-content: stretch;
   white-space: pre;
+  line-height: 1.2;
+  width: 144px;
   border-radius: 20px;
-  padding: 16px;
+  padding: 18px;
 }
-.text__yN4DT {
+.text__n2WQ1 {
+  animation: none;
   position: relative;
   font-size: 30px;
   font-weight: 500;
   color: #ffffff;
 }
-.text__z4JaU {
+.text__ulhJy {
+  animation: none;
   position: relative;
   color: var(--token-sxMiRhCxgPbQ);
   font-size: 14px;

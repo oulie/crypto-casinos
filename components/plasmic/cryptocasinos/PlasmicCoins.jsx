@@ -17,6 +17,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import InfoDotPanel from "../../InfoDotPanel"; // plasmic-import: rsu3SXicdqjb/component
 import SectionHeader from "../../SectionHeader"; // plasmic-import: peFiZbBQXNG2/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import CardCoinStats from "../../CardCoinStats"; // plasmic-import: oroZGFcSE0LK/component
@@ -150,68 +151,81 @@ function PlasmicCoins__RenderFunc(props) {
                   "Compare the most popular cryptocurrencies used at online casinos. Find the best networks for fast deposits, low withdrawal fees, and discover which casinos support your preferred coin."
                 }
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__ik3Mm)}>
-                <div className={classNames(projectcss.all, sty.freeBox__d9L50)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__f4Ypw
-                    )}
-                  >
-                    {"40+"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__iI3Pn
-                    )}
-                  >
-                    {"Coins tracked"}
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__kqRgj)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__q4LdF
-                    )}
-                  >
-                    {"Live"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__vALoE
-                    )}
-                  >
-                    {"Market data"}
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__qL4Z1)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yN4DT
-                    )}
-                  >
-                    {"120+"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__z4JaU
-                    )}
-                  >
-                    {"Casinos reviewd"}
-                  </div>
-                </div>
-              </div>
+              <InfoDotPanel
+                data-plasmic-name={"infoDotPanel"}
+                data-plasmic-override={overrides.infoDotPanel}
+                className={classNames("__wab_instance", sty.infoDotPanel)}
+                content={
+                  <React.Fragment>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fwbTh)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___7Kl7F
+                        )}
+                      >
+                        {"40+"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__r2IeM
+                        )}
+                      >
+                        {"Coins tracked"}
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__rudoz)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__cGjTb
+                        )}
+                      >
+                        {"Live"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__eZdVx
+                        )}
+                      >
+                        {"Market data"}
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fcPry)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__n2WQ1
+                        )}
+                      >
+                        {"120+"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ulhJy
+                        )}
+                      >
+                        {"Casinos reviewd"}
+                      </div>
+                    </div>
+                  </React.Fragment>
+                }
+              />
             </div>
           </div>
           <div
@@ -688,7 +702,16 @@ function PlasmicCoins__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "content", "leftContent", "cardPriceChart", "linkButton4"],
+  root: [
+    "root",
+    "infoDotPanel",
+    "content",
+    "leftContent",
+    "cardPriceChart",
+    "linkButton4"
+  ],
+
+  infoDotPanel: ["infoDotPanel"],
   content: ["content", "leftContent", "cardPriceChart", "linkButton4"],
   leftContent: ["leftContent", "cardPriceChart", "linkButton4"],
   cardPriceChart: ["cardPriceChart"],
@@ -727,6 +750,7 @@ export const PlasmicCoins = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    infoDotPanel: makeNodeComponent("infoDotPanel"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
     cardPriceChart: makeNodeComponent("cardPriceChart"),

@@ -20,6 +20,7 @@ import {
   renderPlasmicSlot
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import InfoDotPanel from "../../InfoDotPanel"; // plasmic-import: rsu3SXicdqjb/component
 import SidebarTableOfContents from "../../SidebarTableOfContents"; // plasmic-import: wktJy5_5Z9UD/component
 import LinkTableOfContents from "../../LinkTableOfContents"; // plasmic-import: 0wQjSxZ9XwHa/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -147,15 +148,22 @@ function PlasmicTerms__RenderFunc(props) {
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dolor et odio hendrerit dignissim."
                 }
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__clp0S)}>
-                <div className={classNames(projectcss.all, sty.freeBox__wOnwW)}>
-                  {renderPlasmicSlot({
-                    defaultContents: "Updated at Mar 16, 2026",
-                    value: args.updatedAt,
-                    className: classNames(sty.slotTargetUpdatedAt)
-                  })}
-                </div>
-              </div>
+              <InfoDotPanel
+                data-plasmic-name={"infoDotPanel"}
+                data-plasmic-override={overrides.infoDotPanel}
+                className={classNames("__wab_instance", sty.infoDotPanel)}
+                content={
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__wOnwW)}
+                  >
+                    {renderPlasmicSlot({
+                      defaultContents: "Updated at Mar 16, 2026",
+                      value: args.updatedAt,
+                      className: classNames(sty.slotTargetUpdatedAt)
+                    })}
+                  </div>
+                }
+              />
             </div>
           </div>
           <div
@@ -581,6 +589,7 @@ function PlasmicTerms__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
+    "infoDotPanel",
     "content",
     "leftContent",
     "span",
@@ -592,6 +601,7 @@ const PlasmicDescendants = {
     "sidebarTableOfContents"
   ],
 
+  infoDotPanel: ["infoDotPanel"],
   content: [
     "content",
     "leftContent",
@@ -646,6 +656,7 @@ export const PlasmicTerms = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    infoDotPanel: makeNodeComponent("infoDotPanel"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),
     span: makeNodeComponent("span"),

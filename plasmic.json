@@ -1220,6 +1220,19 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicActionsMain.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "rsu3SXicdqjb",
+          "name": "InfoDotPanel",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicInfoDotPanel.jsx",
+          "importSpec": {
+            "modulePath": "InfoDotPanel.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicInfoDotPanel.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

@@ -1,0 +1,108 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: flex-start;
+}
+.wrap {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  column-gap: 20px;
+  padding: 18px;
+}
+.freeBox__nLtAn {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 6px;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  white-space: pre;
+  border-radius: 20px;
+  padding: 16px;
+}
+.text___8On2 {
+  animation: none;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.text__d2NYv {
+  animation: none;
+  position: relative;
+  color: var(--token-sxMiRhCxgPbQ);
+  font-size: 14px;
+}
+.freeBox__nzBbc {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 6px;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  white-space: pre;
+  border-radius: 20px;
+  padding: 16px;
+}
+.text___0ZpUm {
+  animation: none;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.text__zTvmR {
+  animation: none;
+  position: relative;
+  color: var(--token-sxMiRhCxgPbQ);
+  font-size: 14px;
+}
+.freeBox__o6Buv {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 6px;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  white-space: pre;
+  border-radius: 20px;
+  padding: 16px;
+}
+.text__s9ZOp {
+  animation: none;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.text__ejNxS {
+  animation: none;
+  position: relative;
+  color: var(--token-sxMiRhCxgPbQ);
+  font-size: 14px;
+}
