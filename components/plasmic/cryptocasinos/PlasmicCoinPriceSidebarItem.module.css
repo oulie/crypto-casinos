@@ -58,7 +58,10 @@
 .slotTargetPrice {
   color: #ffffff;
 }
-.slotTargetChange {
+.change {
   font-size: 12px;
   color: var(--token-sxMiRhCxgPbQ);
+}
+.changeisNegative {
+  color: var(--token-QL0xMMXWaeGp);
 }

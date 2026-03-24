@@ -15,7 +15,9 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  renderPlasmicSlot
+  hasVariant,
+  renderPlasmicSlot,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -25,14 +27,15 @@ import sty from "./PlasmicCoinPriceSidebarItem.module.css"; // plasmic-import: O
 
 createPlasmicElementProxy;
 
-export const PlasmicCoinPriceSidebarItem__VariantProps = new Array();
+export const PlasmicCoinPriceSidebarItem__VariantProps = new Array(
+  "isNegative"
+);
 
 export const PlasmicCoinPriceSidebarItem__ArgProps = new Array(
   "icon",
   "title",
   "handle",
-  "price",
-  "change"
+  "price"
 );
 
 const $$ = {};
@@ -71,6 +74,25 @@ function PlasmicCoinPriceSidebarItem__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "isNegative",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.isNegative
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
   const styleTokensClassNames = _useStyleTokens();
   return (
     <div
@@ -84,7 +106,8 @@ function PlasmicCoinPriceSidebarItem__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        sty.root
+        sty.root,
+        { [sty.rootisNegative]: hasVariant($state, "isNegative", "isNegative") }
       )}
     >
       <PlasmicImg__
@@ -122,19 +145,33 @@ function PlasmicCoinPriceSidebarItem__RenderFunc(props) {
           value: args.price,
           className: classNames(sty.slotTargetPrice)
         })}
-        {renderPlasmicSlot({
-          defaultContents: "+2,4%",
-          value: args.change,
-          className: classNames(sty.slotTargetChange)
-        })}
+        <div
+          data-plasmic-name={"change"}
+          data-plasmic-override={overrides.change}
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.change,
+            {
+              [sty.changeisNegative]: hasVariant(
+                $state,
+                "isNegative",
+                "isNegative"
+              )
+            }
+          )}
+        >
+          {"+2,4%"}
+        </div>
       </div>
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img"],
-  img: ["img"]
+  root: ["root", "img", "change"],
+  img: ["img"],
+  change: ["change"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -170,6 +207,7 @@ export const PlasmicCoinPriceSidebarItem = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
+    change: makeNodeComponent("change"),
     // Metadata about props expected for PlasmicCoinPriceSidebarItem
     internalVariantProps: PlasmicCoinPriceSidebarItem__VariantProps,
     internalArgProps: PlasmicCoinPriceSidebarItem__ArgProps

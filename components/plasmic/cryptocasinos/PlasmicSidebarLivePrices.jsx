@@ -93,7 +93,11 @@ function PlasmicSidebarLivePrices__RenderFunc(props) {
       <div
         className={classNames(projectcss.all, sty.freeBox__inmOx, "bg-grain")}
       >
-        <div className={classNames(projectcss.all, sty.freeBox__tchgu)}>
+        <div
+          data-plasmic-name={"items"}
+          data-plasmic-override={overrides.items}
+          className={classNames(projectcss.all, sty.items)}
+        >
           <CoinPriceSidebarItem
             className={classNames(
               "__wab_instance",
@@ -103,17 +107,6 @@ function PlasmicSidebarLivePrices__RenderFunc(props) {
           />
 
           <CoinPriceSidebarItem
-            change={
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__kM
-                )}
-              >
-                {"-5,66%"}
-              </div>
-            }
             className={classNames(
               "__wab_instance",
               sty.coinPriceSidebarItem__cpOv7
@@ -140,17 +133,6 @@ function PlasmicSidebarLivePrices__RenderFunc(props) {
           />
 
           <CoinPriceSidebarItem
-            change={
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__i8FwP
-                )}
-              >
-                {"-4,84%"}
-              </div>
-            }
             className={classNames(
               "__wab_instance",
               sty.coinPriceSidebarItem__svpC
@@ -162,6 +144,7 @@ function PlasmicSidebarLivePrices__RenderFunc(props) {
               fullHeight: 225,
               aspectRatio: 1
             }}
+            isNegative={true}
             price={"$1.4389"}
             title={"XRP"}
           />
@@ -183,17 +166,6 @@ function PlasmicSidebarLivePrices__RenderFunc(props) {
           />
 
           <CoinPriceSidebarItem
-            change={
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___3F2N
-                )}
-              >
-                {"-4,84%"}
-              </div>
-            }
             className={classNames(
               "__wab_instance",
               sty.coinPriceSidebarItem___71Ok
@@ -215,6 +187,7 @@ function PlasmicSidebarLivePrices__RenderFunc(props) {
               fullHeight: 225,
               aspectRatio: 1
             }}
+            isNegative={true}
             price={"$1.4389"}
             title={"Polkadot"}
           />
@@ -241,8 +214,9 @@ function PlasmicSidebarLivePrices__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "linkTiny"],
-  linkTiny: ["linkTiny"]
+  root: ["root", "linkTiny", "items"],
+  linkTiny: ["linkTiny"],
+  items: ["items"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -278,6 +252,7 @@ export const PlasmicSidebarLivePrices = Object.assign(
   {
     // Helper components rendering sub-elements
     linkTiny: makeNodeComponent("linkTiny"),
+    items: makeNodeComponent("items"),
     // Metadata about props expected for PlasmicSidebarLivePrices
     internalVariantProps: PlasmicSidebarLivePrices__VariantProps,
     internalArgProps: PlasmicSidebarLivePrices__ArgProps

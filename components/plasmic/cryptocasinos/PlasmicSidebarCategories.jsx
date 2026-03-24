@@ -26,6 +26,7 @@ import StarIcon from "./icons/PlasmicIcon__Star"; // plasmic-import: KIRkdu8buNh
 import BookIcon from "./icons/PlasmicIcon__Book"; // plasmic-import: h9sLGs5m_Vd1/icon
 import GiftIcon from "./icons/PlasmicIcon__Gift"; // plasmic-import: JLJyojIPy5bM/icon
 import ListCheckIcon from "./icons/PlasmicIcon__ListCheck"; // plasmic-import: w5YHMvzaEKho/icon
+import DiceIcon from "./icons/PlasmicIcon__Dice"; // plasmic-import: uZVnQmbmAoUm/icon
 import TrophyIcon from "./icons/PlasmicIcon__Trophy"; // plasmic-import: I-1KWj6kHo73/icon
 
 createPlasmicElementProxy;
@@ -102,6 +103,7 @@ function PlasmicSidebarCategories__RenderFunc(props) {
       >
         <LinkSidebar
           className={classNames("__wab_instance", sty.linkSidebar___6MoBi)}
+          count={"124"}
           href={`/casinos`}
           icon={
             <StarIcon
@@ -113,6 +115,7 @@ function PlasmicSidebarCategories__RenderFunc(props) {
 
         <LinkSidebar
           className={classNames("__wab_instance", sty.linkSidebar__pgBwe)}
+          count={"43"}
           href={`/guides`}
           icon={
             <BookIcon
@@ -125,6 +128,7 @@ function PlasmicSidebarCategories__RenderFunc(props) {
 
         <LinkSidebar
           className={classNames("__wab_instance", sty.linkSidebar___9XHEb)}
+          count={"22"}
           icon={
             <GiftIcon
               className={classNames(projectcss.all, sty.svg___614L)}
@@ -136,12 +140,14 @@ function PlasmicSidebarCategories__RenderFunc(props) {
 
         <LinkSidebar
           className={classNames("__wab_instance", sty.linkSidebar__td0W5)}
+          count={"89"}
           href={`/news`}
           title={"Crypto News"}
         />
 
         <LinkSidebar
           className={classNames("__wab_instance", sty.linkSidebar__ni0Xy)}
+          count={"33"}
           icon={
             <ListCheckIcon
               className={classNames(projectcss.all, sty.svg__eYdF)}
@@ -152,7 +158,20 @@ function PlasmicSidebarCategories__RenderFunc(props) {
         />
 
         <LinkSidebar
+          className={classNames("__wab_instance", sty.linkSidebar__zry3C)}
+          count={"17"}
+          icon={
+            <DiceIcon
+              className={classNames(projectcss.all, sty.svg__cpUmt)}
+              role={"img"}
+            />
+          }
+          title={"Original Games"}
+        />
+
+        <LinkSidebar
           className={classNames("__wab_instance", sty.linkSidebar__zlilt)}
+          count={"12"}
           icon={
             <TrophyIcon
               className={classNames(projectcss.all, sty.svg__jLes)}

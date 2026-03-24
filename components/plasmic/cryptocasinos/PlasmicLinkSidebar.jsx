@@ -29,7 +29,12 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkSidebar__VariantProps = new Array();
 
-export const PlasmicLinkSidebar__ArgProps = new Array("href", "icon", "title");
+export const PlasmicLinkSidebar__ArgProps = new Array(
+  "href",
+  "icon",
+  "title",
+  "count"
+);
 
 const $$ = {};
 
@@ -99,19 +104,23 @@ function PlasmicLinkSidebar__RenderFunc(props) {
         className: classNames(sty.slotTargetTitle)
       })}
       <div
-        data-plasmic-name={"text"}
-        data-plasmic-override={overrides.text}
-        className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
-        {"42"}
+        {renderPlasmicSlot({
+          defaultContents: "42",
+          value: args.count,
+          className: classNames(sty.slotTargetCount)
+        })}
       </div>
     </PlasmicLink__>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root", "freeBox"],
+  freeBox: ["freeBox"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -146,7 +155,7 @@ export const PlasmicLinkSidebar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
+    freeBox: makeNodeComponent("freeBox"),
     // Metadata about props expected for PlasmicLinkSidebar
     internalVariantProps: PlasmicLinkSidebar__VariantProps,
     internalArgProps: PlasmicLinkSidebar__ArgProps

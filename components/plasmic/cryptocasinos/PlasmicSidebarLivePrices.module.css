@@ -33,7 +33,7 @@
   overflow: hidden;
   min-width: 0;
 }
-.freeBox__tchgu {
+.items {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -48,15 +48,6 @@
 .text__ikm01 {
   padding-right: 0px;
 }
-.text__kM {
-  color: var(--token-QL0xMMXWaeGp);
-}
-.text__i8FwP {
-  color: var(--token-QL0xMMXWaeGp);
-}
 .text__xtSm {
   padding-bottom: 0px;
-}
-.text___3F2N {
-  color: var(--token-QL0xMMXWaeGp);
 }

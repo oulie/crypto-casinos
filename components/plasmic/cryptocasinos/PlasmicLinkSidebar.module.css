@@ -31,19 +31,23 @@
 .root:hover .slotTargetTitle {
   color: #ffffff;
 }
-.text {
+.freeBox {
   position: relative;
   margin-left: auto;
-  font-size: 12px;
   background: var(--token-qAtNpqcFq1ZH);
-  color: #ffffff66;
   transition-property: background;
   transition-duration: 0.15s;
+  display: flex;
+  flex-direction: row;
   -webkit-transition-property: background;
   -webkit-transition-duration: 0.15s;
   border-radius: 10px;
   padding: 2px 6px;
 }
-.root:hover .text {
+.root:hover .freeBox {
   background: var(--token-PU2kSrpIWaun);
+}
+.slotTargetCount {
+  font-size: 12px;
+  color: #ffffff66;
 }

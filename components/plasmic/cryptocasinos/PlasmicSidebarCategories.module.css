@@ -78,6 +78,15 @@
   max-width: 100%;
   height: 1em;
 }
+.linkSidebar__zry3C:global(.__wab_instance) {
+  position: relative;
+}
+.svg__cpUmt {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}
 .linkSidebar__zlilt:global(.__wab_instance) {
   position: relative;
 }
