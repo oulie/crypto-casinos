@@ -45,6 +45,14 @@
     display: none;
   }
 }
+.linkNav___7HhSm:global(.__wab_instance) {
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .linkNav___7HhSm:global(.__wab_instance) {
+    display: none;
+  }
+}
 .linkNav__miIq:global(.__wab_instance) {
   position: relative;
 }
@@ -66,6 +74,14 @@
 }
 @media (max-width: 1023px) {
   .linkNav__pqzxn:global(.__wab_instance) {
+    display: none;
+  }
+}
+.linkNav___8WlHu:global(.__wab_instance) {
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .linkNav___8WlHu:global(.__wab_instance) {
     display: none;
   }
 }

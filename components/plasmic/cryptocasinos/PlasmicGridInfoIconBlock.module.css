@@ -1,0 +1,151 @@
+.root {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+  color: #cfcfcf;
+  cursor: pointer;
+  position: relative;
+}
+.freeBox__aY6I0 {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+}
+.freeBox__zumBx {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: var(--token-QL0xMMXWaeGp);
+  border-radius: 20px;
+  padding: 16px;
+}
+.slotTargetIcon {
+  color: #ffffff;
+}
+.slotTargetIcon > *,
+.slotTargetIcon > :global(.__wab_slot) > *,
+.slotTargetIcon > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetIcon
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetIcon > picture > img,
+.slotTargetIcon > :global(.__wab_slot) > picture > img,
+.slotTargetIcon > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetIcon
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  animation: none;
+}
+.svg__eInNf {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+.freeBox__apOv {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 10px;
+  min-width: 0;
+}
+.freeBox__aKcCc {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  min-width: 0;
+}
+.slotTargetTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.slotTargetTitle > *,
+.slotTargetTitle > :global(.__wab_slot) > *,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetTitle > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  animation: none;
+}
+.text___61Ufi {
+  animation: none;
+}
+.freeBox__aljl {
+  animation: none;
+  position: relative;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+}
+.slotTargetDecription {
+  font-size: 14px;
+}
+.slotTargetDecription > *,
+.slotTargetDecription > :global(.__wab_slot) > *,
+.slotTargetDecription > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetDecription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetDecription > picture > img,
+.slotTargetDecription > :global(.__wab_slot) > picture > img,
+.slotTargetDecription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img,
+.slotTargetDecription
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  animation: none;
+}
+.text___1XF2R {
+  animation: none;
+}

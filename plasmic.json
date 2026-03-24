@@ -1233,6 +1233,33 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicInfoDotPanel.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "OhMS9mmVgmjX",
+          "name": "AboutUs",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicAboutUs.jsx",
+          "importSpec": {
+            "modulePath": "../pages/about-us.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicAboutUs.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/about-us"
+        },
+        {
+          "id": "_c6dW-u5D8SQ",
+          "name": "GridInfoIconBlock",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicGridInfoIconBlock.jsx",
+          "importSpec": {
+            "modulePath": "GridInfoIconBlock.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicGridInfoIconBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1440,6 +1467,26 @@
           "id": "VgUBlzQRDY_v",
           "name": "TriangleFilledIcon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__TriangleFilled.jsx"
+        },
+        {
+          "id": "PFhoEeCyCTo1",
+          "name": "UsersIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Users.jsx"
+        },
+        {
+          "id": "63YnkqLOEAM3",
+          "name": "MapPinIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__MapPin.jsx"
+        },
+        {
+          "id": "SZilBF00Lt3s",
+          "name": "EmailIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Email.jsx"
+        },
+        {
+          "id": "29x9snRvI3lW",
+          "name": "BriefcaseIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Briefcase.jsx"
         }
       ],
       "images": [

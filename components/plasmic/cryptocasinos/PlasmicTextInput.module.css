@@ -24,11 +24,13 @@
   outline-color: var(--token-QL0xMMXWaeGp);
 }
 .ariaInputtype_soft:global(.__wab_instance) {
-  background: var(--token-vQDCNWqJVDXb);
+  background: var(--token-PU2kSrpIWaun);
   box-shadow: none;
+  border-radius: 10px;
+  padding: 20px;
 }
 .ariaInputtype_soft[data-hovered]:global(.__wab_instance) {
-  background: var(--token-YtjFFO2MNjHc);
+  background: var(--token-qAtNpqcFq1ZH);
 }
 .ariaInputtype_plain:global(.__wab_instance) {
   box-shadow: none;

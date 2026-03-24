@@ -126,6 +126,12 @@ function PlasmicNavbar__RenderFunc(props) {
         <div className={classNames(projectcss.all, sty.freeBox__uruUf)}>
           <LinkNav
             className={classNames("__wab_instance", sty.linkNav__n8X9Y)}
+            href={`/`}
+            title={"Home"}
+          />
+
+          <LinkNav
+            className={classNames("__wab_instance", sty.linkNav___7HhSm)}
             href={`/casinos`}
           />
 
@@ -145,6 +151,12 @@ function PlasmicNavbar__RenderFunc(props) {
             className={classNames("__wab_instance", sty.linkNav__pqzxn)}
             href={`/news`}
             title={"News"}
+          />
+
+          <LinkNav
+            className={classNames("__wab_instance", sty.linkNav___8WlHu)}
+            href={`/about-us`}
+            title={"About"}
           />
 
           <ButtonSearch
