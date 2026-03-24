@@ -9,6 +9,9 @@
   position: relative;
   min-width: 0;
 }
+.handleRecentChanges:global(.__wab_instance) {
+  position: relative;
+}
 .accordion {
   display: flex;
   flex-direction: column;
@@ -67,7 +70,4 @@
   width: 16px;
   height: 16px;
   flex-shrink: 0;
-}
-.handleRecentChanges:global(.__wab_instance) {
-  position: relative;
 }

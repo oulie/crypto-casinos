@@ -16,9 +16,9 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import HandleRecentChanges from "../../HandleRecentChanges"; // plasmic-import: IQ2c8c_hDkmi/component
 import RowChangelog from "../../RowChangelog"; // plasmic-import: iOOjtDw_sc94/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
-import HandleRecentChanges from "../../HandleRecentChanges"; // plasmic-import: IQ2c8c_hDkmi/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -75,6 +75,12 @@ function PlasmicSectionChangelog__RenderFunc(props) {
         sty.root
       )}
     >
+      <HandleRecentChanges
+        data-plasmic-name={"handleRecentChanges"}
+        data-plasmic-override={overrides.handleRecentChanges}
+        className={classNames("__wab_instance", sty.handleRecentChanges)}
+      />
+
       <div
         data-plasmic-name={"accordion"}
         data-plasmic-override={overrides.accordion}
@@ -113,11 +119,6 @@ function PlasmicSectionChangelog__RenderFunc(props) {
           </div>
         </div>
       </div>
-      <HandleRecentChanges
-        data-plasmic-name={"handleRecentChanges"}
-        data-plasmic-override={overrides.handleRecentChanges}
-        className={classNames("__wab_instance", sty.handleRecentChanges)}
-      />
     </div>
   );
 }
@@ -125,18 +126,18 @@ function PlasmicSectionChangelog__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
+    "handleRecentChanges",
     "accordion",
     "content",
     "freeBox",
-    "linkButton",
-    "handleRecentChanges"
+    "linkButton"
   ],
 
+  handleRecentChanges: ["handleRecentChanges"],
   accordion: ["accordion", "content", "freeBox", "linkButton"],
   content: ["content", "freeBox", "linkButton"],
   freeBox: ["freeBox", "linkButton"],
-  linkButton: ["linkButton"],
-  handleRecentChanges: ["handleRecentChanges"]
+  linkButton: ["linkButton"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -171,11 +172,11 @@ export const PlasmicSectionChangelog = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    handleRecentChanges: makeNodeComponent("handleRecentChanges"),
     accordion: makeNodeComponent("accordion"),
     content: makeNodeComponent("content"),
     freeBox: makeNodeComponent("freeBox"),
     linkButton: makeNodeComponent("linkButton"),
-    handleRecentChanges: makeNodeComponent("handleRecentChanges"),
     // Metadata about props expected for PlasmicSectionChangelog
     internalVariantProps: PlasmicSectionChangelog__VariantProps,
     internalArgProps: PlasmicSectionChangelog__ArgProps
