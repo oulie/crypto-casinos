@@ -73,10 +73,9 @@ function PlasmicCardReviewHero__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__mdF4S)} />
       <div className={classNames(projectcss.all, sty.freeBox__clMci)}>
         <div className={classNames(projectcss.all, sty.freeBox__pHenu)}>
           <div

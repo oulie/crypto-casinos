@@ -1168,6 +1168,32 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicTooltip.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "6HEPAdwlP8u-",
+          "name": "CardFeatured",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardFeatured.jsx",
+          "importSpec": {
+            "modulePath": "CardFeatured.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardFeatured.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Mo3DD1VnWk6l",
+          "name": "CardQuoteBlock",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicCardQuoteBlock.jsx",
+          "importSpec": {
+            "modulePath": "CardQuoteBlock.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicCardQuoteBlock.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

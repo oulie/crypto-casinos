@@ -27,10 +27,12 @@ import TableSample from "../../TableSample"; // plasmic-import: YHX7r1koYXua/com
 import CardProCon from "../../CardProCon"; // plasmic-import: _S-PAjhmk554/component
 import ProConRow from "../../ProConRow"; // plasmic-import: KERk-bERJlpe/component
 import TableRowCoin from "../../TableRowCoin"; // plasmic-import: nX5ivYUrRc2W/component
-import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
+import CardFeatured from "../../CardFeatured"; // plasmic-import: 6HEPAdwlP8u-/component
 import RichTextImage from "../../RichTextImage"; // plasmic-import: 1vp7wIRXlNq8/component
+import CardQuoteBlock from "../../CardQuoteBlock"; // plasmic-import: Mo3DD1VnWk6l/component
 import CardCasinoList from "../../CardCasinoList"; // plasmic-import: 6YxcbeY1AF1_/component
 import SectionHeader from "../../SectionHeader"; // plasmic-import: peFiZbBQXNG2/component
+import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
 import SidebarRecentArticles from "../../SidebarRecentArticles"; // plasmic-import: 91sde1xxKkNX/component
@@ -291,13 +293,9 @@ function PlasmicArticleSample__RenderFunc(props) {
                   className={classNames(
                     projectcss.all,
                     sty.freeBox__w9FHw,
-                    "bg-grain"
+                    "card-grain"
                   )}
                 >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__hEebr)}
-                  />
-
                   <div
                     className={classNames(
                       projectcss.all,
@@ -953,56 +951,12 @@ function PlasmicArticleSample__RenderFunc(props) {
                   <React.Fragment>{""}</React.Fragment>
                 </React.Fragment>
               </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  sty.freeBox__rgd9W,
-                  "bg-grain"
-                )}
-              >
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__kllMk)}
-                />
+              <CardFeatured
+                data-plasmic-name={"cardFeatured"}
+                data-plasmic-override={overrides.cardFeatured}
+                className={classNames("__wab_instance", sty.cardFeatured)}
+              />
 
-                <div className={classNames(projectcss.all, sty.freeBox__ja3H7)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__twd9Z
-                    )}
-                  >
-                    {"Featured"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__tWym
-                    )}
-                  >
-                    {
-                      "Compare deposit matches, cashback, and free-spin offers on one page"
-                    }
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__o1Dxo
-                    )}
-                  >
-                    {
-                      "Our bonus comparison pages simplify rollover terms, max-cashout rules, accepted coins, and game restrictions so you can evaluate offers faster."
-                    }
-                  </div>
-                </div>
-                <LinkButton
-                  className={classNames("__wab_instance", sty.linkButton__eWtR)}
-                  size={"medium"}
-                  title={"See Bonus Rankings"}
-                />
-              </div>
               <RichTextImage
                 data-plasmic-name={"richTextImage"}
                 data-plasmic-override={overrides.richTextImage}
@@ -1043,70 +997,28 @@ function PlasmicArticleSample__RenderFunc(props) {
                 }
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__s7EyN)}>
-                <div
+                <CardQuoteBlock
                   className={classNames(
-                    projectcss.all,
-                    sty.freeBox__abiJh,
-                    "bg-grain"
+                    "__wab_instance",
+                    sty.cardQuoteBlock__srC0J
                   )}
+                  slot={"note \u00b7 Payments research"}
                 >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___70A8K)}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__lhFyv
-                    )}
-                  >
-                    {
-                      "\u201cFast withdrawals and clear terms are usually the first things experienced players mention when recommending a crypto casino.\u201d"
-                    }
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__dSibE
-                    )}
-                  >
-                    {"note \u00b7 Payments research"}
-                  </div>
-                </div>
-                <div
+                  {
+                    "\u201cFast withdrawals and clear terms are usually the first things experienced players mention when recommending a crypto casino.\u201d"
+                  }
+                </CardQuoteBlock>
+                <CardQuoteBlock
                   className={classNames(
-                    projectcss.all,
-                    sty.freeBox__zkWx3,
-                    "bg-grain"
+                    "__wab_instance",
+                    sty.cardQuoteBlock__ze2Z8
                   )}
+                  slot={"note \u00b7 Coin support analysis"}
                 >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__y2JJv)}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__vkbwT
-                    )}
-                  >
-                    {
-                      "\u201cAltcoin support matters most when it reduces friction. More coins is only useful if networks and limits are explained properly.\u201d"
-                    }
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__dDjK7
-                    )}
-                  >
-                    {"note \u00b7 Coin support analysis"}
-                  </div>
-                </div>
+                  {
+                    "\u201cAltcoin support matters most when it reduces friction. More coins is only useful if networks and limits are explained properly.\u201d"
+                  }
+                </CardQuoteBlock>
               </div>
               <h2
                 className={classNames(
@@ -1308,6 +1220,7 @@ const PlasmicDescendants = {
     "tableSample",
     "ul",
     "ol",
+    "cardFeatured",
     "richTextImage",
     "h3",
     "cardCasinoList",
@@ -1330,6 +1243,7 @@ const PlasmicDescendants = {
     "tableSample",
     "ul",
     "ol",
+    "cardFeatured",
     "richTextImage",
     "h3",
     "cardCasinoList",
@@ -1348,6 +1262,7 @@ const PlasmicDescendants = {
     "tableSample",
     "ul",
     "ol",
+    "cardFeatured",
     "richTextImage",
     "h3",
     "cardCasinoList",
@@ -1359,6 +1274,7 @@ const PlasmicDescendants = {
   tableSample: ["tableSample"],
   ul: ["ul"],
   ol: ["ol"],
+  cardFeatured: ["cardFeatured"],
   richTextImage: ["richTextImage"],
   h3: ["h3"],
   cardCasinoList: ["cardCasinoList"],
@@ -1419,6 +1335,7 @@ export const PlasmicArticleSample = Object.assign(
     tableSample: makeNodeComponent("tableSample"),
     ul: makeNodeComponent("ul"),
     ol: makeNodeComponent("ol"),
+    cardFeatured: makeNodeComponent("cardFeatured"),
     richTextImage: makeNodeComponent("richTextImage"),
     h3: makeNodeComponent("h3"),
     cardCasinoList: makeNodeComponent("cardCasinoList"),

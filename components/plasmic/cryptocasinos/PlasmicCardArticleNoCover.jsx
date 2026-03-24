@@ -101,16 +101,10 @@ function PlasmicCardArticleNoCover__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain",
+        "card-grain",
         { [sty.rootalt]: hasVariant($state, "alt", "alt") }
       )}
     >
-      <div
-        className={classNames(projectcss.all, sty.freeBox__f9C5, {
-          [sty.freeBoxalt__f9C5N1Jip]: hasVariant($state, "alt", "alt")
-        })}
-      />
-
       {renderPlasmicSlot({
         defaultContents: (
           <TagPill

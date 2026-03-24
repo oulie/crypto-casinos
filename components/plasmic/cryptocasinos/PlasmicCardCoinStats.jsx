@@ -85,10 +85,9 @@ function PlasmicCardCoinStats__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__s4BVv)} />
       <div className={classNames(projectcss.all, sty.freeBox__pUrPc)}>
         <div className={classNames(projectcss.all, sty.freeBox__tuElg)}>
           <PlasmicImg__

@@ -233,13 +233,9 @@ function PlasmicHomepage__RenderFunc(props) {
                 className={classNames(
                   projectcss.all,
                   sty.freeBox__qWeFb,
-                  "bg-grain"
+                  "card-grain"
                 )}
               >
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__roAk)}
-                />
-
                 <HeroCardLink
                   className={classNames(
                     "__wab_instance",

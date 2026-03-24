@@ -85,10 +85,9 @@ function PlasmicCardCasinoVertical__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__uCSaZ)} />
       <div className={classNames(projectcss.all, sty.freeBox__ma0Gf)}>
         <div className={classNames(projectcss.all, sty.freeBox__mexze)}>
           <PlasmicImg__

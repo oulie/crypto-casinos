@@ -75,6 +75,23 @@ a {
   text-decoration: none;
 }
 
+.card-grain {
+  box-shadow: inset 0px 0px 0px 1px #ffffff1a, 0px 0px 0px 2px #000000;
+  position: relative;
+}
+
+.card-grain::before {
+  content: "";
+  position: absolute;
+  background: url(/plasmic/cryptocasinos/images/image.webp) top 50% left 50% / 100px auto repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .navbar {
   margin: 0 auto;
   position: sticky !important;
@@ -177,10 +194,34 @@ a {
 .navbar-mobile {
   position: sticky !important;
   bottom: 0;
-  left: 0;  
+  left: 0;
   right: 0;
   z-index: 99999;
 }
+
+.dot-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.dot-grid__wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.dot-grid__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 
 
 @media (max-width: 1023px) {

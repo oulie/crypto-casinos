@@ -75,10 +75,9 @@ function PlasmicCardCasinoDetails__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__snhR6)} />
       <div className={classNames(projectcss.all, sty.freeBox__yOzXt)}>
         <div className={classNames(projectcss.all, sty.freeBox__ogUsS)}>
           <ZapIcon

@@ -97,14 +97,13 @@ function PlasmicCardProCon__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain",
+        "card-grain",
         {
           [sty.roottype_cons]: hasVariant($state, "type", "cons"),
           [sty.roottype_pros]: hasVariant($state, "type", "pros")
         }
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox___6HeyD)} />
       <div className={classNames(projectcss.all, sty.freeBox__ujCc0)}>
         <div
           data-plasmic-name={"text"}

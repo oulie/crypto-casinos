@@ -73,10 +73,9 @@ function PlasmicCardAuthorDetails__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox___3SjfZ)} />
       <div className={classNames(projectcss.all, sty.freeBox__aClO)}>
         <div
           className={classNames(

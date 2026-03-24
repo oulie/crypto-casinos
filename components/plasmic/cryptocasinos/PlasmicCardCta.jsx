@@ -72,10 +72,9 @@ function PlasmicCardCta__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__srohq)} />
       <div className={classNames(projectcss.all, sty.freeBox__srh23)}>
         <div className={classNames(projectcss.all, sty.freeBox__o74Up)}>
           <PlasmicImg__

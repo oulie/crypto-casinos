@@ -80,10 +80,9 @@ function PlasmicCardArticleFeatureGrid__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__xtl5D)} />
       <div className={classNames(projectcss.all, sty.freeBox__btyZ7)}>
         <div className={classNames(projectcss.all, sty.freeBox__n7H)}>
           <BookIcon

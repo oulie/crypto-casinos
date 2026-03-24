@@ -93,10 +93,9 @@ function PlasmicCardCasinoList__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__oSgaQ)} />
       <div className={classNames(projectcss.all, sty.freeBox__jZcKz)}>
         <div className={classNames(projectcss.all, sty.freeBox___3Iq9C)}>
           <div className={classNames(projectcss.all, sty.freeBox__iH2VG)}>

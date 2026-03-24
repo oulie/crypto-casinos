@@ -185,13 +185,9 @@ function PlasmicCoinSample__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       sty.freeBox__nm9NE,
-                      "bg-grain"
+                      "card-grain"
                     )}
                   >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__uKyG)}
-                    />
-
                     <HeroCardLink
                       className={classNames(
                         "__wab_instance",

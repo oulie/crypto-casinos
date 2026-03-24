@@ -72,10 +72,9 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__dhvTy)} />
       <div className={classNames(projectcss.all, sty.freeBox__jf1If)}>
         <div
           className={classNames(

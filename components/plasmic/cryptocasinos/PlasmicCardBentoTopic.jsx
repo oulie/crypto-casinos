@@ -102,11 +102,10 @@ function PlasmicCardBentoTopic__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain",
+        "card-grain",
         { [sty.rootglow_green]: hasVariant($state, "glow", "green") }
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox___2Y7X1)} />
       <div className={classNames(projectcss.all, sty.freeBox___3L0Hk)}>
         <PlasmicLink__
           data-plasmic-name={"link"}

@@ -74,10 +74,9 @@ function PlasmicCardPriceChart__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__jxyko)} />
       <div className={classNames(projectcss.all, sty.freeBox__t1A6K)}>
         <div className={classNames(projectcss.all, sty.freeBox__mv8Na)}>
           <IconBitcoinIcon

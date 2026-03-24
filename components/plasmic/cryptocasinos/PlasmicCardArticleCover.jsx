@@ -73,10 +73,9 @@ function PlasmicCardArticleCover__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__qlmYt)} />
       <div className={classNames(projectcss.all, sty.freeBox__pDcOr)}>
         <div className={classNames(projectcss.all, sty.freeBox__e9Yrv)}>
           <PlasmicImg__

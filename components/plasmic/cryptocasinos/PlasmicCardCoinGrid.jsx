@@ -87,14 +87,13 @@ function PlasmicCardCoinGrid__RenderFunc(props) {
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "bg-grain"
+        "card-grain"
       )}
       component={Link}
       href={`/coins/btc`}
       legacyBehavior={false}
       platform={"nextjs"}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__gVjF)} />
       <PlasmicImg__
         data-plasmic-name={"img"}
         data-plasmic-override={overrides.img}
