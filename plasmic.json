@@ -1194,6 +1194,32 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicCardQuoteBlock.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Cj5yFNb9f9DR",
+          "name": "Drafts",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicDrafts.jsx",
+          "importSpec": {
+            "modulePath": "Drafts.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicDrafts.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "s3lR74zcYqTi",
+          "name": "ActionsMain",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicActionsMain.jsx",
+          "importSpec": {
+            "modulePath": "ActionsMain.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicActionsMain.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

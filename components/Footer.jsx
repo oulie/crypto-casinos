@@ -2,11 +2,8 @@ import * as React from "react";
 import { PlasmicFooter } from "./plasmic/cryptocasinos/PlasmicFooter";
 
 function Footer_(props, ref) {
+  return (<PlasmicFooter footer={{ ref }} {...props}
 
-  return (<PlasmicFooter footer={{ ref }} {...props} 
-
-  
-  
   />);
 }
 

@@ -1,0 +1,135 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+}
+.freeBox__mvYdh {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  width: 100%;
+  background: url("/plasmic/cryptocasinos/images/dotPatternGraySvg.svg") top 50% left 0% / 8px auto repeat;
+  column-gap: 6px;
+  min-width: 0;
+  border-radius: 25px;
+  padding: 14px 20px;
+}
+.freeBox__cdzKj {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 6px;
+  background: var(--token-PU2kSrpIWaun);
+  border-radius: 10px;
+  padding: 6px;
+}
+.linkButton__ilJv:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__j2X2R {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__otsXj {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__wGnnt:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__g7Bpx {
+  animation: none;
+}
+.svg__u96Va {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__nw5Et {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.freeBox__yiXlA {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: var(--token-PU2kSrpIWaun);
+  column-gap: 6px;
+  border-radius: 20px;
+  padding: 7px 22px 7px 19px;
+}
+.text {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.4;
+  min-width: 0;
+}
+.freeBox__egQy9 {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.linkCoinIcon__pOT0:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__dplBm:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__vbUPl:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__vWrxF:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__pupj7:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__keJeo:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.linkCoinIcon__nqch2:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}

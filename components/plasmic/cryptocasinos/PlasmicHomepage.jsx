@@ -21,9 +21,9 @@ import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HeroEyebrowPill from "../../HeroEyebrowPill"; // plasmic-import: 9b8CeTfcgtV8/component
 import HeroCardLink from "../../HeroCardLink"; // plasmic-import: QXwWWXLv7dKm/component
 import CornerTDivider from "../../CornerTDivider"; // plasmic-import: uVYTGz9cJOUu/component
-import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
-import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
+import ActionsMain from "../../ActionsMain"; // plasmic-import: s3lR74zcYqTi/component
 import SectionHeader from "../../SectionHeader"; // plasmic-import: peFiZbBQXNG2/component
+import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import CardCasinoList from "../../CardCasinoList"; // plasmic-import: 6YxcbeY1AF1_/component
 import InfoBlockRank from "../../InfoBlockRank"; // plasmic-import: _Cbr6Dwvaf0w/component
 import CardBentoTopic from "../../CardBentoTopic"; // plasmic-import: U8ruvn_mupQO/component
@@ -332,137 +332,11 @@ function PlasmicHomepage__RenderFunc(props) {
                   title={"Expert guides"}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__wse2R)}>
-                <div className={classNames(projectcss.all, sty.freeBox__hQlk)}>
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton___3DaL
-                    )}
-                    href={`/casinos`}
-                  />
-
-                  <LinkButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.linkButton__db89C
-                    )}
-                    color={"gray"}
-                    href={`/guides`}
-                    title={"Browse Guides"}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__hmk3I)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__wkW16
-                    )}
-                  >
-                    {"Explore Coins"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      sty.freeBox___1OOz,
-                      "link-coin-icon-wrap"
-                    )}
-                  >
-                    <LinkCoinIcon
-                      className={classNames(
-                        "__wab_instance",
-                        sty.linkCoinIcon__b4AdV
-                      )}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      shorthand={"DOT"}
-                    />
-
-                    <LinkCoinIcon
-                      className={classNames(
-                        "__wab_instance",
-                        sty.linkCoinIcon__cksVl
-                      )}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      shorthand={"USDT"}
-                    />
-
-                    <LinkCoinIcon
-                      className={classNames(
-                        "__wab_instance",
-                        sty.linkCoinIcon__qv5NH
-                      )}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      shorthand={"ADA"}
-                    />
-
-                    <LinkCoinIcon
-                      className={classNames(
-                        "__wab_instance",
-                        sty.linkCoinIcon__iHvdr
-                      )}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      shorthand={"ETH"}
-                    />
-
-                    <LinkCoinIcon
-                      className={classNames(
-                        "__wab_instance",
-                        sty.linkCoinIcon___89YcN
-                      )}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      shorthand={"XRP"}
-                    />
-
-                    <LinkCoinIcon
-                      className={classNames(
-                        "__wab_instance",
-                        sty.linkCoinIcon__vsrJ1
-                      )}
-                      icon={{
-                        src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
-                        fullWidth: 225,
-                        fullHeight: 225,
-                        aspectRatio: 1
-                      }}
-                      shorthand={"SOL"}
-                    />
-
-                    <LinkCoinIcon
-                      className={classNames(
-                        "__wab_instance",
-                        sty.linkCoinIcon__rZctq
-                      )}
-                      shorthand={"BTC"}
-                    />
-                  </div>
-                </div>
-              </div>
+              <ActionsMain
+                data-plasmic-name={"actionsMain"}
+                data-plasmic-override={overrides.actionsMain}
+                className={classNames("__wab_instance", sty.actionsMain)}
+              />
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__ezV7R)} />
@@ -1183,6 +1057,7 @@ const PlasmicDescendants = {
     "hero",
     "heroEyebrowPill",
     "span",
+    "actionsMain",
     "content",
     "cardsCasinos",
     "infoBlockRank",
@@ -1196,9 +1071,10 @@ const PlasmicDescendants = {
     "cardCta"
   ],
 
-  hero: ["hero", "heroEyebrowPill", "span"],
+  hero: ["hero", "heroEyebrowPill", "span", "actionsMain"],
   heroEyebrowPill: ["heroEyebrowPill"],
   span: ["span"],
+  actionsMain: ["actionsMain"],
   content: [
     "content",
     "cardsCasinos",
@@ -1268,6 +1144,7 @@ export const PlasmicHomepage = Object.assign(
     hero: makeNodeComponent("hero"),
     heroEyebrowPill: makeNodeComponent("heroEyebrowPill"),
     span: makeNodeComponent("span"),
+    actionsMain: makeNodeComponent("actionsMain"),
     content: makeNodeComponent("content"),
     cardsCasinos: makeNodeComponent("cardsCasinos"),
     infoBlockRank: makeNodeComponent("infoBlockRank"),
