@@ -9,9 +9,11 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: OXSVHEvZKoQP
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -95,13 +97,14 @@ function PlasmicCoinPriceSidebarItem__RenderFunc(props) {
   });
   const styleTokensClassNames = _useStyleTokens();
   return (
-    <div
+    <PlasmicLink__
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -109,6 +112,10 @@ function PlasmicCoinPriceSidebarItem__RenderFunc(props) {
         sty.root,
         { [sty.rootisNegative]: hasVariant($state, "isNegative", "isNegative") }
       )}
+      component={Link}
+      href={`/coins/btc`}
+      legacyBehavior={false}
+      platform={"nextjs"}
     >
       <PlasmicImg__
         data-plasmic-name={"img"}
@@ -164,7 +171,7 @@ function PlasmicCoinPriceSidebarItem__RenderFunc(props) {
           {"+2,4%"}
         </div>
       </div>
-    </div>
+    </PlasmicLink__>
   );
 }
 

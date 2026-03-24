@@ -1782,6 +1782,16 @@
           "id": "2qmxN8mwsDsV",
           "name": "uifaces-alien-avatar (9).jpg",
           "filePath": "../public/plasmic/cryptocasinos/images/uifacesAlienAvatar9Jpg.jpg"
+        },
+        {
+          "id": "SCl1cYTK0Mk9",
+          "name": "coin-usdc.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/coinUsdcSvg.svg"
+        },
+        {
+          "id": "J66H-Fs_GvDF",
+          "name": "coin-bnb.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/coinBnbSvg.svg"
         }
       ],
       "indirect": false,
