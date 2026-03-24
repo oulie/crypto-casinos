@@ -13,7 +13,9 @@ import { useRouter } from "next/router";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -23,7 +25,7 @@ import sty from "./PlasmicMarqueePriceItem.module.css"; // plasmic-import: _gAGX
 
 createPlasmicElementProxy;
 
-export const PlasmicMarqueePriceItem__VariantProps = new Array();
+export const PlasmicMarqueePriceItem__VariantProps = new Array("isNegative");
 
 export const PlasmicMarqueePriceItem__ArgProps = new Array();
 
@@ -56,6 +58,25 @@ function PlasmicMarqueePriceItem__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "isNegative",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.isNegative
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
   const styleTokensClassNames = _useStyleTokens();
   return (
     <div
@@ -73,28 +94,37 @@ function PlasmicMarqueePriceItem__RenderFunc(props) {
       )}
     >
       <div
+        data-plasmic-name={"shorthand"}
+        data-plasmic-override={overrides.shorthand}
         className={classNames(
           projectcss.all,
           projectcss.__wab_text,
-          sty.text___2OWIi
+          sty.shorthand
         )}
       >
         {"BTC"}
       </div>
       <div
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.text__x2H1X
-        )}
+        data-plasmic-name={"price"}
+        data-plasmic-override={overrides.price}
+        className={classNames(projectcss.all, projectcss.__wab_text, sty.price)}
       >
         {"$4,230.50"}
       </div>
       <div
+        data-plasmic-name={"change"}
+        data-plasmic-override={overrides.change}
         className={classNames(
           projectcss.all,
           projectcss.__wab_text,
-          sty.text__bwnR
+          sty.change,
+          {
+            [sty.changeisNegative]: hasVariant(
+              $state,
+              "isNegative",
+              "isNegative"
+            )
+          }
         )}
       >
         {"+2.4%"}
@@ -104,7 +134,10 @@ function PlasmicMarqueePriceItem__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "shorthand", "price", "change"],
+  shorthand: ["shorthand"],
+  price: ["price"],
+  change: ["change"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -139,6 +172,9 @@ export const PlasmicMarqueePriceItem = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    shorthand: makeNodeComponent("shorthand"),
+    price: makeNodeComponent("price"),
+    change: makeNodeComponent("change"),
     // Metadata about props expected for PlasmicMarqueePriceItem
     internalVariantProps: PlasmicMarqueePriceItem__VariantProps,
     internalArgProps: PlasmicMarqueePriceItem__ArgProps

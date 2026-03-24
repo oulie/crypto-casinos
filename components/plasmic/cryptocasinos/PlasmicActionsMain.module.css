@@ -21,6 +21,25 @@
   border-radius: 25px;
   padding: 16px;
 }
+@media (max-width: 1023px) {
+  .wrap {
+    flex-wrap: wrap;
+    align-items: stretch;
+    row-gap: 6px;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media (max-width: 511px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    column-gap: 0px;
+  }
+}
 .freeBox__rlQ0H {
   animation: none;
   display: flex;
@@ -35,6 +54,7 @@
 .linkButton__oVc4A:global(.__wab_instance) {
   animation: none;
   position: relative;
+  flex-grow: 1;
 }
 .svg__hXlf6 {
   animation: none;
@@ -53,6 +73,7 @@
 .linkButton___64CbE:global(.__wab_instance) {
   animation: none;
   position: relative;
+  flex-grow: 1;
 }
 .text__xgQWy {
   animation: none;

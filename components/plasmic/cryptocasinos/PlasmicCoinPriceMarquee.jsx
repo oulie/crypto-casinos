@@ -74,9 +74,9 @@ function PlasmicCoinPriceMarquee__RenderFunc(props) {
       )}
     >
       <div
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
-        className={classNames(projectcss.all, sty.freeBox)}
+        data-plasmic-name={"itmes"}
+        data-plasmic-override={overrides.itmes}
+        className={classNames(projectcss.all, sty.itmes)}
       >
         <MarqueePriceItem
           className={classNames("__wab_instance", sty.marqueePriceItem___471G0)}
@@ -107,8 +107,8 @@ function PlasmicCoinPriceMarquee__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox"],
-  freeBox: ["freeBox"]
+  root: ["root", "itmes"],
+  itmes: ["itmes"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -143,7 +143,7 @@ export const PlasmicCoinPriceMarquee = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
+    itmes: makeNodeComponent("itmes"),
     // Metadata about props expected for PlasmicCoinPriceMarquee
     internalVariantProps: PlasmicCoinPriceMarquee__VariantProps,
     internalArgProps: PlasmicCoinPriceMarquee__ArgProps

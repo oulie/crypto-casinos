@@ -3,22 +3,29 @@
 import * as React from "react";
 import { PlasmicMarqueePriceItem } from "./plasmic/cryptocasinos/PlasmicMarqueePriceItem";
 
-function MarqueePriceItem_(props, ref) {
-  // Use PlasmicMarqueePriceItem to render this component as it was
-  // designed in Plasmic, by activating the appropriate variants,
-  // attaching the appropriate event handlers, etc.  You
-  // can also install whatever React hooks you need here to manage state or
-  // fetch data.
-  //
-  // Props you can pass into PlasmicMarqueePriceItem are:
-  // 1. Variants you want to activate,
-  // 2. Contents for slots you want to fill,
-  // 3. Overrides for any named node in the component to attach behavior and data,
-  // 4. Props to set on the root node.
-  //
-  // By default, we are just piping all MarqueePriceItemProps here, but feel free
-  // to do whatever works for you.
-  return <PlasmicMarqueePriceItem root={{ ref }} {...props} />;
+function MarqueePriceItem_(
+  { change, isNegative, price, shorthand, ...props },
+  ref
+) {
+  return (
+    <PlasmicMarqueePriceItem
+      root={{ ref }}
+      {...props}
+      change={{
+        children: change,
+        ...(props.change || {}),
+      }}
+      isNegative={isNegative}
+      price={{
+        children: price,
+        ...(props.price || {}),
+      }}
+      shorthand={{
+        children: shorthand,
+        ...(props.shorthand || {}),
+      }}
+    />
+  );
 }
 
 const MarqueePriceItem = React.forwardRef(MarqueePriceItem_);

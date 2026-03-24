@@ -14,7 +14,7 @@
   border-top: 1px none #ffffff0f;
   border-bottom: 1px solid #ffffff0f;
 }
-.freeBox {
+.itmes {
   display: flex;
   flex-direction: row;
   position: relative;

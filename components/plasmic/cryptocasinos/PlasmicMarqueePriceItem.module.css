@@ -7,14 +7,17 @@
   position: relative;
   font-size: 12px;
 }
-.text___2OWIi {
+.shorthand {
   position: relative;
 }
-.text__x2H1X {
+.price {
   position: relative;
   opacity: 0.5;
 }
-.text__bwnR {
+.change {
   position: relative;
   color: var(--token-sxMiRhCxgPbQ);
+}
+.changeisNegative {
+  color: var(--token-QL0xMMXWaeGp);
 }

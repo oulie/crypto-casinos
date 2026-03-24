@@ -314,39 +314,41 @@
 .actionsMain:global(.__wab_instance) {
   position: relative;
 }
-.linkButton__gw7RB:global(.__wab_instance) {
+.linkButton__u8Ana:global(.__wab_instance) {
   animation: none;
   position: relative;
+  flex-grow: 1;
 }
-.svg__aiom6 {
+.svg__pWHbV {
   animation: none;
   object-fit: cover;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
-.svg__qrvBn {
+.svg__ms0Tg {
   animation: none;
   object-fit: cover;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
-.linkButton__zbTzg:global(.__wab_instance) {
+.linkButton__sh8Ic:global(.__wab_instance) {
   animation: none;
   position: relative;
+  flex-grow: 1;
 }
-.text__hrvXm {
+.text__qiNiF {
   animation: none;
 }
-.svg__qphdj {
+.svg__fxc9A {
   animation: none;
   object-fit: cover;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
-.svg__wntw9 {
+.svg__syYfG {
   animation: none;
   object-fit: cover;
   width: 16px;
