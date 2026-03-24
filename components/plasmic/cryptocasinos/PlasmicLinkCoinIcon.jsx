@@ -17,10 +17,13 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
+  generateStateOnChangeProp,
+  generateStateValueProp,
   hasVariant,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import Tooltip from "../../Tooltip"; // plasmic-import: E5TEWGpV7MnO/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -30,7 +33,7 @@ createPlasmicElementProxy;
 
 export const PlasmicLinkCoinIcon__VariantProps = new Array("size");
 
-export const PlasmicLinkCoinIcon__ArgProps = new Array("icon");
+export const PlasmicLinkCoinIcon__ArgProps = new Array("icon", "shorthand");
 
 const $$ = {};
 
@@ -52,7 +55,8 @@ function PlasmicLinkCoinIcon__RenderFunc(props) {
             fullWidth: 64,
             fullHeight: 64,
             aspectRatio: undefined
-          }
+          },
+          shorthand: "BTC"
         },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)
@@ -75,6 +79,12 @@ function PlasmicLinkCoinIcon__RenderFunc(props) {
         type: "private",
         variableType: "variant",
         initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.size
+      },
+      {
+        path: "tooltip.isOpen",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false
       }
     ],
 
@@ -89,49 +99,103 @@ function PlasmicLinkCoinIcon__RenderFunc(props) {
   });
   const styleTokensClassNames = _useStyleTokens();
   return (
-    <PlasmicLink__
+    <div
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
-        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root,
-        "link-coin-icon",
         { [sty.rootsize_small]: hasVariant($state, "size", "small") }
       )}
-      component={Link}
-      href={`/coins/btc`}
-      legacyBehavior={false}
-      platform={"nextjs"}
     >
-      <PlasmicImg__
-        data-plasmic-name={"img"}
-        data-plasmic-override={overrides.img}
-        alt={""}
-        className={classNames(sty.img, "link-coin-icon-img", {
-          [sty.imgsize_small]: hasVariant($state, "size", "small")
-        })}
-        displayHeight={hasVariant($state, "size", "small") ? "20px" : "30px"}
-        displayMaxHeight={"none"}
-        displayMaxWidth={"none"}
-        displayMinHeight={"0"}
-        displayMinWidth={"0"}
-        displayWidth={hasVariant($state, "size", "small") ? "20px" : "30px"}
-        loading={"lazy"}
-        src={args.icon}
+      <Tooltip
+        data-plasmic-name={"tooltip"}
+        data-plasmic-override={overrides.tooltip}
+        className={classNames("__wab_instance", sty.tooltip)}
+        content={
+          <React.Fragment>
+            {(() => {
+              try {
+                return $props.shorthand;
+              } catch (e) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
+                  return "BTC";
+                }
+                throw e;
+              }
+            })()}
+          </React.Fragment>
+        }
+        isOpen={generateStateValueProp($state, ["tooltip", "isOpen"])}
+        onOpenChange={async (...eventArgs) => {
+          generateStateOnChangeProp($state, ["tooltip", "isOpen"]).apply(
+            null,
+            eventArgs
+          );
+          if (
+            eventArgs.length > 1 &&
+            eventArgs[1] &&
+            eventArgs[1]._plasmic_state_init_
+          ) {
+            return;
+          }
+        }}
+        trigger={
+          <PlasmicLink__
+            data-plasmic-name={"link"}
+            data-plasmic-override={overrides.link}
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              sty.link,
+              "link-coin-icon",
+              { [sty.linksize_small]: hasVariant($state, "size", "small") }
+            )}
+            component={Link}
+            href={`/coins/btc`}
+            legacyBehavior={false}
+            platform={"nextjs"}
+          >
+            <PlasmicImg__
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img, "link-coin-icon-img", {
+                [sty.imgsize_small]: hasVariant($state, "size", "small")
+              })}
+              displayHeight={
+                hasVariant($state, "size", "small") ? "20px" : "30px"
+              }
+              displayMaxHeight={"none"}
+              displayMaxWidth={"none"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={
+                hasVariant($state, "size", "small") ? "20px" : "30px"
+              }
+              loading={"lazy"}
+              src={args.icon}
+            />
+          </PlasmicLink__>
+        }
       />
-    </PlasmicLink__>
+    </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img"],
+  root: ["root", "tooltip", "link", "img"],
+  tooltip: ["tooltip", "link", "img"],
+  link: ["link", "img"],
   img: ["img"]
 };
 
@@ -167,6 +231,8 @@ export const PlasmicLinkCoinIcon = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    tooltip: makeNodeComponent("tooltip"),
+    link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicLinkCoinIcon
     internalVariantProps: PlasmicLinkCoinIcon__VariantProps,

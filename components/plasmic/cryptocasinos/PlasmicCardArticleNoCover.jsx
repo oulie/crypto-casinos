@@ -162,6 +162,7 @@ function PlasmicCardArticleNoCover__RenderFunc(props) {
                   "__wab_instance",
                   sty.linkCoinIcon__ggEgk
                 )}
+                shorthand={"BTC"}
                 size={"small"}
               />
 
@@ -173,6 +174,7 @@ function PlasmicCardArticleNoCover__RenderFunc(props) {
                   fullHeight: 225,
                   aspectRatio: 1
                 }}
+                shorthand={"ETH"}
                 size={"small"}
               />
 
@@ -187,6 +189,7 @@ function PlasmicCardArticleNoCover__RenderFunc(props) {
                   fullHeight: 225,
                   aspectRatio: 1
                 }}
+                shorthand={"SOL"}
                 size={"small"}
               />
             </React.Fragment>

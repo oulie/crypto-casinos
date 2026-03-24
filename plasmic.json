@@ -1142,6 +1142,32 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicBreadcrumbChevron.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "8vy9oxrBKO3N",
+          "name": "OverlayArrow",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicOverlayArrow.jsx",
+          "importSpec": {
+            "modulePath": "OverlayArrow.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicOverlayArrow.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "E5TEWGpV7MnO",
+          "name": "Tooltip",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicTooltip.jsx",
+          "importSpec": {
+            "modulePath": "Tooltip.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicTooltip.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1344,6 +1370,11 @@
           "id": "HdrPe8G3Z0hy",
           "name": "ClockIcon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Clock.jsx"
+        },
+        {
+          "id": "VgUBlzQRDY_v",
+          "name": "TriangleFilledIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__TriangleFilled.jsx"
         }
       ],
       "images": [

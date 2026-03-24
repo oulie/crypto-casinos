@@ -220,6 +220,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
                       "__wab_instance",
                       sty.linkCoinIcon___6PGpL
                     )}
+                    shorthand={"BTC"}
                     size={"small"}
                   />
 
@@ -234,6 +235,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
                       fullHeight: 225,
                       aspectRatio: 1
                     }}
+                    shorthand={"ETH"}
                     size={"small"}
                   />
 
@@ -248,6 +250,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
                       fullHeight: 225,
                       aspectRatio: 1
                     }}
+                    shorthand={"SOL"}
                     size={"small"}
                   />
 
@@ -262,6 +265,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
                       fullHeight: 225,
                       aspectRatio: 1
                     }}
+                    shorthand={"ADA"}
                     size={"small"}
                   />
 
@@ -276,6 +280,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
                       fullHeight: 225,
                       aspectRatio: 1
                     }}
+                    shorthand={"DOT"}
                     size={"small"}
                   />
                 </React.Fragment>

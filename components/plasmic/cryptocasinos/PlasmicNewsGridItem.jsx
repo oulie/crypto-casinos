@@ -172,6 +172,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
                       "__wab_instance",
                       sty.linkCoinIcon__ehrlr
                     )}
+                    shorthand={"BTC"}
                     size={"small"}
                   />
 
@@ -186,6 +187,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
                       fullHeight: 225,
                       aspectRatio: 1
                     }}
+                    shorthand={"ETH"}
                     size={"small"}
                   />
 
@@ -200,6 +202,7 @@ function PlasmicNewsGridItem__RenderFunc(props) {
                       fullHeight: 225,
                       aspectRatio: 1
                     }}
+                    shorthand={"SOL"}
                     size={"small"}
                   />
                 </React.Fragment>
