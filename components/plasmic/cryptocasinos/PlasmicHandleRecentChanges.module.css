@@ -14,6 +14,13 @@
   flex-grow: 1;
   height: 1px;
   background: #ffffff0f;
+  transition-property: background;
+  transition-duration: 0.15s;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover .freeBox__p8XRo {
+  background: #ffffff33;
 }
 .buttonOpen {
   display: flex;
@@ -22,9 +29,18 @@
   justify-content: center;
   column-gap: 6px;
   font-size: 12px;
+  transition-property: border-color, color;
+  transition-duration: 0.15s, 0.15s;
+  cursor: pointer;
+  -webkit-transition-property: border-color, color;
+  -webkit-transition-duration: 0.15s, 0.15s;
   border-radius: 20px;
   padding: 6px 14px;
   border: 1px solid #ffffff0f;
+}
+.root:hover .buttonOpen {
+  color: #ffffff;
+  border-color: #ffffff33;
 }
 .text {
   position: relative;
@@ -47,4 +63,11 @@
   flex-grow: 1;
   height: 1px;
   background: #ffffff0f;
+  transition-property: background;
+  transition-duration: 0.15s;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover .freeBox__pLhvp {
+  background: #ffffff33;
 }

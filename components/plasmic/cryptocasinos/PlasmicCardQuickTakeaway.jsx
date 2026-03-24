@@ -9,13 +9,19 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: h4XyEFfhBuXq
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  generateStateOnChangeProp,
+  generateStateValueProp,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import Tooltip from "../../Tooltip"; // plasmic-import: E5TEWGpV7MnO/component
 import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -58,6 +64,25 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "tooltip.isOpen",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
   const styleTokensClassNames = _useStyleTokens();
   return (
     <div
@@ -207,12 +232,44 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
             >
               {"Level 1 Required"}
             </div>
-            <CircleQuestionIcon
-              data-plasmic-name={"svg"}
-              data-plasmic-override={overrides.svg}
-              className={classNames(projectcss.all, sty.svg)}
-              role={"img"}
-            />
+            <PlasmicLink__
+              data-plasmic-name={"link"}
+              data-plasmic-override={overrides.link}
+              className={classNames(projectcss.all, projectcss.a, sty.link)}
+              component={Link}
+              href={`/guides/how-to-choose-a-crypto-casino`}
+              legacyBehavior={false}
+              platform={"nextjs"}
+            >
+              <Tooltip
+                data-plasmic-name={"tooltip"}
+                data-plasmic-override={overrides.tooltip}
+                className={classNames("__wab_instance", sty.tooltip)}
+                content={"Click to learn more"}
+                isOpen={generateStateValueProp($state, ["tooltip", "isOpen"])}
+                onOpenChange={async (...eventArgs) => {
+                  generateStateOnChangeProp($state, [
+                    "tooltip",
+                    "isOpen"
+                  ]).apply(null, eventArgs);
+                  if (
+                    eventArgs.length > 1 &&
+                    eventArgs[1] &&
+                    eventArgs[1]._plasmic_state_init_
+                  ) {
+                    return;
+                  }
+                }}
+                trigger={
+                  <CircleQuestionIcon
+                    data-plasmic-name={"svg"}
+                    data-plasmic-override={overrides.svg}
+                    className={classNames(projectcss.all, sty.svg)}
+                    role={"img"}
+                  />
+                }
+              />
+            </PlasmicLink__>
           </div>
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__ol7P)}>
@@ -323,7 +380,9 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg"],
+  root: ["root", "link", "tooltip", "svg"],
+  link: ["link", "tooltip", "svg"],
+  tooltip: ["tooltip", "svg"],
   svg: ["svg"]
 };
 
@@ -359,6 +418,8 @@ export const PlasmicCardQuickTakeaway = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
+    tooltip: makeNodeComponent("tooltip"),
     svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicCardQuickTakeaway
     internalVariantProps: PlasmicCardQuickTakeaway__VariantProps,

@@ -176,10 +176,22 @@
 .text___0TfYc {
   font-size: 14px;
 }
+.link {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  color: #cfcfcf;
+}
+.tooltip:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+}
 .svg {
   object-fit: cover;
   max-width: 100%;
   opacity: 0.5;
+  color: #ffffff;
   height: 1em;
 }
 .freeBox__ol7P {
