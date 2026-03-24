@@ -23,6 +23,7 @@ import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import InfoDotPanel from "../../InfoDotPanel"; // plasmic-import: rsu3SXicdqjb/component
 import SidebarTableOfContents from "../../SidebarTableOfContents"; // plasmic-import: wktJy5_5Z9UD/component
 import LinkTableOfContents from "../../LinkTableOfContents"; // plasmic-import: 0wQjSxZ9XwHa/component
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -87,6 +88,7 @@ function PlasmicTerms__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const pageMetadata = generateDynamicMetadata(
     wrapQueriesWithLoadingProxy({}),
     $ctx

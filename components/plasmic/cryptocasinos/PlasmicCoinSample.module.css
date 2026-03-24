@@ -119,18 +119,13 @@
   position: relative;
   width: 100%;
   height: auto;
-  font-size: 45px;
+  font-size: clamp(38px, 6vw, 54px);
   letter-spacing: -3px;
   line-height: 1;
   max-width: 700px;
   font-weight: 700;
   color: #ffffff;
   min-width: 0;
-}
-@media (max-width: 511px) {
-  .text__hQiOg {
-    font-size: 55px;
-  }
 }
 .text__tWalq {
   position: relative;

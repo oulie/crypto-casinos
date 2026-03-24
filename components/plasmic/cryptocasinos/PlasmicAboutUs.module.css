@@ -92,7 +92,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  font-size: 52px;
+  font-size: clamp(38px, 6vw, 54px);
   letter-spacing: -3px;
   line-height: 0.9;
   max-width: 700px;

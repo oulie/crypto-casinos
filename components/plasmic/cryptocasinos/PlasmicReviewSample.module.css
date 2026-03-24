@@ -124,7 +124,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  font-size: 52px;
+  font-size: clamp(38px, 6vw, 54px);
   letter-spacing: -3px;
   line-height: 0.9;
   font-weight: 700;
@@ -132,11 +132,6 @@
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 0;
-}
-@media (max-width: 511px) {
-  .text__cct0F {
-    font-size: 55px;
-  }
 }
 .text__olZgB {
   position: relative;
