@@ -6,6 +6,11 @@
   column-gap: 10px;
   position: relative;
   font-size: 12px;
+  color: #cfcfcf;
+  cursor: pointer;
+}
+.root:hover {
+  color: #ffffff;
 }
 .shorthand {
   position: relative;

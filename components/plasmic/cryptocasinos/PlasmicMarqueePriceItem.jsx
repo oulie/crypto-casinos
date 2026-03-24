@@ -9,8 +9,10 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: _gAGXkAXxPJ1
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -79,19 +81,24 @@ function PlasmicMarqueePriceItem__RenderFunc(props) {
   });
   const styleTokensClassNames = _useStyleTokens();
   return (
-    <div
+    <PlasmicLink__
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
         sty.root
       )}
+      component={Link}
+      href={`/coins/btc`}
+      legacyBehavior={false}
+      platform={"nextjs"}
     >
       <div
         data-plasmic-name={"shorthand"}
@@ -129,7 +136,7 @@ function PlasmicMarqueePriceItem__RenderFunc(props) {
       >
         {"+2.4%"}
       </div>
-    </div>
+    </PlasmicLink__>
   );
 }
 
