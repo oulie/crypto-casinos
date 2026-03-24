@@ -27,6 +27,7 @@ import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-impor
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicCardQuickTakeaway.module.css"; // plasmic-import: h4XyEFfhBuXq/css
+import ExternalIcon from "./icons/PlasmicIcon__External"; // plasmic-import: PEwZHbQZ9aIL/icon
 import CircleQuestionIcon from "./icons/PlasmicIcon__CircleQuestion"; // plasmic-import: nlOIPZUgTjYn/icon
 
 createPlasmicElementProxy;
@@ -122,14 +123,20 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
           >
             {"Website"}
           </div>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__x25Ez
-            )}
-          >
-            {"stake.com"}
+          <div className={classNames(projectcss.all, sty.freeBox__lkEv0)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__x25Ez
+              )}
+            >
+              {"stake.com"}
+            </div>
+            <ExternalIcon
+              className={classNames(projectcss.all, sty.svg__dn6Mk)}
+              role={"img"}
+            />
           </div>
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__tGyLl)}>
@@ -262,9 +269,7 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
                 }}
                 trigger={
                   <CircleQuestionIcon
-                    data-plasmic-name={"svg"}
-                    data-plasmic-override={overrides.svg}
-                    className={classNames(projectcss.all, sty.svg)}
+                    className={classNames(projectcss.all, sty.svg__nCbw5)}
                     role={"img"}
                   />
                 }
@@ -380,10 +385,9 @@ function PlasmicCardQuickTakeaway__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "tooltip", "svg"],
-  link: ["link", "tooltip", "svg"],
-  tooltip: ["tooltip", "svg"],
-  svg: ["svg"]
+  root: ["root", "link", "tooltip"],
+  link: ["link", "tooltip"],
+  tooltip: ["tooltip"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -420,7 +424,6 @@ export const PlasmicCardQuickTakeaway = Object.assign(
     // Helper components rendering sub-elements
     link: makeNodeComponent("link"),
     tooltip: makeNodeComponent("tooltip"),
-    svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicCardQuickTakeaway
     internalVariantProps: PlasmicCardQuickTakeaway__VariantProps,
     internalArgProps: PlasmicCardQuickTakeaway__ArgProps

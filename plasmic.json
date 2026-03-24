@@ -1550,6 +1550,11 @@
           "id": "C-E9NBaV2Mie",
           "name": "ChevronDownUpIcon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ChevronDownUp.jsx"
+        },
+        {
+          "id": "PEwZHbQZ9aIL",
+          "name": "ExternalIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__External.jsx"
         }
       ],
       "images": [
