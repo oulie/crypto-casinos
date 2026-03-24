@@ -1299,6 +1299,20 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicSectionChangelog.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "sfd6F04sxWcM",
+          "name": "SearchResults",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicSearchResults.jsx",
+          "importSpec": {
+            "modulePath": "../pages/search.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicSearchResults.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/search"
         }
       ],
       "icons": [

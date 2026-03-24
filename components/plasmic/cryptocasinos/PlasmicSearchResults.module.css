@@ -1,0 +1,631 @@
+.root {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--token-PU2kSrpIWaun);
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  padding: 0px;
+}
+.freeBox___0Jz2S {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: var(--token-eI5HWtMjxYZN);
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 40px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  min-width: 0;
+}
+.freeBox__mnCdk {
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+  flex-grow: 1;
+  flex-basis: 60%;
+  text-align: center;
+  min-width: 0;
+}
+.text {
+  animation: none;
+  color: var(--token-sxMiRhCxgPbQ);
+}
+.searchTerm {
+  animation: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: clamp(38px, 6vw, 54px);
+  letter-spacing: -3px;
+  line-height: 0.9;
+  max-width: 700px;
+  font-weight: 700;
+  color: #ffffff;
+  min-width: 0;
+}
+.freeBox__g5Roh {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 0;
+}
+.freeBox__l6Lp6 {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  width: 100%;
+  background: url("/plasmic/cryptocasinos/images/dotPatternGraySvg.svg") top 50% left 50% / 8px auto repeat;
+  column-gap: 6px;
+  min-width: 0;
+  border-radius: 30px;
+  padding: 16px;
+}
+.freeBox__biBRh {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--token-PU2kSrpIWaun);
+  column-gap: 6px;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  min-width: 0;
+  border-radius: 10px;
+  padding: 16px;
+}
+.freeBox___97UBr {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  column-gap: 6px;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  min-width: 0;
+  border-bottom: 1px solid #ffffff1a;
+}
+.linkButton___5Nhep:global(.__wab_instance) {
+  animation: none;
+}
+.svg__a70Fa {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__o4QuX {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__meR4Y:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__kuDCq {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__v7Rav {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__truB6:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__hKXh {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__jIeIw {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__ciHo:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__dbpe9 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__reVpD {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__p168U:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__fiDib {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__c9WI9 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__wkbDy:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__vbBaV {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__gmtFg {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__ktA93:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__dmz6Q {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__p2DAc {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__jZyNp:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg___5YUr6 {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__wmrO {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__frD8N:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__u1Pey {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__bsd7Z {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton___0OjN2:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg__tDnMk {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__ah8Mj {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.linkButton__k9R42:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.svg___8XLcf {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.svg__fSjZm {
+  animation: none;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.togglesCoins:global(.__wab_instance) {
+  margin-top: 20px;
+}
+.content {
+  animation: none;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: var(--token-eI5HWtMjxYZN);
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 30px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 0;
+}
+@media (max-width: 1023px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    column-gap: 0px;
+  }
+}
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: var(--token-eI5HWtMjxYZN);
+  justify-content: flex-start;
+  align-items: stretch;
+  row-gap: 30px;
+  min-width: 0;
+}
+@media (max-width: 1023px) {
+  .leftContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    column-gap: 0px;
+  }
+}
+.freeBox__e1VzO {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  min-width: 0;
+}
+@media (max-width: 511px) {
+  .freeBox__e1VzO {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-bottom: 20px;
+  }
+}
+.newsGridItem__qzc4T:global(.__wab_instance) {
+  position: relative;
+}
+@media (max-width: 511px) {
+  .newsGridItem__qzc4T:global(.__wab_instance) {
+    grid-column-end: span 1;
+  }
+}
+.tagPill__ux1H9:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__bc1NL {
+  animation: none;
+}
+.tagPill__kHnxD:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text___83PFg {
+  animation: none;
+}
+.linkCoinIcon__uBbCi:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__kWhR9:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__e8Bi6:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.newsGridItem__iPqlg:global(.__wab_instance) {
+  position: relative;
+}
+.tagPill__eaGkK:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__gsCwm {
+  animation: none;
+}
+.tagPill__cvekz:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__xuLaq {
+  animation: none;
+}
+.tagPill__h8Kke:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__cGDlg {
+  animation: none;
+}
+.linkCoinIcon__iLfm:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__hIXl:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__yuXgv:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.newsGridItem___01Arr:global(.__wab_instance) {
+  position: relative;
+}
+.tagPill__yi1Hz:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__o2Jc6 {
+  animation: none;
+}
+.tagPill__rHKR:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__y3LnT {
+  animation: none;
+}
+.tagPill__z62Te:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__tGy54 {
+  animation: none;
+}
+.linkCoinIcon__thbD:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__wL9Bx:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__pSbWd:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.newsGridItem__z9Qmb:global(.__wab_instance) {
+  position: relative;
+}
+.tagPill__x6GrL:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__qgf8A {
+  animation: none;
+}
+.tagPill__uvdkG:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__bYhBq {
+  animation: none;
+}
+.tagPill___1YyA8:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__wqt5J {
+  animation: none;
+}
+.linkCoinIcon___3NcMc:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__ttR9G:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__xWj:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.newsGridItem__ljjVz:global(.__wab_instance) {
+  position: relative;
+}
+.tagPill__rxMgN:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__mOSx {
+  animation: none;
+}
+.tagPill__fGlCi:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__uJiIw {
+  animation: none;
+}
+.tagPill__aZyf4:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__pKxJv {
+  animation: none;
+}
+.linkCoinIcon__cvaDs:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__yR9Ju:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__xyY2L:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.newsGridItem__e98E8:global(.__wab_instance) {
+  position: relative;
+}
+.tagPill__pz9MQ:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__yAtPe {
+  animation: none;
+}
+.tagPill___5Bljh:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__vyDN {
+  animation: none;
+}
+.tagPill__k34Gx:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__vqhnw {
+  animation: none;
+}
+.linkCoinIcon__uf7Oi:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__sda0Z:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__lviCw:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.newsGridItem__egWUw:global(.__wab_instance) {
+  position: relative;
+}
+.tagPill__qNdcd:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__seWpE {
+  animation: none;
+}
+.tagPill__eWivT:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__erVmW {
+  animation: none;
+}
+.tagPill__pwlgE:global(.__wab_instance) {
+  animation: none;
+  position: relative;
+}
+.text__hkbPr {
+  animation: none;
+}
+.linkCoinIcon__tzX2U:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__uApGi:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.linkCoinIcon__qXmqo:global(.__wab_instance) {
+  animation: none;
+  max-width: 100%;
+}
+.pagination:global(.__wab_instance) {
+  position: relative;
+}

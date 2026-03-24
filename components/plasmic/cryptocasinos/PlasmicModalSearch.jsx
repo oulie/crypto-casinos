@@ -66,7 +66,7 @@ function PlasmicModalSearch__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "textField.value",
+        path: "inputSearch.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
@@ -104,12 +104,12 @@ function PlasmicModalSearch__RenderFunc(props) {
         className={classNames(projectcss.all, sty.searchbar)}
       >
         <TextField
-          data-plasmic-name={"textField"}
-          data-plasmic-override={overrides.textField}
-          className={classNames("__wab_instance", sty.textField)}
+          data-plasmic-name={"inputSearch"}
+          data-plasmic-override={overrides.inputSearch}
+          className={classNames("__wab_instance", sty.inputSearch)}
           iconStart={true}
           onChange={async (...eventArgs) => {
-            generateStateOnChangeProp($state, ["textField", "value"]).apply(
+            generateStateOnChangeProp($state, ["inputSearch", "value"]).apply(
               null,
               eventArgs
             );
@@ -131,7 +131,7 @@ function PlasmicModalSearch__RenderFunc(props) {
               role={"img"}
             />
           }
-          value={generateStateValueProp($state, ["textField", "value"])}
+          value={generateStateValueProp($state, ["inputSearch", "value"])}
         />
       </div>
       <div
@@ -306,9 +306,9 @@ function PlasmicModalSearch__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "searchbar", "textField", "svg", "scrollDiv"],
-  searchbar: ["searchbar", "textField", "svg"],
-  textField: ["textField", "svg"],
+  root: ["root", "searchbar", "inputSearch", "svg", "scrollDiv"],
+  searchbar: ["searchbar", "inputSearch", "svg"],
+  inputSearch: ["inputSearch", "svg"],
   svg: ["svg"],
   scrollDiv: ["scrollDiv"]
 };
@@ -346,7 +346,7 @@ export const PlasmicModalSearch = Object.assign(
   {
     // Helper components rendering sub-elements
     searchbar: makeNodeComponent("searchbar"),
-    textField: makeNodeComponent("textField"),
+    inputSearch: makeNodeComponent("inputSearch"),
     svg: makeNodeComponent("svg"),
     scrollDiv: makeNodeComponent("scrollDiv"),
     // Metadata about props expected for PlasmicModalSearch

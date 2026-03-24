@@ -22,7 +22,7 @@
   margin-bottom: 1px;
   border-bottom: 1px solid #ffffff0f;
 }
-.textField:global(.__wab_instance):global(.__wab_instance) {
+.inputSearch:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
 }
 .svg {
