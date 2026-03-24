@@ -119,6 +119,7 @@ function PlasmicActionsMain__RenderFunc(props) {
                 fullHeight: 225,
                 aspectRatio: 1
               }}
+              shorthand={"DOT"}
             />
 
             <LinkCoinIcon
@@ -129,6 +130,7 @@ function PlasmicActionsMain__RenderFunc(props) {
                 fullHeight: 225,
                 aspectRatio: 1
               }}
+              shorthand={"USDT"}
             />
 
             <LinkCoinIcon
@@ -139,6 +141,7 @@ function PlasmicActionsMain__RenderFunc(props) {
                 fullHeight: 225,
                 aspectRatio: 1
               }}
+              shorthand={"ADA"}
             />
 
             <LinkCoinIcon
@@ -149,6 +152,7 @@ function PlasmicActionsMain__RenderFunc(props) {
                 fullHeight: 225,
                 aspectRatio: 1
               }}
+              shorthand={"ETH"}
             />
 
             <LinkCoinIcon
@@ -159,6 +163,7 @@ function PlasmicActionsMain__RenderFunc(props) {
                 fullHeight: 225,
                 aspectRatio: 1
               }}
+              shorthand={"XRP"}
             />
 
             <LinkCoinIcon
@@ -169,10 +174,12 @@ function PlasmicActionsMain__RenderFunc(props) {
                 fullHeight: 225,
                 aspectRatio: 1
               }}
+              shorthand={"SOL"}
             />
 
             <LinkCoinIcon
               className={classNames("__wab_instance", sty.linkCoinIcon__wifyt)}
+              shorthand={"BTC"}
             />
           </div>
         </div>
