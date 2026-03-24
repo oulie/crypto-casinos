@@ -1260,6 +1260,45 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicGridInfoIconBlock.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "IQ2c8c_hDkmi",
+          "name": "HandleRecentChanges",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicHandleRecentChanges.jsx",
+          "importSpec": {
+            "modulePath": "HandleRecentChanges.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicHandleRecentChanges.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "iOOjtDw_sc94",
+          "name": "RowChangelog",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicRowChangelog.jsx",
+          "importSpec": {
+            "modulePath": "RowChangelog.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicRowChangelog.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "OMdPTI3XFm3i",
+          "name": "SectionChangelog",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicSectionChangelog.jsx",
+          "importSpec": {
+            "modulePath": "SectionChangelog.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicSectionChangelog.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1487,6 +1526,16 @@
           "id": "29x9snRvI3lW",
           "name": "BriefcaseIcon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Briefcase.jsx"
+        },
+        {
+          "id": "CZNfu11PHS7W",
+          "name": "ChevronUpDownIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ChevronUpDown.jsx"
+        },
+        {
+          "id": "C-E9NBaV2Mie",
+          "name": "ChevronDownUpIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__ChevronDownUp.jsx"
         }
       ],
       "images": [

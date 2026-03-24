@@ -26,7 +26,7 @@
     column-gap: 0px;
   }
 }
-.freeBox___3Iq9C {
+.link {
   display: flex;
   flex-direction: column;
   width: 160px;
@@ -35,12 +35,13 @@
   justify-content: flex-start;
   align-items: stretch;
   row-gap: 10px;
+  color: #ffffff;
   flex-shrink: 0;
   padding: 20px 20px 30px;
   border-right: 1px solid #ffffff0f;
 }
 @media (max-width: 511px) {
-  .freeBox___3Iq9C {
+  .link {
     width: 100%;
     border-right-style: none;
     row-gap: 0px;

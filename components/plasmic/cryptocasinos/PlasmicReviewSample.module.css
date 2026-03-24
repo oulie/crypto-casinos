@@ -397,6 +397,9 @@
 .text__jf8Lr {
   animation: none;
 }
+.sectionChangelog:global(.__wab_instance) {
+  position: relative;
+}
 .divider {
   display: flex;
   flex-direction: column;

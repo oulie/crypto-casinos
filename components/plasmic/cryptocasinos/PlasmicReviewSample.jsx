@@ -21,6 +21,7 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import CardReviewHero from "../../CardReviewHero"; // plasmic-import: w9WrndX1XiEm/component
 import ActionsMain from "../../ActionsMain"; // plasmic-import: s3lR74zcYqTi/component
+import SectionChangelog from "../../SectionChangelog"; // plasmic-import: OMdPTI3XFm3i/component
 import CardProCon from "../../CardProCon"; // plasmic-import: _S-PAjhmk554/component
 import ProConRow from "../../ProConRow"; // plasmic-import: KERk-bERJlpe/component
 import RichTextImage from "../../RichTextImage"; // plasmic-import: 1vp7wIRXlNq8/component
@@ -326,6 +327,12 @@ function PlasmicReviewSample__RenderFunc(props) {
                   </div>
                 </div>
               }
+            />
+
+            <SectionChangelog
+              data-plasmic-name={"sectionChangelog"}
+              data-plasmic-override={overrides.sectionChangelog}
+              className={classNames("__wab_instance", sty.sectionChangelog)}
             />
           </div>
           <div
@@ -1066,6 +1073,7 @@ const PlasmicDescendants = {
     "hero",
     "cardReviewHero",
     "actionsMain",
+    "sectionChangelog",
     "divider",
     "content",
     "leftContent",
@@ -1079,9 +1087,10 @@ const PlasmicDescendants = {
     "sidebarTableOfContents"
   ],
 
-  hero: ["hero", "cardReviewHero", "actionsMain"],
+  hero: ["hero", "cardReviewHero", "actionsMain", "sectionChangelog"],
   cardReviewHero: ["cardReviewHero"],
   actionsMain: ["actionsMain"],
+  sectionChangelog: ["sectionChangelog"],
   divider: ["divider"],
   content: [
     "content",
@@ -1149,6 +1158,7 @@ export const PlasmicReviewSample = Object.assign(
     hero: makeNodeComponent("hero"),
     cardReviewHero: makeNodeComponent("cardReviewHero"),
     actionsMain: makeNodeComponent("actionsMain"),
+    sectionChangelog: makeNodeComponent("sectionChangelog"),
     divider: makeNodeComponent("divider"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),

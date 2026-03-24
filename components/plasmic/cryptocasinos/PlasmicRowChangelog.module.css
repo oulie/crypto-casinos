@@ -1,0 +1,60 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  column-gap: 20px;
+}
+.freeBox__ti2Wd {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 220px;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+.text___4Nb5 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  min-width: 0;
+}
+.freeBox__iIryC {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 0;
+}
+.text___1If1B {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-sxMiRhCxgPbQ);
+  margin-bottom: 10px;
+  line-height: 16px;
+  min-width: 0;
+}
+.text__hfkQc {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  opacity: 0.6;
+  line-height: 2;
+  font-size: 14px;
+  min-width: 0;
+}

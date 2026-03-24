@@ -1,0 +1,50 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.freeBox__p8XRo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
+  height: 1px;
+  background: #ffffff0f;
+}
+.buttonOpen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 6px 14px;
+  border: 1px solid #ffffff0f;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}
+.freeBox__pLhvp {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
+  height: 1px;
+  background: #ffffff0f;
+}

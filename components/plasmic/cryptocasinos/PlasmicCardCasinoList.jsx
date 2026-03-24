@@ -9,9 +9,11 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: 6YxcbeY1AF1_
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -97,7 +99,15 @@ function PlasmicCardCasinoList__RenderFunc(props) {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__jZcKz)}>
-        <div className={classNames(projectcss.all, sty.freeBox___3Iq9C)}>
+        <PlasmicLink__
+          data-plasmic-name={"link"}
+          data-plasmic-override={overrides.link}
+          className={classNames(projectcss.all, projectcss.a, sty.link)}
+          component={Link}
+          href={`/casinos/stake`}
+          legacyBehavior={false}
+          platform={"nextjs"}
+        >
           <div className={classNames(projectcss.all, sty.freeBox__iH2VG)}>
             <div className={classNames(projectcss.all, sty.freeBox___84Ygu)}>
               {renderPlasmicSlot({
@@ -121,7 +131,7 @@ function PlasmicCardCasinoList__RenderFunc(props) {
             loading={"lazy"}
             src={args.logo}
           />
-        </div>
+        </PlasmicLink__>
         <div className={classNames(projectcss.all, sty.freeBox__axL9K)}>
           <div className={classNames(projectcss.all, sty.freeBox__nEf7B)}>
             {renderPlasmicSlot({
@@ -346,7 +356,8 @@ function PlasmicCardCasinoList__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img"],
+  root: ["root", "link", "img"],
+  link: ["link", "img"],
   img: ["img"]
 };
 
@@ -382,6 +393,7 @@ export const PlasmicCardCasinoList = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicCardCasinoList
     internalVariantProps: PlasmicCardCasinoList__VariantProps,
