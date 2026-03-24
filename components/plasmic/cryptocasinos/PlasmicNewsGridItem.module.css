@@ -24,10 +24,17 @@
   object-fit: cover;
   max-width: 100%;
   aspect-ratio: 16/9;
+  transition-property: filter;
+  transition-duration: 0.2s;
+  -webkit-transition-property: filter;
+  -webkit-transition-duration: 0.2s;
   border-radius: 20px;
 }
 .img__wwPr > picture > img {
   object-fit: cover;
+}
+.root .img__wwPr:hover {
+  filter: brightness(120%);
 }
 .freeBox___4DYvv {
   display: flex;
@@ -51,14 +58,12 @@
   width: 100%;
   min-width: 0;
 }
-.text {
+.tagPill:global(.__wab_instance) {
   animation: none;
-  font-size: 14px;
-  background: var(--token-PU2kSrpIWaun);
-  color: #cfcfcf;
-  border-radius: 100px;
-  padding: 2px 10px;
-  border: 1px solid #ffffff1a;
+  position: relative;
+}
+.text__l7LOn {
+  animation: none;
 }
 .freeBox__s7Y8B {
   animation: none;
@@ -93,17 +98,25 @@
   align-items: flex-start;
   row-gap: 10px;
   cursor: pointer;
+  color: #ffffff;
   min-width: 0;
 }
 .freeBox__tGy9T {
   padding-top: 10px;
   display: flex;
   flex-direction: row;
+  color: #ffffff;
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root .freeBox__tGy9T:hover {
+  color: var(--token-QL0xMMXWaeGp);
 }
 .slotTargetTitle {
   font-size: 22px;
   font-weight: 500;
-  color: #ffffff;
   line-height: 1.1;
   letter-spacing: -1px;
 }

@@ -22,8 +22,8 @@ import {
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import TagPill from "../../TagPill"; // plasmic-import: nn118kQlMOAC/component
+import LinkCoinIcon from "../../LinkCoinIcon"; // plasmic-import: q2l6s7HIpw7u/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -146,17 +146,13 @@ function PlasmicNewsGridItem__RenderFunc(props) {
         className={classNames(projectcss.all, sty.freeBox___4DYvv, "bg-grain")}
       >
         <div className={classNames(projectcss.all, sty.freeBox___7A8MH)}>
-          <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text
-            )}
-          >
-            {"News"}
-          </div>
+          <TagPill
+            data-plasmic-name={"tagPill"}
+            data-plasmic-override={overrides.tagPill}
+            className={classNames("__wab_instance", sty.tagPill)}
+            title={"News"}
+          />
+
           <div
             className={classNames(
               projectcss.all,
@@ -319,8 +315,8 @@ function PlasmicNewsGridItem__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root", "tagPill"],
+  tagPill: ["tagPill"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -355,7 +351,7 @@ export const PlasmicNewsGridItem = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
+    tagPill: makeNodeComponent("tagPill"),
     // Metadata about props expected for PlasmicNewsGridItem
     internalVariantProps: PlasmicNewsGridItem__VariantProps,
     internalArgProps: PlasmicNewsGridItem__ArgProps
