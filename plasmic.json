@@ -1313,6 +1313,32 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/search"
+        },
+        {
+          "id": "XX0_JPfCPMT2",
+          "name": "LanguagePicker",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLanguagePicker.jsx",
+          "importSpec": {
+            "modulePath": "LanguagePicker.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLanguagePicker.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "lU1Y0Rijh0b0",
+          "name": "LanguagePickerOption",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLanguagePickerOption.jsx",
+          "importSpec": {
+            "modulePath": "LanguagePickerOption.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLanguagePickerOption.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1797,6 +1823,21 @@
           "id": "J66H-Fs_GvDF",
           "name": "coin-bnb.svg",
           "filePath": "../public/plasmic/cryptocasinos/images/coinBnbSvg.svg"
+        },
+        {
+          "id": "BhiloLGaotqE",
+          "name": "us.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/usSvg.svg"
+        },
+        {
+          "id": "H6eww0KYM_lN",
+          "name": "es.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/esSvg.svg"
+        },
+        {
+          "id": "QAEYGTlvYGnw",
+          "name": "fr.svg",
+          "filePath": "../public/plasmic/cryptocasinos/images/frSvg.svg"
         }
       ],
       "indirect": false,

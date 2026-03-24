@@ -21,6 +21,7 @@ import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LogoNav from "../../LogoNav"; // plasmic-import: P-YvXBhx4Ztn/component
 import LinkNav from "../../LinkNav"; // plasmic-import: 5h9FlaGpp_HW/component
 import ButtonSearch from "../../ButtonSearch"; // plasmic-import: yuJ4kW6TZe94/component
+import LanguagePicker from "../../LanguagePicker"; // plasmic-import: XX0_JPfCPMT2/component
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -159,20 +160,28 @@ function PlasmicNavbar__RenderFunc(props) {
             title={"About"}
           />
 
-          <ButtonSearch
-            data-plasmic-name={"buttonSearch"}
-            data-plasmic-override={overrides.buttonSearch}
-            className={classNames("__wab_instance", sty.buttonSearch)}
-          />
+          <div className={classNames(projectcss.all, sty.freeBox__hgI5A)}>
+            <ButtonSearch
+              data-plasmic-name={"buttonSearch"}
+              data-plasmic-override={overrides.buttonSearch}
+              className={classNames("__wab_instance", sty.buttonSearch)}
+            />
 
-          <LinkButton
-            data-plasmic-name={"linkButton"}
-            data-plasmic-override={overrides.linkButton}
-            className={classNames("__wab_instance", sty.linkButton)}
-            color={"gray"}
-            size={"small"}
-            title={"Updates"}
-          />
+            <LanguagePicker
+              data-plasmic-name={"languagePicker"}
+              data-plasmic-override={overrides.languagePicker}
+              className={classNames("__wab_instance", sty.languagePicker)}
+            />
+
+            <LinkButton
+              data-plasmic-name={"linkButton"}
+              data-plasmic-override={overrides.linkButton}
+              className={classNames("__wab_instance", sty.linkButton)}
+              color={"gray"}
+              size={"small"}
+              title={"Updates"}
+            />
+          </div>
         </div>
       </div>
       {(hasVariant($state, "showProgress", "showProgress") ? true : false) ? (
@@ -199,9 +208,19 @@ function PlasmicNavbar__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "logoNav", "buttonSearch", "linkButton", "track", "progress"],
+  root: [
+    "root",
+    "logoNav",
+    "buttonSearch",
+    "languagePicker",
+    "linkButton",
+    "track",
+    "progress"
+  ],
+
   logoNav: ["logoNav"],
   buttonSearch: ["buttonSearch"],
+  languagePicker: ["languagePicker"],
   linkButton: ["linkButton"],
   track: ["track", "progress"],
   progress: ["progress"]
@@ -241,6 +260,7 @@ export const PlasmicNavbar = Object.assign(
     // Helper components rendering sub-elements
     logoNav: makeNodeComponent("logoNav"),
     buttonSearch: makeNodeComponent("buttonSearch"),
+    languagePicker: makeNodeComponent("languagePicker"),
     linkButton: makeNodeComponent("linkButton"),
     track: makeNodeComponent("track"),
     progress: makeNodeComponent("progress"),
