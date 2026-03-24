@@ -142,7 +142,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 60%;
+  width: clamp(200px, 20vw, 280px);
   max-width: 100%;
   justify-content: center;
   align-items: center;
@@ -150,7 +150,7 @@
   opacity: 0.4;
   aspect-ratio: 1;
   transform: rotate3d(0, 0, 1, 14deg);
-  border-radius: 60px;
+  border-radius: clamp(40px, 6vw, 60px);
   padding: 10px;
 }
 .freeBox__tnVcw {
@@ -163,8 +163,8 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  border-radius: 50px;
-  padding: 40px;
+  border-radius: calc(clamp(40px, 6vw, 60px) - 10px);
+  padding: clamp(20px, 3vw, 40px);
   border: 1px dashed var(--token-Off7mEOZIgQq);
 }
 .svg___8A1V {
