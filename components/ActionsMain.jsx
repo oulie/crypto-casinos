@@ -13,7 +13,7 @@ function ActionsMain_(props, ref) {
             color="#49494b"
             dotSize={2}
             gap={6}
-            maxOffset={6}
+            maxOffset={8}
             outerRadius={28}
             style={{ borderRadius: "25px", width: "100%" }}
           >
