@@ -9,9 +9,11 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: nX5ivYUrRc2W
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
   PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -19,6 +21,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -73,6 +76,7 @@ function PlasmicTableRowCoin__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
   return (
     <div
@@ -90,21 +94,30 @@ function PlasmicTableRowCoin__RenderFunc(props) {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__e0Tpc)}>
-        <PlasmicImg__
-          data-plasmic-name={"img"}
-          data-plasmic-override={overrides.img}
-          alt={""}
-          className={classNames(sty.img)}
-          displayHeight={"32px"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"32px"}
-          loading={"lazy"}
-          src={args.icon}
-        />
-
+        <PlasmicLink__
+          data-plasmic-name={"link"}
+          data-plasmic-override={overrides.link}
+          className={classNames(projectcss.all, projectcss.a, sty.link)}
+          component={Link}
+          href={`/coins/btc`}
+          legacyBehavior={false}
+          platform={"nextjs"}
+        >
+          <PlasmicImg__
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={"32px"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"32px"}
+            loading={"lazy"}
+            src={args.icon}
+          />
+        </PlasmicLink__>
         <div className={classNames(projectcss.all, sty.freeBox__booAy)}>
           <div className={classNames(projectcss.all, sty.freeBox__zlJ1B)}>
             {renderPlasmicSlot({
@@ -178,7 +191,8 @@ function PlasmicTableRowCoin__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "linkButton"],
+  root: ["root", "link", "img", "linkButton"],
+  link: ["link", "img"],
   img: ["img"],
   linkButton: ["linkButton"]
 };
@@ -215,6 +229,7 @@ export const PlasmicTableRowCoin = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
     linkButton: makeNodeComponent("linkButton"),
     // Metadata about props expected for PlasmicTableRowCoin

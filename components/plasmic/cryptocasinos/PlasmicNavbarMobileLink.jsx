@@ -16,7 +16,9 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  renderPlasmicSlot
+  hasVariant,
+  renderPlasmicSlot,
+  useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
@@ -27,7 +29,7 @@ import BookIcon from "./icons/PlasmicIcon__Book"; // plasmic-import: h9sLGs5m_Vd
 
 createPlasmicElementProxy;
 
-export const PlasmicNavbarMobileLink__VariantProps = new Array();
+export const PlasmicNavbarMobileLink__VariantProps = new Array("isCurrent");
 
 export const PlasmicNavbarMobileLink__ArgProps = new Array(
   "href",
@@ -66,6 +68,25 @@ function PlasmicNavbarMobileLink__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "isCurrent",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.isCurrent
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
   const styleTokensClassNames = _useStyleTokens();
   return (
     <PlasmicLink__
@@ -96,12 +117,24 @@ function PlasmicNavbarMobileLink__RenderFunc(props) {
         ),
 
         value: args.icon,
-        className: classNames(sty.slotTargetIcon)
+        className: classNames(sty.slotTargetIcon, {
+          [sty.slotTargetIconisCurrent]: hasVariant(
+            $state,
+            "isCurrent",
+            "isCurrent"
+          )
+        })
       })}
       {renderPlasmicSlot({
         defaultContents: "Guides",
         value: args.title,
-        className: classNames(sty.slotTargetTitle)
+        className: classNames(sty.slotTargetTitle, {
+          [sty.slotTargetTitleisCurrent]: hasVariant(
+            $state,
+            "isCurrent",
+            "isCurrent"
+          )
+        })
       })}
     </PlasmicLink__>
   );

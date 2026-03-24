@@ -419,17 +419,25 @@
   height: 16px;
   flex-shrink: 0;
 }
+.freeBox__bHspE {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: visible;
+}
 .freeBox__pqgyv {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 100%;
   height: auto;
-  max-width: 100%;
   justify-content: flex-start;
   align-items: stretch;
   row-gap: 4px;
-  min-width: 0;
+  flex-grow: 1;
+  min-width: 600px;
+  padding-bottom: 20px;
 }
 .freeBox__fcgi5 {
   display: grid;
@@ -442,6 +450,11 @@
   text-transform: uppercase;
   min-width: 0;
   padding: 8px;
+}
+@media (max-width: 511px) {
+  .freeBox__fcgi5 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 .text__mmLz {
   animation: none;

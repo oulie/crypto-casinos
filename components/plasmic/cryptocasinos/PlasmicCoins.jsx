@@ -419,195 +419,199 @@ function PlasmicCoins__RenderFunc(props) {
                 title={"All Supported Coins"}
               />
 
-              <div className={classNames(projectcss.all, sty.freeBox__pqgyv)}>
-                <div className={classNames(projectcss.all, sty.freeBox__fcgi5)}>
+              <div className={classNames(projectcss.all, sty.freeBox__bHspE)}>
+                <div className={classNames(projectcss.all, sty.freeBox__pqgyv)}>
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__mmLz
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__fcgi5)}
                   >
-                    {"Coin"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___6TwMq
-                    )}
-                  >
-                    {"Price"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__tQvms
-                    )}
-                  >
-                    {"24H Change"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ur7CE
-                    )}
-                  >
-                    {"Network speed"}
-                  </div>
-                </div>
-                <TableRowCoin
-                  className={classNames(
-                    "__wab_instance",
-                    sty.tableRowCoin__z5E6R
-                  )}
-                  iconNetworkSpeed={
-                    <ClockIcon
-                      className={classNames(projectcss.all, sty.svg__afxts)}
-                      role={"img"}
-                    />
-                  }
-                  networkSpeed={"5-10 min"}
-                />
-
-                <TableRowCoin
-                  className={classNames(
-                    "__wab_instance",
-                    sty.tableRowCoin__ymC3S
-                  )}
-                  coinName={"Tether"}
-                  coinShorthand={
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__yRlqC
+                        sty.text__mmLz
                       )}
                     >
-                      {"USDT"}
+                      {"Coin"}
                     </div>
-                  }
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                  iconNetworkSpeed={
-                    <ZapIcon
-                      className={classNames(projectcss.all, sty.svg___6Uo6Q)}
-                      role={"img"}
-                    />
-                  }
-                />
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___6TwMq
+                      )}
+                    >
+                      {"Price"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__tQvms
+                      )}
+                    >
+                      {"24H Change"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ur7CE
+                      )}
+                    >
+                      {"Network speed"}
+                    </div>
+                  </div>
+                  <TableRowCoin
+                    className={classNames(
+                      "__wab_instance",
+                      sty.tableRowCoin__z5E6R
+                    )}
+                    iconNetworkSpeed={
+                      <ClockIcon
+                        className={classNames(projectcss.all, sty.svg__afxts)}
+                        role={"img"}
+                      />
+                    }
+                    networkSpeed={"5-10 min"}
+                  />
 
-                <TableRowCoin
-                  className={classNames(
-                    "__wab_instance",
-                    sty.tableRowCoin__b4UYs
-                  )}
-                  coinName={"Polkadot"}
-                  coinShorthand={"DOT"}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                  iconNetworkSpeed={
-                    <ZapIcon
-                      className={classNames(projectcss.all, sty.svg___7L8Wm)}
-                      role={"img"}
-                    />
-                  }
-                />
+                  <TableRowCoin
+                    className={classNames(
+                      "__wab_instance",
+                      sty.tableRowCoin__ymC3S
+                    )}
+                    coinName={"Tether"}
+                    coinShorthand={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__yRlqC
+                        )}
+                      >
+                        {"USDT"}
+                      </div>
+                    }
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    iconNetworkSpeed={
+                      <ZapIcon
+                        className={classNames(projectcss.all, sty.svg___6Uo6Q)}
+                        role={"img"}
+                      />
+                    }
+                  />
 
-                <TableRowCoin
-                  className={classNames(
-                    "__wab_instance",
-                    sty.tableRowCoin__wZlOe
-                  )}
-                  coinName={"Cardano"}
-                  coinShorthand={"ADA"}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                  iconNetworkSpeed={
-                    <ClockIcon
-                      className={classNames(projectcss.all, sty.svg__er5C1)}
-                      role={"img"}
-                    />
-                  }
-                  networkSpeed={"5-10 min"}
-                />
+                  <TableRowCoin
+                    className={classNames(
+                      "__wab_instance",
+                      sty.tableRowCoin__b4UYs
+                    )}
+                    coinName={"Polkadot"}
+                    coinShorthand={"DOT"}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    iconNetworkSpeed={
+                      <ZapIcon
+                        className={classNames(projectcss.all, sty.svg___7L8Wm)}
+                        role={"img"}
+                      />
+                    }
+                  />
 
-                <TableRowCoin
-                  className={classNames(
-                    "__wab_instance",
-                    sty.tableRowCoin__qAfl
-                  )}
-                  coinName={"XRP"}
-                  coinShorthand={"XRP"}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                  iconNetworkSpeed={
-                    <ZapIcon
-                      className={classNames(projectcss.all, sty.svg__qz66K)}
-                      role={"img"}
-                    />
-                  }
-                />
+                  <TableRowCoin
+                    className={classNames(
+                      "__wab_instance",
+                      sty.tableRowCoin__wZlOe
+                    )}
+                    coinName={"Cardano"}
+                    coinShorthand={"ADA"}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    iconNetworkSpeed={
+                      <ClockIcon
+                        className={classNames(projectcss.all, sty.svg__er5C1)}
+                        role={"img"}
+                      />
+                    }
+                    networkSpeed={"5-10 min"}
+                  />
 
-                <TableRowCoin
-                  className={classNames(
-                    "__wab_instance",
-                    sty.tableRowCoin__jlMsw
-                  )}
-                  coinName={"Ethereum"}
-                  coinShorthand={"ETH"}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                  iconNetworkSpeed={
-                    <ZapIcon
-                      className={classNames(projectcss.all, sty.svg__mdvWo)}
-                      role={"img"}
-                    />
-                  }
-                />
+                  <TableRowCoin
+                    className={classNames(
+                      "__wab_instance",
+                      sty.tableRowCoin__qAfl
+                    )}
+                    coinName={"XRP"}
+                    coinShorthand={"XRP"}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    iconNetworkSpeed={
+                      <ZapIcon
+                        className={classNames(projectcss.all, sty.svg__qz66K)}
+                        role={"img"}
+                      />
+                    }
+                  />
 
-                <TableRowCoin
-                  className={classNames(
-                    "__wab_instance",
-                    sty.tableRowCoin__dDf3W
-                  )}
-                  coinName={"Solana"}
-                  coinShorthand={"SOL"}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                  iconNetworkSpeed={
-                    <ZapIcon
-                      className={classNames(projectcss.all, sty.svg__o451Z)}
-                      role={"img"}
-                    />
-                  }
-                />
+                  <TableRowCoin
+                    className={classNames(
+                      "__wab_instance",
+                      sty.tableRowCoin__jlMsw
+                    )}
+                    coinName={"Ethereum"}
+                    coinShorthand={"ETH"}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    iconNetworkSpeed={
+                      <ZapIcon
+                        className={classNames(projectcss.all, sty.svg__mdvWo)}
+                        role={"img"}
+                      />
+                    }
+                  />
+
+                  <TableRowCoin
+                    className={classNames(
+                      "__wab_instance",
+                      sty.tableRowCoin__dDf3W
+                    )}
+                    coinName={"Solana"}
+                    coinShorthand={"SOL"}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    iconNetworkSpeed={
+                      <ZapIcon
+                        className={classNames(projectcss.all, sty.svg__o451Z)}
+                        role={"img"}
+                      />
+                    }
+                  />
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__ecfWi)}>
                 <LinkButton

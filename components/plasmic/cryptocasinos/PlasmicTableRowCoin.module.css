@@ -11,6 +11,11 @@
   border-radius: 10px;
   padding: 8px;
 }
+@media (max-width: 511px) {
+  .root {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
 .root:nth-child(even) {
   background: none;
 }
@@ -22,6 +27,13 @@
   align-items: center;
   justify-content: flex-start;
   column-gap: 8px;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
 }
 .img {
   object-fit: cover;
@@ -132,6 +144,11 @@
   justify-content: center;
   align-items: flex-end;
   min-width: 0;
+}
+@media (max-width: 511px) {
+  .freeBox__buo0A {
+    display: none;
+  }
 }
 .linkButton:global(.__wab_instance) {
   max-width: 100%;

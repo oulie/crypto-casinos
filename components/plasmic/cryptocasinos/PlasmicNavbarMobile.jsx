@@ -25,6 +25,7 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s
 import sty from "./PlasmicNavbarMobile.module.css"; // plasmic-import: BRfhhBRySlKA/css
 import HouseIcon from "./icons/PlasmicIcon__House"; // plasmic-import: RZEM2UmEVS6m/icon
 import TrophyIcon from "./icons/PlasmicIcon__Trophy"; // plasmic-import: I-1KWj6kHo73/icon
+import BookIcon from "./icons/PlasmicIcon__Book"; // plasmic-import: h9sLGs5m_Vd1/icon
 import MegaphoneIcon from "./icons/PlasmicIcon__Megaphone"; // plasmic-import: wuaoX7IFFr8_/icon
 import CoinsIcon from "./icons/PlasmicIcon__Coins"; // plasmic-import: YH9P_qiC8MJ-/icon
 
@@ -81,7 +82,9 @@ function PlasmicNavbarMobile__RenderFunc(props) {
       )}
     >
       <NavbarMobileLink
-        className={classNames("__wab_instance", sty.navbarMobileLink__nnqEv)}
+        data-plasmic-name={"linkHome"}
+        data-plasmic-override={overrides.linkHome}
+        className={classNames("__wab_instance", sty.linkHome)}
         icon={
           <HouseIcon
             className={classNames(projectcss.all, sty.svg__dyury)}
@@ -92,7 +95,9 @@ function PlasmicNavbarMobile__RenderFunc(props) {
       />
 
       <NavbarMobileLink
-        className={classNames("__wab_instance", sty.navbarMobileLink__tm0E7)}
+        data-plasmic-name={"linkCasinos"}
+        data-plasmic-override={overrides.linkCasinos}
+        className={classNames("__wab_instance", sty.linkCasinos)}
         href={`/casinos`}
         icon={
           <TrophyIcon
@@ -104,12 +109,22 @@ function PlasmicNavbarMobile__RenderFunc(props) {
       />
 
       <NavbarMobileLink
-        className={classNames("__wab_instance", sty.navbarMobileLink__uGTe)}
+        data-plasmic-name={"linkGuides"}
+        data-plasmic-override={overrides.linkGuides}
+        className={classNames("__wab_instance", sty.linkGuides)}
         href={`/guides`}
+        icon={
+          <BookIcon
+            className={classNames(projectcss.all, sty.svg__c8Qb2)}
+            role={"img"}
+          />
+        }
       />
 
       <NavbarMobileLink
-        className={classNames("__wab_instance", sty.navbarMobileLink__gGjp4)}
+        data-plasmic-name={"linkNews"}
+        data-plasmic-override={overrides.linkNews}
+        className={classNames("__wab_instance", sty.linkNews)}
         href={`/news`}
         icon={
           <MegaphoneIcon
@@ -121,7 +136,9 @@ function PlasmicNavbarMobile__RenderFunc(props) {
       />
 
       <NavbarMobileLink
-        className={classNames("__wab_instance", sty.navbarMobileLink__dncOi)}
+        data-plasmic-name={"linkCoins"}
+        data-plasmic-override={overrides.linkCoins}
+        className={classNames("__wab_instance", sty.linkCoins)}
         icon={
           <CoinsIcon
             className={classNames(projectcss.all, sty.svg__hQ1V6)}
@@ -135,7 +152,20 @@ function PlasmicNavbarMobile__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: [
+    "root",
+    "linkHome",
+    "linkCasinos",
+    "linkGuides",
+    "linkNews",
+    "linkCoins"
+  ],
+
+  linkHome: ["linkHome"],
+  linkCasinos: ["linkCasinos"],
+  linkGuides: ["linkGuides"],
+  linkNews: ["linkNews"],
+  linkCoins: ["linkCoins"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -170,6 +200,11 @@ export const PlasmicNavbarMobile = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    linkHome: makeNodeComponent("linkHome"),
+    linkCasinos: makeNodeComponent("linkCasinos"),
+    linkGuides: makeNodeComponent("linkGuides"),
+    linkNews: makeNodeComponent("linkNews"),
+    linkCoins: makeNodeComponent("linkCoins"),
     // Metadata about props expected for PlasmicNavbarMobile
     internalVariantProps: PlasmicNavbarMobile__VariantProps,
     internalArgProps: PlasmicNavbarMobile__ArgProps

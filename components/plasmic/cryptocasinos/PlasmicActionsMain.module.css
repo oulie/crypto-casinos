@@ -51,6 +51,15 @@
   border-radius: 30px;
   padding: 10px;
 }
+@media (max-width: 511px) {
+  .freeBox__rlQ0H {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    align-items: stretch;
+    column-gap: 0px;
+  }
+}
 .linkButton__oVc4A:global(.__wab_instance) {
   animation: none;
   position: relative;
