@@ -8,19 +8,23 @@
   color: #cfcfcf;
   cursor: pointer;
 }
-.root:hover {
-  color: #ffffff;
-}
 .img {
   object-fit: cover;
   max-width: 100%;
   width: 80px;
   height: 80px;
+  transition-property: filter;
+  transition-duration: 0.2s;
   flex-shrink: 0;
+  -webkit-transition-property: filter;
+  -webkit-transition-duration: 0.2s;
   border-radius: 10px;
 }
 .img > picture > img {
   object-fit: cover;
+}
+.root:hover .img {
+  filter: brightness(120%);
 }
 .freeBox__aWqF8 {
   display: flex;
@@ -44,6 +48,31 @@
 .slotTargetTitle {
   font-size: 14px;
   color: #ffffff;
+}
+.slotTargetTitle > *,
+.slotTargetTitle > :global(.__wab_slot) > *,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetTitle > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > picture > img,
+.slotTargetTitle > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetTitle
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover .slotTargetTitle {
+  color: var(--token-QL0xMMXWaeGp);
 }
 .freeBox__xxBxG {
   width: 100%;
@@ -78,4 +107,11 @@
   > picture
   > img {
   opacity: 0.6;
+  transition-property: color;
+  transition-duration: 0.15s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.15s;
+}
+.root:hover .slotTargetTimeSince {
+  color: #cfcfcf;
 }
