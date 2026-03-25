@@ -126,28 +126,6 @@ function PlasmicCardCasinoLarge__RenderFunc(props) {
           >
             {"Fast payouts, premium UX, and sportsbook included."}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__tQrX)}>
-            <div className={classNames(projectcss.all, sty.freeBox__aLrS1)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___8IPpk
-                )}
-              >
-                {"Welcome bonus"}
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__eWuq7
-                )}
-              >
-                {"200% up to $1k"}
-              </div>
-            </div>
-          </div>
           <div className={classNames(projectcss.all, sty.freeBox__aAbiC)}>
             <div className={classNames(projectcss.all, sty.freeBox__tvnVq)}>
               <ZapIcon
@@ -205,131 +183,164 @@ function PlasmicCardCasinoLarge__RenderFunc(props) {
               title={"Claim Bonus"}
             />
 
-            <LinkButton
-              className={classNames("__wab_instance", sty.linkButton__oouvC)}
-              color={"gray"}
-              href={`/casinos/stake`}
-              size={"medium"}
-              title={"Read Review"}
-            />
+            <div className={classNames(projectcss.all, sty.freeBox__eBdOb)}>
+              <div className={classNames(projectcss.all, sty.freeBox__dEXjg)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__kk61W
+                  )}
+                >
+                  {"Welcome bonus"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__q0Bir
+                  )}
+                >
+                  {"200% up to $1k"}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__r3F3O)}>
           <div className={classNames(projectcss.all, sty.freeBox__tDc1N)}>
             <div className={classNames(projectcss.all, sty.freeBox__hVXuV)}>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__bf7Mu)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={args.screenshot}
-              />
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__svLum)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__x5QZp
-                )}
-              >
-                {"Supported Coins"}
+              <div className={classNames(projectcss.all, sty.freeBox__nhtat)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__bf7Mu)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={args.screenshot}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__cw5Ed)}
+                />
               </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  sty.freeBox__xrgKz,
-                  "link-coin-icon-wrap"
-                )}
-              >
-                <LinkCoinIcon
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__wPr0N)}>
+              <div className={classNames(projectcss.all, sty.freeBox__svLum)}>
+                <div
                   className={classNames(
-                    "__wab_instance",
-                    sty.linkCoinIcon__uoEc2
+                    projectcss.all,
+                    sty.freeBox__xrgKz,
+                    "link-coin-icon-wrap"
                   )}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                />
+                >
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__uoEc2
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinDotSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-                <LinkCoinIcon
-                  className={classNames(
-                    "__wab_instance",
-                    sty.linkCoinIcon__uxHfe
-                  )}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__uxHfe
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinUsdtSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-                <LinkCoinIcon
-                  className={classNames(
-                    "__wab_instance",
-                    sty.linkCoinIcon__lGvAp
-                  )}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__lGvAp
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinAdaSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-                <LinkCoinIcon
-                  className={classNames(
-                    "__wab_instance",
-                    sty.linkCoinIcon__tIjRl
-                  )}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__tIjRl
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinEthSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-                <LinkCoinIcon
-                  className={classNames(
-                    "__wab_instance",
-                    sty.linkCoinIcon__tkXsB
-                  )}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__tkXsB
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinXrpSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-                <LinkCoinIcon
-                  className={classNames(
-                    "__wab_instance",
-                    sty.linkCoinIcon__rgY5O
-                  )}
-                  icon={{
-                    src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
-                    fullWidth: 225,
-                    fullHeight: 225,
-                    aspectRatio: 1
-                  }}
-                />
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__rgY5O
+                    )}
+                    icon={{
+                      src: "/plasmic/cryptocasinos/images/coinSolSvg.svg",
+                      fullWidth: 225,
+                      fullHeight: 225,
+                      aspectRatio: 1
+                    }}
+                    size={"small"}
+                  />
 
-                <LinkCoinIcon
+                  <LinkCoinIcon
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkCoinIcon__rg92
+                    )}
+                    size={"small"}
+                  />
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__jMqsz)}>
+                <LinkButton
                   className={classNames(
                     "__wab_instance",
-                    sty.linkCoinIcon__rg92
+                    sty.linkButton__h19OM
                   )}
+                  color={"clear"}
+                  href={`/casinos/stake`}
+                  size={"small"}
+                  title={"Read Review"}
                 />
               </div>
             </div>
