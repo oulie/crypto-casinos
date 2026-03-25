@@ -1,8 +1,9 @@
-import * as React from "react";
+import React, { useState, useRef } from "react";
 import { PlasmicActionsMain } from "./plasmic/cryptocasinos/PlasmicActionsMain";
 import DotGrid from "./DotGrid";
 
 function ActionsMain_(props, ref) {
+
 
   return (<PlasmicActionsMain root={{ ref }} {...props}
 

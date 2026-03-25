@@ -4,6 +4,49 @@ import { useEffect, useRef } from 'react';
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
+const parseColor = color => {
+  const normalized = color.trim();
+
+  if (normalized.startsWith('#')) {
+    const hex = normalized.slice(1);
+
+    if (hex.length === 3) {
+      return {
+        r: parseInt(hex[0] + hex[0], 16),
+        g: parseInt(hex[1] + hex[1], 16),
+        b: parseInt(hex[2] + hex[2], 16)
+      };
+    }
+
+    if (hex.length === 6) {
+      return {
+        r: parseInt(hex.slice(0, 2), 16),
+        g: parseInt(hex.slice(2, 4), 16),
+        b: parseInt(hex.slice(4, 6), 16)
+      };
+    }
+  }
+
+  const match = normalized.match(/^rgb\(\s*(\d+),\s*(\d+),\s*(\d+)\s*\)$/i);
+  if (match) {
+    return {
+      r: Number(match[1]),
+      g: Number(match[2]),
+      b: Number(match[3])
+    };
+  }
+
+  return { r: 73, g: 73, b: 75 };
+};
+
+const mixColor = (from, to, progress) => ({
+  r: Math.round(from.r + (to.r - from.r) * progress),
+  g: Math.round(from.g + (to.g - from.g) * progress),
+  b: Math.round(from.b + (to.b - from.b) * progress)
+});
+
+const toRgbString = color => `rgb(${color.r}, ${color.g}, ${color.b})`;
+
 const normalizeCornerRadii = (radius, width, height) => {
   if (typeof radius === 'number') {
     const value = Math.max(0, Math.min(radius, width / 2, height / 2));
@@ -88,6 +131,7 @@ function DotGrid({
   children,
   className = '',
   color = '#49494b',
+  colorTransitionDuration = 220,
   dotSize = 2,
   gap = 6,
   radius = 72,
@@ -103,6 +147,8 @@ function DotGrid({
   const pointerRef = useRef(null);
   const drawRef = useRef(() => {});
   const frameRef = useRef(null);
+  const colorFrameRef = useRef(null);
+  const colorRef = useRef(parseColor(color));
 
   useEffect(() => {
     const root = rootRef.current;
@@ -207,7 +253,7 @@ function DotGrid({
       };
 
       context.clearRect(0, 0, canvasWidth, canvasHeight);
-      context.fillStyle = color;
+      context.fillStyle = toRgbString(colorRef.current);
 
       for (const dot of dotsRef.current) {
         let x = dot.x;
@@ -262,8 +308,12 @@ function DotGrid({
         cancelAnimationFrame(frameRef.current);
         frameRef.current = null;
       }
+      if (colorFrameRef.current) {
+        cancelAnimationFrame(colorFrameRef.current);
+        colorFrameRef.current = null;
+      }
     };
-  }, [bleed, color, dotSize, gap, maxOffset, outerRadius, radius]);
+  }, [bleed, dotSize, gap, maxOffset, outerRadius, radius]);
 
   const redraw = () => {
     if (frameRef.current) {
@@ -294,6 +344,45 @@ function DotGrid({
     pointerRef.current = null;
     redraw();
   };
+
+  useEffect(() => {
+    const nextColor = parseColor(color);
+
+    if (colorTransitionDuration <= 0) {
+      colorRef.current = nextColor;
+      drawRef.current();
+      return undefined;
+    }
+
+    const fromColor = colorRef.current;
+    const startTime = performance.now();
+
+    if (colorFrameRef.current) {
+      cancelAnimationFrame(colorFrameRef.current);
+      colorFrameRef.current = null;
+    }
+
+    const animate = now => {
+      const progress = clamp((now - startTime) / colorTransitionDuration, 0, 1);
+      colorRef.current = mixColor(fromColor, nextColor, progress);
+      drawRef.current();
+
+      if (progress < 1) {
+        colorFrameRef.current = requestAnimationFrame(animate);
+      } else {
+        colorFrameRef.current = null;
+      }
+    };
+
+    colorFrameRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      if (colorFrameRef.current) {
+        cancelAnimationFrame(colorFrameRef.current);
+        colorFrameRef.current = null;
+      }
+    };
+  }, [color, colorTransitionDuration]);
 
   return (
     <div

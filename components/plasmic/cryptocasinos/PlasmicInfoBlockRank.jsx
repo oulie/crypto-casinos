@@ -81,12 +81,12 @@ function PlasmicInfoBlockRank__RenderFunc(props) {
       >
         <div className={classNames(projectcss.all, sty.freeBox__xkcUu)}>
           <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
+            data-plasmic-name={"description"}
+            data-plasmic-override={overrides.description}
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text
+              sty.description
             )}
           >
             {
@@ -96,9 +96,9 @@ function PlasmicInfoBlockRank__RenderFunc(props) {
         </div>
         <div className={classNames(projectcss.all, sty.freeBox___24JXu)}>
           <LinkButton
-            data-plasmic-name={"linkButton"}
-            data-plasmic-override={overrides.linkButton}
-            className={classNames("__wab_instance", sty.linkButton)}
+            data-plasmic-name={"buttonRank"}
+            data-plasmic-override={overrides.buttonRank}
+            className={classNames("__wab_instance", sty.buttonRank)}
             color={"outlined"}
             href={`/guides/how-to-choose-a-crypto-casino`}
             iconLeft={
@@ -120,10 +120,10 @@ function PlasmicInfoBlockRank__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "wrap", "text", "linkButton", "svg"],
-  wrap: ["wrap", "text", "linkButton", "svg"],
-  text: ["text"],
-  linkButton: ["linkButton", "svg"],
+  root: ["root", "wrap", "description", "buttonRank", "svg"],
+  wrap: ["wrap", "description", "buttonRank", "svg"],
+  description: ["description"],
+  buttonRank: ["buttonRank", "svg"],
   svg: ["svg"]
 };
 
@@ -160,8 +160,8 @@ export const PlasmicInfoBlockRank = Object.assign(
   {
     // Helper components rendering sub-elements
     wrap: makeNodeComponent("wrap"),
-    text: makeNodeComponent("text"),
-    linkButton: makeNodeComponent("linkButton"),
+    description: makeNodeComponent("description"),
+    buttonRank: makeNodeComponent("buttonRank"),
     svg: makeNodeComponent("svg"),
     // Metadata about props expected for PlasmicInfoBlockRank
     internalVariantProps: PlasmicInfoBlockRank__VariantProps,

@@ -222,6 +222,9 @@ a {
   pointer-events: none;
 }
 
+.opacity-100 {
+  opacity: 1 !important;
+}
 
 
 @media (max-width: 1023px) {
