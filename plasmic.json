@@ -1339,6 +1339,20 @@
           "cssFilePath": "plasmic/cryptocasinos/PlasmicLanguagePickerOption.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "juWg6hSQlE-U",
+          "name": "Contact",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicContact.jsx",
+          "importSpec": {
+            "modulePath": "../pages/contact.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/contact"
         }
       ],
       "icons": [

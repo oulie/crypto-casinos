@@ -223,6 +223,7 @@ function PlasmicFooter__RenderFunc(props) {
 
             <LinkFooter
               className={classNames("__wab_instance", sty.linkFooter__yq4Aq)}
+              href={`/contact`}
               title={"Contact us"}
             />
           </div>
