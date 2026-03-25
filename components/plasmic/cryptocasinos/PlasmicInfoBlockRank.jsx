@@ -75,49 +75,53 @@ function PlasmicInfoBlockRank__RenderFunc(props) {
       )}
     >
       <div
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
-        className={classNames(projectcss.all, sty.freeBox)}
+        data-plasmic-name={"wrap"}
+        data-plasmic-override={overrides.wrap}
+        className={classNames(projectcss.all, sty.wrap)}
       >
-        <div
-          data-plasmic-name={"text"}
-          data-plasmic-override={overrides.text}
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text
-          )}
-        >
-          {
-            "We rank casinos by reputation, bonus clarity, withdrawal speed, and supported payment methods."
-          }
+        <div className={classNames(projectcss.all, sty.freeBox__xkcUu)}>
+          <div
+            data-plasmic-name={"text"}
+            data-plasmic-override={overrides.text}
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text
+            )}
+          >
+            {
+              "We rank casinos by reputation, bonus clarity, withdrawal speed, and supported payment methods."
+            }
+          </div>
         </div>
-        <LinkButton
-          data-plasmic-name={"linkButton"}
-          data-plasmic-override={overrides.linkButton}
-          className={classNames("__wab_instance", sty.linkButton)}
-          color={"outlined"}
-          href={`/guides/how-to-choose-a-crypto-casino`}
-          iconLeft={
-            <BadgeCheckIcon
-              data-plasmic-name={"svg"}
-              data-plasmic-override={overrides.svg}
-              className={classNames(projectcss.all, sty.svg)}
-              role={"img"}
-            />
-          }
-          showIcon={["left"]}
-          size={"medium"}
-          title={"How we rank casinos"}
-        />
+        <div className={classNames(projectcss.all, sty.freeBox___24JXu)}>
+          <LinkButton
+            data-plasmic-name={"linkButton"}
+            data-plasmic-override={overrides.linkButton}
+            className={classNames("__wab_instance", sty.linkButton)}
+            color={"outlined"}
+            href={`/guides/how-to-choose-a-crypto-casino`}
+            iconLeft={
+              <BadgeCheckIcon
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
+                role={"img"}
+              />
+            }
+            showIcon={["left"]}
+            size={"medium"}
+            title={"How we rank casinos"}
+          />
+        </div>
       </div>
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "text", "linkButton", "svg"],
-  freeBox: ["freeBox", "text", "linkButton", "svg"],
+  root: ["root", "wrap", "text", "linkButton", "svg"],
+  wrap: ["wrap", "text", "linkButton", "svg"],
   text: ["text"],
   linkButton: ["linkButton", "svg"],
   svg: ["svg"]
@@ -155,7 +159,7 @@ export const PlasmicInfoBlockRank = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
+    wrap: makeNodeComponent("wrap"),
     text: makeNodeComponent("text"),
     linkButton: makeNodeComponent("linkButton"),
     svg: makeNodeComponent("svg"),
