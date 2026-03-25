@@ -53,15 +53,26 @@
   font-size: 12px;
   text-transform: uppercase;
 }
-.freeBox__x9Gky {
+.freeBox__pSNfB {
   display: flex;
   flex-direction: row;
   position: relative;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-content: flex-start;
+  min-width: 0;
+}
+.freeBox__x9Gky {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: auto;
   column-gap: 20px;
-  min-width: 0;
 }
 .img {
   animation: none;
@@ -73,6 +84,12 @@
 }
 .img > picture > img {
   object-fit: cover;
+}
+@media (max-width: 511px) {
+  .img {
+    width: 72px;
+    flex-shrink: 0;
+  }
 }
 .freeBox__xwquu {
   display: flex;
@@ -115,7 +132,7 @@
   padding: 2px 8px 2px 4px;
   border: 1px solid var(--token-6ezJMcDkCpjz);
 }
-.svg {
+.svg__eZcIs {
   object-fit: cover;
   max-width: 100%;
   color: var(--token-6ezJMcDkCpjz);
@@ -130,6 +147,68 @@
   max-width: 100%;
   color: var(--token-6ezJMcDkCpjz);
   min-width: 0;
+}
+.freeBox__a0COh {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.linkSocial__r6U5:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__gQGxU {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 22px;
+  height: 22px;
+}
+.linkSocial__c2Bwp:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__a5Nhh {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 22px;
+  height: 22px;
+}
+.linkSocial__fodg2:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__ubaz8 {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 22px;
+  height: 22px;
+}
+.linkSocial__j8Jre:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__iVlwv {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 22px;
+  height: 22px;
+}
+.linkSocial__goWTm:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.svg__fHEb {
+  animation: none;
+  object-fit: cover;
+  max-width: 100%;
+  width: 22px;
+  height: 22px;
 }
 .text__efEd0 {
   animation: none;

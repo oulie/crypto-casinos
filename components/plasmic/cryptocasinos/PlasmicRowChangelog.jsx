@@ -9,8 +9,11 @@
 // Plasmic Project: 1LHryFzrfagz6s5XszxyaX
 // Component: iOOjtDw_sc94
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
@@ -73,15 +76,58 @@ function PlasmicRowChangelog__RenderFunc(props) {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__ti2Wd)}>
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text___4Nb5
-          )}
+        <PlasmicLink__
+          data-plasmic-name={"link"}
+          data-plasmic-override={overrides.link}
+          className={classNames(projectcss.all, projectcss.a, sty.link)}
+          component={Link}
+          href={`/authors/peter-pragnanda`}
+          legacyBehavior={false}
+          platform={"nextjs"}
         >
-          {"Mar 22, 2026"}
-        </div>
+          <PlasmicImg__
+            data-plasmic-name={"img"}
+            data-plasmic-override={overrides.img}
+            alt={""}
+            className={classNames(sty.img)}
+            displayHeight={"32px"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"32px"}
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg",
+              fullWidth: 1024,
+              fullHeight: 1024,
+              aspectRatio: undefined
+            }}
+          />
+
+          <div className={classNames(projectcss.all, sty.freeBox__uP0FC)}>
+            <div className={classNames(projectcss.all, sty.freeBox__tjRlh)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__cbFvW
+                )}
+              >
+                {"Peter Pragnanda"}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__gUng
+                )}
+              >
+                {"Mar 22, 2026"}
+              </div>
+            </div>
+          </div>
+        </PlasmicLink__>
       </div>
       <div className={classNames(projectcss.all, sty.freeBox__iIryC)}>
         <div
@@ -110,7 +156,9 @@ function PlasmicRowChangelog__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "link", "img"],
+  link: ["link", "img"],
+  img: ["img"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -145,6 +193,8 @@ export const PlasmicRowChangelog = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
+    img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicRowChangelog
     internalVariantProps: PlasmicRowChangelog__VariantProps,
     internalArgProps: PlasmicRowChangelog__ArgProps

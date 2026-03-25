@@ -24,6 +24,7 @@ import SectionHeader from "../../SectionHeader"; // plasmic-import: peFiZbBQXNG2
 import LinkButton from "../../LinkButton"; // plasmic-import: IXlYPJ9laVnz/component
 import TextInput from "../../TextInput"; // plasmic-import: 5f0MCF-XtEuB/component
 import TextAreaInput from "../../TextAreaInput"; // plasmic-import: NL4Ws_7S4FzI/component
+import LinkSocial from "../../LinkSocial"; // plasmic-import: B79vdv0pZon9/component
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
@@ -32,6 +33,10 @@ import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: 480yurPMF
 import MapPinIcon from "./icons/PlasmicIcon__MapPin"; // plasmic-import: 63YnkqLOEAM3/icon
 import EmailIcon from "./icons/PlasmicIcon__Email"; // plasmic-import: SZilBF00Lt3s/icon
 import BriefcaseIcon from "./icons/PlasmicIcon__Briefcase"; // plasmic-import: 29x9snRvI3lW/icon
+import FacebookIcon from "./icons/PlasmicIcon__Facebook"; // plasmic-import: QjS7qBeUnBWD/icon
+import InstagramIcon from "./icons/PlasmicIcon__Instagram"; // plasmic-import: i7CSvtV_b018/icon
+import XcomIcon from "./icons/PlasmicIcon__Xcom"; // plasmic-import: SuObJQ4_Jd2f/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: o1mVPeiNIwPq/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -456,6 +461,66 @@ function PlasmicContact__RenderFunc(props) {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__dYvXk)}>
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__dd5Lz
+                    )}
+                  />
+
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__lif5M
+                    )}
+                    icon={
+                      <FacebookIcon
+                        className={classNames(projectcss.all, sty.svg__wc3D6)}
+                        role={"img"}
+                      />
+                    }
+                  />
+
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial___8J0Xa
+                    )}
+                    icon={
+                      <InstagramIcon
+                        className={classNames(projectcss.all, sty.svg__ygAs)}
+                        role={"img"}
+                      />
+                    }
+                  />
+
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__uerGv
+                    )}
+                    icon={
+                      <XcomIcon
+                        className={classNames(projectcss.all, sty.svg__nptQs)}
+                        role={"img"}
+                      />
+                    }
+                  />
+
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__tYWfk
+                    )}
+                    icon={
+                      <Icon5Icon
+                        className={classNames(projectcss.all, sty.svg__qvCcs)}
+                        role={"img"}
+                      />
+                    }
+                  />
                 </div>
               </div>
             </div>

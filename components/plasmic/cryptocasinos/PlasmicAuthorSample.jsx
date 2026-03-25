@@ -15,9 +15,11 @@ import {
   PlasmicImg as PlasmicImg__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import LinkSocial from "../../LinkSocial"; // plasmic-import: B79vdv0pZon9/component
 import CardAuthorDetails from "../../CardAuthorDetails"; // plasmic-import: Nv1hbciYplVE/component
 import SectionHeader from "../../SectionHeader"; // plasmic-import: peFiZbBQXNG2/component
 import NewsGridItem from "../../NewsGridItem"; // plasmic-import: ftCRKqiLCHeT/component
@@ -32,6 +34,10 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 1LHryFzrfagz6s5XszxyaX/projectcss
 import sty from "./PlasmicAuthorSample.module.css"; // plasmic-import: TBnEkGLLqmJO/css
 import BadgeCheckIcon from "./icons/PlasmicIcon__BadgeCheck"; // plasmic-import: OE1F_elgA17S/icon
+import FacebookIcon from "./icons/PlasmicIcon__Facebook"; // plasmic-import: QjS7qBeUnBWD/icon
+import InstagramIcon from "./icons/PlasmicIcon__Instagram"; // plasmic-import: i7CSvtV_b018/icon
+import XcomIcon from "./icons/PlasmicIcon__Xcom"; // plasmic-import: SuObJQ4_Jd2f/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: o1mVPeiNIwPq/icon
 
 const emptyProxy = new Proxy(() => "", {
   get(_, prop) {
@@ -138,61 +144,130 @@ function PlasmicAuthorSample__RenderFunc(props) {
               >
                 {"Author"}
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__x9Gky)}>
-                <PlasmicImg__
-                  data-plasmic-name={"img"}
-                  data-plasmic-override={overrides.img}
-                  alt={""}
-                  className={classNames(sty.img)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"102px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg",
-                    fullWidth: 1024,
-                    fullHeight: 1024,
-                    aspectRatio: undefined
-                  }}
-                />
+              <div className={classNames(projectcss.all, sty.freeBox__pSNfB)}>
+                <div className={classNames(projectcss.all, sty.freeBox__x9Gky)}>
+                  <PlasmicImg__
+                    data-plasmic-name={"img"}
+                    data-plasmic-override={overrides.img}
+                    alt={""}
+                    className={classNames(sty.img)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobile")
+                        ? "72px"
+                        : "102px"
+                    }
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/cryptocasinos/images/uifacesAlienAvatar1Jpg.jpg",
+                      fullWidth: 1024,
+                      fullHeight: 1024,
+                      aspectRatio: undefined
+                    }}
+                  />
 
-                <div className={classNames(projectcss.all, sty.freeBox__xwquu)}>
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___60Wh
-                    )}
-                  >
-                    {"Peter Pragnanda"}
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__t9GRp)}
+                    className={classNames(projectcss.all, sty.freeBox__xwquu)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__ormf4)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___60Wh
+                      )}
                     >
-                      <BadgeCheckIcon
-                        data-plasmic-name={"svg"}
-                        data-plasmic-override={overrides.svg}
-                        className={classNames(projectcss.all, sty.svg)}
-                        role={"img"}
-                      />
-
+                      {"Peter Pragnanda"}
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__t9GRp)}
+                    >
                       <div
                         className={classNames(
                           projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__gcHux
+                          sty.freeBox__ormf4
                         )}
                       >
-                        {"Expert"}
+                        <BadgeCheckIcon
+                          className={classNames(projectcss.all, sty.svg__eZcIs)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__gcHux
+                          )}
+                        >
+                          {"Expert"}
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__a0COh)}>
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__r6U5
+                    )}
+                  />
+
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__c2Bwp
+                    )}
+                    icon={
+                      <FacebookIcon
+                        className={classNames(projectcss.all, sty.svg__a5Nhh)}
+                        role={"img"}
+                      />
+                    }
+                  />
+
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__fodg2
+                    )}
+                    icon={
+                      <InstagramIcon
+                        className={classNames(projectcss.all, sty.svg__ubaz8)}
+                        role={"img"}
+                      />
+                    }
+                  />
+
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__j8Jre
+                    )}
+                    icon={
+                      <XcomIcon
+                        className={classNames(projectcss.all, sty.svg__iVlwv)}
+                        role={"img"}
+                      />
+                    }
+                  />
+
+                  <LinkSocial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.linkSocial__goWTm
+                    )}
+                    icon={
+                      <Icon5Icon
+                        className={classNames(projectcss.all, sty.svg__fHEb)}
+                        role={"img"}
+                      />
+                    }
+                  />
                 </div>
               </div>
               <div
@@ -584,7 +659,6 @@ const PlasmicDescendants = {
     "root",
     "hero",
     "img",
-    "svg",
     "cardAuthorDetails",
     "content",
     "leftContent",
@@ -597,9 +671,8 @@ const PlasmicDescendants = {
     "cardCta"
   ],
 
-  hero: ["hero", "img", "svg", "cardAuthorDetails"],
+  hero: ["hero", "img", "cardAuthorDetails"],
   img: ["img"],
-  svg: ["svg"],
   cardAuthorDetails: ["cardAuthorDetails"],
   content: [
     "content",
@@ -664,7 +737,6 @@ export const PlasmicAuthorSample = Object.assign(
     // Helper components rendering sub-elements
     hero: makeNodeComponent("hero"),
     img: makeNodeComponent("img"),
-    svg: makeNodeComponent("svg"),
     cardAuthorDetails: makeNodeComponent("cardAuthorDetails"),
     content: makeNodeComponent("content"),
     leftContent: makeNodeComponent("leftContent"),

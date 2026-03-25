@@ -179,7 +179,7 @@ function PlasmicNavbar__RenderFunc(props) {
               className={classNames("__wab_instance", sty.linkButton)}
               color={"gray"}
               size={"small"}
-              title={"Updates"}
+              title={"CTA"}
             />
           </div>
         </div>

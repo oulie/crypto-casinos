@@ -1353,6 +1353,19 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/contact"
+        },
+        {
+          "id": "B79vdv0pZon9",
+          "name": "LinkSocial",
+          "type": "managed",
+          "projectId": "1LHryFzrfagz6s5XszxyaX",
+          "renderModuleFilePath": "plasmic/cryptocasinos/PlasmicLinkSocial.jsx",
+          "importSpec": {
+            "modulePath": "LinkSocial.jsx"
+          },
+          "cssFilePath": "plasmic/cryptocasinos/PlasmicLinkSocial.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1595,6 +1608,31 @@
           "id": "PEwZHbQZ9aIL",
           "name": "ExternalIcon",
           "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__External.jsx"
+        },
+        {
+          "id": "2paBffCFlmmR",
+          "name": "LinkedinIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Linkedin.jsx"
+        },
+        {
+          "id": "QjS7qBeUnBWD",
+          "name": "FacebookIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Facebook.jsx"
+        },
+        {
+          "id": "i7CSvtV_b018",
+          "name": "InstagramIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Instagram.jsx"
+        },
+        {
+          "id": "SuObJQ4_Jd2f",
+          "name": "XcomIcon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Xcom.jsx"
+        },
+        {
+          "id": "o1mVPeiNIwPq",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/cryptocasinos/icons/PlasmicIcon__Icon5.jsx"
         }
       ],
       "images": [
